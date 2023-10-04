@@ -1,0 +1,27 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"EAS",6.67,.09,6.76,6,,"","","46 Part Time.txt",
+"EAS",7.64,.06,7.7,6,,"","","45 Full Time.txt",.9399996
+"EAS",22950,1529,24479,18400,,"","","43 Assistant Store Manager.txt",24471.3
+"EAS",32725,4173,36898,,15,"","","42 Store Manager.txt",12419
+"EAS",48481,923,49404,,,"DM/AREA MGR","","40 District Manager.txt",12506
+"EAS",80000,7550,87550,,,"REG MGR","","39 Regional Manager.txt",38146
+"EAS",97506,0,97506,,40,"DR OPS","VP FINANCE","34 Top DC _ Logistics.txt",9956
+"EAS",46852,0,46852,,0,"MGR LP","DR OPS","32 Top Loss Prevention.txt",-50654
+"EAS",107000,0,107000,,12,"VP HR","","30 Top Human Resources.txt",60148
+"EAS",54387,0,54387,,7,"MGR MIS","","28 Computer Operations.txt",-52613
+"EAS",71500,0,71500,,3,"DR VIS MERCH","VP CUST SATISF","24 Top Visual.txt",17113
+"EAS",85000,0,85000,,9,"DR CUST COMMUNICATIONS","VP CUST SATISF","23 Art Department.txt",13500
+"EAS",,,,,,"VP CUSTOMER SATISFACTION","","22 Top Mktg_Sales Promo.txt",
+"EAS",65000,0,65000,,,"MGR SOURCING","","21 Product Coordinator.txt",
+"EAS",31429,640,32069,,,"MERCH ANALYST","","19 Distributor.txt",-32931
+"EAS",55702,1527,57229,,,"MERCH PLANNER","","18 Planner.txt",25160
+"EAS",136000,0,136000,,14,"VP/MERCH OPS","PRES","16 Top Planner.txt",78771
+"EAS",70000,0,49983,,,"","","14 Buyer.txt",-86017
+"EAS",76067,7600,83667,,2,"MERCH DR","","12 Div Merchandise Mgr.txt",33684
+"EAS",125000,0,125000,,11,"GMM","PRESIDENT","11 General Merchandise Mgr.txt",41333
+"EAS",85400,0,85400,,11,"CONTROLLER","","08 Controller.txt",-39600
+"EAS",146000,0,146000,,28,"VP FINANCE","","07 CFO.txt",60600
+"EAS",45750,0,45750,,,"FIELD PROJECT MGR","","06 Regional Store Construct.txt",-100250
+"EAS",71500,0,71500,,2,"DR VISUAL MERCH/DR OPS","VP CUST SATISFCTN/VP FINANCE","05 Top Store Plan_Construct.txt",25750
+"EAS",94000,0,94000,,1,"DR RE","CUSTOMER SATISFACTION","03 Top Real Estate.txt",22500
+"EAS",,0,,,920,"","","01 CEO.txt",

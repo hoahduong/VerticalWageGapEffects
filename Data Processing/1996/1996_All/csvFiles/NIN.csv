@@ -1,0 +1,33 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"NIN",5,0,5,,,"","","46 Part Time.txt",
+"NIN",8.2,0,8.2,,,"","","45 Full Time.txt",3.2
+"NIN",16640,0,16640,,,"","","43 Assistant Store Manager.txt",16631.8
+"NIN",10854,12646,23500,,4,"","","42 Store Manager.txt",6860
+"NIN",45000,2250,47250,,,"AREA SM","","40 District Manager.txt",23750
+"NIN",61000,3050,64050,,,"RSM","","39 Regional Manager.txt",16800
+"NIN",75000,11250,86250,,4,"OPS MGR","","38 Zone Manager.txt",22200
+"NIN",170000,42500,212500,,8000,"EX VP OPS","GR PRES RET","37 Top Store Operations.txt",126250
+"NIN",210000,52000,262000,,175,"SR VP DISTRIB","COO","34 Top DC _ Logistics.txt",49500
+"NIN",,,,,,"","","31 Comp_Benefits Mgr.txt",
+"NIN",210000,52500,262500,,34,"SR VP HR","CEO","30 Top Human Resources.txt",
+"NIN",61000,6000,67000,,10,"DR POS SYSTEMS","SR VP MIS","29 Point Of Sale Admin.txt",-195500
+"NIN",80000,8000,88000,,10,"OPS MGR","","28 Computer Operations.txt",21000
+"NIN",110000,27500,137500,,20,"VP SYSTEMS","","27 Systems Programming.txt",49500
+"NIN",160000,40000,200000,,70,"SR VP MIS","COO","26 Top Systems_Data Procg.txt",62500
+"NIN",160000,80000,240000,,0,"VP INT DES","GR PRES RET","24 Top Visual.txt",40000
+"NIN",75000,7500,82500,,6,"SR ART DR","VP MKTNG","23 Art Department.txt",-157500
+"NIN",125000,75000,200000,,28,"VP MKTNG","","22 Top Mktg_Sales Promo.txt",117500
+"NIN",25000,1200,26200,,,"MERCH COORD","","19 Distributor.txt",-173800
+"NIN",45000,4500,49500,,,"PLANNER","","18 Planner.txt",23300
+"NIN",35000,3500,38500,,,"ASST/ASSOC RETAIL DR","","15 Assistant Buyer.txt",-11000
+"NIN",,,69000,,,"","","14 Buyer.txt",30500
+"NIN",85000,12750,97750,,,"BUYER","","13 Sr Buyer.txt",28750
+"NIN",90000,22500,112500,,8,"VP MERCH/MERCH MGR","","12 Div Merchandise Mgr.txt",14750
+"NIN",240000,120000,360000,,175,"SR VP FINAN","","08 Controller.txt",247500
+"NIN",275000,0,275000,,300,"CFO","","07 CFO.txt",-85000
+"NIN",60000,6000,66000,,,"PROJECT MGRS","","06 Regional Store Construct.txt",-209000
+"NIN",110000,27500,137500,,32,"VP STORE PLAN","SR VP RE","05 Top Store Plan_Construct.txt",71500
+"NIN",100000,15000,115000,,,"DR RE","","04 Regional Real Estate.txt",-22500
+"NIN",190000,85000,275000,,50,"SR VP RE/STORE PLAN","GROUP PRES","03 Top Real Estate.txt",160000
+"NIN",250000,125000,375000,,15,"SR VP GEN COUN","","02 General Counsel.txt",100000
+"NIN",500000,250000,750000,,1200,"GROUP PRES OF RETAIL DIV","PRES OF PARENT CO","01 CEO.txt",375000

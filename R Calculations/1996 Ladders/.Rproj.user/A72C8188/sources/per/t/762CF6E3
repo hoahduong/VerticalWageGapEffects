@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1555606252182.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "762CF6E3",
+    "lastKnownWriteTime" : 111550524582144,
+    "last_content_update" : 1555606252182,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "F1D06D1A",
+        "caption" : "levelNZ",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=levelNZ&cache_key=F1D06D1A",
+        "displayedObservations" : 84,
+        "environment" : "",
+        "object" : "levelNZ",
+        "preview" : 0,
+        "totalObservations" : 84,
+        "variables" : 2
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

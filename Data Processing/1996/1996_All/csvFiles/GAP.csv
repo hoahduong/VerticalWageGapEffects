@@ -1,0 +1,42 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"GAP",5.67,0,5.67,4.25,,"","","46 Part Time.txt",
+"GAP",7.98,0,7.98,4.25,,"","","45 Full Time.txt",2.31
+"GAP",22500,600,23100,,,"","","43 Assistant Store Manager.txt",23092.02
+"GAP",32400,2100,34500,,7,"","","42 Store Manager.txt",11400
+"GAP",,,43100,,,"AREA MGR","","41 Area Manager.txt",8600
+"GAP",56000,7300,63300,,,"DM","","40 District Manager.txt",20200
+"GAP",97000,15000,112000,,,"RM","","39 Regional Manager.txt",48700
+"GAP",209000,50000,259000,,5,"ZONE VP","","38 Zone Manager.txt",147000
+"GAP",343800,54600,398400,,16797,"DIV EX VP OPS","DIV PRES","37 Top Store Operations.txt",139400
+"GAP",247000,30000,277000,,500,"SR VP DISTRIB","COO","34 Top DC _ Logistics.txt",-121400
+"GAP",51200,3800,55000,44600,,"REG LP MGR","","33 Regional Loss Prevention.txt",-222000
+"GAP",92800,5600,98400,,15,"DR LP","VP STORE OPS","32 Top Loss Prevention.txt",43400
+"GAP",,,,,,"","","31 Comp_Benefits Mgr.txt",
+"GAP",310000,100000,410000,,16,"SR VP CORP HR","COO","30 Top Human Resources.txt",
+"GAP",96700,2900,99600,,5,"DR MIS","VP MIS","29 Point Of Sale Admin.txt",-310400
+"GAP",286800,27600,314400,,150,"VP MIS","","28 Computer Operations.txt",214800
+"GAP",188700,20000,208700,,100,"VP MIS","","27 Systems Programming.txt",-105700
+"GAP",420000,50000,470000,,350,"SR VP MIS-CIO","COO","26 Top Systems_Data Procg.txt",261300
+"GAP",157000,28200,185200,,20,"VP VIS MDSG/DESIGN","DIV EX VP FIELD STORES","24 Top Visual.txt",-284800
+"GAP",72500,3300,75800,,3,"ART DR","VP ADVT @ DIV","23 Art Department.txt",-109400
+"GAP",,,,,,"VP MKTNG","","22 Top Mktg_Sales Promo.txt",
+"GAP",94100,6000,100100,,15,"SR DR INT'L SERVICE","SR VP LOG & SOURC","20 Top Import Coordinator.txt",
+"GAP",36700,,36700,,,"DISTRIB ANALYST","","19 Distributor.txt",-63400
+"GAP",45000,,45000,,,"PLANNER","","18 Planner.txt",8300
+"GAP",56000,2000,58000,,5,"PLANNING MGR","","17 Sr Planner.txt",13000
+"GAP",125000,15000,140000,,40,"SR DR/VP PLAN DISTR","DIV PRES/SR VP MERCH","16 Top Planner.txt",82000
+"GAP",43000,,43000,,,"ASST MERCH","","15 Assistant Buyer.txt",-97000
+"GAP",59000,3700,57500,,,"","","14 Buyer.txt",14500
+"GAP",67000,7100,74100,,,"SR MERCH","","13 Sr Buyer.txt",16600
+"GAP",103000,12000,115000,,3,"MERCH MGR","","12 Div Merchandise Mgr.txt",40900
+"GAP",331500,64300,395800,,25,"SR VP MERCH","DIV PRES","11 General Merchandise Mgr.txt",280800
+"GAP",120250,0,120250,,7,"","","10 Top Internal Auditor.txt",-275550
+"GAP",200000,25000,225000,,25,"VP TREAS/TAX/RISK","","09 Treasurer.txt",104750
+"GAP",186200,37300,223500,,168,"VP FINAN/CONTROL","","08 Controller.txt",-1500
+"GAP",315000,40000,355000,,200,"CFO","","07 CFO.txt",131500
+"GAP",100000,6000,106000,,,"SR DR CONSTRUC","","06 Regional Store Construct.txt",-249000
+"GAP",210000,20000,230000,,80,"VP RE","SR VP RE","05 Top Store Plan_Construct.txt",124000
+"GAP",187000,14200,201200,,,"VP RE","","04 Regional Real Estate.txt",-28800
+"GAP",336000,38500,374500,,150,"SR VP RE","CEO","03 Top Real Estate.txt",173300
+"GAP",285000,30000,315000,,30,"SR VP GEN COUNSEL","","02 General Counsel.txt",-59500
+"GAP",1800000,314100,2114100,,45000,"CEO","BD OF DR","01 CEO.txt",1799100

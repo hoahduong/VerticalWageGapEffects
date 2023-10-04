@@ -1,0 +1,21 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"SCA",4.7,.47,5.17,,,"","","46 Part Time.txt",
+"SCA",5.27,0,5.27,,,"","","46 Part Time.txt",.0999999
+"SCA",4.77,1.2,5.97,,,"","","45 Full Time.txt",.6999998
+"SCA",5.5,0,5.5,,,"","","45 Full Time.txt",-.4699998
+"SCA",13200,900,14100,,,"","","43 Assistant Store Manager.txt",14094.5
+"SCA",12900,,12900,,,"","","43 Assistant Store Manager.txt",-1200
+"SCA",19900,1000,20900,,8,"","","42 Store Manager.txt",8000
+"SCA",16800,,16800,,4,"","","42 Store Manager.txt",-4100
+"SCA",35400,0,35400,,,"DM","","40 District Manager.txt",18600
+"SCA",67000,0,67000,,,"REG MGR","","39 Regional Manager.txt",31600
+"SCA",118900,0,118900,,2579,"DR STORE OPS","DIV PRES","37 Top Store Operations.txt",51900
+"SCA",27800,,27800,,,"DISTRIB [I &II]","","19 Distributor.txt",-91100
+"SCA",40500,,40500,,,"MERCH PLANNER","","18 Planner.txt",12700
+"SCA",50000,0,50000,,5,"DIST MGR","","17 Sr Planner.txt",9500
+"SCA",66000,0,66000,,19,"DR DIST","GMM","16 Top Planner.txt",16000
+"SCA",76100,0,75900,,,"","","14 Buyer.txt",9900
+"SCA",125000,0,125000,,16,"DMM","","12 Div Merchandise Mgr.txt",49100
+"SCA",156000,0,156000,,43,"GMM","DIV PRES","11 General Merchandise Mgr.txt",31000
+"SCA",,0,,,1386,"","","01 CEO.txt",
+"SCA",270000,0,270000,,2716,"DIV PRES","PRES/CEO","01 CEO.txt",

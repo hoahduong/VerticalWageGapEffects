@@ -1,0 +1,35 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"GEN",4.94,1.98,6.92,,,"","","46 Part Time.txt",
+"GEN",7.35,1.69,9.04,,,"","","45 Full Time.txt",2.12
+"GEN",16663,3443,20106,,,"","","43 Assistant Store Manager.txt",20096.96
+"GEN",17915,3005,20920,,5,"","","42 Store Manager.txt",814
+"GEN",,,25857,,,"SR STORE MGR","","41 Area Manager.txt",4937
+"GEN",42537,0,42537,,,"REG SALES MGR","","40 District Manager.txt",16680
+"GEN",102969,31381,134350,,,"DIV VP","","39 Regional Manager.txt",91813
+"GEN",143997,15600,159597,,8000,"VP STORE OPS","PRES OF RETAIL","37 Top Store Operations.txt",25247
+"GEN",49057,,49057,40654,3,"TRAF MGR","DC MGR","36 Domestic Traffic.txt",-110540
+"GEN",56254,,56254,47137,75,"","","35 DC Manager.txt",7197
+"GEN",165000,44686,209686,,1137,"SR VP LOG/MANUF","CFO","34 Top DC _ Logistics.txt",153432
+"GEN",46351,,46351,35018,,"LP REG MGR","","33 Regional Loss Prevention.txt",-163335
+"GEN",112000,14000,126000,,30,"VP LP","CEO","32 Top Loss Prevention.txt",79649
+"GEN",50200,6402,56602,,7,"","","31 Comp_Benefits Mgr.txt",-69398
+"GEN",91800,,91800,,20,"VP HR","EX VP/CFO","30 Top Human Resources.txt",35198
+"GEN",58648,,58648,,23,"MGR STORE SYST OPS","CIO","29 Point Of Sale Admin.txt",-33152
+"GEN",78453,,78453,,10,"DR INFO TECH","","28 Computer Operations.txt",19805
+"GEN",71693,,71693,,8,"MGRS -  APPL","","27 Systems Programming.txt",-6760
+"GEN",125000,13050,138050,,105,"CIO","EX VP/CFO","26 Top Systems_Data Procg.txt",66357
+"GEN",68115,,68115,,10,"DR VIS MERCH","SR VP SALES & MKTNG","24 Top Visual.txt",-69935
+"GEN",26708,,26708,,2,"ART COORD","VIS MERCH SALES & PROMO","23 Art Department.txt",-41407
+"GEN",,,,,,"VP MKTNG","","22 Top Mktg_Sales Promo.txt",
+"GEN",,,36721,,,"","","14 Buyer.txt",
+"GEN",64997,1643,66640,,,"SR B","","13 Sr Buyer.txt",29919
+"GEN",79052,3500,82552,,15,"DR OF PROCUREMENT","PRES OF RETAIL","11 General Merchandise Mgr.txt",15912
+"GEN",66322,,66322,,7,"","","10 Top Internal Auditor.txt",-16230
+"GEN",90063,,90063,,13,"ASST TREAS","","09 Treasurer.txt",23741
+"GEN",102886,0,102886,,125,"VP CORP CONTR","","08 Controller.txt",12823
+"GEN",220000,37500,257500,,260,"EX VP/CFO","","07 CFO.txt",154614
+"GEN",42500,6000,48500,,,"SR PROJECT MGR","","06 Regional Store Construct.txt",-209000
+"GEN",,,,,,"DR CONSTRUC","PRES/RETAIL","05 Top Store Plan_Construct.txt",
+"GEN",130100,24188,154288,,27,"VP RE","CEO","03 Top Real Estate.txt",
+"GEN",115000,14954,129954,,7,"VP/LEGAL","","02 General Counsel.txt",-24334
+"GEN",599835,61760,661595,,9658,"PRES/CEO","BD OF DR","01 CEO.txt",531641

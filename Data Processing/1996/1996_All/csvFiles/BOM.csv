@@ -1,0 +1,36 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"BOM",5.78,0,5.78,,,"","","46 Part Time.txt",
+"BOM",6.39,0,6.39,,,"","","45 Full Time.txt",.6099997
+"BOM",17540,,17540,,,"","","43 Assistant Store Manager.txt",17533.61
+"BOM",25400,2100,27500,,7,"","","42 Store Manager.txt",9960
+"BOM",46000,2100,48100,,,"DM","","40 District Manager.txt",20600
+"BOM",80200,6300,86500,,,"REG DR","","39 Regional Manager.txt",38400
+"BOM",175000,9000,184000,,3500,"SR VP STORES","CEO","37 Top Store Operations.txt",97500
+"BOM",55000,2400,57400,,11,"LOG MGR","VP DIST","36 Domestic Traffic.txt",-126600
+"BOM",59667,2900,62567,,30,"","","35 DC Manager.txt",5167
+"BOM",100000,8200,108200,,105,"VP DIST","CFO","34 Top DC _ Logistics.txt",45633
+"BOM",80000,0,80000,,1,"DR LP","CFO","32 Top Loss Prevention.txt",-28200
+"BOM",68500,4200,72700,,3,"","","31 Comp_Benefits Mgr.txt",-7300
+"BOM",31400,200,31600,,4,"OPS SUPER","MGR OPS","29 Point Of Sale Admin.txt",-41100
+"BOM",52000,800,52800,,13,"MGR OPS","","28 Computer Operations.txt",21200
+"BOM",101600,2400,104000,,40,"VP INFO SERV","CFO","26 Top Systems_Data Procg.txt",51200
+"BOM",42450,1400,43850,,,"REG VIS MGR","","25 Regional Visual.txt",-60150
+"BOM",68000,3700,71700,,30,"DR OF VIS MERCH","EVP MERCH DEV","24 Top Visual.txt",27850
+"BOM",55000,1500,56500,,3,"SR ART DR","CR DR","23 Art Department.txt",-15200
+"BOM",100000,0,100000,,16,"CREAT DR","","22 Top Mktg_Sales Promo.txt",43500
+"BOM",122500,9500,132000,,17,"SR VP MULTINTN'L SOURCING","EX VP MERC DEV","20 Top Import Coordinator.txt",32000
+"BOM",27000,2000,29000,,,"DIST","","19 Distributor.txt",-103000
+"BOM",64500,2600,67100,,,"SR MGR","","18 Planner.txt",38100
+"BOM",78000,2586,80586,,6,"DR OF MDSE PLAN & REPL","VP MDSE MGMT","16 Top Planner.txt",13486
+"BOM",34870,300,35170,,,"ASST MDSE MGR","","15 Assistant Buyer.txt",-45416
+"BOM",69500,4500,74000,,,"","","14 Buyer.txt",38830
+"BOM",67288,3700,70988,,5,"MDSE DEV","","12 Div Merchandise Mgr.txt",-3012
+"BOM",290000,0,290000,,70,"EX VP MDSE DEV &MKTG","CEO","11 General Merchandise Mgr.txt",219012
+"BOM",61500,2744,64244,,1,"","","10 Top Internal Auditor.txt",-225756
+"BOM",130000,11263,141263,,58,"VP FIN & TREAS","","09 Treasurer.txt",77019
+"BOM",78600,1247,79847,,48,"CONTR","","08 Controller.txt",-61416
+"BOM",220000,0,220000,,220,"EX VP/CFO","","07 CFO.txt",140153
+"BOM",62400,4088,66488,,6,"DR OF CONST","VP RE","05 Top Store Plan_Construct.txt",-153512
+"BOM",118500,8938,127438,,13,"VP RE","CEO","03 Top Real Estate.txt",60950
+"BOM",150000,0,150000,,3,"VP GEN COUN/SEC","","02 General Counsel.txt",22562
+"BOM",440000,0,440000,,4034,"CEO/PRES","BD OF DR","01 CEO.txt",290000

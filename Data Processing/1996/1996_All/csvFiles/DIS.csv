@@ -1,0 +1,31 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"DIS",5.7,0,5.7,,,"","","46 Part Time.txt",
+"DIS",8.56,0,8.56,,,"","","45 Full Time.txt",2.860001
+"DIS",27000,300,27300,17400,,"","","43 Assistant Store Manager.txt",27291.44
+"DIS",34300,800,35100,,395,"","","42 Store Manager.txt",7800
+"DIS",55600,4500,60100,,,"DM","","40 District Manager.txt",25000
+"DIS",84400,4100,88500,,,"REG DR","","39 Regional Manager.txt",28400
+"DIS",135700,22900,158600,,3,"ZONE DR","","38 Zone Manager.txt",70100
+"DIS",260000,110000,370000,,13000,"SR VP STORES","PRES, NA","37 Top Store Operations.txt",211400
+"DIS",70000,0,70000,57460,8,"DOMSTIC TRAFFIC MGR","DR TRANSPORT","36 Domestic Traffic.txt",-300000
+"DIS",181500,45000,226500,,75,"VP, DISTRIBUTION","PRES, NA","34 Top DC _ Logistics.txt",156500
+"DIS",80000,0,80000,,4,"SR MGR LP","DR INVENTORY ACCTNG","32 Top Loss Prevention.txt",-146500
+"DIS",85000,5000,90000,,,"","","31 Comp_Benefits Mgr.txt",10000
+"DIS",151700,0,151700,,50,"VP HR","PRES, NA","30 Top Human Resources.txt",61700
+"DIS",65354,0,65354,,3,"MGR STORE SYSTEMS","DR STORE SYSTEMS","29 Point Of Sale Admin.txt",-86346
+"DIS",96300,17000,113300,,17,"DR INFO SERV","","28 Computer Operations.txt",47946
+"DIS",165000,47000,212000,,62,"VP INFO SREVICES","PRES,   NA","26 Top Systems_Data Procg.txt",98700
+"DIS",145300,30000,175300,,9,"VP VIS MERCH & STORE DESIGN DEV","VP GEN MERCH MGR","24 Top Visual.txt",-36700
+"DIS",130000,0,130000,,19,"DR TRANSPORTATION","VP DISTRIB","20 Top Import Coordinator.txt",-45300
+"DIS",43823,0,43823,,,"STORE PLANNER","","19 Distributor.txt",-86177
+"DIS",67268,0,67268,,,"PLANN MGR","","18 Planner.txt",23445
+"DIS",122021,0,122021,,10,"DR PLANN & ALLOC","","17 Sr Planner.txt",54753
+"DIS",46892,,46892,,,"ASST PRODUCT MGR","","15 Assistant Buyer.txt",-75129
+"DIS",77805,0,77805,,,"","","14 Buyer.txt",30913
+"DIS",95479,0,95479,,,"SR PRODUCT MGR","","13 Sr Buyer.txt",17674
+"DIS",146700,0,146700,,12,"DR MERCH","","12 Div Merchandise Mgr.txt",51221
+"DIS",280000,95000,375000,,77,"VP GMM","PRES NORTH AMERICA","11 General Merchandise Mgr.txt",228300
+"DIS",135000,8000,143000,,82,"VP FINANCE","","07 CFO.txt",-232000
+"DIS",150000,40000,190000,,45,"VP STORE PLANNING","SRVP RE & PROP DEV","05 Top Store Plan_Construct.txt",47000
+"DIS",210000,90000,300000,,10,"VP RE","SR VP RE & PROP DEV","03 Top Real Estate.txt",110000
+"DIS",350000,200000,550000,,17000,"PRES - WORLD WIDE","PRES - CONSUMER PRODUCTS","01 CEO.txt",250000

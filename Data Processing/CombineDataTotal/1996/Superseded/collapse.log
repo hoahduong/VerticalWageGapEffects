@@ -1,0 +1,1009 @@
+----------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/macbook/Desktop/18-19 Thesis/Data Processing/CombineDataTotal/
+> Superseded/collapse.log
+  log type:  text
+ opened on:  29 Jan 2019, 13:55:45
+
+. 
+. version 15
+
+. 
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/05 Top Store Pl
+> an_Construct.dta", clear
+
+. collapse total, by (code)
+
+. save "05 Top Store Plan_Construct_collapse.dta", replace
+file 05 Top Store Plan_Construct_collapse.dta saved
+
+. 
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/14 Buyer.dta", 
+> clear
+
+. collapse total, by (code)
+
+. save "14 Buyer_collapse.dta", replace
+file 14 Buyer_collapse.dta saved
+
+. 
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/22 Top Mktg_Sal
+> es Promo.dta", clear
+
+. collapse total, by (code)
+
+. save "22 Top Mktg_Sales Promo_collapse.dta", replace
+file 22 Top Mktg_Sales Promo_collapse.dta saved
+
+. 
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/25 Regional Vis
+> ual.dta", clear
+
+. collapse total, by (code)
+
+. save "25 Regional Visual_collapse.dta", replace
+file 25 Regional Visual_collapse.dta saved
+
+. 
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/31 Comp_Benefit
+> s Mgr.dta", clear
+
+. collapse total, by (code)
+
+. save "31 Comp_Benefits Mgr_collapse.dta", replace
+file 31 Comp_Benefits Mgr_collapse.dta saved
+
+. 
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/33 Regional Los
+> s Prevention.dta", clear
+
+. collapse total, by (code)
+
+. save "33 Regional Loss Prevention_collapse.dta", replace
+file 33 Regional Loss Prevention_collapse.dta saved
+
+. 
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/35 DC Manager.d
+> ta", clear
+
+. collapse total, by (code)
+
+. save "35 DC Manager_collapse.dta", replace
+file 35 DC Manager_collapse.dta saved
+
+. 
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/36 Domestic Tra
+> ffic.dta", clear
+
+. collapse total, by (code)
+
+. save "36 Domestic Traffic_collapse.dta", replace
+file 36 Domestic Traffic_collapse.dta saved
+
+. 
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/39 Regional Man
+> ager.dta", clear
+
+. collapse total, by (code)
+
+. save "39 Regional Manager_collapse.dta", replace
+file 39 Regional Manager_collapse.dta saved
+
+. 
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/40 District Man
+> ager.dta", clear
+
+. collapse total, by (code)
+
+. save "40 District Manager_collapse.dta", replace
+file 40 District Manager_collapse.dta saved
+
+. 
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/41 Area Manager
+> .dta", clear
+
+. collapse total, by (code)
+
+. save "41 Area Manager_collapse.dta", replace
+file 41 Area Manager_collapse.dta saved
+
+. 
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/42 Store Manage
+> r.dta", clear
+
+. collapse total, by (code)
+
+. save "42 Store Manager_collapse.dta", replace
+file 42 Store Manager_collapse.dta saved
+
+. 
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/43 Assistant St
+> ore Manager.dta", clear
+
+. collapse total, by (code)
+
+. save "43 Assistant Store Manager_collapse.dta", replace
+file 43 Assistant Store Manager_collapse.dta saved
+
+. 
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/44 Third Key.dt
+> a", clear
+
+. collapse total, by (code)
+
+. save "44 Third Key_collapse.dta", replace
+file 44 Third Key_collapse.dta saved
+
+. 
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/45 Full Time.dt
+> a", clear
+
+. collapse total, by (code)
+
+. save "45 Full Time_collapse.dta", replace
+file 45 Full Time_collapse.dta saved
+
+. 
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/46 Part Time.dt
+> a", clear
+
+. collapse total, by (code)
+
+. save "46 Part Time_collapse.dta", replace
+file 46 Part Time_collapse.dta saved
+
+. 
+. 
+. 
+. 
+. 
+. 
+end of do-file
+
+. 
+. drop _all 
+
+. 
+. // create the big data file
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/001 Company ID.
+> dta", clear
+
+. keep code 
+
+. save total_all_pos.dta, replace emptyok
+(note: file total_all_pos.dta not found)
+file total_all_pos.dta saved
+
+. use total_all_pos.dta, clear
+
+. 
+. // 01 CEO 
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/01 CEO.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             0
+    matched                                66  (_merge==3)
+    -----------------------------------------
+
+. rename total total1
+
+. drop _merge
+
+. 
+. // 02 General Counsel.dta
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/02 General Counsel.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            39
+        from master                        39  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                27  (_merge==3)
+    -----------------------------------------
+
+. rename total total2
+
+. drop _merge
+
+. 
+. // 03 Top Real Estate.dta
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/03 Top Real Estate.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            28
+        from master                        28  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                38  (_merge==3)
+    -----------------------------------------
+
+. rename total total3
+
+. drop _merge
+
+. 
+. 
+. // 04 Regional Real Estate.dta
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/04 Regional Real Estate.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            43
+        from master                        43  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                23  (_merge==3)
+    -----------------------------------------
+
+. rename total total4
+
+. drop _merge
+
+. 
+. // "05 Top Store Plan_Construct.dta" 
+. merge m:1 code using "05 Top Store Plan_Construct_collapse.dta", keepusing(total
+> )
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            21
+        from master                        21  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                45  (_merge==3)
+    -----------------------------------------
+
+. rename total total5
+
+. drop _merge
+
+. 
+. // "06 Regional Store Construct.dta" 
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/06 Regional Store Construct.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            38
+        from master                        38  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                28  (_merge==3)
+    -----------------------------------------
+
+. rename total total6
+
+. drop _merge
+
+. 
+. // "07 CFO.dta" 
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/07 CFO.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            19
+        from master                        19  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                47  (_merge==3)
+    -----------------------------------------
+
+. rename total total7
+
+. drop _merge
+
+. 
+. // "08 Controller.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/08 Controller.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            24
+        from master                        24  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                42  (_merge==3)
+    -----------------------------------------
+
+. rename total total8
+
+. drop _merge
+
+. 
+. // "09 Treasurer.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/09 Treasurer.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            47
+        from master                        47  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                19  (_merge==3)
+    -----------------------------------------
+
+. rename total total9
+
+. drop _merge
+
+. 
+. // "10 Top Internal Auditor.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/10 Top Internal Auditor.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            49
+        from master                        49  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                17  (_merge==3)
+    -----------------------------------------
+
+. rename total total10
+
+. drop _merge
+
+. 
+. // "11 General Merchandise Mgr.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/11 General Merchandise Mgr.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            16
+        from master                        16  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                50  (_merge==3)
+    -----------------------------------------
+
+. rename total total11
+
+. drop _merge
+
+. 
+. //      "12 Div Merchandise Mgr.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/12 Div Merchandise Mgr.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            20
+        from master                        20  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                46  (_merge==3)
+    -----------------------------------------
+
+. rename total total12
+
+. drop _merge
+
+. 
+. //      "13 Sr Buyer.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/13 Sr Buyer.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            41
+        from master                        41  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                25  (_merge==3)
+    -----------------------------------------
+
+. rename total total13
+
+. drop _merge
+
+. 
+. //      "14 Buyer.dta" ///
+. merge m:1 code using "14 Buyer_collapse.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            10
+        from master                        10  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                56  (_merge==3)
+    -----------------------------------------
+
+. rename total total14
+
+. drop _merge
+
+. 
+. //      "15 Assistant Buyer.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/15 Assistant Buyer.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            20
+        from master                        20  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                46  (_merge==3)
+    -----------------------------------------
+
+. rename total total15
+
+. drop _merge
+
+. 
+. //      "16 Top Planner.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/16 Top Planner.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            14
+        from master                        14  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                52  (_merge==3)
+    -----------------------------------------
+
+. rename total total16
+
+. drop _merge
+
+. 
+. //      "17 Sr Planner.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/17 Sr Planner.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            35
+        from master                        35  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                31  (_merge==3)
+    -----------------------------------------
+
+. rename total total17
+
+. drop _merge
+
+. 
+. //      "18 Planner.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/18 Planner.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            16
+        from master                        16  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                50  (_merge==3)
+    -----------------------------------------
+
+. rename total total18
+
+. drop _merge
+
+. 
+. //      "19 Distributor.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/19 Distributor.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            20
+        from master                        20  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                46  (_merge==3)
+    -----------------------------------------
+
+. rename total total19
+
+. drop _merge
+
+. 
+. //      "20 Top Import Coordinator.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/20 Top Import Coordinator.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            48
+        from master                        48  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                18  (_merge==3)
+    -----------------------------------------
+
+. rename total total20
+
+. drop _merge
+
+. 
+. //      "21 Product Coordinator.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/21 Product Coordinator.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            50
+        from master                        50  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                16  (_merge==3)
+    -----------------------------------------
+
+. rename total total21
+
+. drop _merge
+
+. 
+. //      "22 Top Mktg_Sales Promo.dta" ///
+. merge m:1 code using "22 Top Mktg_Sales Promo_collapse.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            24
+        from master                        24  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                42  (_merge==3)
+    -----------------------------------------
+
+. rename total total22
+
+. drop _merge
+
+. 
+. //      "23 Art Department.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/23 Art Department.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            43
+        from master                        43  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                23  (_merge==3)
+    -----------------------------------------
+
+. rename total total23
+
+. drop _merge
+
+. 
+. //      "24 Top Visual.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/24 Top Visual.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            17
+        from master                        17  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                49  (_merge==3)
+    -----------------------------------------
+
+. rename total total24
+
+. drop _merge
+
+. 
+. //      "25 Regional Visual.dta" ///
+. merge m:1 code using "25 Regional Visual_collapse.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            51
+        from master                        51  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                15  (_merge==3)
+    -----------------------------------------
+
+. rename total total25
+
+. drop _merge
+
+. 
+. //      "26 Top Systems_Data Procg.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/26 Top Systems_Data Procg.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            25
+        from master                        25  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                41  (_merge==3)
+    -----------------------------------------
+
+. rename total total26
+
+. drop _merge
+
+. 
+. //      "27 Systems Programming.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/27 Systems Programming.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            37
+        from master                        37  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                29  (_merge==3)
+    -----------------------------------------
+
+. rename total total27
+
+. drop _merge
+
+. 
+. //      "28 Computer Operations.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/28 Computer Operations.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            29
+        from master                        29  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                37  (_merge==3)
+    -----------------------------------------
+
+. rename total total28
+
+. drop _merge
+
+. 
+. //      "29 Point Of Sale Admin.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/29 Point Of Sale Admin.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            33
+        from master                        33  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                33  (_merge==3)
+    -----------------------------------------
+
+. rename total total29
+
+. drop _merge
+
+. 
+. //      "30 Top Human Resources.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/30 Top Human Resources.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            19
+        from master                        19  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                47  (_merge==3)
+    -----------------------------------------
+
+. rename total total30
+
+. drop _merge
+
+. 
+. //      "31 Comp_Benefits Mgr.dta" ///
+. merge m:1 code using "31 Comp_Benefits Mgr_collapse.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            27
+        from master                        27  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                39  (_merge==3)
+    -----------------------------------------
+
+. rename total total31
+
+. drop _merge
+
+. 
+. //      "32 Top Loss Prevention.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/32 Top Loss Prevention.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            25
+        from master                        25  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                41  (_merge==3)
+    -----------------------------------------
+
+. rename total total32
+
+. drop _merge
+
+. 
+. //      "33 Regional Loss Prevention.dta" ///
+. merge m:1 code using "33 Regional Loss Prevention_collapse.dta", keepusing(total
+> )
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            40
+        from master                        40  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                26  (_merge==3)
+    -----------------------------------------
+
+. rename total total33
+
+. drop _merge
+
+. 
+. //      "34 Top DC _ Logistics.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/34 Top DC _ Logistics.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            24
+        from master                        24  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                42  (_merge==3)
+    -----------------------------------------
+
+. rename total total34
+
+. drop _merge
+
+. 
+. //      "35 DC Manager.dta" ///
+. merge m:1 code using "35 DC Manager_collapse.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            43
+        from master                        43  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                23  (_merge==3)
+    -----------------------------------------
+
+. rename total total35
+
+. drop _merge
+
+. 
+. //      "36 Domestic Traffic.dta" ///
+. merge m:1 code using "36 Domestic Traffic_collapse.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            35
+        from master                        35  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                31  (_merge==3)
+    -----------------------------------------
+
+. rename total total36
+
+. drop _merge
+
+. 
+. //      "37 Top Store Operations.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/37 Top Store Operations.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            14
+        from master                        14  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                52  (_merge==3)
+    -----------------------------------------
+
+. rename total total37
+
+. drop _merge
+
+. 
+. //      "38 Zone Manager.dta" ///
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/199
+> 6/38 Zone Manager.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            57
+        from master                        57  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                 9  (_merge==3)
+    -----------------------------------------
+
+. rename total total38
+
+. drop _merge
+
+. 
+. //      "39 Regional Manager.dta" ///
+. merge m:1 code using "39 Regional Manager_collapse.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            10
+        from master                        10  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                56  (_merge==3)
+    -----------------------------------------
+
+. rename total total39
+
+. drop _merge
+
+. 
+. //      "40 District Manager.dta" ///
+. merge m:1 code using "40 District Manager_collapse.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             8
+        from master                         8  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                58  (_merge==3)
+    -----------------------------------------
+
+. rename total total40
+
+. drop _merge
+
+. 
+. //      "41 Area Manager.dta" ///
+. merge m:1 code using "41 Area Manager_collapse.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            47
+        from master                        47  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                19  (_merge==3)
+    -----------------------------------------
+
+. rename total total41
+
+. drop _merge
+
+. 
+. //      "42 Store Manager.dta" ///
+. merge m:1 code using "42 Store Manager_collapse.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             7
+        from master                         7  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                59  (_merge==3)
+    -----------------------------------------
+
+. rename total total42
+
+. drop _merge
+
+. 
+. //      "43 Assistant Store Manager.dta" ///
+. merge m:1 code using "43 Assistant Store Manager_collapse.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             7
+        from master                         7  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                59  (_merge==3)
+    -----------------------------------------
+
+. rename total total43
+
+. drop _merge
+
+. 
+. //      "44 Third Key.dta" ///
+. merge m:1 code using "44 Third Key_collapse.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            31
+        from master                        31  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                35  (_merge==3)
+    -----------------------------------------
+
+. rename total total44
+
+. drop _merge
+
+. 
+. //      "45 Full Time.dta" ///
+. merge m:1 code using "45 Full Time_collapse.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             8
+        from master                         8  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                58  (_merge==3)
+    -----------------------------------------
+
+. rename total total45
+
+. drop _merge
+
+. 
+. //      "46 Part Time.dta" 
+. merge m:1 code using "46 Part Time_collapse.dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             6
+        from master                         6  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                60  (_merge==3)
+    -----------------------------------------
+
+. rename total total46
+
+. drop _merge
+
+. 
+. // load the file after appending all rows
+. save total_all_pos.dta, replace
+file total_all_pos.dta saved
+
+. 
+. exit
+
+end of do-file
+
+
+. do "/Users/macbook/Desktop/18-19 Thesis/Data Processing/CombineDataTotal/Combine
+> DataRaw.do"
+
+. cd "/Users/macbook/Desktop/18-19 Thesis/Data Processing/CombineDataTotal"
+/Users/macbook/Desktop/18-19 Thesis/Data Processing/CombineDataTotal
+
+. 
+. capture log close

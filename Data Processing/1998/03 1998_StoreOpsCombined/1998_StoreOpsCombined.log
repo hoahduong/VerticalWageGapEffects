@@ -1,0 +1,157 @@
+------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/macbook/Desktop/18-19 Thesis/Data Processing/1998/03 1998_StoreOpsComb
+> ined/1998_StoreOpsCombined.log
+  log type:  text
+ opened on:   8 Apr 2019, 09:18:40
+
+. 
+. version 15
+
+. 
+. local csvPath "/Users/macbook/Desktop/18-19 Thesis/Data Processing/1998/03 1998_StoreOps
+> Combined/csvFiles/"
+
+. local dataPath "/Users/macbook/Desktop/18-19 Thesis/Data Processing/1998/02 RealConversi
+> on/convertedData/"
+
+.         
+. drop _all
+
+. 
+. local fileList "43a assistant manager.dta" ///
+>         "42a store manager.dta" ///
+>         "41 area sales _ sr manager.dta" ///
+>         "40a  district manager.dta" ///
+>         "39 regional manager.dta" ///
+>         "38 zone manager.dta" ///
+>         "37 head of stores.dta" ///
+> 
+
+. 
+. // create the big data file
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1998/001 company data.dta", 
+> clear
+
+. keep code employees stores volume 
+
+. save StoreOpsCombined.dta, replace emptyok
+file StoreOpsCombined.dta saved
+
+. use StoreOpsCombined.dta, clear
+
+. local i 44
+
+.         
+. // for each data file, merge by code
+. foreach fileName in "`fileList'" {
+  2. local i = `i' - 1
+  3. merge m:1 code using "`dataPath'`fileName'",  keepusing(total)
+  4. rename total total`i'
+  5. drop _merge
+  6. }
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             6
+        from master                         6  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                58  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             5
+        from master                         5  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                59  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            48
+        from master                        48  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                16  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             6
+        from master                         6  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                58  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            11
+        from master                        11  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                53  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            55
+        from master                        55  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                 9  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            20
+        from master                        20  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                44  (_merge==3)
+    -----------------------------------------
+
+. 
+. save StoreOpsCombined.dta, replace 
+file StoreOpsCombined.dta saved
+
+. 
+. use StoreOpsCombined.dta, clear
+
+. //describe
+. 
+. // rename
+. rename total37 TopStoreOps
+
+. rename total38 ZoneMgr
+
+. rename total39 RegionalMgr
+
+. rename total40 DistrictMgr
+
+. rename total41 AreaMgr
+
+. rename total42 StoreMgr
+
+. rename total43 AsstStoreMgr
+
+. 
+. save StoreOpsCombined.dta, replace
+file StoreOpsCombined.dta saved
+
+.         
+. exit
+
+end of do-file
+
+
+. do "/var/folders/sy/4d9t8khs1jn_xflrv2wvq20c0000gn/T//SD16538.000000"
+
+. cd "/Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined"
+/Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined
+
+. 
+. capture log close

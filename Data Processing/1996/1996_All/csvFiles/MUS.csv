@@ -1,0 +1,36 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"MUS",4.79,0,4.79,4.25,,"","","46 Part Time.txt",
+"MUS",5.29,0,5.29,4.25,,"","","45 Full Time.txt",.5
+"MUS",16657,,16657,14768,,"","","43 Assistant Store Manager.txt",16651.71
+"MUS",23862,743,24605,,6,"","","42 Store Manager.txt",7948
+"MUS",45078,1946,47024,,,"DISTRICT MGR","","40 District Manager.txt",22419
+"MUS",91552,1784,93336,,,"REGIONAL DR","","39 Regional Manager.txt",46312
+"MUS",105000,8136,113136,,2800,"VP - SUNCOAST STORES","DIVISIONAL PRES - SUNCOAST STORES","37 Top Store Operations.txt",19800
+"MUS",73886,0,73886,61600,6,"DR - TRAFFIC","SR VP - DISTRIBUTION","36 Domestic Traffic.txt",-39250
+"MUS",85494,0,85494,61600,380,"","","35 DC Manager.txt",11608
+"MUS",171600,0,171600,,800,"SR VP DISTRIBUTION","VICE CHAIRMAN","34 Top DC _ Logistics.txt",86106
+"MUS",63037,0,63037,47000,,"CORP LP MGR","","33 Regional Loss Prevention.txt",-108563
+"MUS",114300,0,114300,,29,"VP - LOSS PREVENTION","VP/CONTROLLER","32 Top Loss Prevention.txt",51263
+"MUS",65000,0,65000,,12,"","","31 Comp_Benefits Mgr.txt",-49300
+"MUS",115000,0,115000,,37,"VP, HR","CFO","30 Top Human Resources.txt",50000
+"MUS",41400,0,41400,,6,"MGR - POS","DR - OPERATIONS","29 Point Of Sale Admin.txt",-73600
+"MUS",83700,0,83700,,47,"DR - CONPUTER OPERATIONS","","28 Computer Operations.txt",42300
+"MUS",104500,0,104500,,110,"VP - IS&S","EXEC VP- CFO","26 Top Systems_Data Procg.txt",20800
+"MUS",44000,,44000,,2,"MGR - VISUAL PRESENTATION","VP COMMUNICATIONS & MUSIC MKTNG","24 Top Visual.txt",-60500
+"MUS",,,,,,"VP, ADVERTISING","","22 Top Mktg_Sales Promo.txt",
+"MUS",70000,0,70000,,12,"DR - CENTRAL RIM/MERCH SUPPORT","SR VP/GMM","16 Top Planner.txt",
+"MUS",29667,,29667,,,"ASSOCIATE BUYER","","15 Assistant Buyer.txt",-40333
+"MUS",43358,,43358,,,"","","14 Buyer.txt",13691
+"MUS",67612,0,67612,,,"NATIONAL BUYER","","13 Sr Buyer.txt",24254
+"MUS",109805,0,109805,,6,"VP - VIDEO, SOFTWARE, BOOKS","","12 Div Merchandise Mgr.txt",42193
+"MUS",173290,0,173290,,110,"SR VP/GMM","VICE CHAIRMAN","11 General Merchandise Mgr.txt",63485
+"MUS",81040,0,81040,,6,"","","10 Top Internal Auditor.txt",-92250
+"MUS",160413,0,160413,,13,"VP/TREASURER","","09 Treasurer.txt",79373
+"MUS",135200,0,135200,,117,"VP/CONTROLLER","","08 Controller.txt",-25213
+"MUS",286000,0,286000,,330,"EXEC VP, FINANCE & ADMIN/CFO","","07 CFO.txt",150800
+"MUS",54096,0,54096,,,"PROJECT MGR","","06 Regional Store Construct.txt",-231904
+"MUS",103000,,103000,,0,"DR - CONSTRUCTION","SR VP REAL ESTATE","05 Top Store Plan_Construct.txt",48904
+"MUS",85948,0,85948,,,"DR REAL ESTATE","","04 Regional Real Estate.txt",-17052
+"MUS",188760,0,188760,,14,"SR VP REAL ESTATE","CEO","03 Top Real Estate.txt",102812
+"MUS",162750,0,162750,,20,"VP /GENERAL COUNSEL","","02 General Counsel.txt",-26010
+"MUS",515000,0,515000,,16464,"CHAIRMAN/PRES/CEO","BD OF DR","01 CEO.txt",352250

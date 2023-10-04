@@ -1,0 +1,40 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"CAS",6.22,0,6.22,,,"","","46 Part Time.txt",
+"CAS",8.28,0,8.28,,,"","","45 Full Time.txt",2.06
+"CAS",22762,0,22762,,,"","","43 Assistant Store Manager.txt",22753.72
+"CAS",28826,0,28826,,7,"","","42 Store Manager.txt",6064
+"CAS",,,35170,,,"STORE MGR","","41 Area Manager.txt",6344
+"CAS",43198,0,43198,,,"DM","","40 District Manager.txt",8028
+"CAS",95254,0,95254,,,"REG MGR","","39 Regional Manager.txt",52056
+"CAS",187028,0,187028,,4442,"ZONE VP STORE OPS 4442","","38 Zone Manager.txt",91774
+"CAS",256000,0,256000,,8884,"SR VP STORE OPS","CEO","37 Top Store Operations.txt",68972
+"CAS",36451,0,36451,31339,4,"TRAFFIC MGR","DR ADMIN","36 Domestic Traffic.txt",-219549
+"CAS",71900,5000,76900,59700,117,"","","35 DC Manager.txt",40449
+"CAS",110000,10000,120000,,237,"VP DC","EXEC VP OPS & MIS","34 Top DC _ Logistics.txt",43100
+"CAS",63000,0,63000,42923,,"ZONE/REG LP MGR","","33 Regional Loss Prevention.txt",-57000
+"CAS",136420,0,136420,,27,"VP LP","EXEC VP OPS & MIS","32 Top Loss Prevention.txt",73420
+"CAS",110000,25000,135000,,28,"VP HR","GROUP PRES/CEO","30 Top Human Resources.txt",-1420
+"CAS",97000,0,97000,,83,"DR SYSTEMS DEV","","28 Computer Operations.txt",-38000
+"CAS",95000,15000,110000,,45,"DR SYSTEMS DEV","","27 Systems Programming.txt",13000
+"CAS",250000,50000,300000,,128,"EXEC VP OPS & MIS","GROUP PRES/CEO","26 Top Systems_Data Procg.txt",190000
+"CAS",110000,,110000,,3,"VISUAL DR","VP VISUAL MDSG/CREATIVE DR","24 Top Visual.txt",-190000
+"CAS",58389,,58389,,3,"ART DR","BRAND MKTNG DR","23 Art Department.txt",-51611
+"CAS",84000,10000,94000,,76,"DR STRATEGIC MKTNG","","22 Top Mktg_Sales Promo.txt",35611
+"CAS",59000,0,59000,,,"PRODUCT COORDINATOR","","21 Product Coordinator.txt",-35000
+"CAS",26212,0,26212,,,"DISTRIB","","19 Distributor.txt",-32788
+"CAS",58126,,58126,,,"PLANNER","","18 Planner.txt",31914
+"CAS",68402,,68402,,5,"SR PLANNER","","17 Sr Planner.txt",10276
+"CAS",90609,0,90609,,13,"DR OF PLANN & ALLOC","VP PLAN & ALLOC","16 Top Planner.txt",22207
+"CAS",36830,,36830,,,"ASSOCIATE BUYER","","15 Assistant Buyer.txt",-53779
+"CAS",,,67977,,,"","","14 Buyer.txt",31147
+"CAS",80814,0,80814,,,"BUYER 7","","13 Sr Buyer.txt",12837
+"CAS",131206,0,131206,,8,"DIV MERCH MGR","","12 Div Merchandise Mgr.txt",50392
+"CAS",180000,45000,225000,,30,"GEN MERCH MGR","PRES MERCH & ADMIN","11 General Merchandise Mgr.txt",93794
+"CAS",78000,0,78000,,21,"TREASURY OPS MGR","","09 Treasurer.txt",-147000
+"CAS",119024,8000,127024,,61,"CONTROLLER","","08 Controller.txt",49024
+"CAS",55156,0,55156,,,"PROJECT MGR","","06 Regional Store Construct.txt",-71868
+"CAS",111825,10000,121825,,11,"VP STORE PLANN, CONSTRUC & MAINT","SR VP RE","05 Top Store Plan_Construct.txt",66669
+"CAS",171467,0,171467,,,"REG RE DR","","04 Regional Real Estate.txt",49642
+"CAS",260000,0,260000,,33,"SR VP RE","CEO","03 Top Real Estate.txt",88533
+"CAS",140000,0,140000,,5,"VP/GEN COUNSEL","","02 General Counsel.txt",-120000
+"CAS",450000,0,450000,,12041,"PRES/CEO","OWNER","01 CEO.txt",310000

@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1543273075422.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2216038413",
+    "id" : "698CF159",
+    "lastKnownWriteTime" : 1544157957,
+    "last_content_update" : 1544157958159,
+    "path" : "~/Desktop/18-19 Thesis/Data Processing/Preliminary/StoreOps96.R",
+    "project_path" : "StoreOps96.R",
+    "properties" : {
+        "cursorPosition" : "28,39",
+        "scrollLine" : "15"
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

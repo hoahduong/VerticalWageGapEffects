@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1552413626232.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E7F24B4A",
+    "lastKnownWriteTime" : 1552413886,
+    "last_content_update" : 1552413886778,
+    "path" : "~/Desktop/18-19 Thesis/R Calculations/1997 Ladders/BPCombinedStd.R",
+    "project_path" : "BPCombinedStd.R",
+    "properties" : {
+        "cursorPosition" : "158,0",
+        "scrollLine" : "142",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

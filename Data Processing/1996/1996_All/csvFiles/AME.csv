@@ -1,0 +1,35 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"AME",5.07,0,5.07,4.47,,"","","46 Part Time.txt",
+"AME",6.51,0,6.51,4.88,,"","","45 Full Time.txt",1.44
+"AME",20688,,20688,15704,,"","","43 Assistant Store Manager.txt",20681.49
+"AME",27642,3957,31599,,14,"","","42 Store Manager.txt",10911
+"AME",47312,6629,53941,,,"DM","","40 District Manager.txt",22342
+"AME",72706,7607,80313,,,"RM","","39 Regional Manager.txt",26372
+"AME",88000,,88000,,100,"","","35 DC Manager.txt",7687
+"AME",76000,,76000,,10,"DR LOGIS","DR DC OPS","34 Top DC _ Logistics.txt",-12000
+"AME",50000,,50000,,,"REG AUDITOR","","33 Regional Loss Prevention.txt",-26000
+"AME",114000,,114000,,5,"DR LP","COO","32 Top Loss Prevention.txt",64000
+"AME",110000,,110000,,6,"VP HR","COO","30 Top Human Resources.txt",-4000
+"AME",45000,,45000,,4,"PROJECT LEAD -POS","DR MIS","29 Point Of Sale Admin.txt",-65000
+"AME",29000,,29000,,5,"SUPERVISOR COMP OPS","","28 Computer Operations.txt",-16000
+"AME",75000,,75000,,30,"DR MIS","COO","26 Top Systems_Data Procg.txt",46000
+"AME",43000,,43000,,,"FIELD VM","","25 Regional Visual.txt",-32000
+"AME",54000,,54000,,0,"VM MGR","VP MKTNG","24 Top Visual.txt",11000
+"AME",,,,,,"VP MKTNG","","22 Top Mktg_Sales Promo.txt",
+"AME",35000,,35000,,,"MGR QUAL ASSURANCE","","21 Product Coordinator.txt",
+"AME",200000,,200000,,5,"VP PRODUC & SOURC","PRES","20 Top Import Coordinator.txt",165000
+"AME",25000,,25000,,,"ALLOC","","19 Distributor.txt",-175000
+"AME",64000,,64000,,,"DR ALLOC","","18 Planner.txt",39000
+"AME",85000,,85000,,8,"SR DR MERCH PLAN","","17 Sr Planner.txt",21000
+"AME",155000,,155000,,125,"VP ALLOC&DISTRIB","COO","16 Top Planner.txt",70000
+"AME",25000,,25000,,,"AB","","15 Assistant Buyer.txt",-130000
+"AME",,,80000,,,"","","14 Buyer.txt",55000
+"AME",145000,,145000,,,"MERCH MGR","","13 Sr Buyer.txt",65000
+"AME",280000,,280000,,20,"VP MERCH","PRES/CMO","11 General Merchandise Mgr.txt",135000
+"AME",140000,,140000,,15,"TREAS/SR VP FIN","","09 Treasurer.txt",-140000
+"AME",110000,,110000,,25,"CONT/VP FIN","","08 Controller.txt",-30000
+"AME",250000,,250000,,50,"CFO","","07 CFO.txt",140000
+"AME",65000,,65000,,,"CNST MGR","","06 Regional Store Construct.txt",-185000
+"AME",57000,,57000,,2,"MGR SP & DES","VP RE","05 Top Store Plan_Construct.txt",-8000
+"AME",128000,,128000,,20,"VP RE","COO","03 Top Real Estate.txt",71000
+"AME",,0,,,6300,"","","01 CEO.txt",

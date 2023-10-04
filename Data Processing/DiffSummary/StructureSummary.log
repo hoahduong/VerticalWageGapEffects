@@ -1,0 +1,86 @@
+------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/macbook/Desktop/18-19 Thesis/Data Processing/DiffSummary/StructureSumm
+> ary.log
+  log type:  text
+ opened on:  16 Apr 2019, 11:32:38
+
+. 
+. version 15
+
+. 
+. local path96 "/Users/macbook/Desktop/18-19 Thesis/R Calculations/1996 Ladders/"
+
+. local path97 "/Users/macbook/Desktop/18-19 Thesis/R Calculations/1997 Ladders/"
+
+. local path98 "/Users/macbook/Desktop/18-19 Thesis/R Calculations/1998 Ladders/"
+
+. 
+. local fileList "structureNZ.csv"        ///
+>                                 "structureNZNA.csv"     ///
+>                                 "allStruct.csv"
+
+. 
+. // load the data
+. drop _all
+
+. import delimited using "`path96'structureNZ.csv", clear
+(5 vars, 14 obs)
+
+. summ
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |         14         7.5      4.1833          1         14
+        code |         14         7.5      4.1833          1         14
+   structure |         14    .1428571    .3631365          0          1
+      stores |         14    521.3571    404.9421         89       1600
+      volume |          0
+
+. 
+end of do-file
+
+. table structure
+
+----------------------
+Structure |      Freq.
+----------+-----------
+        0 |         12
+        1 |          2
+----------------------
+
+. summary by structure
+command summary is unrecognized
+r(199);
+
+. tab structure
+
+  Structure |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |         12       85.71       85.71
+          1 |          2       14.29      100.00
+------------+-----------------------------------
+      Total |         14      100.00
+
+. tab structure, sum(othervars)
+variable othervars not found
+r(111);
+
+. tab structure, sum
+option sum incorrectly specified
+r(198);
+
+. tab structure, summ
+option summ incorrectly specified
+r(198);
+
+. tab structure, summ(volume)
+no observations
+
+. do "/var/folders/sy/4d9t8khs1jn_xflrv2wvq20c0000gn/T//SD16538.000000"
+
+. cd "/Users/macbook/Desktop/18-19 Thesis/Data Processing/StructureSummary"
+/Users/macbook/Desktop/18-19 Thesis/Data Processing/StructureSummary
+
+. 
+. capture log close

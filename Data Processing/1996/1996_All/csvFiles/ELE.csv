@@ -1,0 +1,30 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"ELE",5.69,0,5.69,5.01,,"","","46 Part Time.txt",
+"ELE",7.4,0,7.4,5.56,,"","","45 Full Time.txt",1.71
+"ELE",21098,,21098,18673,,"","","43 Assistant Store Manager.txt",21090.6
+"ELE",24715,1317,26032,,4,"","","42 Store Manager.txt",4934
+"ELE",26407,,29106,,,"DISTRICT SALES MGR","","41 Area Manager.txt",3074
+"ELE",40554,0,40554,,,"GROUP SALES MGR","","39 Regional Manager.txt",11448
+"ELE",75000,3593,78593,,390,"REGIONAL VP","","38 Zone Manager.txt",38039
+"ELE",49072,,49072,38837,2,"TRAFFIC MGR","VP LIGISTICS & DISTRIB","36 Domestic Traffic.txt",-29521
+"ELE",77312,3650,80962,,90,"VP, LOGISTICS & DISTRIBUTION","SR VP MERCH & DISTRIB","34 Top DC _ Logistics.txt",31890
+"ELE",45500,,45500,,0,"LOSS PREVENTION MGR","SR VP FIANANCE","32 Top Loss Prevention.txt",-35462
+"ELE",,,,,,"","","31 Comp_Benefits Mgr.txt",
+"ELE",93000,4515,97515,,9,"VP HR","CEO","30 Top Human Resources.txt",
+"ELE",25937,0,25937,,0,"TECHNICAL OPERATOR","MGR TECHNICAL SERVICES","29 Point Of Sale Admin.txt",-71578
+"ELE",63124,,63124,,7,"MGR, TECHNICAL SERVICES","","28 Computer Operations.txt",37187
+"ELE",58646,,58646,,2,"PROJECT TEAM LEADER","","27 Systems Programming.txt",-4478
+"ELE",152250,7250,159500,,15,"SR VP, CIO","CEO","26 Top Systems_Data Procg.txt",100854
+"ELE",40895,,40895,,0,"MGR OF STORE DEV","VP DESIGN & CONSTRUCTION","24 Top Visual.txt",-118605
+"ELE",62718,2310,65028,,9,"DR OF MARKETING","","22 Top Mktg_Sales Promo.txt",24133
+"ELE",31759,,31759,,,"PRODUCT DISTRIBUTION ANALYST","","19 Distributor.txt",-33269
+"ELE",77312,3650,80962,,90,"VP, LOGICS & DISTRIBUTION","SR VP, MERCH & DISTRIB","16 Top Planner.txt",49203
+"ELE",31993,,31993,,,"ASST BUYER","","15 Assistant Buyer.txt",-48969
+"ELE",,,47273,,,"","","14 Buyer.txt",15280
+"ELE",66480,3150,69630,,,"SR BUYER","","13 Sr Buyer.txt",22357
+"ELE",84160,4000,88160,,5,"DR/SR BUYER","","12 Div Merchandise Mgr.txt",18530
+"ELE",205000,65000,270000,,100,"SR VP MERCHANDISING & DISTRIBUTION","CEO","11 General Merchandise Mgr.txt",181840
+"ELE",150000,25000,175000,,7,"SR VP FINANCE","","09 Treasurer.txt",-95000
+"ELE",89250,4250,93500,,27,"VP CONTROLLER","","08 Controller.txt",-81500
+"ELE",80000,3900,83900,,3,"VP, DESIGN & CONSTRUC","CEO","05 Top Store Plan_Construct.txt",-9600
+"ELE",325000,250000,575000,,2200,"PRESIDENT/CEO","OWNER","01 CEO.txt",491100

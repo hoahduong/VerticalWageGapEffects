@@ -1,0 +1,195 @@
+------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/macbook/Desktop/18-19 Thesis/Data Processing/1997/1997all.log
+  log type:  text
+ opened on:  13 Feb 2019, 22:25:17
+
+. 
+. version 15
+
+. 
+. local pathName "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1997/"
+
+. 
+. local companyList "AER" ///
+>                                 "AME" ///
+>                                 "AMY" ///
+>                                 "BAK" ///
+>                                 "BIL" ///
+>                                 "BLO" ///
+>                                 "BOD" ///
+>                                 "BOM" ///
+>                                 "BRI" ///
+>                                 "BRO" ///
+>                                 "CAM" ///
+>                                 "CAR" ///
+>                                 "CAS" ///
+>                                 "CAT" ///
+>                                 "CHC" ///
+>                                 "CHR" ///
+>                                 "CLA" ///
+>                                 "CMA" ///
+>                                 "COU" ///
+>                                 "CRA" ///
+>                                 "DEB" ///
+>                                 "DES" ///
+>                                 "DRE" ///
+>                                 "EDD" ///
+>                                 "EDI" ///
+>                                 "ELE" ///
+>                                 "FAC" ///
+>                                 "FAM" ///
+>                                 "FED" ///
+>                                 "FRE" ///
+>                                 "GAN" ///
+>                                 "GAP" ///
+>                                 "GEN" ///
+>                                 "HEL" ///
+>                                 "JBA" ///
+>                                 "JLI" ///
+>                                 "JRI" ///
+>                                 "LAU" ///
+>                                 "LEC" ///
+>                                 "LEN" ///
+>                                 "LIM" ///
+>                                 "LIN" ///
+>                                 "LIZ" ///
+>                                 "MAU" ///
+>                                 "MIL" ///
+>                                 "MOD" ///
+>                                 "MUS" ///
+>                                 "NIN" ///
+>                                 "ONE" ///
+>                                 "PAY" ///
+>                                 "PET" ///
+>                                 "POT" ///
+>                                 "SIZ" ///
+>                                 "SPE" ///
+>                                 "TAL" ///
+>                                 "THI" ///
+>                                 "WAL" ///
+>                                 "WIL" ///
+>                                 "WMS" ///
+>                                 "WOO" 
+
+.                                   
+.                         
+. local fileList "01 CEO.txt" ///
+>         "02 General Counsel.txt" ///
+>         "03 Top Real Estate.txt" ///
+>         "04 Regional Real Estate.txt" ///
+>         "05 Top Store Plan_Construct.txt" ///
+>         "06 Regional Store Construct.txt" ///
+>         "07 CFO.txt" ///
+>         "08 Controller.txt" ///
+>         "09 Treasurer.txt" ///
+>         "10 Top Internal Auditor.txt" ///
+>         "11 General Merchandise Mgr.txt" ///
+>         "12 Div Merchandise Mgr.txt" ///
+>         "13 Sr Buyer.txt" ///
+>         "14 Buyer.txt" ///
+>         "15 Assistant Buyer.txt" ///
+>         "16 Top Planner.txt" ///
+>         "17 Sr Planner.txt" ///
+>         "18 Planner.txt" ///
+>         "19 Distributor.txt" ///
+>         "20 Top Import Coordinator.txt" ///
+>         "21 Product Coordinator.txt" ///
+>         "22 Top Mktg_Sales Promo.txt" ///
+>         "23 Art Department.txt" ///
+>         "24 Top Visual.txt" ///
+>         "25 Regl Visual Merchandiser.txt" ///
+>         "26 Top Systems_Data Procg.txt" ///
+>         "27 Systems Programming.txt" ///
+>         "28 Computer Operations.txt" ///
+>         "29 Point Of Sale Admin.txt" ///
+>         "30 Top Human Resources.txt" ///
+>         "31 Comp_Benefits Mgr.txt" ///
+>         "32 Top Loss Prevention.txt" ///
+>         "33 Regional Loss Prevention.txt" ///
+>         "34 Top DC _ Logistics.txt" ///
+>         "35 DC Manager.txt" ///
+>         "36 Domestic Traffic.txt" ///
+>         "37 Top Store Operations.txt" ///
+>         "38 Zone Manager.txt" ///
+>         "39 Regional Manager.txt" ///
+>         "40A District Manager.txt" ///
+>         "40B District Manager.txt" ///
+>         "41 Area Manager.txt" ///
+>         "42A Store Manager.txt" ///
+>         "42B Store Manager.txt" ///
+>         "43A Assistant Store Manager.txt" ///
+>         "43B Assistant Store Manager.txt" ///
+>         "44A Third Key.txt" ///
+>         "44B Third Key.txt" ///
+>         "45 Full Time.txt" ///
+>         "46 Part Time.txt" 
+
+. 
+. 
+. drop _all 
+
+. 
+. // for each company, generate a .dta file
+. 
+. foreach companyName in "`companyList'"  {
+  2.         drop _all
+  3.         // create the big data file
+.         save `companyName'.dta, replace emptyok
+  4. 
+.         // for each data file, keep the row that has each companyName information and ap
+> pend to the big data file
+.         foreach fileName in "`fileList'" {
+  5.                 import delimited using "`pathName'`fileName'",  clear // names
+  6.                 gen fileName = "`fileName'"
+  7.                 if fileName == "44 Third Key.txt" {
+  8.                         drop comments
+  9.                         // (Need to do more here)
+.                         } 
+ 10.                 else {
+ 11.                 keep if code == "`companyName'"
+ 12.                 append using `companyName'.dta
+ 13.                 save `companyName'.dta, replace 
+ 14.                 }
+ 15.         }
+ 16. 
+. // load the file after appending all rows
+. use `companyName'.dta, clear
+ 17. 
+. // keep certain columns
+. keep code base bonus total hire reports title reportsto fileName
+ 18. 
+. // sort descending by file name 
+. gsort -fileName 
+ 19. 
+. // generate the pay gap between each position
+. //gen payGap = total - total[_n-1]
+. 
+. save `companyName'.dta, replace
+ 20. 
+. }
+(note: dataset contains 0 observations)
+(note: file AER.dta not found)
+file AER.dta saved
+(9 vars, 46 obs)
+(46 observations deleted)
+(note: dataset contains 0 observations)
+file AER.dta saved
+(10 vars, 31 obs)
+(31 observations deleted)
+variable base is str12 in master but long in using data
+    You could specify append's force option to ignore this string/numeric mismatch.  The
+    using variable would then be treated as if it contained "".
+r(106);
+
+end of do-file
+
+r(106);
+
+. do "/var/folders/sy/4d9t8khs1jn_xflrv2wvq20c0000gn/T//SD00792.000000"
+
+. cd "/Users/macbook/Desktop/18-19 Thesis/Data Processing/1997/RealConversion"
+/Users/macbook/Desktop/18-19 Thesis/Data Processing/1997/RealConversion
+
+. 
+. capture log close

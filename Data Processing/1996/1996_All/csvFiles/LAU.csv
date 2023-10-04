@@ -1,0 +1,22 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"LAU",6.52,0,6.52,4.66,,"","","46 Part Time.txt",
+"LAU",7.59,0,7.59,4.66,,"","","45 Full Time.txt",1.07
+"LAU",20909,,20909,13500,,"","","43 Assistant Store Manager.txt",20901.41
+"LAU",33743,,33743,,8,"","","42 Store Manager.txt",12834
+"LAU",63745,693,64438,,,"GEN MGR","","40 District Manager.txt",30695
+"LAU",260000,,260000,,1816,"SR VP OPS","CEO","37 Top Store Operations.txt",195562
+"LAU",65000,,65000,,0,"LOG MGR","GROUP LOG DR [UK]","34 Top DC _ Logistics.txt",-195000
+"LAU",82400,,82400,,0,"DR LP","SR VP OPS","32 Top Loss Prevention.txt",17400
+"LAU",70000,,70000,,3,"","","31 Comp_Benefits Mgr.txt",-12400
+"LAU",24500,,24500,,,"POS TEL ADMIN","CONTR","29 Point Of Sale Admin.txt",-45500
+"LAU",52000,,52000,,1,"SR SYSTEMS OPERATOR","","28 Computer Operations.txt",27500
+"LAU",60500,,60500,56000,,"DR VIS MERCH","","25 Regional Visual.txt",8500
+"LAU",41200,,41200,,2,"SINAGE MGR","MKTNG SERV DR [UK]","23 Art Department.txt",-19300
+"LAU",60000,,60000,,,"MGR LICENSING PRODUCT","","21 Product Coordinator.txt",18800
+"LAU",75000,,75000,,4,"CONTR","","08 Controller.txt",15000
+"LAU",135000,23400,158400,,8,"VP FINAN","","07 CFO.txt",83400
+"LAU",26800,,26800,,,"SHOP MAINT SPECIALIST","","06 Regional Store Construct.txt",-131600
+"LAU",75200,,75200,,2,"DR CONSTRUC & PROPDEV","SR VP OPS","05 Top Store Plan_Construct.txt",48400
+"LAU",130000,23400,153400,,1,"VP RE","SR VP OPS","03 Top Real Estate.txt",78200
+"LAU",66550,,66550,,1,"DR OF LEGAL SERV","","02 General Counsel.txt",-86850
+"LAU",,0,,,1855,"","","01 CEO.txt",

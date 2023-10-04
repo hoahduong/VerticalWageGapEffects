@@ -1,0 +1,42 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"CAT",4.25,0,4.25,4.25,,"","","46 Part Time.txt",
+"CAT",5.6,0,5.6,4.25,,"","","45 Full Time.txt",1.35
+"CAT",14750,500,15250,9880,,"","","43 Assistant Store Manager.txt",15244.4
+"CAT",22667,2000,24667,,10,"","","42 Store Manager.txt",9417
+"CAT",,,32617,,,"DM IN TRAINING","","41 Area Manager.txt",7950
+"CAT",37829,3500,41329,,,"DM","","40 District Manager.txt",8712
+"CAT",78500,0,78500,,,"REG VP-STORE OPS","","39 Regional Manager.txt",37171
+"CAT",208000,0,208000,,6000,"EVP-COO","PRES","37 Top Store Operations.txt",129500
+"CAT",51300,0,51300,40320,5,"DIR TRANSPORT","SVP-DIS & TRAF","36 Domestic Traffic.txt",-156700
+"CAT",63100,0,63100,54400,180,"","","35 DC Manager.txt",11800
+"CAT",141000,0,141000,,300,"SVP-DIT & TRAF","EVP-CFO","34 Top DC _ Logistics.txt",77900
+"CAT",45116,0,45116,40320,,"RLP","","33 Regional Loss Prevention.txt",-95884
+"CAT",68000,,68000,,5,"DR LP","SR VP CONTR","32 Top Loss Prevention.txt",22884
+"CAT",69000,,69000,,3,"","","31 Comp_Benefits Mgr.txt",1000
+"CAT",150000,,150000,,14,"SR VP HR","CFO","30 Top Human Resources.txt",81000
+"CAT",42000,0,42000,,10,"DIR HELP DESK  & PC SYS","VP MIS","29 Point Of Sale Admin.txt",-108000
+"CAT",64000,0,64000,,13,"DIR COMP OPS","","28 Computer Operations.txt",22000
+"CAT",95000,0,95000,,49,"VP-MIS","","27 Systems Programming.txt",31000
+"CAT",145500,0,145500,,50,"SVP- CIO","CFO","26 Top Systems_Data Procg.txt",50500
+"CAT",39000,0,39000,33600,,"VM TRNG MGR","","25 Regional Visual.txt",-106500
+"CAT",65000,0,65000,,2,"AVP-VISUAL","PRES","24 Top Visual.txt",26000
+"CAT",59200,0,59200,,6,"DIR ADVTG","VP ADVTG","23 Art Department.txt",-5800
+"CAT",,,,,,"","","22 Top Mktg_Sales Promo.txt",
+"CAT",17392,0,17392,,,"DIST","","19 Distributor.txt",
+"CAT",37533,0,37533,,,"PLANR","","18 Planner.txt",20141
+"CAT",88000,0,88000,,25,"VP-PLAN/ALLOC","","17 Sr Planner.txt",50467
+"CAT",128000,0,128000,,30,"SVP PLAN & ALLOC","CEO","16 Top Planner.txt",40000
+"CAT",25091,0,25091,,,"ASST BUY","","15 Assistant Buyer.txt",-102909
+"CAT",84336,,66531,,,"","","14 Buyer.txt",41440
+"CAT",84333,0,84333,,,"SR BUYER","","13 Sr Buyer.txt",17802
+"CAT",149625,0,149625,,10,"VP-DMM","","12 Div Merchandise Mgr.txt",65292
+"CAT",250000,0,250000,,50,"EVP-GMM","PRES","11 General Merchandise Mgr.txt",100375
+"CAT",76500,0,76500,,4,"VP-TREAS.","","09 Treasurer.txt",-173500
+"CAT",139000,0,139000,,60,"SVP-CONTROLLER","","08 Controller.txt",62500
+"CAT",200000,0,200000,,450,"EVP-CFO","","07 CFO.txt",61000
+"CAT",65000,0,65000,,,"CONSTRUCT MGR","","06 Regional Store Construct.txt",-135000
+"CAT",95700,0,95700,,2,"SR VP  STOREPLAN & DES","EX VP RE","05 Top Store Plan_Construct.txt",30700
+"CAT",113300,0,113300,,,"SVP CORP RE","","04 Regional Real Estate.txt",17600
+"CAT",170000,,170000,,31,"EVP RE & STORE DEV","CEO","03 Top Real Estate.txt",56700
+"CAT",82000,0,82000,,1,"VP, GENL COUNSEL","","02 General Counsel.txt",-88000
+"CAT",,0,,,8500,"OWNER","","01 CEO.txt",

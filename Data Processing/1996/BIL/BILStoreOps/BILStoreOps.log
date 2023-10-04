@@ -1,0 +1,85 @@
+----------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/BIL/BILStore
+> Ops/BILStoreOps.log
+  log type:  text
+ opened on:  24 Oct 2018, 14:43:41
+
+. 
+. use "/Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/BIL/BIL.dta", clea
+> r
+
+. 
+. local fileList  "01 CEO.txt" ///
+>         "03 Top Real Estate.txt" ///
+>         "04 Regional Real Estate.txt" ///
+>         "07 CFO.txt" ///
+>         "08 Controller.txt" ///
+>         "11 General Merchandise Mgr.txt" ///
+>         "14 Buyer.txt" ///
+>         "16 Top Planner.txt" ///
+>         "19 Distributor.txt" ///
+>         "22 Top Mktg_Sales Promo.txt" ///
+>         "24 Top Visual.txt" ///
+>         "26 Top Systems_Data Procg.txt" ///
+>         "28 Computer Operations.txt" ///
+>         "29 Point Of Sale Admin.txt" ///
+>         "30 Top Human Resources.txt" ///
+>         "34 Top DC _ Logistics.txt" ///
+>         "35 DC Manager.txt" ///
+>         "36 Domestic Traffic.txt" ///
+>         "45 Full Time.txt" ///
+>         "46 Part Time.txt" 
+
+.         
+. foreach fileName in "`fileList'" {
+  2. drop if fileName == "`fileName'"
+  3. }
+(1 observation deleted)
+(1 observation deleted)
+(1 observation deleted)
+(1 observation deleted)
+(1 observation deleted)
+(1 observation deleted)
+(1 observation deleted)
+(1 observation deleted)
+(1 observation deleted)
+(1 observation deleted)
+(1 observation deleted)
+(1 observation deleted)
+(1 observation deleted)
+(1 observation deleted)
+(1 observation deleted)
+(1 observation deleted)
+(1 observation deleted)
+(1 observation deleted)
+(1 observation deleted)
+(1 observation deleted)
+
+. 
+end of do-file
+
+. do "/var/folders/sy/4d9t8khs1jn_xflrv2wvq20c0000gn/T//SD16820.000000"
+
+. // generate the pay gap between each position
+. gen payGap = total - total[_n-1]
+(1 missing value generated)
+
+. 
+end of do-file
+
+. do "/var/folders/sy/4d9t8khs1jn_xflrv2wvq20c0000gn/T//SD16820.000000"
+
+. outsheet code base bonus total hire reports title reportsto fileName payGap usin
+> g BILStoreOps.csv, comma
+
+. 
+end of do-file
+
+. do "/var/folders/sy/4d9t8khs1jn_xflrv2wvq20c0000gn/T//SD16820.000000"
+
+. cd "/Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/BRI"
+/Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/BRI
+
+. 
+. capture log close

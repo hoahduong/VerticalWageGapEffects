@@ -1,0 +1,6 @@
+setwd("~/Desktop/18-19 Thesis/R Calculations/1996 Ladders")
+rm(list=ls())
+
+noZone <- read.csv("noZone.csv")
+noZoneNoArea <- read.csv("noZoneNoArea.csv")
+

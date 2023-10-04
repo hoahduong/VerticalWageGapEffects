@@ -1,0 +1,126 @@
+----------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/macbook/Desktop/18-19 Thesis/Data Processing/CombineDataPos/Co
+> mbineData.log
+  log type:  text
+ opened on:  29 Jan 2019, 14:06:11
+
+. 
+. version 15
+
+. 
+. // use the grep command to get the list of all dta files
+. // $ grep -l '' *.dta
+. 
+. drop _all
+
+. 
+. local fileList "AME.dta"        ///
+>         "BAK.dta"       ///
+>         "BIL.dta"       
+
+.         
+. drop _all 
+
+. 
+. // create the big data file
+. save allData.dta, replace emptyok
+(note: dataset contains 0 observations)
+file allData.dta saved
+
+. 
+. ///use "AME.dta"
+> ///append using allData.dta
+> //save allData.dta, replace
+. 
+. // for each data file, append to the big data file
+. foreach fileName in "`fileList'" {
+  2. use "`fileName'",  clear // names
+  3. append using allData.dta
+  4. save allData.dta, replace 
+  5. }
+file allData.dta saved
+(note: variable hire was float, now double to accommodate using data's values)
+(note: variable fileName was str30, now str31 to accommodate using data's
+       values)
+(note: variable reports was long, now double to accommodate using data's values)
+(note: variable reportsto was str40, now str42 to accommodate using data's
+       values)
+file allData.dta saved
+(note: variable fileName was str30, now str31 to accommodate using data's
+       values)
+(note: variable reportsto was str40, now str42 to accommodate using data's
+       values)
+file allData.dta saved
+
+. 
+end of do-file
+
+. use "/Users/macbook/Desktop/18-19 Thesis/Data Processing/CombineDataPos/allData.
+> dta"
+
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1997/01 CEO.dta"
+
+. base = subinstr(base, "$", "")
+command base is unrecognized
+r(199);
+
+. replace base = subinstr(base, "$", "")
+invalid syntax
+r(198);
+
+. gen baseNoS = subinstr(base, "$", "")
+invalid syntax
+r(198);
+
+. gen baseNoS = subinstr(base, $, "")
+$ invalid name
+r(198);
+
+. gen baseNoS = subinstr(base, "$", "", .)
+(2 missing values generated)
+
+. replace baseNoS = real(baseNoS)
+type mismatch
+r(109);
+
+. destring baseNoS
+must specify either generate or replace option
+r(198);
+
+. destring baseNoS, replace
+baseNoS: contains nonnumeric characters; no replace
+
+. gen baseR = subinstr(baseNoS, ".00", "", .)
+(2 missing values generated)
+
+. destring baseR, replace
+baseR: contains nonnumeric characters; no replace
+
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/01 CEO.dta", clear
+
+. gen baseNoS = subinstr(base, "$", "", .)
+(2 missing values generated)
+
+. gen baseR = subinstr(baseNoS, ",", ".", .)
+(2 missing values generated)
+
+. destring baseR, replace
+baseR: contains nonnumeric characters; no replace
+
+. destring baseR, replace ignore(".")
+baseR: character . removed; replaced as long
+(2 missing values generated)
+
+. destring baseNoS, replace ignore(",")
+baseNoS: character , removed; replaced as long
+(2 missing values generated)
+
+. save
+invalid file specification
+r(198);
+
+. save 01 CEO.dta
+invalid 'CEO.dta' 
+r(198);
+

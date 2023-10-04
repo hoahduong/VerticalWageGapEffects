@@ -1,0 +1,35 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"ONE",4.58,0,4.58,4.25,,"","","46 Part Time.txt",
+"ONE",6.33,0,6.33,5.67,,"","","45 Full Time.txt",1.75
+"ONE",14004,,14004,11993,,"","","43 Assistant Store Manager.txt",13997.67
+"ONE",19895,375,20270,,5,"","","42 Store Manager.txt",6266
+"ONE",,,28391,,,"AREA MGR","","41 Area Manager.txt",8121
+"ONE",38757,774,39531,,,"DSM","","40 District Manager.txt",11140
+"ONE",75415,0,75415,,,"RSM","","39 Regional Manager.txt",35884
+"ONE",110000,0,110000,,4370,"DR OF STORES","SR VP STORE OPS","37 Top Store Operations.txt",34585
+"ONE",173500,0,173500,,50,"VP DISTRIB","CFO","34 Top DC _ Logistics.txt",63500
+"ONE",43367,,43367,38325,,"REG LP MGR","","33 Regional Loss Prevention.txt",-130133
+"ONE",55020,0,55020,,6,"DR LP","DR INTERNAL AUDIT","32 Top Loss Prevention.txt",11653
+"ONE",92500,0,92500,,6,"","","31 Comp_Benefits Mgr.txt",37480
+"ONE",160000,0,160000,,17,"VP CORP DEV","CEO","30 Top Human Resources.txt",67500
+"ONE",61645,,61645,,3,"GRP MGR POS/STORE SYSTEMS","DR SYS DEV","29 Point Of Sale Admin.txt",-98355
+"ONE",86400,0,86400,,22,"DR SYSTEMS DEV","","27 Systems Programming.txt",24755
+"ONE",152250,0,152250,,31,"VP INFO SYSTEMS","CFO","26 Top Systems_Data Procg.txt",65850
+"ONE",60000,0,60000,,1,"DR OF MKTNG","","22 Top Mktg_Sales Promo.txt",-92250
+"ONE",24804,,24804,,,"ALLOCATOR","","19 Distributor.txt",-35196
+"ONE",32204,0,32204,,,"PLANNER","","18 Planner.txt",7400
+"ONE",81510,0,81510,,13,"DR STORE PLAN& ALLOC","","17 Sr Planner.txt",49306
+"ONE",150000,0,150000,,31,"VP PLAN & ALLOC","SR VP MERCH","16 Top Planner.txt",68490
+"ONE",26084,,26084,,,"ASST B","","15 Assistant Buyer.txt",-123916
+"ONE",78850,0,77823,,,"","","14 Buyer.txt",51739
+"ONE",135000,0,135000,,9,"DIV MERCH MGR","","12 Div Merchandise Mgr.txt",57177
+"ONE",250000,0,250000,,23,"SR VP MERCH","CEO","11 General Merchandise Mgr.txt",115000
+"ONE",77480,0,77480,,8,"","","10 Top Internal Auditor.txt",-172520
+"ONE",140000,0,140000,,8,"TREAS","","09 Treasurer.txt",62520
+"ONE",92500,0,92500,,40,"FINAN CONTR","","08 Controller.txt",-47500
+"ONE",250000,0,250000,,103,"EX VP/CFO","","07 CFO.txt",157500
+"ONE",89250,0,89250,,7,"DR STORE PLAN & CONP","VP RE","05 Top Store Plan_Construct.txt",-160750
+"ONE",124425,0,124425,,,"DR OF RE","","04 Regional Real Estate.txt",35175
+"ONE",180000,0,180000,,16,"VP RE","CEO","03 Top Real Estate.txt",55575
+"ONE",105000,0,105000,,1,"VP/GEN COUNSEL","","02 General Counsel.txt",-75000
+"ONE",330000,0,330000,,5300,"CEO/CHAIRMAN","BD OF DR","01 CEO.txt",225000

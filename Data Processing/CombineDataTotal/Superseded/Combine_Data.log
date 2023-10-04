@@ -1,0 +1,25 @@
+----------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/macbook/Desktop/18-19 Thesis/Data Processing/CombineDataTotal/
+> Superseded/Combine_Data.log
+  log type:  text
+ opened on:  29 Jan 2019, 13:55:45
+
+. 
+. version 15
+
+. 
+. local pathName "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/"
+
+. 
+. // use the grep command to get the list of all text files
+. // $ grep -l '' *.dta
+. 
+. do collapse.do
+
+. cd "/Users/macbook/Desktop/18-19 Thesis/Data Processing/CombineDataTotal/Superse
+> ded"
+/Users/macbook/Desktop/18-19 Thesis/Data Processing/CombineDataTotal/Superseded
+
+. 
+. capture log close

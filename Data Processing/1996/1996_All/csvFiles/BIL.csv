@@ -1,0 +1,26 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"BIL",4.3,0,4.3,4.25,,"","","46 Part Time.txt",
+"BIL",5.25,0,5.25,4.25,,"","","45 Full Time.txt",.9499998
+"BIL",10656,,10656,9187,,"","","43 Assistant Store Manager.txt",10650.75
+"BIL",17476,165,17641,,5,"","","42 Store Manager.txt",6985
+"BIL",37442,62,37504,,,"DM","","40 District Manager.txt",19863
+"BIL",73833,0,73833,,,"REG MGR","","39 Regional Manager.txt",36329
+"BIL",103750,0,103750,,2186,"VP STORE OPS","CEO","37 Top Store Operations.txt",29917
+"BIL",35090,0,35090,,6,"TRAFFIC MGR","VP/WARE-DIST","36 Domestic Traffic.txt",-68660
+"BIL",36439,0,36439,,166,"","","35 DC Manager.txt",1349
+"BIL",100000,0,100000,,180,"VP WARE&DISTRIB","CEO","34 Top DC _ Logistics.txt",63561
+"BIL",64500,0,64500,,6,"DR PERSONNEL ADMIN","CEO","30 Top Human Resources.txt",-35500
+"BIL",38000,,38000,,6,"HELP DESK MGR","DR INFO SYSTEMS","29 Point Of Sale Admin.txt",-26500
+"BIL",49807,0,49807,,8,"MGR COMP OPS","","28 Computer Operations.txt",11807
+"BIL",75000,0,75000,,22,"DR INVENT SYSTEMS","CEO","26 Top Systems_Data Procg.txt",25193
+"BIL",32500,,32500,,0,"MERCH PRESENTATION MGR","VP/GMM","24 Top Visual.txt",-42500
+"BIL",,,,,,"ADV SUPERVISOR","","22 Top Mktg_Sales Promo.txt",
+"BIL",18675,,18675,,,"BUYER'S ASST","","19 Distributor.txt",
+"BIL",67500,0,67500,,2,"DR INVENT PLAN","CEO","16 Top Planner.txt",48825
+"BIL",63500,8666,63327,,,"","","14 Buyer.txt",-4173
+"BIL",131250,0,131250,,23,"VP/GMM","CEO","11 General Merchandise Mgr.txt",67923
+"BIL",54500,0,54500,,30,"ASST CONTR","","08 Controller.txt",-76750
+"BIL",142500,0,142500,,32,"SR VP FINANACE","","07 CFO.txt",88000
+"BIL",40533,0,40533,,,"RE MGR","","04 Regional Real Estate.txt",-101967
+"BIL",67500,0,67500,,4,"VP RE","CEO","03 Top Real Estate.txt",26967
+"BIL",375000,0,375000,,2425,"CEO","BD OF DR","01 CEO.txt",307500

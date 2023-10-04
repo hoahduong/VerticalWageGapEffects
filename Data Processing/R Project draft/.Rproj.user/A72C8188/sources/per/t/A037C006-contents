@@ -1,0 +1,41 @@
+CEO = read.delim2("/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/01 CEO.txt", header = TRUE, sep = "\t", dec = ",")
+meanCEO = mean(CEO$Total, na.rm = TRUE)
+CFO = read.delim2("/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/07 CFO.txt", header = TRUE, sep = "\t", dec = ",")
+View(CFO)
+meanCFO = mean(CFO$Total, na.rm = TRUE)
+regionalMan = read.delim2("/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/39 Regional Manager.txt", header = TRUE, sep = "\t", dec = ",")
+View(regionalMan)
+meanRegionalMan = mean(regionalMan$Total, na.rm = TRUE)
+zoneMan = read.delim2("/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/38 Zone Manager.txt", header = TRUE, sep = "\t", dec = ",")
+meanZoneMan = mean(zoneMan$Total, na.rm = TRUE)
+distMan = read.delim2("/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/40 District Manager.txt", header = TRUE, sep = "\t", dec = ",")
+meanDistMan = mean(distMan$Total, na.rm = TRUE)
+areaMan = read.delim2("/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/41 Area Manager.txt", header = TRUE, sep = "\t", dec = ",")
+meanAreaMan = mean(areaMan$Total, na.rm = TRUE)
+storeMan = read.delim2("/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/42 Store Manager.txt", header = TRUE, sep = "\t", dec = ",")
+meanStoreMan = mean(storeMan$Total, na.rm = TRUE)
+asStoreMan = read.delim2("/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/43 Assistant Store Manager.txt", header = TRUE, sep = "\t", dec = ",")
+meanAsStoreMan = mean(asStoreMan$Total, na.rm = TRUE)
+fullTime = read.delim2("/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/45 Full Time.txt", header = TRUE, sep = "\t", dec = ",")
+meanFullTime = mean(fullTime$Total, na.rm = TRUE)
+gap1 = meanCEO - meanCFO
+gap2 = meanCFO - meanRegionalMan
+gap3 = meanRegionalMan - meanDistMan
+gap2 = meanCFO - meanZoneMan
+gap3 = meanZoneMan - meanRegionalMan
+gap4 = meanRegionalMan - meanDistMan
+gap5 = meanDistMan - meanAreaMan
+gap6 = meanAreaMan - meanStoreMan
+gap7 = meanStoreMan - meanAsStoreMan
+gaps <- c(gap1, gap2, gap3, gap4, gap5, gap6, gap7)
+gaps
+plot(gaps)
+abline(x = y)
+abline(0, 1)
+plot(gaps)
+abline(a = 0, b = 1)
+plot(gaps)
+abline(300000, 300000/7)
+abline(0, 43000)
+plot(gaps)
+abline(300000, - 300000/7)

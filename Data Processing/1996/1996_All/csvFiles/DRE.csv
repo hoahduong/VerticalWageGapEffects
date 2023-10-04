@@ -1,0 +1,37 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"DRE",5.49,0,5.49,,,"","","46 Part Time.txt",
+"DRE",6.63,0,6.63,,,"","","45 Full Time.txt",1.14
+"DRE",17243,0,17243,,,"","","43 Assistant Store Manager.txt",17236.37
+"DRE",25200,1000,26200,,8,"","","42 Store Manager.txt",8957
+"DRE",,,30500,,,"AREA SALES MGR","","41 Area Manager.txt",4300
+"DRE",40121,0,40121,,,"D SALES M","","40 District Manager.txt",9621
+"DRE",66134,0,66134,,,"REGIONAL SALES MGR","","39 Regional Manager.txt",26013
+"DRE",180000,0,180000,,6200,"SRVP STORE OPS","SR VP ADMIN","37 Top Store Operations.txt",113866
+"DRE",37000,,37000,,1,"DOM TRAFF MGR","AVP WAREHOUSE","36 Domestic Traffic.txt",-143000
+"DRE",83000,,83000,,11,"AVP WARHOUSING & DISTRIB","COO","34 Top DC _ Logistics.txt",46000
+"DRE",37100,,37100,,,"REG FIELD AUD","","33 Regional Loss Prevention.txt",-45900
+"DRE",100000,,100000,,11,"VP LP","SRVP/CFO","32 Top Loss Prevention.txt",62900
+"DRE",60000,,60000,,3,"","","31 Comp_Benefits Mgr.txt",-40000
+"DRE",140200,,140200,,4,"VP/HR","SRVP ADMIN & BUS DEV","30 Top Human Resources.txt",80200
+"DRE",37400,0,37400,,8,"MGR/HELP DESK","VP/MIS","29 Point Of Sale Admin.txt",-102800
+"DRE",48500,,48500,,9,"MGR/TECH SREV & OPS","","28 Computer Operations.txt",11100
+"DRE",100000,,100000,,6,"AVP APPLICATION DEVELOPMENT","","27 Systems Programming.txt",51500
+"DRE",132500,,132500,,7,"VP/MIS","SR VP/CFO","26 Top Systems_Data Procg.txt",32500
+"DRE",42000,,42000,,0,"VIS PRESETNTATIO MGR","VP MKTNG","24 Top Visual.txt",-90500
+"DRE",42200,,42200,,0,"MARKETING PRODUCTION MGR","VP AMRKETING","23 Art Department.txt",200
+"DRE",,,,,,"VP MARKETING","","22 Top Mktg_Sales Promo.txt",
+"DRE",27200,,27200,,,"MERCH DISTRIB","","19 Distributor.txt",
+"DRE",46500,,46500,,,"CONTROLLER","","18 Planner.txt",19300
+"DRE",45000,,45000,,4,"DR PLANNING & DISTRIB","","17 Sr Planner.txt",-1500
+"DRE",103000,,103000,,10,"VP, PLANNING & DISTRIBUTION","COO","16 Top Planner.txt",58000
+"DRE",25000,,25000,,,"ASST BUYER","","15 Assistant Buyer.txt",-78000
+"DRE",71400,,71500,,,"","","14 Buyer.txt",46500
+"DRE",136000,0,136000,,6,"ASST VP/DMM","","12 Div Merchandise Mgr.txt",64500
+"DRE",350000,,350000,,7,"PRESIDENT/COO","CEO","11 General Merchandise Mgr.txt",214000
+"DRE",106000,,106000,,35,"ASST VP/CORPORATE CONTROLLER","","08 Controller.txt",-244000
+"DRE",160000,,160000,,75,"SR VP/CFO","","07 CFO.txt",54000
+"DRE",94000,,94000,,5,"ASST VPs","VP OPERATIONS","05 Top Store Plan_Construct.txt",-66000
+"DRE",90800,0,90800,,,"DR RE","","04 Regional Real Estate.txt",-3200
+"DRE",157000,,157000,,4,"VP RE","CEO","03 Top Real Estate.txt",66200
+"DRE",100000,,100000,,2,"VP, CORPORATE ATTORNEY","","02 General Counsel.txt",-57000
+"DRE",,0,,,6600,"OWNER","","01 CEO.txt",

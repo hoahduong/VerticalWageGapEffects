@@ -1,0 +1,32 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"THI",5.27,0,5.27,4.25,,"","","46 Part Time.txt",
+"THI",5.77,0,5.77,4.25,,"","","45 Full Time.txt",.5
+"THI",14664,,14664,,,"","","43 Assistant Store Manager.txt",14658.23
+"THI",22090,696,22786,,5,"","","42 Store Manager.txt",8122
+"THI",29427,800,30227,,,"SR CUST SERV MGR","","41 Area Manager.txt",7441
+"THI",48918,2243,51161,,,"RSM","","40 District Manager.txt",20934
+"THI",56575,0,56575,,,"TERRITORIAL SALES MGR","","39 Regional Manager.txt",5414
+"THI",85000,0,85000,,4,"DR OF SALES","","38 Zone Manager.txt",28425
+"THI",130000,14824,144824,,2750,"VP SALES","PRES","37 Top Store Operations.txt",59824
+"THI",32000,,32000,32000,1,"SUPER SHIP/REC","MGR DC","36 Domestic Traffic.txt",-112824
+"THI",45000,,45000,45000,80,"","","35 DC Manager.txt",13000
+"THI",78000,10000,88000,,100,"SR DR DC","CONTR","34 Top DC _ Logistics.txt",43000
+"THI",92000,0,92000,,15,"SR DR HR","PRES/COLE GIFT","30 Top Human Resources.txt",4000
+"THI",44100,0,44100,,3,"MGR VIS MERCH","VP VIS MKTNG","24 Top Visual.txt",-47900
+"THI",38000,0,38000,,3,"MGR CREA PROD","DR MKTNG/NEW BUS CON","23 Art Department.txt",-6100
+"THI",,,,,,"VP MERCH & MKTNG","","22 Top Mktg_Sales Promo.txt",
+"THI",56100,,56100,,,"MGR DIST SYS & ALLOC","","19 Distributor.txt",
+"THI",35600,0,35600,,,"MERCH PLAN","","18 Planner.txt",-20500
+"THI",66000,0,66000,,6,"MGR MERCH PLAN","","17 Sr Planner.txt",30400
+"THI",99850,0,99850,,16,"DR MERCH PLAN & ALL","VP MERCH & MKTNG","16 Top Planner.txt",33850
+"THI",30000,0,30000,,,"ASST BUYER","","15 Assistant Buyer.txt",-69850
+"THI",57100,2546,59646,,,"","","14 Buyer.txt",29646
+"THI",125000,0,125000,,16,"DR MERCH DEV","VP MERCH & MKTNG","11 General Merchandise Mgr.txt",65354
+"THI",50000,0,50000,,10,"","","10 Top Internal Auditor.txt",-75000
+"THI",90000,0,90000,,71,"CONTR","","07 CFO.txt",40000
+"THI",45525,0,45525,,,"PROJECT SUPER","","06 Regional Store Construct.txt",-44475
+"THI",74350,0,74350,,7,"MGR STORE PLAN","VP SALES","05 Top Store Plan_Construct.txt",28825
+"THI",51000,0,51000,,,"MGR RE","","04 Regional Real Estate.txt",-23350
+"THI",81000,0,81000,,3,"DR RE","VP SALES","03 Top Real Estate.txt",30000
+"THI",86600,0,86600,,2,"GEN COUN","","02 General Counsel.txt",5600
+"THI",,0,,,3000,"PRES","CEO","01 CEO.txt",

@@ -1,0 +1,17 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"WMS",6.75,0,6.75,5.9,,"","","46 Part Time.txt",
+"WMS",7.72,0,7.72,5.8,,"","","45 Full Time.txt",.9699998
+"WMS",22429,204,22633,18200,,"","","43 Assistant Store Manager.txt",22625.28
+"WMS",31679,722,32401,,13,"","","42 Store Manager.txt",9768
+"WMS",54500,3600,58100,,,"DM","","40 District Manager.txt",25699
+"WMS",92167,0,92167,,,"RM","","39 Regional Manager.txt",34067
+"WMS",145000,0,145000,,4700,"SVP STORES","EVP/GM","37 Top Store Operations.txt",52833
+"WMS",24808,,24808,,,"VIS MERCH","","25 Regional Visual.txt",-120192
+"WMS",87500,0,87500,,8,"DR VIS MERDH","EVP/GM","24 Top Visual.txt",62692
+"WMS",28000,0,28000,,,"RET INV PLAN","","18 Planner.txt",-59500
+"WMS",55000,0,55000,,5,"MGR, RET INV MGMT","","17 Sr Planner.txt",27000
+"WMS",85000,0,85000,,9,"DR/RETAIL INVENT MGMT","EVP/GM","16 Top Planner.txt",30000
+"WMS",36400,0,36400,,,"AB","","15 Assistant Buyer.txt",-48600
+"WMS",50000,0,52500,,,"","","14 Buyer.txt",16100
+"WMS",70000,0,70000,,10,"DR/DIV MERCH MGR","","12 Div Merchandise Mgr.txt",17500
+"WMS",300000,0,300000,,2700,"EVP/GM OF DIV","PRES/CMO - RETAIL","01 CEO.txt",230000

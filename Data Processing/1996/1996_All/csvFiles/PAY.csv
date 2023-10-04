@@ -1,0 +1,41 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"PAY",5.27,0,5.27,4.3,,"","","46 Part Time.txt",
+"PAY",6.06,0,6.06,4.8,,"","","45 Full Time.txt",.79
+"PAY",15889,,15889,13312,,"","","43 Assistant Store Manager.txt",15882.94
+"PAY",37601,1123,38724,,4,"","","42 Store Manager.txt",22835
+"PAY",58036,3590,61626,,,"DM","","40 District Manager.txt",22902
+"PAY",101506,4310,105816,,,"DR RET OPS","","39 Regional Manager.txt",44190
+"PAY",198100,7629,205729,,3832,"VP RET OPS","","38 Zone Manager.txt",99913
+"PAY",290700,3292,293992,,22992,"SR VP/DR RET OPS","CEO","37 Top Store Operations.txt",88263
+"PAY",117903,1000,118903,83300,16,"DR DOM TRANS OPS","VP LOG","36 Domestic Traffic.txt",-175089
+"PAY",139100,4622,143722,99300,657,"","","35 DC Manager.txt",24819
+"PAY",170100,3980,174080,,716,"VP LOG","SR VP INFO SERV & LOG","34 Top DC _ Logistics.txt",30358
+"PAY",70183,5573,75756,51300,,"DIV MGR LP","","33 Regional Loss Prevention.txt",-98324
+"PAY",103800,1839,105639,,59,"DR LP","SR VP CFO","32 Top Loss Prevention.txt",29883
+"PAY",147900,4649,152549,,17,"","","31 Comp_Benefits Mgr.txt",46910
+"PAY",267800,6933,274733,,92,"SR VP HR","CEO","30 Top Human Resources.txt",122184
+"PAY",110300,2197,112497,,68,"DR INFO TECH","","28 Computer Operations.txt",-162236
+"PAY",152600,2669,155269,,135,"VP INFO SERV & COMM","","27 Systems Programming.txt",42772
+"PAY",260000,4988,264988,,192,"SR VP INFO SERV & LOG","CEO","26 Top Systems_Data Procg.txt",109719
+"PAY",107900,588,108488,,9,"DR VP","SR VP MKT","24 Top Visual.txt",-156500
+"PAY",97900,508,98408,,5,"DR CREAT","SR VP MKTNG","23 Art Department.txt",-10080
+"PAY",200000,1254,201254,,26,"SR VP MKTNG","","22 Top Mktg_Sales Promo.txt",102846
+"PAY",150100,2024,152124,,,"VP QUAL ASSUR","","21 Product Coordinator.txt",-49130
+"PAY",122400,2344,124744,,7,"DR INT'L TRANS","VP LOG","20 Top Import Coordinator.txt",-27380
+"PAY",33310,,33310,,,"ANALYST MDSE DIST","","19 Distributor.txt",-91434
+"PAY",86620,1486,88106,,,"DR MDSE DIST","","18 Planner.txt",54796
+"PAY",136900,0,136900,,49,"VP MERCH DISTR& DR MDSE PLAN","","17 Sr Planner.txt",48794
+"PAY",203000,1033,204033,,130,"SR VP MERCH DIST","CEO","16 Top Planner.txt",67133
+"PAY",48431,548,48979,,,"SR & ASSOC","","15 Assistant Buyer.txt",-155054
+"PAY",86913,7433,94346,,,"","","14 Buyer.txt",45367
+"PAY",109300,0,109300,,,"SR BUYER","","13 Sr Buyer.txt",14954
+"PAY",261200,0,261200,,15,"GMM","PRES","11 General Merchandise Mgr.txt",151900
+"PAY",97700,2249,99949,,80,"","","10 Top Internal Auditor.txt",-161251
+"PAY",164800,1932,166732,,173,"VP & CONTR","","08 Controller.txt",66783
+"PAY",260000,0,260000,,285,"SR VP CFO","","07 CFO.txt",93268
+"PAY",81113,12520,93633,,,"REG MGR CON","","06 Regional Store Construct.txt",-166367
+"PAY",131600,27566,159166,,30,"VP CONSTRUC","SR VP RE","05 Top Store Plan_Construct.txt",65533
+"PAY",185000,25361,210361,,,"VP REG DR","","04 Regional Real Estate.txt",51195
+"PAY",263910,42488,306398,,116,"SR VP RE/CONSTRUC","CEO","03 Top Real Estate.txt",96037
+"PAY",175000,0,175000,,17,"SR VP GEN COUN","","02 General Counsel.txt",-131398
+"PAY",600000,350000,950000,,25000,"CHAIR/CEO","BD OF DR","01 CEO.txt",775000

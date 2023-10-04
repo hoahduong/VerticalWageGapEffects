@@ -1,0 +1,35 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"CLA",4.58,0,4.58,,,"","","46 Part Time.txt",
+"CLA",14227,800,15027,,,"","","43 Assistant Store Manager.txt",15022.42
+"CLA",20230,3500,23730,,4,"","","42 Store Manager.txt",8703
+"CLA",43800,0,43800,,,"D SALES M","","40 District Manager.txt",20070
+"CLA",69252,0,69252,,,"REG MGR","","39 Regional Manager.txt",25452
+"CLA",130000,27000,157000,,7000,"ZONE DR","","38 Zone Manager.txt",87748
+"CLA",45000,,45000,,2,"MGR DOMESTIC","SR VP ADMIN","36 Domestic Traffic.txt",-112000
+"CLA",76650,15000,91650,,40,"EXEC DR DC","SR VP ADMIN","34 Top DC _ Logistics.txt",46650
+"CLA",72000,10000,82000,,4,"EXEC DR LP","PRES","32 Top Loss Prevention.txt",-9650
+"CLA",,,,,,"","","31 Comp_Benefits Mgr.txt",
+"CLA",115000,10000,125000,,27,"VP HR","PRES","30 Top Human Resources.txt",
+"CLA",35000,0,35000,,3,"POS MGR","DR STORE SUPPORT","29 Point Of Sale Admin.txt",-90000
+"CLA",52000,3000,55000,,3,"COMPUTER OPS MGR","","28 Computer Operations.txt",20000
+"CLA",65000,5000,70000,,5,"SR PROJECT MGR","","27 Systems Programming.txt",15000
+"CLA",160000,,160000,,12,"VP MIS","SR VP ADMINISTRATION","26 Top Systems_Data Procg.txt",90000
+"CLA",65500,,65500,,2,"SR DR VIS MERCH /MKTNG","EXEC DR VIS& MKTNG","24 Top Visual.txt",-94500
+"CLA",42500,,42500,,1,"ADV & CREATIVE SERV MGR","EXEC DR VISUAL & MKTING","23 Art Department.txt",-23000
+"CLA",81600,,81600,,6,"EXEC DR/VISUAL & MKTING GROUP","","22 Top Mktg_Sales Promo.txt",39100
+"CLA",43500,2500,46000,,4,"MGR INTRNTL LOGISTICS","AVP OF ADMIN","20 Top Import Coordinator.txt",-35600
+"CLA",21000,1000,22000,,,"MERCH DISTRIB","","19 Distributor.txt",-24000
+"CLA",42000,6000,48000,,,"MERCH PLAN MGR","","18 Planner.txt",26000
+"CLA",75250,12000,87250,,9,"DR PLANN & DISTRIB","","17 Sr Planner.txt",39250
+"CLA",131250,15000,146250,,20,"VP MERCH PLANNING & DISTRIB","EXEC VP","16 Top Planner.txt",59000
+"CLA",25500,,25500,,,"ASST BUYER","","15 Assistant Buyer.txt",-120750
+"CLA",55500,5300,60800,,,"","","14 Buyer.txt",35300
+"CLA",150000,15000,165000,,15,"VP DMM","","12 Div Merchandise Mgr.txt",104200
+"CLA",250000,25000,275000,,50,"EXEC VP","PRES /COO","11 General Merchandise Mgr.txt",110000
+"CLA",110000,10000,120000,,30,"CONTROLLER","","08 Controller.txt",-155000
+"CLA",200000,20000,220000,,70,"CFO","","07 CFO.txt",100000
+"CLA",50500,3000,53500,,,"PROJECT MGR","","06 Regional Store Construct.txt",-166500
+"CLA",69000,10000,79000,,1,"VP CONSTRUC","EXEC VP RE","05 Top Store Plan_Construct.txt",25500
+"CLA",95000,15000,110000,,,"DR RE & VP RE","","04 Regional Real Estate.txt",31000
+"CLA",210000,25000,235000,,9,"EXEC VP RE & CONSTRUC","CEO","03 Top Real Estate.txt",125000
+"CLA",550000,200000,750000,,7500,"PRES/COO","CHAIRMAN OF BOARD","01 CEO.txt",515000

@@ -1,0 +1,17 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"JRI",5.29,0,5.29,4.25,,"","","46 Part Time.txt",
+"JRI",6.55,0,6.55,5.25,,"","","45 Full Time.txt",1.26
+"JRI",17200,,17200,14300,,"","","43 Assistant Store Manager.txt",17193.45
+"JRI",22742,0,22742,,4,"","","42 Store Manager.txt",5542
+"JRI",34800,0,34800,,,"REG MGR","","40 District Manager.txt",12058
+"JRI",60800,0,60800,,,"DIV S MGR","","39 Regional Manager.txt",26000
+"JRI",140000,,140000,,1500,"GEN S MGR","PRES","37 Top Store Operations.txt",79200
+"JRI",41500,,41500,,2,"MKTNG DR","","22 Top Mktg_Sales Promo.txt",-98500
+"JRI",27600,,27600,,,"MERCH","","19 Distributor.txt",-13900
+"JRI",50000,,50000,,,"MGR FINAN CONTROL","","18 Planner.txt",22400
+"JRI",39500,,39500,,2,"SR MDSE PLAN","","17 Sr Planner.txt",-10500
+"JRI",100000,,100000,,15,"DR PRODUCT PLANALLOC","PRES","16 Top Planner.txt",60500
+"JRI",60600,,60600,,,"","","14 Buyer.txt",-39400
+"JRI",72500,,72500,,5,"DR MERCH/SOURS","","12 Div Merchandise Mgr.txt",11900
+"JRI",125000,,125000,,20,"GMM","PRES","11 General Merchandise Mgr.txt",52500
+"JRI",240000,0,240000,,3900,"PRESOF DIV","PRES/PARENT","01 CEO.txt",115000

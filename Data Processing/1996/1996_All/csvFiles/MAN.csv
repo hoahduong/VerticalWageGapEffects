@@ -1,0 +1,26 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"MAN",5.87,.09,5.96,,,"","","46 Part Time.txt",
+"MAN",5.95,.07,6.02,,,"","","45 Full Time.txt",.0599999
+"MAN",25419,162,25581,,,"","","43 Assistant Store Manager.txt",25574.98
+"MAN",32920,4115,37035,,15,"","","42 Store Manager.txt",11454
+"MAN",48438,7620,56058,,,"DM","","40 District Manager.txt",19023
+"MAN",157700,0,157700,,,"RM","","39 Regional Manager.txt",101642
+"MAN",57700,,57700,,105,"D SERVICE C MGR","DR OF ST PLAN & CONSTRUC","34 Top DC _ Logistics.txt",-100000
+"MAN",69030,,69030,,0,"DR LP","PRES ST OPS","32 Top Loss Prevention.txt",11330
+"MAN",,,,,,"","","31 Comp_Benefits Mgr.txt",
+"MAN",49800,,49800,,3,"DR HR","CEO","30 Top Human Resources.txt",
+"MAN",32660,,32660,,,"VIS MERCH","","25 Regional Visual.txt",-17140
+"MAN",81900,,81900,,4,"DR OF VIS MERCH","PRES OF STORE OPS","24 Top Visual.txt",49240
+"MAN",52000,,52000,,,"IMPORT MGR","","21 Product Coordinator.txt",-29900
+"MAN",33775,,33775,,,"PLANNER","","18 Planner.txt",-18225
+"MAN",46750,,46750,,6,"SR PLANNER","","17 Sr Planner.txt",12975
+"MAN",82400,,82400,,16,"DR OF PLAN & DISTR","PRES","16 Top Planner.txt",35650
+"MAN",30100,0,30100,,,"ASST B","","15 Assistant Buyer.txt",-52300
+"MAN",68500,,73721,,,"","","14 Buyer.txt",43621
+"MAN",135000,,135000,,3,"MERCH MGR","","12 Div Merchandise Mgr.txt",61279
+"MAN",135500,,135500,,37,"CFO","","07 CFO.txt",500
+"MAN",53500,,53500,,,"CONSTRUC MGR","","06 Regional Store Construct.txt",-82000
+"MAN",140000,,140000,,5,"DR OF STORE PLAN & CONSTRUC","CEO","05 Top Store Plan_Construct.txt",86500
+"MAN",50000,,50000,,,"LEASE MGR","","04 Regional Real Estate.txt",-90000
+"MAN",98800,,98800,,1,"LEGAL COUNSEL","","02 General Counsel.txt",48800
+"MAN",,0,,,3550,"OWNER","","01 CEO.txt",

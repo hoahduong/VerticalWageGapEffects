@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1555606239817.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1645410110",
+    "id" : "351ADA8A",
+    "lastKnownWriteTime" : 1555625383,
+    "last_content_update" : 1555625383124,
+    "path" : "~/Desktop/18-19 Thesis/R Calculations/1996 Ladders/QuadraticFit.R",
+    "project_path" : "QuadraticFit.R",
+    "properties" : {
+        "cursorPosition" : "201,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

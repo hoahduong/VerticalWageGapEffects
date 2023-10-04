@@ -1,0 +1,20 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"FOO",5.43,.88,6.31,,,"","","46 Part Time.txt",
+"FOO",5.14,0,5.14,,,"","","46 Part Time.txt",-1.17
+"FOO",3.89,3.86,7.75,,,"","","45 Full Time.txt",2.61
+"FOO",9.03,0,9.03,,,"","","45 Full Time.txt",1.28
+"FOO",9136,10502,19638,,,"","","43 Assistant Store Manager.txt",19628.97
+"FOO",36124,4085,40209,,8,"","","42 Store Manager.txt",20571
+"FOO",49694,12943,62637,,,"DM","","40 District Manager.txt",22428
+"FOO",74433,21658,96091,,,"REG VPs","","39 Regional Manager.txt",33454
+"FOO",110000,41103,151103,,12914,"VP GEN SALES MGR","VP GEN MGR","37 Top Store Operations.txt",55012
+"FOO",65000,0,65000,,0,"DR VM","VP RET BRAND DR","24 Top Visual.txt",-86103
+"FOO",38175,3535,41710,,,"MERCH MGR","","19 Distributor.txt",-23290
+"FOO",77100,18754,95854,,,"MERCH PLAN","","18 Planner.txt",54144
+"FOO",69900,10306,80206,,2,"VP PLAN & DIS","VP/GMM","16 Top Planner.txt",-15648
+"FOO",52542,5906,58448,,,"ASSOC B","","15 Assistant Buyer.txt",-21758
+"FOO",69123,15780,83781,,,"","","14 Buyer.txt",25333
+"FOO",93450,35729,129179,,5,"VP/DMM","","12 Div Merchandise Mgr.txt",45398
+"FOO",133500,47515,181015,,5,"VP/GMM","VP/GEN MGR","11 General Merchandise Mgr.txt",51836
+"FOO",,0,,,7749,"","","01 CEO.txt",
+"FOO",,0,,,13929,"","","01 CEO.txt",

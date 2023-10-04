@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1555470605545.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2632374654",
+    "id" : "CB1D2B07",
+    "lastKnownWriteTime" : 1555471145,
+    "last_content_update" : 1555471145789,
+    "path" : "~/Desktop/18-19 Thesis/R Calculations/1998 Ladders/LevelBetas.R",
+    "project_path" : "LevelBetas.R",
+    "properties" : {
+        "cursorPosition" : "136,32",
+        "scrollLine" : "134",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

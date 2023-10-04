@@ -1,0 +1,25 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"WOO",38000,0,38000,32000,2,"TRAF MGR/ANAL","GEN MGR/DC","36 Domestic Traffic.txt",
+"WOO",75000,0,75000,61000,335,"","","35 DC Manager.txt",37000
+"WOO",210000,40000,250000,,4,"VP LOG","COO","34 Top DC _ Logistics.txt",175000
+"WOO",47536,4311,51847,,,"LP SPECIALISTS","","33 Regional Loss Prevention.txt",-198153
+"WOO",78000,17850,95850,,5,"VP MGR - FIELD OPS CONTROL","SR VP/CFO","32 Top Loss Prevention.txt",44003
+"WOO",,,,,,"","","31 Comp_Benefits Mgr.txt",
+"WOO",160000,48477,208477,,3,"SR VP - DR HR","CEO","30 Top Human Resources.txt",
+"WOO",122000,0,122000,,4,"DR WORLDWIDE MIS OPS","","28 Computer Operations.txt",-86477
+"WOO",120000,0,120000,,4,"DR CORP SYS DEV","","27 Systems Programming.txt",-2000
+"WOO",325000,0,325000,,6,"VP INFO SYS","COO","26 Top Systems_Data Procg.txt",205000
+"WOO",78600,18064,96664,,6,"VP RET STORE ENVIRONMENTS","SR VP MKTNG","23 Art Department.txt",-228336
+"WOO",185000,60512,245512,,50,"SR VP MKTNG","","22 Top Mktg_Sales Promo.txt",148848
+"WOO",120000,0,120000,,,"DR GLOBAL TRANS","","21 Product Coordinator.txt",-125512
+"WOO",210000,40000,250000,,4,"VP LOG","COO","20 Top Import Coordinator.txt",130000
+"WOO",183000,0,183000,,3,"","","10 Top Internal Auditor.txt",-67000
+"WOO",230000,0,230000,,3,"VP TREAS","","09 Treasurer.txt",47000
+"WOO",80600,10817,91417,,78,"CONTR","","08 Controller.txt",-138583
+"WOO",150000,38985,188985,,100,"SR VP CFO","","07 CFO.txt",97568
+"WOO",47000,0,47000,,,"MGR CON","","06 Regional Store Construct.txt",-141985
+"WOO",,,,,,"STORE DES & CONSTRUC MGRS","","05 Top Store Plan_Construct.txt",
+"WOO",128000,0,128000,,,"DR - LEAS","","04 Regional Real Estate.txt",
+"WOO",350000,0,350000,,3,"SR VP RE","PRES & COO","03 Top Real Estate.txt",222000
+"WOO",210000,0,210000,,2,"VP GEN COUN","","02 General Counsel.txt",-140000
+"WOO",450000,206850,656850,,27180,"PRES/CEO","CEO/PARENT CO","01 CEO.txt",446850

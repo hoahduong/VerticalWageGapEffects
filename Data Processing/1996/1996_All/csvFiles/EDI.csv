@@ -1,0 +1,16 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"EDI",63000,,63000,61200,9,"GEN MGR TRANS","VP LOGIS","36 Domestic Traffic.txt",
+"EDI",60000,,60000,43600,80,"","","35 DC Manager.txt",-3000
+"EDI",150000,,150000,,15,"VP LOGIS","CIO","34 Top DC _ Logistics.txt",90000
+"EDI",35300,,35300,27800,,"AUDIT SPEC","","33 Regional Loss Prevention.txt",-114700
+"EDI",80000,,80000,,40,"VP/DR INVEN/SHRINK COONTROL","CONTROLLER","32 Top Loss Prevention.txt",44700
+"EDI",,,,,,"","","31 Comp_Benefits Mgr.txt",
+"EDI",192000,,192000,,35,"EX VP HR","CEO","30 Top Human Resources.txt",
+"EDI",235000,,235000,,125,"CHIEF INFO OFFICER","CEO","26 Top Systems_Data Procg.txt",43000
+"EDI",112000,,112000,,30,"CONTR FINAN REPRTNG","","08 Controller.txt",-123000
+"EDI",320000,,320000,,225,"CFO","","07 CFO.txt",208000
+"EDI",80000,,80000,,10,"DR CONSTRUC & PLAN","SR EX VP CORP DEV","05 Top Store Plan_Construct.txt",-240000
+"EDI",95200,,95200,,,"RE ASSOC","","04 Regional Real Estate.txt",15200
+"EDI",190000,,190000,,10,"VP DR OF RE","SR EX VP CORP DEV","03 Top Real Estate.txt",94800
+"EDI",285000,,285000,,35,"EX VP LAW/SEC","","02 General Counsel.txt",95000
+"EDI",450000,0,450000,,20000,"CHAIR/PRES","BD OF DR","01 CEO.txt",165000

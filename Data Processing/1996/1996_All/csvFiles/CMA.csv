@@ -1,0 +1,22 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"CMA",4.64,.27,4.91,,,"","","46 Part Time.txt",
+"CMA",5.01,.54,5.55,,,"","","45 Full Time.txt",.6400003
+"CMA",16600,300,16900,,,"","","43 Assistant Store Manager.txt",16894.45
+"CMA",25600,800,26400,,5,"","","42 Store Manager.txt",9500
+"CMA",41800,1700,43500,,,"DM","","40 District Manager.txt",17100
+"CMA",72600,0,72600,,,"REG MGR","","39 Regional Manager.txt",29100
+"CMA",123500,0,123500,,2482,"DR STORE OPS","DIV PRES","37 Top Store Operations.txt",50900
+"CMA",29800,2000,31800,,,"REG MDSE COORDINATORS","","25 Regional Visual.txt",-91700
+"CMA",45000,,45000,,4,"VIS MERCH MGR","DR STORE OPS","24 Top Visual.txt",13200
+"CMA",45000,0,45000,,2,"ART DR","DR MKTNG","23 Art Department.txt",0
+"CMA",50000,0,50000,,5,"DR MKTNG","","22 Top Mktg_Sales Promo.txt",5000
+"CMA",24300,0,24300,,,"DISTRIBUTOR [SR/II/I]","","19 Distributor.txt",-25700
+"CMA",36000,,36000,,,"MERCH PLANNER","","18 Planner.txt",11700
+"CMA",58000,0,58000,,8,"MDSE ANALYSIS & PLANNING MGR","","17 Sr Planner.txt",22000
+"CMA",71500,0,71500,,17,"DR PLANNING & DISTRIB","GMM","16 Top Planner.txt",13500
+"CMA",31900,,31900,,,"ASST BUYER","","15 Assistant Buyer.txt",-39600
+"CMA",61600,0,58500,,,"","","14 Buyer.txt",26600
+"CMA",104200,0,104200,,4,"DMM","","12 Div Merchandise Mgr.txt",45700
+"CMA",160000,0,160000,,39,"GMM","DIV PRES","11 General Merchandise Mgr.txt",55800
+"CMA",350000,0,350000,,110,"VP FINANCE","","07 CFO.txt",190000
+"CMA",,0,,,2594,"","","01 CEO.txt",

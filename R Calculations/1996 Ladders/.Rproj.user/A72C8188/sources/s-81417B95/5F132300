@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1552238062349.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "5F132300",
+    "lastKnownWriteTime" : 1552275683,
+    "last_content_update" : 1552275683885,
+    "path" : "~/Desktop/18-19 Thesis/R Calculations/1996 Ladders/BoxPlotCombined.R",
+    "project_path" : "BoxPlotCombined.R",
+    "properties" : {
+        "cursorPosition" : "241,34",
+        "scrollLine" : "236",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

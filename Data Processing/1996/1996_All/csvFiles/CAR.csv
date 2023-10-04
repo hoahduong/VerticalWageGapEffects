@@ -1,0 +1,32 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"CAR",5.05,0,5.05,4.25,,"","","46 Part Time.txt",
+"CAR",5.88,0,5.88,4.25,,"","","45 Full Time.txt",.8299999
+"CAR",14376,,14376,,,"","","43 Assistant Store Manager.txt",14370.12
+"CAR",23983,549,24532,,7,"","","42 Store Manager.txt",10156
+"CAR",44731,2581,47312,,,"DM","","40 District Manager.txt",22780
+"CAR",70864,3791,74655,,,"REG DR","","39 Regional Manager.txt",27343
+"CAR",105950,18338,124288,,2402,"VP SALES OPS","PRES","37 Top Store Operations.txt",49633
+"CAR",37937,,37937,33900,5,"PRODUCTION SUPERV/SHIP,REC WAREH","PLANT MGR","36 Domestic Traffic.txt",-86351
+"CAR",86887,5013,91900,,7,"PLANT MGR","DR PLAN/DIS","34 Top DC _ Logistics.txt",53963
+"CAR",38522,,38522,33900,,"LP MGR-REG","","33 Regional Loss Prevention.txt",-53378
+"CAR",49057,0,49057,,2,"LP MGR","VP FINAN","32 Top Loss Prevention.txt",10535
+"CAR",54612,3102,57714,,5,"DR FIELD HR/SALES TRAIN","VP SALES OPS","30 Top Human Resources.txt",8657
+"CAR",29176,,29176,,0,"COORD STORE SYSTEMS","DR MIS","29 Point Of Sale Admin.txt",-28538
+"CAR",42335,,42335,,4,"MGR COMP OPS","","28 Computer Operations.txt",13159
+"CAR",60471,3557,64028,,3,"APPLICATIONS PROGRAM","","27 Systems Programming.txt",21693
+"CAR",87268,5133,92401,,12,"DR MIS","DR PLAN/DISTRIB","26 Top Systems_Data Procg.txt",28373
+"CAR",42840,2520,45360,,3,"MGR, VIS MERCH","VP RET DEV","24 Top Visual.txt",-47041
+"CAR",49537,1514,51051,,0,"MGR MKTNG","","22 Top Mktg_Sales Promo.txt",5691
+"CAR",67403,3870,71273,,4,"SR ART DR/CREATIVE","GMM","20 Top Import Coordinator.txt",20222
+"CAR",32251,,32251,,,"DISTRIB","","19 Distributor.txt",-39022
+"CAR",51063,2998,54061,,,"MERCH PLAN","","18 Planner.txt",21810
+"CAR",91398,5078,96476,,32,"DR PLAN & DISTRIB","PRES","16 Top Planner.txt",42415
+"CAR",38961,,38961,,,"ASST CATEGORY MGR","","15 Assistant Buyer.txt",-57515
+"CAR",59415,2508,61923,,,"","","14 Buyer.txt",22962
+"CAR",89675,15300,104975,,19,"VP GEN MERCH/CREATIVE","PRES","11 General Merchandise Mgr.txt",43052
+"CAR",69670,4098,73768,,26,"CONTR","","08 Controller.txt",-31207
+"CAR",117308,20700,138008,,30,"VP FINANCE","","07 CFO.txt",64240
+"CAR",57550,3000,60550,,,"PROJECT MGR","","06 Regional Store Construct.txt",-77458
+"CAR",81179,4349,85528,,9,"VP RETAIL DEV","PRES","05 Top Store Plan_Construct.txt",24978
+"CAR",115381,20361,135742,,4,"VP RETAIL RE","PRES","03 Top Real Estate.txt",50214
+"CAR",140000,50375,190375,,3500,"PRES","PRES/CEO OF PARENT","01 CEO.txt",54633

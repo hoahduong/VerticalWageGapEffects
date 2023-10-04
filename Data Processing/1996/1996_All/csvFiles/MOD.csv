@@ -1,0 +1,27 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"MOD",5.31,0,5.31,,,"","","46 Part Time.txt",
+"MOD",5.35,0,5.35,,,"","","45 Full Time.txt",.04
+"MOD",15100,,15100,,,"","","43 Assistant Store Manager.txt",15094.65
+"MOD",25100,400,25500,,7,"","","42 Store Manager.txt",10400
+"MOD",,,32800,,,"GROUP SUPERVISOR/DM IN TRAINING","","41 Area Manager.txt",7300
+"MOD",48600,700,49300,,,"DM","","40 District Manager.txt",16500
+"MOD",76100,3800,79900,,,"RM","","39 Regional Manager.txt",30600
+"MOD",139000,13500,152500,,1449,"VP STORES"," PRES","37 Top Store Operations.txt",72600
+"MOD",34200,,34200,,0,"TRAF COORD","DC MGR","36 Domestic Traffic.txt",-118300
+"MOD",58000,,58000,,39,"MGR DC","CFO","34 Top DC _ Logistics.txt",23800
+"MOD",82400,8000,90400,,5,"DR HR","PRES","30 Top Human Resources.txt",32400
+"MOD",56700,,56700,,1,"MGR VIS PRESEN","DR / MKT & SALE PROMO","24 Top Visual.txt",-33700
+"MOD",100000,0,100000,,6,"DR MKTNG & SALES PROMO","","22 Top Mktg_Sales Promo.txt",43300
+"MOD",24600,,24600,,,"MERCH ALLOC","","19 Distributor.txt",-75400
+"MOD",51400,,51400,,,"MGR, MERCH PLAN & ALLOT","","18 Planner.txt",26800
+"MOD",101500,9900,111400,,13,"DR MERCH PLAN & ALLOC","PRES","16 Top Planner.txt",60000
+"MOD",30400,300,30700,,,"ASST B","","15 Assistant Buyer.txt",-80700
+"MOD",,,58400,,,"","","14 Buyer.txt",27700
+"MOD",81100,4100,85200,,,"SR BUYER","","13 Sr Buyer.txt",26800
+"MOD",121100,11700,132800,,7,"DMM","","12 Div Merchandise Mgr.txt",47600
+"MOD",210000,30000,240000,,17,"VP/GMM","CEO","11 General Merchandise Mgr.txt",107200
+"MOD",88200,8500,96700,,24,"CONTR","","08 Controller.txt",-143300
+"MOD",185000,17600,202600,,78,"VP/CFO","","07 CFO.txt",105900
+"MOD",45000,,45000,,,"PROJECT MGR","","06 Regional Store Construct.txt",-157600
+"MOD",64000,,64000,,4,"MGR STORE DEV/PURCH","VP/CFO","05 Top Store Plan_Construct.txt",19000
+"MOD",272000,26500,298500,,1530,"CEO/PRES","MANGNG DR","01 CEO.txt",234500

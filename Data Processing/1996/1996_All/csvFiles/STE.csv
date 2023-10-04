@@ -1,0 +1,36 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"STE",6.68,0,6.68,,,"","","46 Part Time.txt",
+"STE",7.92,0,7.92,7.15,,"","","45 Full Time.txt",1.24
+"STE",20641,0,20641,,,"","","43 Assistant Store Manager.txt",20633.08
+"STE",34601,0,34601,,7,"","","42 Store Manager.txt",13960
+"STE",70301,0,70301,,,"DM","","40 District Manager.txt",35700
+"STE",137750,14933,152683,,,"VP REG OPS","","39 Regional Manager.txt",82382
+"STE",175000,13260,188260,,4627,"SR VP STORES","EX VP STORES","37 Top Store Operations.txt",35577
+"STE",56500,,56500,,97,"","","35 DC Manager.txt",-131760
+"STE",135000,0,135000,,312,"VP DISTR","SR VP STRATEGIC SERV","34 Top DC _ Logistics.txt",78500
+"STE",44564,,44564,,,"REG FIELD INVESTIGATOR","","33 Regional Loss Prevention.txt",-90436
+"STE",152500,15555,168055,,67,"VP LP","CFO","32 Top Loss Prevention.txt",123491
+"STE",63000,,63000,,7,"","","31 Comp_Benefits Mgr.txt",-105055
+"STE",125000,11220,136220,,42,"VP HR","CFO","30 Top Human Resources.txt",73220
+"STE",66900,,66900,,33,"DR COMP OPS & TELEC","","28 Computer Operations.txt",-69320
+"STE",100000,6548,106548,,14,"ASST VP MERCH DIST & FIN SYS","","27 Systems Programming.txt",39648
+"STE",140000,14280,154280,,80,"VP MIS","EX  VP STRAT PLAN","26 Top Systems_Data Procg.txt",47732
+"STE",65160,,65160,,5,"DR","VP","24 Top Visual.txt",-89120
+"STE",106660,0,106660,,11,"CRET DR OF ADV","VP MKT/ADV","23 Art Department.txt",41500
+"STE",160000,9860,169860,,35,"VP MKT/ADV/VIS","","22 Top Mktg_Sales Promo.txt",63200
+"STE",28500,,28500,,,"PLAN","","18 Planner.txt",-141360
+"STE",47000,,47000,,3,"MGR PLAN","","17 Sr Planner.txt",18500
+"STE",140000,8840,148840,,38,"VP IMPACT","GMM","16 Top Planner.txt",101840
+"STE",24035,,24035,,,"INVENTORY ANALYST","","15 Assistant Buyer.txt",-124805
+"STE",44200,,41833,,,"","","14 Buyer.txt",17798
+"STE",60833,,60833,,,"SR B","","13 Sr Buyer.txt",19000
+"STE",83375,,83375,,4,"DR","","12 Div Merchandise Mgr.txt",22542
+"STE",265000,,265000,,70,"EX VP GMM","CEO","11 General Merchandise Mgr.txt",181625
+"STE",66150,,66150,,9,"","","10 Top Internal Auditor.txt",-198850
+"STE",162500,16605,179105,,53,"VP FINAN","","08 Controller.txt",112955
+"STE",345000,105570,450570,,700,"EX VP/CFO","","07 CFO.txt",271465
+"STE",60500,,60500,,,"DR CONSTRUC","","06 Regional Store Construct.txt",-390070
+"STE",120000,12240,132240,,15,"VP STORE PLAN","SR VP RE","05 Top Store Plan_Construct.txt",71740
+"STE",185000,17850,202850,,17,"SR VP RE/STORE PLAN","EX VP STORE OPS","03 Top Real Estate.txt",70610
+"STE",74000,5032,79032,,2,"CORP COUN & SEC","","02 General Counsel.txt",-123818
+"STE",600000,114750,714750,,8000,"CHAIR & CEO","BD OF DR","01 CEO.txt",635718

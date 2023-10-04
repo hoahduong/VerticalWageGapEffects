@@ -1,0 +1,21 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"KIN",6.12,.88,7,,,"","","46 Part Time.txt",
+"KIN",5.49,0,5.49,,,"","","46 Part Time.txt",-1.51
+"KIN",4.15,3.18,7.33,,,"","","45 Full Time.txt",1.84
+"KIN",10219,5811,16030,,,"","","43 Assistant Store Manager.txt",16022.67
+"KIN",31200,1219,32419,,6,"","","42 Store Manager.txt",16389
+"KIN",49568,2476,52044,,,"DM","","40 District Manager.txt",19625
+"KIN",68000,1955,69955,,,"REG VP","","39 Regional Manager.txt",17911
+"KIN",91400,0,91400,,3600,"VP GEN S MGR","CEO SPEC FOOT","37 Top Store Operations.txt",21445
+"KIN",68500,0,68500,,0,"SR VM DR","VP MKTNG","24 Top Visual.txt",-22900
+"KIN",134600,22750,157350,,5,"VP MKTNG","","22 Top Mktg_Sales Promo.txt",88850
+"KIN",35158,,35158,,,"MDSE MGR","","19 Distributor.txt",-122192
+"KIN",63566,0,63566,,,"MDSE PLAN","","18 Planner.txt",28408
+"KIN",133000,0,133000,,30,"VP MDSE PLAN","CEO SPEC FOOT","16 Top Planner.txt",69434
+"KIN",45000,0,45000,,,"ASSOC B","","15 Assistant Buyer.txt",-88000
+"KIN",63980,0,63980,,,"","","14 Buyer.txt",18980
+"KIN",90000,0,90000,,,"SR B","","13 Sr Buyer.txt",26020
+"KIN",115100,0,115100,,3,"VP/DR OF BUYING","","12 Div Merchandise Mgr.txt",25100
+"KIN",200000,33500,233500,,10,"VP/GMM","PRES/SPEC FOOTWEAR","11 General Merchandise Mgr.txt",118400
+"KIN",,0,,,3657,"","","01 CEO.txt",
+"KIN",450000,180000,630000,,4252,"PRES/CEO","CEO/PARENT","01 CEO.txt",

@@ -1,0 +1,38 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"TAL",6.83,.29,7.12,4.9,,"","","46 Part Time.txt",
+"TAL",7.44,.29,7.73,4.9,,"","","45 Full Time.txt",.6100001
+"TAL",24676,950,25626,19354,,"","","43 Assistant Store Manager.txt",25618.27
+"TAL",35680,2230,37910,,17,"","","42 Store Manager.txt",12284
+"TAL",56327,4021,60348,,,"DM","","40 District Manager.txt",22438
+"TAL",91590,21567,113157,,,"REG DR","","39 Regional Manager.txt",52809
+"TAL",182108,73638,255746,,4548,"SR VP STORES","CEO","37 Top Store Operations.txt",142589
+"TAL",98044,,98044,54500,37,"MGR TRANS","DR RET DISTR","36 Domestic Traffic.txt",-157702
+"TAL",103338,19300,122638,,232,"DR RET DISTR","SR VP OPS","34 Top DC _ Logistics.txt",24594
+"TAL",50081,,50081,41100,,"REG MGR LP","","33 Regional Loss Prevention.txt",-72557
+"TAL",86419,20400,106819,,11,"DR LP","VP AUDIT & CONTROL","32 Top Loss Prevention.txt",56738
+"TAL",,,,,,"","","31 Comp_Benefits Mgr.txt",
+"TAL",254824,110674,365498,,50,"SR VP HR","CFO & CEO","30 Top Human Resources.txt",
+"TAL",73161,,73161,,11,"MGR APPL","PROJ/POS/STORE SYS","29 Point Of Sale Admin.txt",-292337
+"TAL",111960,26900,138860,,31,"DR DATA CTR","","28 Computer Operations.txt",65699
+"TAL",135499,32700,168199,,55,"DR SYS DEV","","27 Systems Programming.txt",29339
+"TAL",204120,86411,290531,,140,"SR VP MIS","CEO","26 Top Systems_Data Procg.txt",122332
+"TAL",106807,27000,133807,,12,"DR VIS MERCH","SR VP STORES","24 Top Visual.txt",-156724
+"TAL",,,,,,"DR","","22 Top Mktg_Sales Promo.txt",
+"TAL",102240,,102240,,,"SR SOURC MGR","","21 Product Coordinator.txt",
+"TAL",171660,58700,230360,,110,"VP MANUFAC","COO","20 Top Import Coordinator.txt",128120
+"TAL",28077,,28077,,,"DIST","","19 Distributor.txt",-202283
+"TAL",45052,,45052,,,"PLAN","","18 Planner.txt",16975
+"TAL",83532,4059,87591,,37,"DR OF PLAN CONTROL","","17 Sr Planner.txt",42539
+"TAL",170569,58300,228869,,73,"VP MERCH ADMIN","EX VP COO","16 Top Planner.txt",141278
+"TAL",33339,,33339,,,"ASST B","","15 Assistant Buyer.txt",-195530
+"TAL",66960,3698,73221,,,"","","14 Buyer.txt",39882
+"TAL",97705,16750,114455,,7,"DR MDSE","","12 Div Merchandise Mgr.txt",41234
+"TAL",192111,62750,254861,,37,"VP/GMM","EX VP CFO","11 General Merchandise Mgr.txt",140406
+"TAL",74241,12700,86941,,2,"","","10 Top Internal Auditor.txt",-167920
+"TAL",95536,23600,119136,,49,"DR ACCTNG","","08 Controller.txt",32195
+"TAL",265848,115462,381310,,220,"SR VP FIN/CFO","","07 CFO.txt",262174
+"TAL",61334,,61334,,,"STORE CON MGR","","06 Regional Store Construct.txt",-319976
+"TAL",134492,33800,168292,,21,"DR STORE PLAN & DES","SR VP OPS","05 Top Store Plan_Construct.txt",106958
+"TAL",74945,7399,82344,,,"MGR RE","","04 Regional Real Estate.txt",-85948
+"TAL",217210,93456,310666,,10,"SR VP RE & LEGAL","","02 General Counsel.txt",228322
+"TAL",697500,540000,1237500,,7692,"PRES / CEO","BD OF DR","01 CEO.txt",926834

@@ -1,0 +1,33 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"SPE",4.53,0,4.53,,,"","","46 Part Time.txt",
+"SPE",13021,,13021,11024,,"","","43 Assistant Store Manager.txt",13016.47
+"SPE",21912,700,22612,,8,"","","42 Store Manager.txt",9591
+"SPE",51500,5000,56500,,,"SR DSM","","40 District Manager.txt",33888
+"SPE",155000,40000,195000,,1850,"VP STORE OPS","COO","37 Top Store Operations.txt",138500
+"SPE",65000,7500,72500,,150,"","","35 DC Manager.txt",-122500
+"SPE",37500,3700,41200,35000,,"REG LP","","33 Regional Loss Prevention.txt",-31300
+"SPE",58100,6000,64100,,4,"DR LP","EX VP","32 Top Loss Prevention.txt",22900
+"SPE",73000,7500,80500,,6,"","","31 Comp_Benefits Mgr.txt",16400
+"SPE",100000,0,100000,,12,"DIV VP HR","EX VP","30 Top Human Resources.txt",19500
+"SPE",50200,5000,55200,,10,"MGR OF POS","DR INFO","29 Point Of Sale Admin.txt",-44800
+"SPE",99600,10000,109600,,18,"DR INFO SYS","CFO","26 Top Systems_Data Procg.txt",54400
+"SPE",37500,0,37500,,0,"MGR OF VIS  MERCH","GMM","24 Top Visual.txt",-72100
+"SPE",58600,5800,64400,,0,"ART DR","DR MKTNG","23 Art Department.txt",26900
+"SPE",137500,30000,167500,,7,"VP MKTNG","","22 Top Mktg_Sales Promo.txt",103100
+"SPE",67600,6700,74300,,3,"MDSE CONT/IMP","CFO","20 Top Import Coordinator.txt",-93200
+"SPE",28100,0,28100,,,"MERCH DIS","","19 Distributor.txt",-46200
+"SPE",44800,4400,49200,,,"MERCH PLAN","","18 Planner.txt",21100
+"SPE",68000,7500,75500,,12,"DR MERCH DIS","VP DIS/SYS DES","16 Top Planner.txt",26300
+"SPE",31700,0,31700,,,"ASST B","","15 Assistant Buyer.txt",-43800
+"SPE",,,40000,,,"","","14 Buyer.txt",8300
+"SPE",62200,5400,67600,,,"SR B","","13 Sr Buyer.txt",27600
+"SPE",89000,14100,103100,,3,"DMM","","12 Div Merchandise Mgr.txt",35500
+"SPE",122700,30000,152700,,5,"VP MERCH MGR","SR VP GMM","11 General Merchandise Mgr.txt",49600
+"SPE",90000,30000,120000,,32,"CONTR","","08 Controller.txt",-32700
+"SPE",128500,35000,163500,,75,"CFO","","07 CFO.txt",43500
+"SPE",37700,3700,41400,,,"SUPER FIELD CON","","06 Regional Store Construct.txt",-122100
+"SPE",107000,21400,128400,,32,"DIV VP STORE PLAN/CON","EX VP","05 Top Store Plan_Construct.txt",87000
+"SPE",52900,5100,58000,,,"RE MGR","","04 Regional Real Estate.txt",-70400
+"SPE",110000,25000,135000,,5,"DIV VP RE","DIV VP STORE PLAN","03 Top Real Estate.txt",77000
+"SPE",116500,25000,141500,,3,"VP/GEN COUN","","02 General Counsel.txt",6500
+"SPE",,0,,,2244,"","","01 CEO.txt",

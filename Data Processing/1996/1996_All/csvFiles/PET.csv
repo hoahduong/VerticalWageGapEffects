@@ -1,0 +1,41 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"PET",5,0,5,,,"","","46 Part Time.txt",
+"PET",5.4,0,5.4,,,"","","45 Full Time.txt",.4000001
+"PET",15392,,15392,,,"","","43 Assistant Store Manager.txt",15386.6
+"PET",25369,,25369,,5,"","","42 Store Manager.txt",9977
+"PET",50356,0,50356,,,"DSM","","40 District Manager.txt",24987
+"PET",119167,0,119167,,,"TERRITORY VP","","39 Regional Manager.txt",68811
+"PET",225000,,225000,,6500,"SR VP STORES","CHAIR","37 Top Store Operations.txt",105833
+"PET",72500,,72500,,4,"MGR TRAF","SR VP DISTRIB & LOG","36 Domestic Traffic.txt",-152500
+"PET",70067,,70067,,29,"","","35 DC Manager.txt",-2433
+"PET",160000,,160000,,103,"SR VP DISTR & LOG","CHAIR","34 Top DC _ Logistics.txt",89933
+"PET",47663,,47663,,,"SR LP MGR","","33 Regional Loss Prevention.txt",-112337
+"PET",69800,,69800,,15,"DR LP","VP OPS","32 Top Loss Prevention.txt",22137
+"PET",,,,,,"","","31 Comp_Benefits Mgr.txt",
+"PET",225000,,225000,,5,"SR VP HR","CHAIR","30 Top Human Resources.txt",
+"PET",40050,,40050,,4,"POS PROJ MGR","DR STORE SYS","29 Point Of Sale Admin.txt",-184950
+"PET",77500,,77500,,17,"MGR SYS SUP/OPS","","28 Computer Operations.txt",37450
+"PET",92000,,92000,,8,"DR SYSTEMS","","27 Systems Programming.txt",14500
+"PET",135000,,135000,,58,"VP MIS","CFO","26 Top Systems_Data Procg.txt",43000
+"PET",38695,,38695,,,"VIS MDSNR","","25 Regional Visual.txt",-96305
+"PET",71573,,71573,,1,"DR VIS MDSNG","SR VP STORES","24 Top Visual.txt",32878
+"PET",225000,,225000,,13,"SR VP MKTNG","","22 Top Mktg_Sales Promo.txt",153427
+"PET",185200,,185200,,3,"VP FOREIGN TRADE","GMM","20 Top Import Coordinator.txt",-39800
+"PET",30204,,30204,,," DISTRIB","","19 Distributor.txt",-154996
+"PET",80649,,80649,,,"SR PLAN","","18 Planner.txt",50445
+"PET",138000,,138000,,8,"VP PLANG","","17 Sr Planner.txt",57351
+"PET",380000,,380000,,39,"SR VP PLNG & ALLOC","CHAIR","16 Top Planner.txt",242000
+"PET",33800,,33800,,,"ASSOC B","","15 Assistant Buyer.txt",-346200
+"PET",,,74293,,,"","","14 Buyer.txt",40493
+"PET",100000,,100000,,,"VP MERCH MGR","","13 Sr Buyer.txt",25707
+"PET",177000,,177000,,10,"VP DMM","","12 Div Merchandise Mgr.txt",77000
+"PET",350000,,350000,,36,"SR VP GMM","CHAIR","11 General Merchandise Mgr.txt",173000
+"PET",30000,,30000,,0,"","","10 Top Internal Auditor.txt",-320000
+"PET",154000,,154000,,6,"VP TREAS","","09 Treasurer.txt",124000
+"PET",135000,,135000,,67,"VP CONTR","","08 Controller.txt",-19000
+"PET",325000,,325000,,148,"SR VP/CFO","","07 CFO.txt",190000
+"PET",,,,,,"DR STORE PLAN","SR VP SPEC PROJ","05 Top Store Plan_Construct.txt",
+"PET",110000,,110000,,,"RE DR","","04 Regional Real Estate.txt",
+"PET",165000,,165000,,3,"SR VP RE","CHAIR","03 Top Real Estate.txt",55000
+"PET",225000,,225000,,5,"SR VP & GEN COUN","","02 General Counsel.txt",60000
+"PET",670000,0,670000,,7000,"CHAIR & CEO","BD OF DR","01 CEO.txt",445000

@@ -1,0 +1,252 @@
+------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/macbook/Desktop/18-19 Thesis/Data Processing/DiffSummary/DiffSummary.l
+> og
+  log type:  text
+ opened on:  10 Apr 2019, 22:41:39
+
+. 
+. version 15
+
+. 
+. local path96 "/Users/macbook/Desktop/18-19 Thesis/R Calculations/1996 Ladders/"
+
+. local path97 "/Users/macbook/Desktop/18-19 Thesis/R Calculations/1997 Ladders/"
+
+. local path98 "/Users/macbook/Desktop/18-19 Thesis/R Calculations/1998 Ladders/"
+
+. 
+. local fileList "firstDiffNZ.csv"        ///
+>                                 "firstDiffNZNA.csv"     ///
+>                                 "secondDiffNZ.csv"      ///
+>                                 "secondDiffNZNA.csv"
+
+. 
+. // load the data
+. drop _all
+
+. import delimited using "`path96'firstDiffNZ.csv", clear
+(9 vars, 14 obs)
+
+. summ
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |         14         7.5      4.1833          1         14
+        code |          0
+      stores |         14    521.3571    404.9421         89       1600
+      volume |          0
+ assttostore |         14    8411.286    3285.945        814      14991
+-------------+---------------------------------------------------------
+ storetoarea |         14    7006.429    2855.382        641      12317
+  areatodist |         14     16597.5    10319.66       4657      45750
+   disttoreg |         14    37445.64    20431.01      -4304      91813
+    regtotop |         14    101469.9    59028.38      25247     216067
+
+. 
+. import delimited using "`path96'firstDiffNZNA.csv", clear
+(8 vars, 27 obs)
+
+. summ
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |         27          14    7.937254          1         27
+        code |          0
+      stores |         27    547.5185    491.5284         77       2229
+      volume |          0
+ assttostore |         27    10747.81    3882.756       5350      20571
+-------------+---------------------------------------------------------
+ storetodist |         27    22828.78    5158.105      12058      35700
+   disttoreg |         27    41176.48    23739.06      15330      95050
+    regtotop |         27    72856.81    49758.53      19800     263300
+
+. 
+. import delimited using "`path96'secondDiffNZ.csv", clear
+(9 vars, 14 obs)
+
+. summ
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |         14         7.5      4.1833          1         14
+        code |          0
+      stores |         14    521.3571    404.9421         89       1600
+      volume |          0
+assttostor~a |         14   -1404.857    3954.418      -9342       4123
+-------------+---------------------------------------------------------
+storetoare~t |         14    9591.071    10328.49      -5904      33433
+areatodist~g |         14    20848.14    22882.69     -33028      75133
+disttoregv~p |         14    64024.21    70212.38     -66566     204304
+       avgnz |         14    23264.64    14421.55    3975.25      52088
+
+. 
+. import delimited using "`path96'secondDiffNZNA.csv", clear
+(8 vars, 27 obs)
+
+. summ
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |         27          14    7.937254          1         27
+        code |          0
+      stores |         27    547.5185    491.5284         77       2229
+      volume |          0
+assttostor~t |         27    12080.96     5383.38       1857      23500
+-------------+---------------------------------------------------------
+storetodis~g |         27     18347.7    21195.13     -11615      69150
+disttoregv~p |         27    31680.33    41282.04     -46805     184200
+     avgnzna |         27       20703    16880.82   1685.333   84433.34
+
+. 
+. foreach fileName in "`fileList'" {
+  2.         import delimited using "`path97'`fileName'",  clear 
+  3.         di "This is `fileName'" //DDD
+  4.         summ
+  5. }
+(10 vars, 10 obs)
+This is firstDiffNZ.csv
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |         10         5.5     3.02765          1         10
+        code |          0
+      stores |         10       605.6     519.819        115       1880
+      volume |         10    4.74e+08    3.03e+08   1.55e+08   9.91e+08
+   employees |         10      6141.9    5144.824       1300      18352
+-------------+---------------------------------------------------------
+ assttostore |         10     8786.66    5086.078      -3104      16612
+ storetoarea |         10      7453.4     5564.36      -2600      17678
+  areatodist |         10     15430.9    5607.612       8427      27053
+   disttoreg |         10     50946.6    27355.95      24359     113600
+    regtotop |         10    117047.5    89386.84       4850     330000
+(9 vars, 19 obs)
+This is firstDiffNZNA.csv
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |         19          10    5.627314          1         19
+        code |          0
+      stores |         19    589.6316    642.1337        106       3012
+      volume |         19    6.34e+08    7.13e+08   1.23e+08   3.12e+09
+   employees |         19    5827.263    6554.672       1356      29850
+-------------+---------------------------------------------------------
+ assttostore |         19    11137.65    4039.321     4164.8      20656
+ storetodist |         19    23454.84     7410.78       8743      44199
+   disttoreg |         19    55367.74     49110.3      17477     232447
+    regtotop |         19    85620.95    70492.06     -60000     284100
+(10 vars, 10 obs)
+This is secondDiffNZ.csv
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |         10         5.5     3.02765          1         10
+        code |          0
+      stores |         10       605.6     519.819        115       1880
+      volume |         10    4.74e+08    3.03e+08   1.55e+08   9.91e+08
+   employees |         10      6141.9    5144.824       1300      18352
+-------------+---------------------------------------------------------
+assttostor~a |         10    -1333.26    8420.673     -19212      10451
+storetoare~t |         10      7977.5    8347.249      -3840      20100
+areatodist~g |         10     35515.7    25287.71       8634      86547
+disttoregv~p |         10     66100.9    91178.45    -108750     244360
+       avgnz |         10    27065.21    21918.81     1988.5    80160.6
+(9 vars, 19 obs)
+This is secondDiffNZNA.csv
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |         19          10    5.627314          1         19
+        code |          0
+      stores |         19    589.6316    642.1337        106       3012
+      volume |         19    6.34e+08    7.13e+08   1.23e+08   3.12e+09
+   employees |         19    5827.263    6554.672       1356      29850
+-------------+---------------------------------------------------------
+assttostor~t |         19    12317.19     8360.01    -3996.4      34250
+storetodis~g |         19    31912.89    46706.46      -5491     205836
+disttoregv~p |         19    30253.21    94253.25    -292447     232100
+     avgnzna |         19    24827.76    23281.92  -23551.33   89409.53
+
+. 
+. foreach fileName in "`fileList'" {
+  2.         import delimited using "`path98'`fileName'",  clear 
+  3.         di "This is `fileName'" //DDD
+  4.         summ
+  5. }
+(10 vars, 11 obs)
+This is firstDiffNZ.csv
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |         11           6    3.316625          1         11
+        code |          0
+      stores |         11    482.5455    634.6278        111       2300
+      volume |         11    3.39e+08    3.15e+08   1.34e+08   1.20e+09
+   employees |         11    4100.182    3735.987       1232      14165
+-------------+---------------------------------------------------------
+ assttostore |         11    9239.545    5836.904    -1361.6    23553.4
+ storetoarea |         11    10705.64    5501.605       4747      18900
+  areatodist |         11    15647.91     11138.6       1318      43200
+   disttoreg |         11    37404.55    13423.88      23650      68364
+    regtotop |         11    107014.7    50318.15      37879     174267
+(9 vars, 20 obs)
+This is firstDiffNZNA.csv
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |         20        10.5     5.91608          1         20
+        code |          0
+      stores |         20       614.6    556.1669         68       2610
+      volume |         20    7.41e+08    6.02e+08   9.36e+07   2.60e+09
+   employees |         20      7527.9     5235.88       1386      23708
+-------------+---------------------------------------------------------
+ assttostore |         20    11158.96    3950.481     3841.2      21401
+ storetodist |         20    25112.78    6545.586      14551      44302
+   disttoreg |         20    50083.76    28380.96          0     138800
+    regtotop |         20    103220.1    47816.51      25150     173950
+(10 vars, 11 obs)
+This is secondDiffNZ.csv
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |         11           6    3.316625          1         11
+        code |          0
+      stores |         11    482.5455    634.6278        111       2300
+      volume |         11    3.39e+08    3.15e+08   1.34e+08   1.20e+09
+   employees |         11    4100.182    3735.987       1232      14165
+-------------+---------------------------------------------------------
+assttostor~a |         11    1466.091    7198.431   -11889.4    11401.6
+storetoare~t |         11    4942.273    14196.89     -16506      38453
+areatodist~g |         11    21756.64    18239.22     -10900      55457
+disttoregv~p |         11    69610.18    57228.67     -30485     147615
+       avgnz |         11     24443.8    11817.07    9810.15      40676
+(9 vars, 20 obs)
+This is secondDiffNZNA.csv
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          v1 |         20        10.5     5.91608          1         20
+        code |          0
+      stores |         20       614.6    556.1669         68       2610
+      volume |         20    7.41e+08    6.02e+08   9.36e+07   2.60e+09
+   employees |         20      7527.9     5235.88       1386      23708
+-------------+---------------------------------------------------------
+assttostor~t |         20    13953.82    8991.969      -5154    34301.2
+storetodis~g |         20    24970.97    26834.59     -16247     108136
+disttoregv~p |         20    53136.32    53012.89     -48100     151032
+     avgnzna |         20    30687.04     15691.2     2231.8   53895.33
+
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+end of do-file
+
+. do "/var/folders/sy/4d9t8khs1jn_xflrv2wvq20c0000gn/T//SD16538.000000"
+
+. capture log close

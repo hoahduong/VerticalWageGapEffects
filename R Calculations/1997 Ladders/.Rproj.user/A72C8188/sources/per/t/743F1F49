@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1555430103365.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3379937645",
+    "id" : "743F1F49",
+    "lastKnownWriteTime" : 1555635563,
+    "last_content_update" : 1555635563613,
+    "path" : "~/Desktop/18-19 Thesis/R Calculations/1997 Ladders/SecondDiffTest.R",
+    "project_path" : "SecondDiffTest.R",
+    "properties" : {
+        "cursorPosition" : "205,0",
+        "scrollLine" : "198",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

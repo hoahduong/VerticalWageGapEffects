@@ -1,0 +1,369 @@
+------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombine
+> d/1996_StoreOpsCombined.log
+  log type:  text
+ opened on:  18 Apr 2019, 18:28:34
+
+. 
+. version 15
+
+. 
+. local pathName "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/"
+
+. local dataPath "/Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCo
+> mbined/Data/"
+
+. 
+. // use the grep command to get the list of all text files
+. // $ grep -l '' *.txt
+. 
+. local fileList "01 CEO" ///
+>         "02 General Counsel" ///
+>         "03 Top Real Estate" ///
+>         "04 Regional Real Estate" ///
+>         "05 Top Store Plan_Construct" ///
+>         "06 Regional Store Construct" ///
+>         "07 CFO" ///
+>         "08 Controller" ///
+>         "09 Treasurer" ///
+>         "10 Top Internal Auditor" ///
+>         "11 General Merchandise Mgr" ///
+>         "12 Div Merchandise Mgr" ///
+>         "13 Sr Buyer" ///
+>         "14 Buyer" ///
+>         "15 Assistant Buyer" ///
+>         "16 Top Planner" ///
+>         "17 Sr Planner" ///
+>         "18 Planner" ///
+>         "19 Distributor" ///
+>         "20 Top Import Coordinator" ///
+>         "21 Product Coordinator" ///
+>         "22 Top Mktg_Sales Promo" ///
+>         "23 Art Department" ///
+>         "24 Top Visual" ///
+>         "25 Regional Visual" ///
+>         "26 Top Systems_Data Procg" ///
+>         "27 Systems Programming" ///
+>         "28 Computer Operations" ///
+>         "29 Point Of Sale Admin" ///
+>         "30 Top Human Resources" ///
+>         "31 Comp_Benefits Mgr" ///
+>         "32 Top Loss Prevention" ///
+>         "33 Regional Loss Prevention" ///
+>         "34 Top DC _ Logistics" ///
+>         "35 DC Manager" ///
+>         "36 Domestic Traffic" ///
+>         "37 Top Store Operations" ///
+>         "38 Zone Manager" ///
+>         "39 Regional Manager" ///
+>         "40 District Manager" ///
+>         "41 Area Manager" ///
+>         "42 Store Manager" ///
+>         "43 Assistant Store Manager" ///
+>         "44 Third Key" ///
+>         "45 Full Time" ///
+>         "46 Part Time" 
+
+. 
+. // for each data file, merge by code
+. foreach fileName in "`fileList'" {
+  2. import delimited using "`pathName'`fileName'.txt",  clear 
+  3. save "`dataPath'`fileName'.dta", replace 
+  4. }
+(10 vars, 66 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/0
+> 1 CEO.dta saved
+(8 vars, 27 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/0
+> 2 General Counsel.dta saved
+(9 vars, 38 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/0
+> 3 Top Real Estate.dta saved
+(7 vars, 23 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/0
+> 4 Regional Real Estate.dta saved
+(23 vars, 46 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/0
+> 5 Top Store Plan_Construct.dta saved
+(7 vars, 28 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/0
+> 6 Regional Store Construct.dta saved
+(8 vars, 47 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/0
+> 7 CFO.dta saved
+(7 vars, 42 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/0
+> 8 Controller.dta saved
+(7 vars, 19 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/0
+> 9 Treasurer.dta saved
+(6 vars, 17 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/1
+> 0 Top Internal Auditor.dta saved
+(9 vars, 50 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/1
+> 1 General Merchandise Mgr.dta saved
+(9 vars, 46 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/1
+> 2 Div Merchandise Mgr.dta saved
+(8 vars, 25 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/1
+> 3 Sr Buyer.dta saved
+(28 vars, 56 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/1
+> 4 Buyer.dta saved
+(6 vars, 46 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/1
+> 5 Assistant Buyer.dta saved
+(9 vars, 52 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/1
+> 6 Top Planner.dta saved
+(9 vars, 31 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/1
+> 7 Sr Planner.dta saved
+(8 vars, 50 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/1
+> 8 Planner.dta saved
+(6 vars, 46 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/1
+> 9 Distributor.dta saved
+(9 vars, 18 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/2
+> 0 Top Import Coordinator.dta saved
+(7 vars, 16 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/2
+> 1 Product Coordinator.dta saved
+(43 vars, 42 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/2
+> 2 Top Mktg_Sales Promo.dta saved
+(8 vars, 23 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/2
+> 3 Art Department.dta saved
+(9 vars, 49 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/2
+> 4 Top Visual.dta saved
+(76 vars, 15 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/2
+> 5 Regional Visual.dta saved
+(8 vars, 41 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/2
+> 6 Top Systems_Data Procg.dta saved
+(7 vars, 29 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/2
+> 7 Systems Programming.dta saved
+(8 vars, 37 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/2
+> 8 Computer Operations.dta saved
+(7 vars, 33 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/2
+> 9 Point Of Sale Admin.dta saved
+(9 vars, 47 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/3
+> 0 Top Human Resources.dta saved
+(17 vars, 39 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/3
+> 1 Comp_Benefits Mgr.dta saved
+(9 vars, 41 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/3
+> 2 Top Loss Prevention.dta saved
+(76 vars, 26 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/3
+> 3 Regional Loss Prevention.dta saved
+(10 vars, 42 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/3
+> 4 Top DC _ Logistics.dta saved
+(75 vars, 23 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/3
+> 5 DC Manager.dta saved
+(78 vars, 31 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/3
+> 6 Domestic Traffic.dta saved
+(10 vars, 52 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/3
+> 7 Top Store Operations.dta saved
+(7 vars, 9 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/3
+> 8 Zone Manager.dta saved
+(32 vars, 56 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/3
+> 9 Regional Manager.dta saved
+(108 vars, 58 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/4
+> 0 District Manager.dta saved
+(100 vars, 19 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/4
+> 1 Area Manager.dta saved
+(107 vars, 59 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/4
+> 2 Store Manager.dta saved
+(107 vars, 59 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/4
+> 3 Assistant Store Manager.dta saved
+(108 vars, 35 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/4
+> 4 Third Key.dta saved
+(76 vars, 58 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/4
+> 5 Full Time.dta saved
+(78 vars, 60 obs)
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/4
+> 6 Part Time.dta saved
+
+. 
+end of do-file
+
+. 
+. // 42 43 have repeated code
+. use "`dataPath'42 Store Manager.dta", clear
+
+. collapse total, by (code)
+
+. save "`dataPath'42 Store Manager_collapse.dta", replace
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/4
+> 2 Store Manager_collapse.dta saved
+
+. 
+. use "`dataPath'43 Assistant Store Manager.dta", clear
+
+. collapse total, by (code)
+
+. save "`dataPath'43 Assistant Store Manager_collapse.dta", replace
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombined/Data/4
+> 3 Assistant Store Manager_collapse.dta saved
+
+. 
+. // create the big data file
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/001 Company ID.dta", cl
+> ear
+
+. keep code store volume
+
+. save StoreOpsCombined.dta, replace emptyok
+file StoreOpsCombined.dta saved
+
+. use StoreOpsCombined.dta, clear
+
+. 
+. // 43 Assistant Store Manager.dta
+. merge m:1 code using "`dataPath'43 Assistant Store Manager_collapse.dta", keepusing(tota
+> l)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             8
+        from master                         8  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                58  (_merge==3)
+    -----------------------------------------
+
+. rename total total43
+
+. drop _merge
+
+. 
+. local fileList "42 Store Manager_collapse.dta" ///
+>         "41 Area Manager.dta" ///
+>         "40 District Manager.dta" ///
+>         "39 Regional Manager.dta" ///
+>         "38 Zone Manager.dta" ///
+>         "37 Top Store Operations.dta"
+
+. 
+. local i 43
+
+.         
+. // for each data file, merge by code
+. foreach fileName in "`fileList'" {
+  2. local i = `i' - 1
+  3. merge m:1 code using "`dataPath'`fileName'",  keepusing(total)
+  4. rename total total`i'
+  5. drop _merge
+  6. }
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             8
+        from master                         8  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                58  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            47
+        from master                        47  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                19  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             8
+        from master                         8  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                58  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            10
+        from master                        10  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                56  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            57
+        from master                        57  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                 9  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            14
+        from master                        14  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                52  (_merge==3)
+    -----------------------------------------
+
+. 
+. save StoreOpsCombined.dta, replace 
+file StoreOpsCombined.dta saved
+
+. 
+. use StoreOpsCombined.dta
+
+. //describe
+. 
+. // rename
+. rename total37 TopStoreOps
+
+. rename total38 ZoneMgr
+
+. rename total39 RegionalMgr
+
+. rename total40 DistrictMgr
+
+. rename total41 AreaMgr
+
+. rename total42 StoreMgr
+
+. rename total43 AsstStoreMgr
+
+. 
+. save StoreOpsCombined.dta, replace
+file StoreOpsCombined.dta saved
+
+. 
+end of do-file
+

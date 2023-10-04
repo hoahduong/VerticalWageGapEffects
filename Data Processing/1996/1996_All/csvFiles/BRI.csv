@@ -1,0 +1,33 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"BRI",4.79,1.19,5.98,4.25,,"","","46 Part Time.txt",
+"BRI",8.23,10.24,18.47,7,,"","","45 Full Time.txt",12.49
+"BRI",24551,25,24576,,,"","","43 Assistant Store Manager.txt",24557.53
+"BRI",31072,79,31151,,15,"","","42 Store Manager.txt",6575
+"BRI",50750,72,50822,,,"DM","","40 District Manager.txt",19671
+"BRI",69333,0,69333,,,"RM","","39 Regional Manager.txt",18511
+"BRI",140000,0,140000,,1242,"SR VP STORE OPS","CEO","37 Top Store Operations.txt",70667
+"BRI",40000,2000,42000,27200,5,"SHIP & REC MGR","DC OPS MGR","36 Domestic Traffic.txt",-98000
+"BRI",63000,0,63000,,44,"DC OPS MGR","CEO","34 Top DC _ Logistics.txt",21000
+"BRI",36500,3000,39500,31800,,"REG LP MGR","","33 Regional Loss Prevention.txt",-23500
+"BRI",83000,6000,89000,,6,"DIV VP LP","CEO","32 Top Loss Prevention.txt",49500
+"BRI",57100,1638,58738,,4,"","","31 Comp_Benefits Mgr.txt",-30262
+"BRI",100000,5000,105000,,6,"VP HR","CEO","30 Top Human Resources.txt",46262
+"BRI",36000,0,36000,,0,"SYSTEM SPEC","VP INFO SYSTEMS","29 Point Of Sale Admin.txt",-69000
+"BRI",60000,0,60000,,4,"COMP OPS MGR","","28 Computer Operations.txt",24000
+"BRI",55000,0,55000,,0,"SYSTEM MGR","","27 Systems Programming.txt",-5000
+"BRI",100000,0,100000,,8,"VP INFO SYSTEMS","CEO","26 Top Systems_Data Procg.txt",45000
+"BRI",175000,0,175000,,12,"SR VP MKTNG, VIS ,FASHION DR","","22 Top Mktg_Sales Promo.txt",75000
+"BRI",52050,0,52050,,,"SOURCING & PRODUC MGR","","21 Product Coordinator.txt",-122950
+"BRI",88000,2550,90550,,6,"DIV VP SOURCING & PRODUCTION","CEO","20 Top Import Coordinator.txt",38500
+"BRI",36925,0,36925,,,"MERCH PLAN/ALLOC","","19 Distributor.txt",-53625
+"BRI",44000,0,44000,,,"MERCH PLANNER","","18 Planner.txt",7075
+"BRI",37500,0,37500,,1,"SR PLAN/ALLOC","","17 Sr Planner.txt",-6500
+"BRI",85000,2100,87100,,8,"DR OF MERCH PLANN & ALLOC","CEO","16 Top Planner.txt",49600
+"BRI",32666,0,32666,,,"ASST MERCHANDISER","","15 Assistant Buyer.txt",-54434
+"BRI",,,50625,,,"","","14 Buyer.txt",17959
+"BRI",76175,,76175,,,"MERCH","","13 Sr Buyer.txt",25550
+"BRI",88000,2000,90000,,7,"DMM","","12 Div Merchandise Mgr.txt",13825
+"BRI",112500,2500,115000,,8,"VP MERCHANDISING","CEO","11 General Merchandise Mgr.txt",25000
+"BRI",91000,5000,96000,,22,"CONTROLLER","","08 Controller.txt",-19000
+"BRI",70000,5000,75000,,0,"DR OF STORE PLANNING","CEO","05 Top Store Plan_Construct.txt",-21000
+"BRI",,0,,,1800,"OWNER","","01 CEO.txt",

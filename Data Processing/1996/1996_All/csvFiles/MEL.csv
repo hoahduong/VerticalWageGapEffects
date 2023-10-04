@@ -1,0 +1,32 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"MEL",6.81,0,6.81,,,"","","45 Full Time.txt",
+"MEL",,,32600,,,"AREA MGR","","41 Area Manager.txt",32593.19
+"MEL",41700,3200,44900,,,"DM","","40 District Manager.txt",12300
+"MEL",105300,12400,117700,,,"DR OF OPS","","39 Regional Manager.txt",72800
+"MEL",200000,29000,229000,,9352,"VP STORE OPS","PRES","37 Top Store Operations.txt",111300
+"MEL",77200,8100,85300,,,"","","35 DC Manager.txt",-143700
+"MEL",41900,,41900,33000,,"REG SEC SUPER","","33 Regional Loss Prevention.txt",-43400
+"MEL",66500,8000,74500,,15,"DR SEC","VP ACCTNG/OPS","32 Top Loss Prevention.txt",32600
+"MEL",100000,18100,118100,,24,"","","31 Comp_Benefits Mgr.txt",43600
+"MEL",215000,50300,265300,,100,"VP HR","PRES","30 Top Human Resources.txt",147200
+"MEL",120500,7000,127500,,,"DR APPL DEV","","27 Systems Programming.txt",-137800
+"MEL",190000,26000,216000,,60,"VP MIS","CFO","26 Top Systems_Data Procg.txt",88500
+"MEL",61000,1200,62200,,1,"FASHION/MKTNG BRAND DR","VP MKT/SP","24 Top Visual.txt",-153800
+"MEL",63000,3000,66000,,4,"DR CREAT SERV","VP MKTNG/SP","23 Art Department.txt",3800
+"MEL",124500,16400,140900,,21,"VP MKTNG/SP","","22 Top Mktg_Sales Promo.txt",74900
+"MEL",28000,,28000,,,"PROD COORD","","21 Product Coordinator.txt",-112900
+"MEL",135000,0,135000,,80,"VP FAR EAST PURCH","PRES","20 Top Import Coordinator.txt",107000
+"MEL",28400,,28400,,,"DIST COORD","","19 Distributor.txt",-106600
+"MEL",38400,925,39325,,,"PLANNER","","18 Planner.txt",10925
+"MEL",92300,4100,96400,,33,"DR MERCH","","17 Sr Planner.txt",57075
+"MEL",170000,0,170000,,100,"VP PLAN & DISTRIB","GMM","16 Top Planner.txt",73600
+"MEL",79300,4700,84000,,,"","","14 Buyer.txt",-86000
+"MEL",90900,6000,96900,,,"SR B","","13 Sr Buyer.txt",12900
+"MEL",173800,27000,200800,,9,"VP MERCH MGR","","12 Div Merchandise Mgr.txt",103900
+"MEL",315000,0,315000,,150,"GMM","PRES","11 General Merchandise Mgr.txt",114200
+"MEL",135000,0,135000,,3,"VP/TREAS","","09 Treasurer.txt",-180000
+"MEL",200000,0,200000,,150,"VP CONTR","","08 Controller.txt",65000
+"MEL",320000,0,320000,,211,"CFO","","07 CFO.txt",120000
+"MEL",105000,0,105000,,6,"SR DR STORE PLAN& CONSTRUC","VP RE","05 Top Store Plan_Construct.txt",-215000
+"MEL",200000,0,200000,,7,"GEN COUN","","02 General Counsel.txt",95000
+"MEL",360000,50400,410400,,3563,"PRES","CEO","01 CEO.txt",210400

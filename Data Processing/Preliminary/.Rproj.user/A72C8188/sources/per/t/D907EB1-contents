@@ -1,0 +1,512 @@
+plot(gaps)
+abline(a = 0, b = 1)
+plot(gaps)
+abline(300000, 300000/7)
+abline(0, 43000)
+plot(gaps)
+abline(300000, - 300000/7)
+View(CEO)
+View(areaMan)
+gaps2 <- c(gap7, gap6, gap5, gap4, gap3, gap2, gap1)
+plot(gaps2)
+abline(a = 0, b = 300000/7)
+library(haven)
+q_nrfData <- read_dta("Desktop/18-19 Thesis/fromBefore/nrf1quick/q-nrfData.dta")
+View(q_nrfData)
+clear
+clear()
+rm(list=ls())
+#input initial value and parameters, specify a n period model for m paths
+S0=60
+r=0.05
+b=0.15
+T=0.5
+m=10000
+n=10000
+K=rep(62,m)
+deltaT=T/n
+#record the path at discrete n values as a vector S and m path’s ending price as a vector Y
+S=rep(S0,n+1)
+Y=rep(0,m)
+#record m path’s payoff function as a vector D
+D=rep(0,m)
+for(j in 1:m)
+{
+W=rnorm(n,0,1)
+for(i in 1:n)
+{
+S[i+1]=S[i]+r*S[i]*deltaT+ b*S[i]*sqrt(deltaT)*W[i]
+}
+Y[j]=S[n+1]
+D[j]=max(K[j]-Y[j],0)
+}
+#input initial value and parameters, specify a n period model for m paths
+S0=60
+r=0.05
+b=0.15
+T=0.5
+m=10000
+n=10000
+K=rep(62,m)
+deltaT=T/n
+#record the path at discrete n values as a vector S and m path’s ending price as a vector Y
+S=rep(S0,n+1)
+Y=rep(0,m)
+#record m path’s payoff function as a vector D
+D=rep(0,m)
+for(j in 1:m)
+{
+W=rnorm(n,0,1)
+for(i in 1:n)
+{
+S[i+1]=S[i]+r*S[i]*deltaT+ b*S[i]*sqrt(deltaT)*W[i]
+}
+Y[j]=S[n+1]
+D[j]=max(K[j]-Y[j],0)
+}
+p=exp(-r*T)*mean(D)
+p
+#input initial value and parameters, specify a n period model for m paths
+S0=60
+r=0.05
+b=0.15
+T=0.5
+m=10000
+n=10000
+K=rep(62,m)
+deltaT=T/n
+#record the path at discrete n values as a vector S and m path’s ending price as a vector Y
+S=rep(S0,n+1)
+Y=rep(0,m)
+#record m path’s payoff function as a vector D
+D=rep(0,m)
+for(j in 1:m)
+{
+W=rnorm(n,0,1)
+for(i in 1:n)
+{
+S[i+1]=S[i]+r*S[i]*deltaT+ b*S[i]*sqrt(deltaT)*W[i]
+}
+Y[j]=S[n+1]
+D[j]=max(K[j]-Y[j],0)
+}
+price <- c(2.791445, 2.775245, 2.788279, 2.770456, 2.750464, 2.751529, 2.821298, 2.858014, 2.759759, 2.830136)
+hist(price)
+mean(price)
+sd(price)
+t.test(price, 2.790)
+t.test(price - mean(price))
+t.test(price - 2.790)
+t.test(price)
+mean(price)
+sd(price)
+mean(price) - sd(price)
+put <-c(2.791445,2.775245,2.788279,2.770456,2.750464,2.751529,2.821298,2.858014,2.759759,2.830136)
+hist(put)
+mean(put)
+sd(put)
+t.test(put)
+t.test(put)
+BilStoreOps <- read.csv("/Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/BIL/BILStoreOps.csv", header = TRUE)
+BilStoreOps <- read.csv("/Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/BIL/BILStoreOps/BilStoreOps.csv"
+, header = TRUE)
+plot(BilStoreOps$payGap)
+GAPStoreOps <- read.csv("/Users/macbook/Desktop/18-19 Thesis/Data Processing/GAP/Superseded/GAPStoreOps.csv", header = TRUE)
+GAPStoreOps <- read.csv("/Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/GAP/Superseded/GAPStoreOps.csv", header = TRUE)
+plot(GAPStoreOps$payGap)
+GAPBuying <- read.csv("/Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/GAP/Superseded/GAPBuying.csv", header = TRUE)
+plot(GAPBuying$payGap)
+`45.Full.Time` <- read.csv("~/Desktop/18-19 Thesis/fromBefore/theData/1996/45 Full Time.txt")
+View(`45.Full.Time`)
+View(`45.Full.Time`)
+fulltime <- read.delim2("~/Desktop/18-19 Thesis/fromBefore/theData/1996/45 Full Time.txt")
+View(fulltime)
+mean(fulltime$Total)
+fulltime <- read.delim2("~/Desktop/18-19 Thesis/fromBefore/theData/1996/45 Full Time.txt", header = TRUE, na.rm = TRUE)
+fulltime <- read.delim2("~/Desktop/18-19 Thesis/fromBefore/theData/1996/45 Full Time.txt", header = TRUE)
+mean(fulltime$Total, na.rm = TRUE)
+mean(fulltime$Total)
+mean(fulltime$Total, na.rm = TRUE)
+mean(fulltime$Base, na.rm = TRUE)
+library(quadprog)
+dir("/Volumes/Hoa Duong/Lafayette/Courses/Math/347")
+library(quadprog)
+install.packages("quadprog")
+library(quadprog)
+library(quadprog)
+rp = 0.10
+Dmat = matrix(c(26/25, -41/25, 9/25, -41/25, 81/25, -19/25,
+9/25, -19/25, 6/25),3,3)
+dvec = c(0,0,0)
+Amat = matrix(c(1,1,1,0.08,0.12,0.11),3,2)
+bvec = c(1,rp)
+qp = solve.QP(Dmat, dvec, Amat, bvec, meq=2)
+rp
+sigmap = sqrt(2 * qp$value)
+sigmap
+weight = qp$solution
+weight
+library(quadprog)
+n =10000
+r = seq(-0.4, 0.6, by = (0.6 + 0.4) / n)
+sigma = rep(0, n+1)
+rf = rep(0.05, n+1)
+sharp = rep(0, n+1)
+maxsharp = 0
+weight = rep(0, 3)
+for(i in 1:n+1)
+{
+Dmat = matrix(c(26/25, -41/25, 9/25, -41/25, 81/25, -19/25,
+9/25, -19/25, 6/25),3,3)
+dvec = c(0,0,0)
+Amat = matrix(c(c(1,1,1,0.08,0.12,0.11),3,2)
+bvec = c(1, r[i])
+qp = solve.QP(Dmat, dvec, Amat, bvec, meq=2)
+sigma[i] = sqrt(2 * qp$value)
+sharp[i] = (r[i] - rf[i]) / sigma[i]
+if(sharp[i] > maxsharp)
+{
+maxsharp = sharp[i]
+weighttangent = qp$solution
+rtangent = r[i]
+sigmatangent = sigma[i]
+}
+}
+rtangent
+sigmatangent
+weighttangent
+library(quadprog)
+n =10000
+r = seq(-0.4, 0.6, by = (0.6 + 0.4) / n)
+sigma = rep(0, n+1)
+rf = rep(0.05, n+1)
+sharp = rep(0, n+1)
+maxsharp = 0
+weight = rep(0, 3)
+for(i in 1:n+1)
+{
+Dmat = matrix(c(26/25, -41/25, 9/25, -41/25, 81/25, -19/25,
+9/25, -19/25, 6/25),3,3)
+dvec = c(0,0,0)
+Amat = matrix(c(c(1,1,1,0.08,0.12,0.11),3,2)
+bvec = c(1, r[i])
+qp = solve.QP(Dmat, dvec, Amat, bvec, meq=2)
+sigma[i] = sqrt(2 * qp$value)
+sharp[i] = (r[i] - rf[i]) / sigma[i]
+if(sharp[i] > maxsharp)
+{
+maxsharp = sharp[i]
+weighttangent = qp$solution
+rtangent = r[i]
+sigmatangent = sigma[i]
+}
+}
+for(i in 1:n+1) {
+Dmat = matrix(c(26/25, -41/25, 9/25, -41/25, 81/25, -19/25,
+9/25, -19/25, 6/25),3,3)
+dvec = c(0,0,0)
+Amat = matrix(c(c(1,1,1,0.08,0.12,0.11),3,2)
+bvec = c(1, r[i])
+qp = solve.QP(Dmat, dvec, Amat, bvec, meq=2)
+sigma[i] = sqrt(2 * qp$value)
+sharp[i] = (r[i] - rf[i]) / sigma[i]
+if(sharp[i] > maxsharp) {
+maxsharp = sharp[i]
+weighttangent = qp$solution
+rtangent = r[i]
+sigmatangent = sigma[i]
+}
+}
+for(i in 1:n+1) {
+Dmat = matrix(c(26/25, -41/25, 9/25, -41/25, 81/25, -19/25,
+9/25, -19/25, 6/25),3,3)
+dvec = c(0,0,0)
+Amat = matrix(c(1,1,1,0.08,0.12,0.11),3,2)
+bvec = c(1, r[i])
+qp = solve.QP(Dmat, dvec, Amat, bvec, meq=2)
+sigma[i] = sqrt(2 * qp$value)
+sharp[i] = (r[i] - rf[i]) / sigma[i]
+if(sharp[i] > maxsharp) {
+maxsharp = sharp[i]
+weighttangent = qp$solution
+rtangent = r[i]
+sigmatangent = sigma[i]
+}
+}
+rtangent
+sigmatangent
+weighttangent
+rp = 0.20
+rf1 = 0.05
+rfweight = (rp - rtangent) / (rf1 - rtangent)
+weight = (1 - rfweight) * weighttangent
+sigmap = (1 - rfweight) * sigmatangent
+weight
+rp
+sigmap
+library(quadprog)
+n =10000
+r = seq(-0.4, 0.6, by = (0.6 + 0.4) / n)
+sigma = rep(0, n+1)
+rf = rep(0.105778, n+1)
+sharp = rep(0, n+1)
+maxsharp = 0
+weight = rep(0, 3)
+for(i in 1:n+1) {
+Dmat = matrix(c(26/25, -41/25, 9/25, -41/25, 81/25, -19/25,
+9/25, -19/25, 6/25),3,3)
+dvec = c(0,0,0)
+Amat = matrix(c(1,1,1,0.08,0.12,0.11),3,2)
+bvec = c(1, r[i])
+qp = solve.QP(Dmat, dvec, Amat, bvec, meq=2)
+sigma[i] = sqrt(2 * qp$value)
+sharp[i] = (r[i] - rf[i]) / sigma[i]
+if(sharp[i] > maxsharp) {
+maxsharp = sharp[i]
+weighttangent = qp$solution
+rtangent = r[i]
+sigmatangent = sigma[i]
+}
+}
+rtangent
+sigmatangent
+weighttangent
+rp = 0.20
+rf1 = 0.105778
+rfweight = (rp - rtangent) / (rf1 - rtangent)
+weight = (1 - rfweight) * weighttangent
+sigmap = (1 - rfweight) * sigmatangent
+weight
+rp
+sigmap
+library(quadprog)
+n =10000
+r = seq(-0.4, 0.6, by = (0.6 + 0.4) / n)
+sigma = rep(0, n+1)
+rf = rep(0.15, n+1)
+sharp = rep(0, n+1)
+maxsharp = 0
+weight = rep(0, 3)
+for(i in 1:n+1) {
+Dmat = matrix(c(26/25, -41/25, 9/25, -41/25, 81/25, -19/25,
+9/25, -19/25, 6/25),3,3)
+dvec = c(0,0,0)
+Amat = matrix(c(1,1,1,0.08,0.12,0.11),3,2)
+bvec = c(1, r[i])
+qp = solve.QP(Dmat, dvec, Amat, bvec, meq=2)
+sigma[i] = sqrt(2 * qp$value)
+sharp[i] = (r[i] - rf[i]) / sigma[i]
+if(sharp[i] > maxsharp) {
+maxsharp = sharp[i]
+weighttangent = qp$solution
+rtangent = r[i]
+sigmatangent = sigma[i]
+}
+}
+rtangent
+sigmatangent
+weighttangent
+library(quadprog)
+n =10000
+r = seq(-0.4, 0.6, by = (0.6 + 0.4) / n)
+sigma = rep(0, n+1)
+rf = rep(0.105778, n+1)
+sharp = rep(0, n+1)
+maxsharp = 0
+weight = rep(0, 3)
+for(i in 1:n+1) {
+Dmat = matrix(c(26/25, -41/25, 9/25, -41/25, 81/25, -19/25,
+9/25, -19/25, 6/25),3,3)
+dvec = c(0,0,0)
+Amat = matrix(c(1,1,1,0.08,0.12,0.11),3,2)
+bvec = c(1, r[i])
+qp = solve.QP(Dmat, dvec, Amat, bvec, meq=2)
+sigma[i] = sqrt(2 * qp$value)
+sharp[i] = (r[i] - rf[i]) / sigma[i]
+if(sharp[i] > maxsharp) {
+maxsharp = sharp[i]
+weighttangent = qp$solution
+rtangent = r[i]
+sigmatangent = sigma[i]
+}
+}
+rtangent
+sigmatangent
+weighttangent
+#Find optimal portfolio weight
+rp = 0.20
+rf1 = 0.105778
+rfweight = (rp - rtangent) / (rf1 - rtangent)
+weight = (1 - rfweight) * weighttangent
+sigmap = (1 - rfweight) * sigmatangent
+weight
+rp
+sigmap
+library(quadprog)
+n =10000
+r = seq(-0.4, 0.6, by = (0.6 + 0.4) / n)
+sigma = rep(0, n+1)
+rf = rep(0.15, n+1)
+sharp = rep(0, n+1)
+maxsharp = 0
+weight = rep(0, 3)
+for(i in 1:n+1) {
+Dmat = matrix(c(26/25, -41/25, 9/25, -41/25, 81/25, -19/25,
+9/25, -19/25, 6/25),3,3)
+dvec = c(0,0,0)
+Amat = matrix(c(1,1,1,0.08,0.12,0.11),3,2)
+bvec = c(1, r[i])
+qp = solve.QP(Dmat, dvec, Amat, bvec, meq=2)
+sigma[i] = sqrt(2 * qp$value)
+sharp[i] = (r[i] - rf[i]) / sigma[i]
+if(sharp[i] > maxsharp) {
+maxsharp = sharp[i]
+weighttangent = qp$solution
+rtangent = r[i]
+sigmatangent = sigma[i]
+}
+}
+rtangent
+sigmatangent
+weighttangent
+#Find optimal portfolio weight
+rp = 0.20
+rf1 = 0.15
+rfweight = (rp - rtangent) / (rf1 - rtangent)
+weight = (1 - rfweight) * weighttangent
+sigmap = (1 - rfweight) * sigmatangent
+weight
+rp
+sigmap
+library(quadprog)
+rp = 0.10
+Dmat = matrix(c(26/25, -41/25, -41/25, 81/25, 2, 2)
+dvec = c(0,0,0)
+Amat  = matrix(c(1,1,0.08, 0.12, 1, 0, 0, 1), 2, 4)
+bvec = c(1,rp,0,0)
+qp = solve.QP(Dmat, dvec, Amat, bvec, meq=2)
+rp
+sigmap = sqrt(2 * qp$value)
+sigmap
+weight=qp$solution
+weight
+library(quadprog)
+rp = 0.10
+Dmat = matrix(c(26/25, -41/25, -41/25, 81/25, 2, 2)
+dvec = c(0,0)
+Amat  = matrix(c(1,1,0.08, 0.12, 1, 0, 0, 1), 2, 4)
+bvec = c(1,rp,0,0)
+qp = solve.QP(Dmat, dvec, Amat, bvec, meq=2)
+rp
+sigmap = sqrt(2 * qp$value)
+sigmap
+weight=qp$solution
+weight
+library(quadprog)
+n =10000
+r = seq(-0.4, 0.6, by = (0.6 + 0.4) / n)
+sigma = rep(0, n+1)
+rf = rep(0.05, n+1)
+sharp = rep(0, n+1)
+maxsharp = 0
+weight = rep(0, 3)
+for(i in 1:n+1) {
+Dmat = matrix(c(26/25, -41/25, 9/25, -41/25, 81/25, -19/25,
+9/25, -19/25, 6/25),3,3)
+dvec = c(0,0,0)
+Amat = matrix(c(1,1,1,0.08,0.12,0.11),3,2)
+bvec = c(1, r[i])
+qp = solve.QP(Dmat, dvec, Amat, bvec, meq=2)
+sigma[i] = sqrt(2 * qp$value)
+sharp[i] = (r[i] - rf[i]) / sigma[i]
+if(sharp[i] > maxsharp) {
+maxsharp = sharp[i]
+weighttangent = qp$solution
+rtangent = r[i]
+sigmatangent = sigma[i]
+}
+}
+rtangent
+sigmatangent
+weighttangent
+#Find optimal portfolio weight
+rp = 0.20
+rf1 = 0.05
+rfweight = (rp - rtangent) / (rf1 - rtangent)
+weight = (1 - rfweight) * weighttangent
+sigmap = (1 - rfweight) * sigmatangent
+weight
+rp
+sigmap
+library(quadprog)
+n =10000
+r = seq(-0.4, 0.6, by = (0.6 + 0.4) / n)
+sigma = rep(0, n+1)
+rf = rep(0.105778, n+1)
+sharp = rep(0, n+1)
+maxsharp = 0
+weight = rep(0, 3)
+for(i in 1:n+1) {
+Dmat = matrix(c(26/25, -41/25, 9/25, -41/25, 81/25, -19/25,
+9/25, -19/25, 6/25),3,3)
+dvec = c(0,0,0)
+Amat = matrix(c(1,1,1,0.08,0.12,0.11),3,2)
+bvec = c(1, r[i])
+qp = solve.QP(Dmat, dvec, Amat, bvec, meq=2)
+sigma[i] = sqrt(2 * qp$value)
+sharp[i] = (r[i] - rf[i]) / sigma[i]
+if(sharp[i] > maxsharp) {
+maxsharp = sharp[i]
+weighttangent = qp$solution
+rtangent = r[i]
+sigmatangent = sigma[i]
+}
+}
+rtangent
+sigmatangent
+weighttangent
+#Find optimal portfolio weight
+rp = 0.20
+rf1 = 0.105778
+rfweight = (rp - rtangent) / (rf1 - rtangent)
+weight = (1 - rfweight) * weighttangent
+sigmap = (1 - rfweight) * sigmatangent
+weight
+rp
+sigmap
+library(quadprog)
+n =10000
+r = seq(-0.4, 0.6, by = (0.6 + 0.4) / n)
+sigma = rep(0, n+1)
+rf = rep(0.15, n+1)
+sharp = rep(0, n+1)
+maxsharp = 0
+weight = rep(0, 3)
+for(i in 1:n+1) {
+Dmat = matrix(c(26/25, -41/25, 9/25, -41/25, 81/25, -19/25,
+9/25, -19/25, 6/25),3,3)
+dvec = c(0,0,0)
+Amat = matrix(c(1,1,1,0.08,0.12,0.11),3,2)
+bvec = c(1, r[i])
+qp = solve.QP(Dmat, dvec, Amat, bvec, meq=2)
+sigma[i] = sqrt(2 * qp$value)
+sharp[i] = (r[i] - rf[i]) / sigma[i]
+if(sharp[i] > maxsharp) {
+maxsharp = sharp[i]
+weighttangent = qp$solution
+rtangent = r[i]
+sigmatangent = sigma[i]
+}
+}
+rtangent
+sigmatangent
+weighttangent
+#Find optimal portfolio weight
+rp = 0.20
+rf1 = 0.15
+rfweight = (rp - rtangent) / (rf1 - rtangent)
+weight = (1 - rfweight) * weighttangent
+sigmap = (1 - rfweight) * sigmatangent
+weight
+rp
+sigmap

@@ -1,0 +1,29 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"MIL",6,0,6,5,,"","","46 Part Time.txt",
+"MIL",7.7,0,7.7,5,,"","","45 Full Time.txt",1.7
+"MIL",21340,,21340,17160,,"","","43 Assistant Store Manager.txt",21332.3
+"MIL",31300,,31300,,15,"","","42 Store Manager.txt",9960
+"MIL",54300,2900,57200,,,"D SALES M","","40 District Manager.txt",25900
+"MIL",101500,50750,152250,,,"R SALES MGR","","39 Regional Manager.txt",95050
+"MIL",180000,80000,260000,,2083,"VP STORES","PRES","37 Top Store Operations.txt",107750
+"MIL",150800,75400,226200,,110,"DVP  PHYSICAL DISTRIB","SR VP/CFO","34 Top DC _ Logistics.txt",-33800
+"MIL",50200,,50200,43700,,"AREA LP MGR","","33 Regional Loss Prevention.txt",-176000
+"MIL",78000,38000,116000,,10,"DR LP","SR VP HR/LP","32 Top Loss Prevention.txt",65800
+"MIL",59000,,59000,,3,"","","31 Comp_Benefits Mgr.txt",-57000
+"MIL",220000,107500,327500,,22,"SR VP/HR-LP","PRES","30 Top Human Resources.txt",268500
+"MIL",41100,,41100,,5,"SUPPORT CENTER MGR","CONTR","29 Point Of Sale Admin.txt",-286400
+"MIL",96000,48000,144000,,10,"DR/TECH SER","","28 Computer Operations.txt",102900
+"MIL",90000,43500,133500,,16,"DR SYSTEMS & PROGRAM","","27 Systems Programming.txt",-10500
+"MIL",57000,,57000,,2,"MGR/ VIS PRES","SR VP STORES","24 Top Visual.txt",-76500
+"MIL",74025,2750,76775,,,"PRODUC MGR","","21 Product Coordinator.txt",19775
+"MIL",33089,,33089,,,"DISTRIB","","19 Distributor.txt",-43686
+"MIL",47000,0,47000,,,"DISTRIB MGR","","18 Planner.txt",13911
+"MIL",148000,72500,220500,,23,"VP PLANN/DISTRIB","PRES","16 Top Planner.txt",173500
+"MIL",41580,,41580,,,"ASSOC B","","15 Assistant Buyer.txt",-178920
+"MIL",69400,3125,71863,,,"","","14 Buyer.txt",30283
+"MIL",165000,80000,245000,,15," MERCH MGR","","12 Div Merchandise Mgr.txt",173137
+"MIL",98000,47000,145000,,35,"CONTR","","08 Controller.txt",-100000
+"MIL",265000,130000,395000,,67,"SR VP FINANACE CFO","","07 CFO.txt",250000
+"MIL",,,,,,"DR FACILITIES","VP RE","05 Top Store Plan_Construct.txt",
+"MIL",190000,92500,282500,,6,"VP, RE","PRES","03 Top Real Estate.txt",
+"MIL",750000,0,750000,,3500,"PRES","PARENT CO","01 CEO.txt",467500

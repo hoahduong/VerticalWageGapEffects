@@ -1,0 +1,2704 @@
+------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/macbook/Desktop/18-19 Thesis/Data Processing/1998/01 DescribeData/desc
+> ribeData.log
+  log type:  text
+ opened on:  22 Mar 2019, 18:58:32
+
+. 
+. version 15
+
+. 
+. local pathName "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1998/"
+
+. 
+. local fileList "01 ceo" ///
+>                 "02 head of legal" ///
+>                 "03 head of real estate" ///
+>                 "04 regional real estate" ///
+>                 "05 head of store plan const" ///
+>                 "06 field regional const mgr" ///
+>                 "07 cfo" ///
+>                 "08 controller" ///
+>                 "09 treasurer" ///
+>                 "10 top internal auditor" ///
+>                 "11 head of merchandising" ///
+>                 "12 div merchandise mgr" ///
+>                 "13 sr merch buyer" ///
+>                 "14 merch buyer" ///
+>                 "15 assistant _ assoiciate" ///
+>                 "16 head of merch plan alloc" ///
+>                 "17 sr merch plan controll" ///
+>                 "18 merch planner controller" ///
+>                 "19 merch distrib" ///
+>                 "20 head of import prod" ///
+>                 "21 production coor" ///
+>                 "22 head of mktg advtg sales" ///
+>                 "23 art department head" ///
+>                 "24 head of visual" ///
+>                 "25 reg visual merch" ///
+>                 "26 head info sys data proc" ///
+>                 "27 head systems programming" ///
+>                 "28 head computer operations" ///
+>                 "29 point sale admin" ///
+>                 "30 head of human resource" ///
+>                 "31 compensation benefit mgr" ///
+>                 "32 head of loss prevention" ///
+>                 "33 regional loss prevention" ///
+>                 "34 head phys distrib log" ///
+>                 "35 distribution center mgr" ///
+>                 "36 domestic traffic manager" ///
+>                 "37 head of stores" ///
+>                 "38 zone manager" ///
+>                 "39 regional manager" ///
+>                 "40a  district manager" ///
+>                 "40b district manager" ///
+>                 "41 area sales _ sr manager" ///
+>                 "42a store manager" ///
+>                 "42b store manager" ///
+>                 "43a assistant manager" ///
+>                 "43b assistant manager" ///
+>                 "44a third key" ///
+>                 "44b third key" ///
+>                 "45 full time" ///
+>                 "46 part time" 
+
+.                 
+. drop _all
+
+. 
+. 
+. // See which files need to have variables renamed and/or separated 
+. foreach fileName in "`fileList'" {
+  2.         
+.         import delimited using "`pathName'`fileName'.txt",  clear // names
+  3.         di "This is `fileName'"
+  4.         describe 
+  5. }
+(9 vars, 44 obs)
+This is 01 ceo
+
+Contains data
+  obs:            44                          
+ vars:             9                          
+ size:         1,188                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+match           str1    %9s                   Match
+reports         long    %12.0g                .Reports
+base            long    %12.0g                Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           long    %12.0g                Bonus
+total           long    %12.0g                Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(10 vars, 26 obs)
+This is 02 head of legal
+
+Contains data
+  obs:            26                          
+ vars:            10                          
+ size:         1,352                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+reports         int     %8.0g                 .Reports
+rptscode        str3    %9s                   .RPTSCODE
+match           str1    %9s                   Match
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str12   %12s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(12 vars, 32 obs)
+This is 03 head of real estate
+
+Contains data
+  obs:            32                          
+ vars:            12                          
+ size:         3,520                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+title           str25   %25s                  Title
+posrept         str32   %32s                  PosRept
+reports         int     %8.0g                 .Reports
+rptscode        str4    %9s                   .rptsCode
+match           str1    %9s                   Match
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str12   %12s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(9 vars, 21 obs)
+This is 04 regional real estate
+
+Contains data
+  obs:            21                          
+ vars:             9                          
+ size:         1,491                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+title           str25   %25s                  Title
+assoc           byte    %8.0g                 .Assoc
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str11   %11s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(40 vars, 44 obs)
+This is 05 head of store plan const
+
+Contains data
+  obs:            44                          
+ vars:            40                          
+ size:        15,620                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 Co Code
+title           str35   %35s                  Title
+pdc             float   %9.0g                 PDC%
+pdccap          str2    %9s                   PDCcap
+pdcbase         str12   %12s                  PDCBase
+pdcbonus        str11   %11s                  PDCBonus
+pdctotal        str12   %12s                  PDCTotal
+pdcrpts         int     %8.0g                 PDC.rpts
+pdcrptscode     str3    %9s                   PDC.rptsCode
+pdcreportto     str25   %25s                  PDCReportTo
+pd              float   %9.0g                 P&D%
+pdcap           str2    %9s                   P&Dcap
+pdbase          str12   %12s                  P&DBase
+pdbonus         str11   %11s                  P&DBonus
+pdtotal         str12   %12s                  P&DTotal
+pdrpts          byte    %8.0g                 P&Drpts
+pdreportto      str22   %22s                  P&DReportTo
+const           float   %9.0g                 Const%
+constcap        str2    %9s                   Constcap
+constbase       str12   %12s                  ConstBase
+constbonus      str11   %11s                  ConstBonus
+consttotal      str12   %12s                  ConstTotal
+constrpts       byte    %8.0g                 Constrpts
+constrptscode   str3    %9s                   Const.rptsCode
+constreportto   str25   %25s                  ConstReportTo
+dsgn            byte    %8.0g                 Dsgn%
+dsgncap         str2    %9s                   Dsgncap
+dsgnbase        str11   %11s                  DsgnBase
+dsgnbonus       str10   %10s                  DsgnBonus
+dsgntotal       str11   %11s                  DsgnTotal
+dsgnrpts        byte    %8.0g                 DsgnRpts
+dsgnreportto    str25   %25s                  DsgnReportTo
+fix             byte    %8.0g                 Fix%
+fixcap          str2    %9s                   Fixcap
+fixbase         str11   %11s                  FixBase
+fixbonus        str10   %10s                  FixBonus
+fixtotal        str11   %11s                  FixTotal
+fixrpts         byte    %8.0g                 FixRpts
+fixreportto     str14   %14s                  FixReportTo
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(9 vars, 23 obs)
+This is 06 field regional const mgr
+
+Contains data
+  obs:            23                          
+ vars:             9                          
+ size:         1,633                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+title           str25   %25s                  Title
+assoc           byte    %8.0g                 .Assoc
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str11   %11s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(10 vars, 43 obs)
+This is 07 cfo
+
+Contains data
+  obs:            43                          
+ vars:            10                          
+ size:         2,408                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+match           str1    %9s                   Match
+reports         int     %8.0g                 .Reports
+rptscode        str7    %9s                   .rptsCode
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str12   %12s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(9 vars, 44 obs)
+This is 08 controller
+
+Contains data
+  obs:            44                          
+ vars:             9                          
+ size:         2,288                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+reports         int     %8.0g                 .Reports
+rptscode        str4    %9s                   .rptsCode
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str12   %12s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(9 vars, 18 obs)
+This is 09 treasurer
+
+Contains data
+  obs:            18                          
+ vars:             9                          
+ size:           900                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 Co Code
+reports         byte    %8.0g                 .Reports
+rptscode        str4    %9s                   .rptsCode
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str11   %11s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(9 vars, 14 obs)
+This is 10 top internal auditor
+
+Contains data
+  obs:            14                          
+ vars:             9                          
+ size:           686                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+reports         byte    %8.0g                 .Reports
+rptscode        str3    %9s                   .rptsCode
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str11   %11s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(11 vars, 38 obs)
+This is 11 head of merchandising
+
+Contains data
+  obs:            38                          
+ vars:            11                          
+ size:         2,052                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+title           str24   %24s                  Title
+match           str1    %9s                   Match
+reports         int     %8.0g                 .Reports
+rptscode        str5    %9s                   .rptsCode
+base            long    %12.0g                Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           long    %12.0g                Bonus
+total           long    %12.0g                Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(11 vars, 46 obs)
+This is 12 div merchandise mgr
+
+Contains data
+  obs:            46                          
+ vars:            11                          
+ size:         3,220                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+title           str20   %20s                  Title
+assoc           byte    %8.0g                 .Assoc
+reports         byte    %8.0g                 .Reports
+rptscode        str3    %9s                   .RptsCode
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str11   %11s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(11 vars, 28 obs)
+This is 13 sr merch buyer
+
+Contains data
+  obs:            28                          
+ vars:            11                          
+ size:         2,408                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+title           str21   %21s                  Title
+assoc           byte    %8.0g                 .Assoc
+volume          str16   %16s                  Volume
+volbotcode      str6    %9s                   VolBotCode
+base            str12   %12s                  Base
+bns             byte    %8.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str11   %11s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(11 vars, 56 obs)
+This is 14 merch buyer
+
+Contains data
+  obs:            56                          
+ vars:            11                          
+ size:         3,864                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+jobmatch        str1    %9s                   JobMatch
+assoc           byte    %8.0g                 .Assoc
+volume          str16   %16s                  Volume
+volcode         str6    %9s                   VolCode
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str11   %11s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(19 vars, 50 obs)
+This is 15 assistant _ assoiciate
+
+Contains data
+  obs:            50                          
+ vars:            19                          
+ size:         9,950                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+assocbns        float   %9.0g                 AssocBns%
+assoccap        str2    %9s                   AssocCap
+assocbase       str11   %11s                  AssocBase
+assocbonus      str10   %10s                  AssocBonus
+assoctotal      str11   %11s                  AssocTotal
+assoc           byte    %8.0g                 .Assoc
+assocvol        str18   %18s                  AssocVol
+assocvolcode    str7    %9s                   ASSOCVOLCODE
+assistbns       float   %9.0g                 AssistBns%
+assistcap       str2    %9s                   AssistCap
+assistbase      str11   %11s                  AssistBase
+assistbonus     str10   %10s                  AssistBonus
+assisttotal     str11   %11s                  AssistTotal
+assist          byte    %8.0g                 .Assist
+assistvol       str18   %18s                  AssistVol
+assistvolcode   str6    %9s                   ASSISTVOLCODE
+describediffe~e str68   %68s                  DescribeDifference
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(12 vars, 47 obs)
+This is 16 head of merch plan alloc
+
+Contains data
+  obs:            47                          
+ vars:            12                          
+ size:         3,196                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+level           str6    %9s                   Level
+match           str1    %9s                   Match
+reportto        str32   %32s                  ReportTo:
+reports         int     %8.0g                 .Reports
+rptscode        str5    %9s                   .RptsCode
+base            long    %12.0g                Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           long    %12.0g                Bonus
+total           long    %12.0g                Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(12 vars, 27 obs)
+This is 17 sr merch plan controll
+
+Contains data
+  obs:            27                          
+ vars:            12                          
+ size:         2,403                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+title           str35   %35s                  Title
+match           str1    %9s                   Match
+assoc           byte    %8.0g                 .Assoc
+reports         float   %9.0g                 .Reports
+rptscode        str3    %9s                   .RptsCode
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str11   %11s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(10 vars, 46 obs)
+This is 18 merch planner controller
+
+Contains data
+  obs:            46                          
+ vars:            10                          
+ size:         3,864                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+title           str40   %40s                  Title
+match           str1    %9s                   Match
+assoc           byte    %8.0g                 .Assoc
+base            str11   %11s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str10   %10s                  Bonus
+total           str11   %11s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(9 vars, 48 obs)
+This is 19 merch distrib
+
+Contains data
+  obs:            48                          
+ vars:             9                          
+ size:         4,176                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+title           str46   %46s                  Title
+assoc           byte    %8.0g                 .Assoc
+base            str11   %11s                  Base
+bonus           str10   %10s                  Bonus
+nocap           str3    %9s                   No Cap
+total           str11   %11s                  Total
+exnon           str1    %9s                   Ex/Non
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(12 vars, 15 obs)
+This is 20 head of import prod
+
+Contains data
+  obs:            15                          
+ vars:            12                          
+ size:         1,185                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+title           str25   %25s                  Title
+ob              str1    %9s                   O/B
+as              str1    %9s                   A/S
+reports         int     %8.0g                 .Reports
+rptscode        str4    %9s                   .rptsCode
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str12   %12s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(21 vars, 9 obs)
+This is 21 production coor
+
+Contains data
+  obs:             9                          
+ vars:            21                          
+ size:           801                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+title           str31   %31s                  Title
+nafassoc        byte    %8.0g                 NAFAssoc
+nafbns          byte    %8.0g                 NAFBns%
+nafcap          byte    %8.0g                 NAFCap
+nafbase         byte    %8.0g                 NAFBase
+nafbonus        byte    %8.0g                 NAFBonus
+naftotal        byte    %8.0g                 NAFTotal
+osassoc         byte    %8.0g                 O/SAssoc
+osbns           byte    %8.0g                 O/SBns%
+oscap           byte    %8.0g                 O/SCap
+osbase          byte    %8.0g                 O/SBase
+osbonus         byte    %8.0g                 O/SBonus
+ostotal         byte    %8.0g                 O/STotal
+odassoc         byte    %8.0g                 O&DAssoc
+odbns           float   %9.0g                 O&DBns%
+odcap           str2    %9s                   O&DCap
+odbase          str12   %12s                  O&DBase
+odbonus         str11   %11s                  O&DBonus
+odtotal         str12   %12s                  O&DTotal
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(41 vars, 46 obs)
+This is 22 head of mktg advtg sales
+
+Contains data
+  obs:            46                          
+ vars:            41                          
+ size:        12,328                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+masp            float   %9.0g                 MA&SP%
+maspcap         str2    %9s                   MA&SPcap
+maspbase        str12   %12s                  MA&SPBase
+maspbonus       str12   %12s                  MA&SPBonus
+masptotal       str12   %12s                  MA&SPTotal
+masprpts        byte    %8.0g                 MA&SPRpts
+rptscode        str4    %9s                   .RptsCode
+masptitle       str25   %25s                  MA&SPTitle
+mrkt            float   %9.0g                 Mrkt%
+mrktcap         byte    %8.0g                 Mrktcap
+mrktbase        str12   %12s                  MrktBase
+mrktbonus       str11   %11s                  MrktBonus
+mrkttotal       str12   %12s                  MrktTotal
+mrktrpts        byte    %8.0g                 MrktRpts
+mrkttitle       str23   %23s                  MrktTitle
+mrkttitlecode   str3    %9s                   MRKTTITLECODE
+adv             byte    %8.0g                 Adv%
+advcap          str2    %9s                   Advcap
+advbase         str12   %12s                  AdvBase
+advbonus        str12   %12s                  AdvBonus
+advtotal        str12   %12s                  AdvTotal
+advrpts         byte    %8.0g                 AdvRpts
+advtitle        str8    %9s                   AdvTitle
+advtitlecode    str3    %9s                   ADVTITLECODE
+adsp            float   %9.0g                 Ad&SP%
+adspcap         str2    %9s                   Ad&SPcap
+adspbase        str12   %12s                  Ad&SPBase
+adspbonus       str11   %11s                  Ad&SPBonus
+adsptotal       str12   %12s                  Ad&SPTotal
+adsprpts        byte    %8.0g                 Ad&SPRpts
+adsptitle       str22   %22s                  Ad&SPTitle
+adsptitlecode   str3    %9s                   AD&SPTITLECODE
+asv             byte    %8.0g                 AS&V%
+asvcap          byte    %8.0g                 AS&Vcap
+asvbase         byte    %8.0g                 AS&VBase
+asvbonus        byte    %8.0g                 AS&VBonus
+asvtotal        byte    %8.0g                 AS&VTotal
+asvrpts         byte    %8.0g                 AS&VRpts
+asvtitle        byte    %8.0g                 AS&VTitle
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(11 vars, 24 obs)
+This is 23 art department head
+
+Contains data
+  obs:            24                          
+ vars:            11                          
+ size:         2,760                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+title           str33   %33s                  Title
+reportsto       str33   %33s                  ReportsTo:
+rpts            byte    %8.0g                 .Rpts
+rptscode        str3    %9s                   .RptsCode
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str11   %11s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(10 vars, 46 obs)
+This is 24 head of visual
+
+Contains data
+  obs:            46                          
+ vars:            10                          
+ size:         2,668                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+title           str30   %30s                  Title
+rpts            byte    %8.0g                 .Rpts
+rptscode        str5    %9s                   .RptsCode
+base            long    %12.0g                Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           long    %12.0g                Bonus
+total           long    %12.0g                Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(7 vars, 17 obs)
+This is 25 reg visual merch
+
+Contains data
+  obs:            17                          
+ vars:             7                          
+ size:           680                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+assoc           byte    %8.0g                 .Assoc
+base            str11   %11s                  Base
+bonus           str10   %10s                  Bonus
+nocap           str3    %9s                   No Cap
+total           str11   %11s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(10 vars, 40 obs)
+This is 26 head info sys data proc
+
+Contains data
+  obs:            40                          
+ vars:            10                          
+ size:         2,240                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+level           str3    %9s                   Level
+rpts            int     %8.0g                 .Rpts
+rptscode        str5    %9s                   .RptsCode
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str12   %12s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(10 vars, 38 obs)
+This is 27 head systems programming
+
+Contains data
+  obs:            38                          
+ vars:            10                          
+ size:         3,040                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+title           str30   %30s                  Title
+rpts            byte    %8.0g                 .Rpts
+rptscode        str4    %9s                   .RptsCode
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str11   %11s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(10 vars, 36 obs)
+This is 28 head computer operations
+
+Contains data
+  obs:            36                          
+ vars:            10                          
+ size:         2,988                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+title           str32   %32s                  Title
+rpts            int     %8.0g                 .Rpts
+rptscode        str4    %9s                   .RptsCode
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str11   %11s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(9 vars, 26 obs)
+This is 29 point sale admin
+
+Contains data
+  obs:            26                          
+ vars:             9                          
+ size:         1,092                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+rpts            byte    %8.0g                 .Rpts
+rptscode        str3    %9s                   .RptsCode
+base            str12   %12s                  Base
+bonus           float   %9.0g                 Bonus%
+cap             str2    %9s                   Cap?
+v8              float   %9.0g                 Bonus$
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(12 vars, 46 obs)
+This is 30 head of human resource
+
+Contains data
+  obs:            46                          
+ vars:            12                          
+ size:         2,668                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+level           str3    %9s                   Level
+reportsto       str25   %25s                  ReportsTo
+rpts            int     %8.0g                 .Rpts
+rptscode        str5    %9s                   .RptsCode
+match           str1    %9s                   Match
+base            long    %12.0g                Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           long    %12.0g                Bonus
+total           long    %12.0g                Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(23 vars, 40 obs)
+This is 31 compensation benefit mgr
+
+Contains data
+  obs:            40                          
+ vars:            23                          
+ size:         5,440                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+cbbns           float   %9.0g                 C&BBns%
+cbcap           str2    %9s                   C&BCap
+cbbase          str12   %12s                  C&BBase
+cbbonus         str11   %11s                  C&BBonus
+cbtotal         str12   %12s                  C&BTotal
+cbrpts          byte    %8.0g                 C&B.Rpts
+cbrptscode      str3    %9s                   C&B.RptsCode
+benbns          float   %9.0g                 BenBns%
+bencap          str2    %9s                   BenCap
+benbase         str12   %12s                  BenBase
+benbonus        str11   %11s                  BenBonus
+bentotal        str12   %12s                  BenTotal
+benrpts         byte    %8.0g                 Ben.Rpts
+benrptscode     str3    %9s                   Ben.RptsCode
+compbns         byte    %8.0g                 CompBns%
+compcap         str2    %9s                   CompCap
+compbase        str12   %12s                  CompBase
+compbonus       str11   %11s                  CompBonus
+comptotal       str12   %12s                  CompTotal
+comprpts        byte    %8.0g                 Comp.Rpts
+comprptscode    str3    %9s                   Comp.RptsCode
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(14 vars, 44 obs)
+This is 32 head of loss prevention
+
+Contains data
+  obs:            44                          
+ vars:            14                          
+ size:         6,380                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+level           str3    %9s                   Level
+reportsto       str35   %35s                  ReportsTo
+rpts            int     %8.0g                 .Rpts
+rptscode        str3    %9s                   .RptsCode
+shrink          float   %9.0g                 Shrink
+shrinkcode      str3    %9s                   ShrinkCode
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str11   %11s                  Bonus
+total           str12   %12s                  Total
+comments        str50   %50s                  Comments
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(8 vars, 34 obs)
+This is 33 regional loss prevention
+
+Contains data
+  obs:            34                          
+ vars:             8                          
+ size:         1,462                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+assoc           byte    %8.0g                 .Assoc
+base            str11   %11s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str10   %10s                  Bonus
+total           str11   %11s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(16 vars, 40 obs)
+This is 34 head phys distrib log
+
+Contains data
+  obs:            40                          
+ vars:            16                          
+ size:         4,000                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+level           str3    %9s                   Level
+matcha          byte    %8.0g                 MatchA
+dcscode         str2    %9s                   .DCsCode
+matchb          str1    %9s                   MatchB
+matchc          str1    %9s                   MatchC
+matchd          str1    %9s                   MatchD
+reportsto       str36   %36s                  ReportsTo
+rpts            int     %8.0g                 .Rpts
+rptscode        str7    %9s                   .RptsCode
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str12   %12s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(10 vars, 29 obs)
+This is 35 distribution center mgr
+
+Contains data
+  obs:            29                          
+ vars:            10                          
+ size:         1,595                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+assoc           byte    %8.0g                 .Assoc
+rpts            float   %9.0g                 .Rpts
+rptscode        str5    %9s                   .RptsCode
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str11   %11s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(12 vars, 28 obs)
+This is 36 domestic traffic manager
+
+Contains data
+  obs:            28                          
+ vars:            12                          
+ size:         1,540                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+level           str3    %9s                   Level
+assoc           byte    %8.0g                 .Assoc
+match           str1    %9s                   Match
+rpts            int     %8.0g                 .Rpts
+rptscode        str3    %9s                   .RptsCode
+base            str12   %12s                  Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str11   %11s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(12 vars, 44 obs)
+This is 37 head of stores
+
+Contains data
+  obs:            44                          
+ vars:            12                          
+ size:         3,300                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+level           str5    %9s                   Level
+match           str1    %9s                   Match
+reportsto       str33   %33s                  ReportsTo
+rpts            long    %12.0g                .Rpts
+rptscode        str10   %10s                  .RptsCode
+base            long    %12.0g                Base
+bns             float   %9.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           long    %12.0g                Bonus
+total           long    %12.0g                Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(9 vars, 9 obs)
+This is 38 zone manager
+
+Contains data
+  obs:             9                          
+ vars:             9                          
+ size:           432                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 Cocode
+level           str3    %9s                   Level
+assoc           byte    %8.0g                 .Assoc
+base            str12   %12s                  Base
+bns             int     %8.0g                 Bns%
+cap             str2    %9s                   Cap
+bonus           str12   %12s                  Bonus
+total           str12   %12s                  Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(53 vars, 53 obs)
+This is 39 regional manager
+
+Contains data
+  obs:            53                          
+ vars:            53                          
+ size:        18,073                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+car             str2    %9s                   Car
+allassoc        byte    %8.0g                 ALLAssoc
+allbons         int     %8.0g                 ALLBons%
+allbns          str11   %11s                  ALLBns$
+allcap          str2    %9s                   ALLCap
+allbase         str12   %12s                  ALLBase
+allbonus        str11   %11s                  ALLBonus
+alltotal        str12   %12s                  ALLTotal
+storessupervi~d float   %9.0g                 StoresSupervised
+v12             byte    %8.0g                 0-25Assoc
+v13             byte    %8.0g                 0-25Bns%
+v14             byte    %8.0g                 0-25Bns$
+v15             str2    %9s                   0-25Cap
+v16             str12   %12s                  0-25Base
+v17             str11   %11s                  0-25Bonus
+v18             str12   %12s                  0-25Total
+v19             byte    %8.0g                 25-49Assoc
+v20             byte    %8.0g                 25-49Bns%
+v21             str11   %11s                  25-49Bns$
+v22             str2    %9s                   25-49Cap
+v23             str12   %12s                  25-49Base
+v24             str11   %11s                  25-49Bonus
+v25             str12   %12s                  25-49Total
+v26             byte    %8.0g                 50-74Assoc
+v27             byte    %8.0g                 50-74Bns%
+v28             str11   %11s                  50-74Bns$
+v29             str2    %9s                   50-74Cap
+v30             str12   %12s                  50-74Base
+v31             str11   %11s                  50-74Bonus
+v32             str12   %12s                  50-74Total
+v33             byte    %8.0g                 75-99Assoc
+v34             byte    %8.0g                 75-99Bns%
+v35             str11   %11s                  75-99Bns$
+v36             str2    %9s                   75-99Cap
+v37             str12   %12s                  75-99Base
+v38             str11   %11s                  75-99Bonus
+v39             str12   %12s                  75-99Total
+v40             byte    %8.0g                 100-199Assoc
+v41             int     %8.0g                 100-199Bns%
+v42             str11   %11s                  100-199Bns$
+v43             str2    %9s                   100-199Cap
+v44             str12   %12s                  100-199Base
+v45             str11   %11s                  100-199Bonus
+v46             str12   %12s                  100-199Total
+assoc           byte    %8.0g                 200+Assoc
+bns             byte    %8.0g                 200+Bns%
+v49             byte    %8.0g                 200+Bns$
+cap             byte    %8.0g                 200+Cap
+base            str12   %12s                  200+Base
+bonus           str11   %11s                  200+Bonus
+total           str12   %12s                  200+Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(53 vars, 58 obs)
+This is 40a  district manager
+
+Contains data
+  obs:            58                          
+ vars:            53                          
+ size:        21,750                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+car             str4    %9s                   Car
+allassoc        int     %8.0g                 AllAssoc
+strsupvd        float   %9.0g                 StrSupvd
+allbns          byte    %8.0g                 AllBns%
+v7              str11   %11s                  AllBns$
+allcap          str6    %9s                   AllCap
+allbase         str11   %11s                  AllBase
+allbonus        str11   %11s                  AllBonus
+alltotal        str11   %11s                  AllTotal
+v12             int     %8.0g                 0-5Assoc
+v13             byte    %8.0g                 0-5Bns%
+v14             str10   %10s                  0-5Bns$
+v15             str2    %9s                   0-5Cap
+v16             str11   %11s                  0-5Base
+v17             str11   %11s                  0-5Bonus
+v18             str11   %11s                  0-5Total
+v19             byte    %8.0g                 5-7Assoc
+v20             byte    %8.0g                 5-7Bns%
+v21             str11   %11s                  5-7Bns$
+v22             str2    %9s                   5-7Cap
+v23             str11   %11s                  5-7Base
+v24             str11   %11s                  5-7Bonus
+v25             str11   %11s                  5-7Total
+v26             int     %8.0g                 8-11Assoc
+v27             byte    %8.0g                 8-11Bns%
+v28             str11   %11s                  8-11Bns$
+v29             str6    %9s                   8-11Cap
+v30             str11   %11s                  8-11Base
+v31             str11   %11s                  8-11Bonus
+v32             str11   %11s                  8-11Total
+v33             byte    %8.0g                 12-19Assoc
+v34             float   %9.0g                 12-19Bns%
+v35             str11   %11s                  12-19Bns$
+v36             str6    %9s                   12-19Cap
+v37             str11   %11s                  12-19Base
+v38             str11   %11s                  12-19Bonus
+v39             str11   %11s                  12-19Total
+v40             int     %8.0g                 20-29Assoc
+v41             byte    %8.0g                 20-29Bns%
+v42             str10   %10s                  20-29Bns$
+v43             str6    %9s                   20-29Cap
+v44             str11   %11s                  20-29Base
+v45             str11   %11s                  20-29Bonus
+v46             str11   %11s                  20-29Total
+assoc           byte    %8.0g                 30+Assoc
+bns             byte    %8.0g                 30+Bns%
+v49             str11   %11s                  30+Bns$
+cap             str6    %9s                   30+Cap
+base            str12   %12s                  30+Base
+bonus           str11   %11s                  30+Bonus
+total           str12   %12s                  30+Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(87 vars, 47 obs)
+This is 40b district manager
+
+Contains data
+  obs:            47                          
+ vars:            87                          
+ size:        36,284                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+boassoc         byte    %8.0g                 BOAssoc
+bobase          str11   %11s                  BOBase
+bobonus         str11   %11s                  BOBonus
+bototal         str11   %11s                  BOTotal
+bomin           str11   %11s                  BOMin
+maassoc         byte    %8.0g                 MAAssoc
+mabase          str11   %11s                  MABase
+mabonus         str11   %11s                  MABonus
+matotal         str12   %12s                  MATotal
+mamin           str11   %11s                  MAMin
+liassoc         byte    %8.0g                 LIAssoc
+libase          str11   %11s                  LIBase
+libonus         str11   %11s                  LIBonus
+litotal         str11   %11s                  LITotal
+limin           str11   %11s                  LIMin
+njassoc         byte    %8.0g                 NJAssoc
+njbase          str12   %12s                  NJBase
+njbonus         str11   %11s                  NJBonus
+njtotal         str12   %12s                  NJTotal
+njmin           str11   %11s                  NJMin
+wpassoc         byte    %8.0g                 WPAssoc
+wpbase          str11   %11s                  WPBase
+wpbonus         str11   %11s                  WPBonus
+wptotal         str11   %11s                  WPTotal
+wpmin           str11   %11s                  WPMin
+phassoc         byte    %8.0g                 PHAssoc
+phbase          str11   %11s                  PHBase
+phbonus         str11   %11s                  PHBonus
+phtotal         str11   %11s                  PHTotal
+phmin           str11   %11s                  PHMin
+waassoc         byte    %8.0g                 WAAssoc
+wabase          str11   %11s                  WABase
+wabonus         str11   %11s                  WABonus
+watotal         str11   %11s                  WATotal
+wamin           str11   %11s                  WAMin
+atassoc         byte    %8.0g                 ATAssoc
+atbase          str11   %11s                  ATBase
+atbonus         str11   %11s                  ATBonus
+attotal         str11   %11s                  ATTotal
+atmin           str11   %11s                  ATMin
+miassoc         byte    %8.0g                 MIAssoc
+mibase          str11   %11s                  MIBase
+mibonus         str11   %11s                  MIBonus
+mitotal         str11   %11s                  MITotal
+mimin           str11   %11s                  MIMin
+meassoc         byte    %8.0g                 MEAssoc
+mebase          str11   %11s                  MEBase
+mebonus         str11   %11s                  MEBonus
+metotal         str11   %11s                  METotal
+memin           str11   %11s                  MEMin
+chassoc         byte    %8.0g                 CHAssoc
+chbase          str11   %11s                  CHBase
+chbonus         str11   %11s                  CHBonus
+chtotal         str11   %11s                  CHTotal
+chmin           str11   %11s                  CHMin
+laassoc         byte    %8.0g                 LAAssoc
+labase          str11   %11s                  LABase
+labonus         str11   %11s                  LABonus
+latotal         str11   %11s                  LATotal
+lamin           str11   %11s                  LAMin
+sfassoc         byte    %8.0g                 SFAssoc
+sfbase          str11   %11s                  SFBase
+sfbonus         str11   %11s                  SFBonus
+sftotal         str11   %11s                  SFTotal
+sfmin           str11   %11s                  SFMin
+seassoc         byte    %8.0g                 SEAssoc
+sebase          str11   %11s                  SEBase
+sebonus         str11   %11s                  SEBonus
+setotal         str11   %11s                  SETotal
+semin           str11   %11s                  SEMin
+alassoc         byte    %8.0g                 ALAssoc
+albase          str11   %11s                  ALBase
+albonus         str11   %11s                  ALBonus
+altotal         str11   %11s                  ALTotal
+almin           str11   %11s                  ALMin
+hiassoc         byte    %8.0g                 HIAssoc
+hibase          str11   %11s                  HIBase
+hibonus         str11   %11s                  HIBonus
+hitotal         str11   %11s                  HITotal
+himin           str11   %11s                  HIMin
+prassoc         byte    %8.0g                 PRAssoc
+prbase          str11   %11s                  PRBase
+prbonus         str11   %11s                  PRBonus
+prtotal         str11   %11s                  PRTotal
+prmin           str11   %11s                  PRMin
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(104 vars, 16 obs)
+This is 41 area sales _ sr manager
+
+Contains data
+  obs:            16                          
+ vars:           104                          
+ size:        12,656                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+title           str25   %25s                  TITLE
+car             str1    %9s                   Car
+strsupr         byte    %8.0g                 .StrSupr
+strsuprcode     str3    %9s                   .StrSuprCode
+allassoc        int     %8.0g                 AllAssoc
+allbns          byte    %8.0g                 AllBns%
+v9              str11   %11s                  AllBns$
+allcap          str2    %9s                   AllCap
+allbase         str11   %11s                  AllBase
+allbonus        str11   %11s                  AllBonus
+alltotal        str11   %11s                  AllTotal
+v14             byte    %8.0g                 <2Assoc
+v15             byte    %8.0g                 <2Bns%
+v16             str11   %11s                  <2Bns$
+v17             str2    %9s                   <2Cap
+v18             str11   %11s                  <2Base
+v19             str10   %10s                  <2Bonus
+v20             str11   %11s                  <2Total
+v21             int     %8.0g                 2-4Assoc
+v22             byte    %8.0g                 2-4Bns%
+v23             str11   %11s                  2-4Bns$
+v24             str2    %9s                   2-4Cap
+v25             str11   %11s                  2-4Base
+v26             str11   %11s                  2-4Bonus
+v27             str11   %11s                  2-4Total
+assoc           byte    %8.0g                 5+Assoc
+bns             byte    %8.0g                 5+Bns%
+v30             byte    %8.0g                 5+Bns$
+cap             str2    %9s                   5+Cap
+base            str11   %11s                  5+Base
+bonus           str10   %10s                  5+Bonus
+total           str11   %11s                  5+Total
+boassoc         byte    %8.0g                 BOAssoc
+bobase          str11   %11s                  BOBase
+bobonus         str11   %11s                  BOBonus
+bototal         str11   %11s                  BOTotal
+bomin           str11   %11s                  BOMin
+metassoc        byte    %8.0g                 MetAssoc
+metbase         str11   %11s                  MetBase
+metbonus        str10   %10s                  MetBonus
+mettotal        str11   %11s                  MetTotal
+metmin          str11   %11s                  MetMin
+wpassoc         byte    %8.0g                 WPAssoc
+wpbase          str11   %11s                  WPBase
+wpbonus         str10   %10s                  WPBonus
+wptotal         str11   %11s                  WPTotal
+wpmin           str11   %11s                  WPMin
+phassoc         byte    %8.0g                 PHAssoc
+phbase          str11   %11s                  PHBase
+phbonus         str11   %11s                  PHBonus
+phtotal         str11   %11s                  PHTotal
+phmin           str11   %11s                  PHMin
+waassoc         byte    %8.0g                 WAAssoc
+wabase          str11   %11s                  WABase
+wabonus         str10   %10s                  WABonus
+watotal         str11   %11s                  WATotal
+wamin           str11   %11s                  WAMin
+atassoc         byte    %8.0g                 ATAssoc
+atbase          str11   %11s                  ATBase
+atbonus         str10   %10s                  ATBonus
+attotal         str11   %11s                  ATTotal
+atmin           str11   %11s                  ATMin
+miassoc         byte    %8.0g                 MIAssoc
+mibase          str11   %11s                  MIBase
+mibonus         str10   %10s                  MIBonus
+mitotal         str11   %11s                  MITotal
+mimin           str11   %11s                  MIMin
+meassoc         byte    %8.0g                 MEAssoc
+mebase          str11   %11s                  MEBase
+mebonus         str10   %10s                  MEBonus
+metotal         str11   %11s                  METotal
+memin           str11   %11s                  MEMin
+chassoc         byte    %8.0g                 CHAssoc
+chbase          str11   %11s                  CHBase
+chbonus         str10   %10s                  CHBonus
+chtotal         str11   %11s                  CHTotal
+chmin           str11   %11s                  CHMin
+laassoc         byte    %8.0g                 LAAssoc
+labase          str11   %11s                  LABase
+labonus         str10   %10s                  LABonus
+latotal         str11   %11s                  LATotal
+lamin           str11   %11s                  LAMin
+sfassoc         byte    %8.0g                 SFAssoc
+sfbase          str11   %11s                  SFBase
+sfbonus         str10   %10s                  SFBonus
+sftotal         str11   %11s                  SFTotal
+sfmin           str11   %11s                  SFMin
+alassoc         byte    %8.0g                 ALAssoc
+albase          str11   %11s                  ALBase
+albonus         str6    %9s                   ALBonus
+altotal         str11   %11s                  ALTotal
+almin           str11   %11s                  ALMin
+hiassoc         byte    %8.0g                 HIAssoc
+hibase          str11   %11s                  HIBase
+hibonus         str10   %10s                  HIBonus
+hitotal         str11   %11s                  HITotal
+himin           str11   %11s                  HIMin
+prassoc         byte    %8.0g                 PRAssoc
+prbase          byte    %8.0g                 PRBase
+prbonus         byte    %8.0g                 PRBonus
+prtotal         byte    %8.0g                 PRTotal
+prmin           byte    %8.0g                 PRMin
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(54 vars, 59 obs)
+This is 42a store manager
+
+Contains data
+  obs:            59                          
+ vars:            54                          
+ size:        10,738                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+reports         float   %9.0g                 .Reports
+rptcode         str3    %9s                   .RPTCODE
+incrs           float   %9.0g                 Incrs%
+allassoc        int     %8.0g                 AllAssoc
+allbns          float   %9.0g                 AllBns%
+v8              float   %9.0g                 AllBns$
+allcap          str6    %9s                   AllCap
+allbase         float   %9.0g                 AllBase
+allbonus        float   %9.0g                 AllBonus
+alltotal        float   %9.0g                 AllTotal
+v13             int     %8.0g                 <500Assoc
+v14             float   %9.0g                 <500Bns%
+v15             int     %8.0g                 <500Bns$
+v16             str2    %9s                   <500Cap
+v17             float   %9.0g                 <500Base
+v18             float   %9.0g                 <500Bonus
+v19             float   %9.0g                 <500Total
+v20             int     %8.0g                 501-999Assoc
+v21             float   %9.0g                 501-999Bns%
+v22             int     %8.0g                 501-999Bns$
+v23             str2    %9s                   501-999Cap
+v24             float   %9.0g                 501-999Base
+v25             float   %9.0g                 501-999Bonus
+v26             float   %9.0g                 501-999Total
+m14assoc        int     %8.0g                 1M-1,4Assoc
+m14bns          float   %9.0g                 1M-1,4Bns%
+v29             int     %8.0g                 1M-1,4Bns$
+m14cap          str6    %9s                   1M-1,4Cap
+m14base         float   %9.0g                 1M-1,4Base
+m14bonus        float   %9.0g                 1M-1,4Bonus
+m14total        float   %9.0g                 1M-1,4Total
+v34             int     %8.0g                 1,5-2,4Assoc
+v35             byte    %8.0g                 1,5-2,4Bns%
+v36             int     %8.0g                 1,5-2,4Bns$
+v37             str6    %9s                   1,5-2,4Cap
+v38             float   %9.0g                 1,5-2,4Base
+v39             float   %9.0g                 1,5-2,49Bonus
+v40             float   %9.0g                 1,5-2,4Total
+v41             int     %8.0g                 2,5-3,9Assoc
+v42             byte    %8.0g                 2,5-3,9Bns%
+v43             int     %8.0g                 2,5-3,9Bns$
+v44             str6    %9s                   2,5-3,9Cap
+v45             float   %9.0g                 2,5-3,9Base
+v46             float   %9.0g                 2,5-3,9Bonus
+v47             float   %9.0g                 2,5-3,9Total
+massoc          int     %8.0g                 4M+Assoc
+mbns            byte    %8.0g                 4M+Bns%
+v50             int     %8.0g                 4M+Bns$
+mcap            str6    %9s                   4M+Cap
+mbase           long    %12.0g                4M+Base
+mbonus          float   %9.0g                 4M+Bonus
+mtotal          float   %9.0g                 4M+Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(88 vars, 56 obs)
+This is 42b store manager
+
+Contains data
+  obs:            56                          
+ vars:            88                          
+ size:        43,064                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+boassoc         byte    %8.0g                 BOAssoc
+bobase          str11   %11s                  BOBase
+bobonus         str11   %11s                  BOBonus
+bototal         str11   %11s                  BOTotal
+bomin           str11   %11s                  BOMin
+maassoc         byte    %8.0g                 MAAssoc
+mabase          str11   %11s                  MABase
+mabonus         str11   %11s                  MABonus
+matotal         str11   %11s                  MATotal
+mamin           str11   %11s                  MAMin
+liassoc         byte    %8.0g                 LIAssoc
+libase          str11   %11s                  LIBase
+libonus         str11   %11s                  LIBonus
+litotal         str11   %11s                  LITotal
+limin           str11   %11s                  LIMin
+njassoc         byte    %8.0g                 NJAssoc
+njbase          str11   %11s                  NJBase
+njbonus         str11   %11s                  NJBonus
+njtotal         str11   %11s                  NJTotal
+njmin           str11   %11s                  NJMin
+wpassoc         byte    %8.0g                 WPAssoc
+wpbase          str11   %11s                  WPBase
+wpbonus         str11   %11s                  WPBonus
+wptotal         str11   %11s                  WPTotal
+wpmin           str11   %11s                  WPMin
+phassoc         byte    %8.0g                 PHAssoc
+phbase          str11   %11s                  PHBase
+phbonus         str11   %11s                  PHBonus
+phtotal         str11   %11s                  PHTotal
+phmin           str11   %11s                  PHMin
+waassoc         byte    %8.0g                 WAAssoc
+wabase          str11   %11s                  WABase
+wabonus         str11   %11s                  WABonus
+watotal         str11   %11s                  WATotal
+wamin           str11   %11s                  WAMin
+atassoc         int     %8.0g                 ATAssoc
+atbase          str11   %11s                  ATBase
+atbonus         str11   %11s                  ATBonus
+attotal         str11   %11s                  ATTotal
+atmin           str11   %11s                  ATMin
+miassoc         byte    %8.0g                 MIAssoc
+mibase          str11   %11s                  MIBase
+mibonus         str11   %11s                  MIBonus
+mitotal         str11   %11s                  MITotal
+mimin           str11   %11s                  MIMin
+meassoc         byte    %8.0g                 MEAssoc
+mebase          str11   %11s                  MEBase
+mebonus         str10   %10s                  MEBonus
+metotal         str11   %11s                  METotal
+memin           str11   %11s                  MEMin
+chassoc         int     %8.0g                 CHAssoc
+chbase          str11   %11s                  CHBase
+chbonus         str11   %11s                  CHBonus
+chtotal         str11   %11s                  CHTotal
+chmin           str11   %11s                  CHMin
+laassoc         int     %8.0g                 LAAssoc
+labase          str11   %11s                  LABase
+labonus         str11   %11s                  LABonus
+latotal         str11   %11s                  LATotal
+lamin           str11   %11s                  LAMin
+sfassoc         int     %8.0g                 SFAssoc
+sfbase          str11   %11s                  SFBase
+sfbonus         str11   %11s                  SFBonus
+sftotal         str11   %11s                  SFTotal
+sfmin           str11   %11s                  SFMin
+seassoc         byte    %8.0g                 SEAssoc
+sebase          str11   %11s                  SEBase
+sebonus         str10   %10s                  SEBonus
+setotal         str11   %11s                  SETotal
+semin           str11   %11s                  SEMin
+alassoc         byte    %8.0g                 ALAssoc
+albase          str11   %11s                  ALBase
+albonus         str10   %10s                  ALBonus
+altotal         str11   %11s                  ALTotal
+almin           str11   %11s                  ALMin
+hiassoc         byte    %8.0g                 HIAssoc
+hibase          str11   %11s                  HIBase
+hibonus         str10   %10s                  HIBonus
+hitotal         str11   %11s                  HITotal
+himin           str11   %11s                  HIMin
+prassoc         byte    %8.0g                 PRAssoc
+prbase          str11   %11s                  PRBase
+prbonus         str10   %10s                  PRBonus
+prtotal         str11   %11s                  PRTotal
+prmin           str11   %11s                  PRMin
+hrs             byte    %8.0g                 .Hrs
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(37 vars, 58 obs)
+This is 43a assistant manager
+
+Contains data
+  obs:            58                          
+ vars:            37                          
+ size:        11,948                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+statuscode      str4    %9s                   StatusCode
+allassoc        float   %9.0g                 AllAssoc
+allbase         str7    %9s                   AllBase
+allbns          str6    %9s                   AllBns
+alltotal        str7    %9s                   AllTotal
+v8              int     %8.0g                 <500Assoc
+v9              str7    %9s                   <500Base
+v10             str6    %9s                   <500Bonus
+v11             str7    %9s                   <500Total
+v12             str7    %9s                   <500Min
+v13             int     %8.0g                 501-999Assoc
+v14             str7    %9s                   501-999Base
+v15             str6    %9s                   501-999Bns
+v16             str7    %9s                   501-999Total
+v17             str7    %9s                   501-999Min
+m14assoc        int     %8.0g                 1M-1,4Assoc
+m14base         str7    %9s                   1M-1,4Base
+m14bns          str6    %9s                   1M-1,4Bns
+m14total        str7    %9s                   1M-1,4Total
+m14min          str7    %9s                   1M-1,4Min
+v23             int     %8.0g                 1,5-2,4Assoc
+v24             str7    %9s                   1,5-2,4Base
+v25             str6    %9s                   1,5-2,4Bns
+v26             str7    %9s                   1,5-2,4Total
+v27             str7    %9s                   1,5-2,4Min
+v28             int     %8.0g                 2,5-3,9Assoc
+v29             str7    %9s                   2,5-3,9Base
+v30             str6    %9s                   2,5-3,9Bns
+v31             str7    %9s                   2,5-3,9Total
+v32             str7    %9s                   2,5-3,9Min
+massoc          int     %8.0g                 4M+Assoc
+mbase           str7    %9s                   4M+Base
+mbns            str6    %9s                   4M+Bns
+mtotal          str7    %9s                   4M+Total
+mmin            str7    %9s                   4M+Min
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(88 vars, 52 obs)
+This is 43b assistant manager
+
+Contains data
+  obs:            52                          
+ vars:            88                          
+ size:        25,688                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+boassoc         int     %8.0g                 BOAssoc
+bobase          str7    %9s                   BOBase
+bobonus         str6    %9s                   BOBonus
+bototal         str7    %9s                   BOTotal
+bomin           str7    %9s                   BOMin
+maassoc         int     %8.0g                 MAAssoc
+mabase          str7    %9s                   MABase
+mabonus         str6    %9s                   MABonus
+matotal         str7    %9s                   MATotal
+mamin           str7    %9s                   MAMin
+liassoc         int     %8.0g                 LIAssoc
+libase          str7    %9s                   LIBase
+libonus         str6    %9s                   LIBonus
+litotal         str7    %9s                   LITotal
+limin           str7    %9s                   LIMin
+njassoc         int     %8.0g                 NJAssoc
+njbase          str7    %9s                   NJBase
+njbonus         str6    %9s                   NJBonus
+njtotal         str7    %9s                   NJTotal
+njmin           str7    %9s                   NJMin
+wpassoc         int     %8.0g                 WPAssoc
+wpbase          str7    %9s                   WPBase
+wpbonus         str6    %9s                   WPBonus
+wptotal         str7    %9s                   WPTotal
+wpmin           str7    %9s                   WPMin
+phassoc         int     %8.0g                 PHAssoc
+phbase          str7    %9s                   PHBase
+phbonus         str6    %9s                   PHBonus
+phtotal         str7    %9s                   PHTotal
+phmin           str7    %9s                   PHMin
+waassoc         int     %8.0g                 WAAssoc
+wabase          str7    %9s                   WABase
+wabonus         str6    %9s                   WABonus
+watotal         str7    %9s                   WATotal
+wamin           str7    %9s                   WAMin
+atassoc         int     %8.0g                 ATAssoc
+atbase          str7    %9s                   ATBase
+atbonus         str6    %9s                   ATBonus
+attotal         str7    %9s                   ATTotal
+atmin           str7    %9s                   ATMin
+miassoc         int     %8.0g                 MIAssoc
+mibase          str7    %9s                   MIBase
+mibonus         str6    %9s                   MIBonus
+mitotal         str7    %9s                   MITotal
+mimin           str7    %9s                   MIMin
+meassoc         int     %8.0g                 MEAssoc
+mebase          str7    %9s                   MEBase
+mebonus         str6    %9s                   MEBonus
+metotal         str7    %9s                   METotal
+memin           str7    %9s                   MEMin
+chassoc         int     %8.0g                 CHAssoc
+chbase          str7    %9s                   CHBase
+chbonus         str6    %9s                   CHBonus
+chtotal         str7    %9s                   CHTotal
+chmin           str7    %9s                   CHMin
+laassoc         int     %8.0g                 LAAssoc
+labase          str7    %9s                   LABase
+labonus         str6    %9s                   LABonus
+latotal         str7    %9s                   LATotal
+lamin           str7    %9s                   LAMin
+sfassoc         int     %8.0g                 SFAssoc
+sfbase          str7    %9s                   SFBase
+sfbonus         str6    %9s                   SFBonus
+sftotal         str7    %9s                   SFTotal
+sfmin           str7    %9s                   SFMin
+seassoc         int     %8.0g                 SEAssoc
+sebase          str7    %9s                   SEBase
+sebonus         str6    %9s                   SEBonus
+setotal         str7    %9s                   SETotal
+semin           str7    %9s                   SEMin
+alassoc         byte    %8.0g                 ALAssoc
+albase          str7    %9s                   ALBase
+albonus         str6    %9s                   ALBonus
+altotal         str7    %9s                   ALTotal
+almin           str7    %9s                   ALMin
+hiassoc         byte    %8.0g                 HIAssoc
+hibase          str7    %9s                   HIBase
+hibonus         str6    %9s                   HIBonus
+hitotal         str7    %9s                   HITotal
+himin           str7    %9s                   HIMin
+prassoc         byte    %8.0g                 PRAssoc
+prbase          str7    %9s                   PRBase
+prbonus         str6    %9s                   PRBonus
+prtotal         str7    %9s                   PRTotal
+prmin           str6    %9s                   PRMin
+incrs           byte    %8.0g                 .Incrs
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(38 vars, 37 obs)
+This is 44a third key
+
+Contains data
+  obs:            37                          
+ vars:            38                          
+ size:         7,918                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+title           str31   %31s                  Title
+mca             str4    %9s                   M/C/A
+incr            byte    %8.0g                 .Incr
+ftassoc         int     %8.0g                 FTAssoc
+ftbase          str7    %9s                   FTBase
+ftbns           str6    %9s                   FTBns
+fttotal         str7    %9s                   FTTotal
+ptassoc         int     %8.0g                 PTAssoc
+ptbase          str7    %9s                   PTBase
+ptne            str2    %9s                   PTNE?
+ptbns           str6    %9s                   PTBns
+pttotal         str7    %9s                   PTTotal
+v15             int     %8.0g                 <500Assoc
+v16             str6    %9s                   <500Base
+v17             str6    %9s                   <500Bonus
+v18             str6    %9s                   <500Total
+v19             int     %8.0g                 501-999Assoc
+v20             str6    %9s                   501-999Base
+v21             str6    %9s                   501-999Bns
+v22             str6    %9s                   501-999Total
+m14assoc        int     %8.0g                 1M-1,4Assoc
+m14base         str7    %9s                   1M-1,4Base
+m14bns          str6    %9s                   1M-1,4Bns
+m14total        str7    %9s                   1M-1,4Total
+v27             int     %8.0g                 1,5-2,4Assoc
+v28             str7    %9s                   1,5-2,4Base
+v29             str6    %9s                   1,5-2,4Bns
+v30             str7    %9s                   1,5-2,4Total
+v31             int     %8.0g                 2,5-3,9Assoc
+v32             str7    %9s                   2,5-3,9Base
+v33             str6    %9s                   2,5-3,9Bns
+v34             str7    %9s                   2,5-3,9Total
+massoc          int     %8.0g                 4M+Assoc
+mbase           str7    %9s                   4M+Base
+mbns            str6    %9s                   4M+Bns
+mtotal          str7    %9s                   4M+Total
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(87 vars, 34 obs)
+This is 44b third key
+
+Contains data
+  obs:            34                          
+ vars:            87                          
+ size:        15,572                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+boassoc         byte    %8.0g                 BOAssoc
+bobase          str7    %9s                   BOBase
+bobonus         str6    %9s                   BOBonus
+bototal         str7    %9s                   BOTotal
+bomin           str6    %9s                   BOMin
+maassoc         byte    %8.0g                 MAAssoc
+mabase          str7    %9s                   MABase
+mabonus         str6    %9s                   MABonus
+matotal         str7    %9s                   MATotal
+mamin           str7    %9s                   MAMin
+liassoc         byte    %8.0g                 LIAssoc
+libase          str7    %9s                   LIBase
+libonus         str6    %9s                   LIBonus
+litotal         str7    %9s                   LITotal
+limin           str6    %9s                   LIMin
+njassoc         byte    %8.0g                 NJAssoc
+njbase          str7    %9s                   NJBase
+njbonus         str6    %9s                   NJBonus
+njtotal         str7    %9s                   NJTotal
+njmin           str6    %9s                   NJMin
+wpassoc         byte    %8.0g                 WPAssoc
+wpbase          str7    %9s                   WPBase
+wpbonus         str6    %9s                   WPBonus
+wptotal         str7    %9s                   WPTotal
+wpmin           str6    %9s                   WPMin
+phassoc         byte    %8.0g                 PHAssoc
+phbase          str7    %9s                   PHBase
+phbonus         str6    %9s                   PHBonus
+phtotal         str7    %9s                   PHTotal
+phmin           str6    %9s                   PHMin
+waassoc         byte    %8.0g                 WAAssoc
+wabase          str7    %9s                   WABase
+wabonus         str6    %9s                   WABonus
+watotal         str7    %9s                   WATotal
+wamin           str6    %9s                   WAMin
+atassoc         byte    %8.0g                 ATAssoc
+atbase          str7    %9s                   ATBase
+atbonus         str6    %9s                   ATBonus
+attotal         str7    %9s                   ATTotal
+atmin           str6    %9s                   ATMin
+miassoc         byte    %8.0g                 MIAssoc
+mibase          str7    %9s                   MIBase
+mibonus         str6    %9s                   MIBonus
+mitotal         str7    %9s                   MITotal
+mimin           str6    %9s                   MIMin
+meassoc         byte    %8.0g                 MEAssoc
+mebase          str7    %9s                   MEBase
+mebonus         str6    %9s                   MEBonus
+metotal         str7    %9s                   METotal
+memin           str6    %9s                   MEMin
+chassoc         byte    %8.0g                 CHAssoc
+chbase          str7    %9s                   CHBase
+chbonus         str6    %9s                   CHBonus
+chtotal         str7    %9s                   CHTotal
+chmin           str6    %9s                   CHMin
+laassoc         byte    %8.0g                 LAAssoc
+labase          str7    %9s                   LABase
+labonus         str6    %9s                   LABonus
+latotal         str7    %9s                   LATotal
+lamin           str6    %9s                   LAMin
+sfassoc         byte    %8.0g                 SFAssoc
+sfbase          str7    %9s                   SFBase
+sfbonus         str6    %9s                   SFBonus
+sftotal         str7    %9s                   SFTotal
+sfmin           str6    %9s                   SFMin
+seassoc         byte    %8.0g                 SEAssoc
+sebase          str7    %9s                   SEBase
+sebonus         str6    %9s                   SEBonus
+setotal         str7    %9s                   SETotal
+semin           str6    %9s                   SEMin
+alassoc         byte    %8.0g                 ALAssoc
+albase          str6    %9s                   ALBase
+albonus         str6    %9s                   ALBonus
+altotal         str6    %9s                   ALTotal
+almin           str6    %9s                   ALMin
+hiassoc         byte    %8.0g                 HIAssoc
+hibase          str6    %9s                   HIBase
+hibonus         str6    %9s                   HIBonus
+hitotal         str6    %9s                   HITotal
+himin           str6    %9s                   HIMin
+prassoc         byte    %8.0g                 PRAssoc
+prbase          str6    %9s                   PRBase
+prbonus         str6    %9s                   PRBonus
+prtotal         str6    %9s                   PRTotal
+prmin           str6    %9s                   PRMin
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(93 vars, 49 obs)
+This is 45 full time
+
+Contains data
+  obs:            49                          
+ vars:            93                          
+ size:        23,961                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+inc36mo         byte    %8.0g                 .Inc36mo
+mca             str4    %9s                   M/C/A
+natassoc        int     %8.0g                 NatAssoc
+natbase         str7    %9s                   NatBase
+natbonus        str7    %9s                   NatBonus
+nattotal        str7    %9s                   NatTotal
+boassoc         int     %8.0g                 BOAssoc
+bobase          str7    %9s                   BOBase
+bobonus         str6    %9s                   BOBonus
+bototal         str7    %9s                   BOTotal
+bomin           str6    %9s                   BOMin
+maassoc         int     %8.0g                 MAAssoc
+mabase          str7    %9s                   MABase
+mabonus         str6    %9s                   MABonus
+matotal         str7    %9s                   MATotal
+mamin           str6    %9s                   MAMin
+liassoc         byte    %8.0g                 LIAssoc
+libase          str7    %9s                   LIBase
+libonus         str6    %9s                   LIBonus
+litotal         str7    %9s                   LITotal
+limin           str6    %9s                   LIMin
+njassoc         int     %8.0g                 NJAssoc
+njbase          str7    %9s                   NJBase
+njbonus         str6    %9s                   NJBonus
+njtotal         str7    %9s                   NJTotal
+njmin           str6    %9s                   NJMin
+wpassoc         int     %8.0g                 WPAssoc
+wpbase          str7    %9s                   WPBase
+wpbonus         str6    %9s                   WPBonus
+wptotal         str7    %9s                   WPTotal
+wpmin           str6    %9s                   WPMin
+phassoc         int     %8.0g                 PHAssoc
+phbase          str7    %9s                   PHBase
+phbonus         str6    %9s                   PHBonus
+phtotal         str7    %9s                   PHTotal
+phmin           str6    %9s                   PHMin
+waassoc         int     %8.0g                 WAAssoc
+wabase          str7    %9s                   WABase
+wabonus         str7    %9s                   WABonus
+watotal         str7    %9s                   WATotal
+wamin           str6    %9s                   WAMin
+atassoc         int     %8.0g                 ATAssoc
+atbase          str7    %9s                   ATBase
+atbonus         str7    %9s                   ATBonus
+attotal         str7    %9s                   ATTotal
+atmin           str6    %9s                   ATMin
+miassoc         byte    %8.0g                 MIAssoc
+mibase          str7    %9s                   MIBase
+mibonus         str6    %9s                   MIBonus
+mitotal         str7    %9s                   MITotal
+mimin           str6    %9s                   MIMin
+meassoc         byte    %8.0g                 MEAssoc
+mebase          str6    %9s                   MEBase
+mebonus         str6    %9s                   MEBonus
+metotal         str6    %9s                   METotal
+memin           str6    %9s                   MEMin
+chassoc         int     %8.0g                 CHAssoc
+chbase          str7    %9s                   CHBase
+chbonus         str6    %9s                   CHBonus
+chtotal         str7    %9s                   CHTotal
+chmin           str6    %9s                   CHMin
+laassoc         byte    %8.0g                 LAAssoc
+labase          str7    %9s                   LABase
+labonus         str6    %9s                   LABonus
+latotal         str7    %9s                   LATotal
+lamin           str6    %9s                   LAMin
+sfassoc         int     %8.0g                 SFAssoc
+sfbase          str7    %9s                   SFBase
+sfbonus         str6    %9s                   SFBonus
+sftotal         str7    %9s                   SFTotal
+sfmin           str6    %9s                   SFMin
+seassoc         byte    %8.0g                 SEAssoc
+sebase          str7    %9s                   SEBase
+sebonus         str6    %9s                   SEBonus
+setotal         str7    %9s                   SETotal
+semin           str6    %9s                   SEMin
+alassoc         byte    %8.0g                 ALAssoc
+albase          str6    %9s                   ALBase
+albonus         byte    %8.0g                 ALBonus
+altotal         str6    %9s                   ALTotal
+almin           str6    %9s                   ALMin
+hiassoc         byte    %8.0g                 HIAssoc
+hibase          str6    %9s                   HIBase
+hibonus         str6    %9s                   HIBonus
+hitotal         str6    %9s                   HITotal
+himin           str6    %9s                   HIMin
+prassoc         byte    %8.0g                 PRAssoc
+prbase          str6    %9s                   PRBase
+prbonus         str6    %9s                   PRBonus
+prtotal         str6    %9s                   PRTotal
+prmin           str6    %9s                   PRMin
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+(95 vars, 57 obs)
+This is 46 part time
+
+Contains data
+  obs:            57                          
+ vars:            95                          
+ size:        28,215                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+cocode          byte    %8.0g                 CoCode
+inc36mo         byte    %8.0g                 .Inc36Mo
+incyr           byte    %8.0g                 .IncYr
+mca             str4    %9s                   M/C/A
+comment         str18   %18s                  Comment
+natassoc        long    %12.0g                NatAssoc
+natbase         str6    %9s                   NatBase
+natbonus        str6    %9s                   NatBonus
+nattotal        str6    %9s                   NatTotal
+boassoc         int     %8.0g                 BOAssoc
+bobase          str6    %9s                   BOBase
+bobonus         str6    %9s                   BOBonus
+bototal         str7    %9s                   BOTotal
+bomin           str6    %9s                   BOMin
+maassoc         int     %8.0g                 MAAssoc
+mabase          str6    %9s                   MABase
+mabonus         str6    %9s                   MABonus
+matotal         str7    %9s                   MATotal
+mamin           str6    %9s                   MAMin
+liassoc         int     %8.0g                 LIAssoc
+libase          str6    %9s                   LIBase
+libonus         str6    %9s                   LIBonus
+litotal         str6    %9s                   LITotal
+limin           str6    %9s                   LIMin
+njassoc         int     %8.0g                 NJAssoc
+njbase          str6    %9s                   NJBase
+njbonus         str6    %9s                   NJBonus
+njtotal         str6    %9s                   NJTotal
+njmin           str6    %9s                   NJMin
+wpassoc         int     %8.0g                 WPAssoc
+wpbase          str6    %9s                   WPBase
+wpbonus         str6    %9s                   WPBonus
+wptotal         str6    %9s                   WPTotal
+wpmin           str6    %9s                   WPMin
+phassoc         int     %8.0g                 PHAssoc
+phbase          str6    %9s                   PHBase
+phbonus         str6    %9s                   PHBonus
+phtotal         str6    %9s                   PHTotal
+phmin           str6    %9s                   PHMin
+waassoc         int     %8.0g                 WAAssoc
+wabase          str6    %9s                   WABase
+wabonus         str6    %9s                   WABonus
+watotal         str6    %9s                   WATotal
+wamin           str6    %9s                   WAMin
+atassoc         int     %8.0g                 ATAssoc
+atbase          str6    %9s                   ATBase
+atbonus         str6    %9s                   ATBonus
+attotal         str7    %9s                   ATTotal
+atmin           str6    %9s                   ATMin
+miassoc         int     %8.0g                 MIAssoc
+mibase          str6    %9s                   MIBase
+mibonus         str6    %9s                   MIBonus
+mitotal         str6    %9s                   MITotal
+mimin           str6    %9s                   MIMin
+meassoc         int     %8.0g                 MEAssoc
+mebase          str6    %9s                   MEBase
+mebonus         str6    %9s                   MEBonus
+metotal         str6    %9s                   METotal
+memin           str6    %9s                   MEMin
+chassoc         int     %8.0g                 CHAssoc
+chbase          str6    %9s                   CHBase
+chbonus         str6    %9s                   CHBonus
+chtotal         str6    %9s                   CHTotal
+chmin           str6    %9s                   CHMin
+laassoc         int     %8.0g                 LAAssoc
+labase          str6    %9s                   LABase
+labonus         str6    %9s                   LABonus
+latotal         str7    %9s                   LATotal
+lamin           str6    %9s                   LAMin
+sfassoc         int     %8.0g                 SFAssoc
+sfbase          str6    %9s                   SFBase
+sfbonus         str6    %9s                   SFBonus
+sftotal         str6    %9s                   SFTotal
+sfmin           str6    %9s                   SFMin
+seassoc         int     %8.0g                 SEAssoc
+sebase          str6    %9s                   SEBase
+sebonus         str6    %9s                   SEBonus
+setotal         str6    %9s                   SETotal
+semin           str6    %9s                   SEMin
+alassoc         byte    %8.0g                 ALAssoc
+albase          str6    %9s                   ALBase
+albonus         str6    %9s                   ALBonus
+altotal         str6    %9s                   ALTotal
+almin           str6    %9s                   ALMin
+hiassoc         int     %8.0g                 HIAssoc
+hibase          str6    %9s                   HIBase
+hibonus         str6    %9s                   HIBonus
+hitotal         str6    %9s                   HITotal
+himin           str6    %9s                   HIMin
+prassoc         int     %8.0g                 PRAssoc
+prbase          str6    %9s                   PRBase
+prbonus         str6    %9s                   PRBonus
+prtotal         str6    %9s                   PRTotal
+prmin           str6    %9s                   PRMin
+------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+
+. 
+. // 39
+. local fileName "39 regional manager" 
+
+. import delimited using "`pathName'`fileName'.txt",  clear
+(53 vars, 53 obs)
+
+. 
+. rename v12              assoc0_25
+
+. rename v13              bnspct0_25
+
+. rename v14              bnsdollar0_25
+
+. rename v15            cap0_25
+
+. rename v16              base0_25
+
+. rename v17             bonus0_25
+
+. rename v18              total0_25
+
+. rename v19              assoc25_49
+
+. rename v20              bnspct25_49
+
+. rename v21             bnsdollar25_49
+
+. rename v22            cap25_49
+
+. rename v23              base25_49
+
+. rename v24             bonus25_49
+
+. rename v25              total25_49
+
+. rename v26              assoc50_74
+
+. rename v27              bnspct50_74
+
+. rename v28             bnsdollar50_74
+
+. rename v29            cap50_74
+
+. rename v30              base50_74
+
+. rename v31             bonus50_74
+
+. rename v32              total50_74
+
+. rename v33              assoc75_99
+
+. rename v34              bnspct75_99
+
+. rename v35             bnsdollar75_99
+
+. rename v36            cap75_99
+
+. rename v37              base75_99
+
+. rename v38             bonus75_99
+
+. rename v39              total75_99
+
+. rename v40              assoc100_199
+
+. rename v41            bnspct100_199
+
+. rename v42             bnsdollar100_199
+
+. rename v43            cap100_199
+
+. rename v44              base100_199
+
+. rename v45             bonus100_199
+
+. rename v46              total100_199
+
+. rename assoc           assoc200
+
+. rename bns              bnspct200
+
+. rename v49              bnsdollar200
+
+. rename cap              cap200
+
+. rename base             base200
+
+. rename bonus           bonus200
+
+. rename total            total200
+
+. rename allassoc           assoc
+
+. rename allbons          bnspct
+
+. rename allbns            bnsdollar
+
+. rename allcap           cap
+
+. rename allbase         base
+
+. rename allbonus       bonus
+
+. rename alltotal          total
+
+. 
+. // save it
+. save "`fileName'.dta", replace
+file 39 regional manager.dta saved
+
+. 
+. // 40a
+. local fileName "40a  district manager" 
+
+. import delimited using "`pathName'`fileName'.txt",  clear
+(53 vars, 58 obs)
+
+. 
+. rename v12                     assoc0_5
+
+. rename v13                       bnspct0_5
+
+. rename v14                       bnsdollar0_5
+
+. rename v15                     cap0_5
+
+. rename v16                      base0_5
+
+. rename v17                      bonus0_5
+
+. rename v18                      total0_5
+
+. rename v19                       assoc5_7
+
+. rename v20                       bnspct5_7
+
+. rename v21                      bnsdollar5_7
+
+. rename v22                     cap5_7
+
+. rename v23                      base5_7
+
+. rename v24                      bonus5_7
+
+. rename v25                      total5_7
+
+. rename v26                     assoc8_11
+
+. rename v27                       bnspct8_11
+
+. rename v28                      bnsdollar8_11
+
+. rename v29                     cap8_11
+
+. rename v30                      base8_11
+
+. rename v31                      bonus8_11
+
+. rename v32                      total8_11
+
+. rename v33                       assoc12_19
+
+. rename v34                      bnspct12_19
+
+. rename v35                      bnsdollar12_19
+
+. rename v36                     cap12_19
+
+. rename v37                      base12_19
+
+. rename v38                      bonus12_19
+
+. rename v39                      total12_19
+
+. rename v40                     assoc20_29
+
+. rename v41                       bnspct20_29
+
+. rename v42                       bnsdollar20_29
+
+. rename v43                     cap20_29
+
+. rename v44                      base20_29
+
+. rename v45                      bonus20_29
+
+. rename v46                      total20_29
+
+. rename assoc                     assoc30
+
+. rename bns                       bnspct30
+
+. rename v49                      bnsdollar30
+
+. rename cap                     cap30
+
+. rename base                      base30
+
+. rename bonus                    bonus30
+
+. rename total                     total30
+
+. rename allassoc               assoc
+
+. rename allbns                  bnspct
+
+. rename v7                       bnsdollar
+
+. rename allcap                 cap
+
+. rename allbase               base
+
+. rename allbonus             bonus
+
+. rename alltotal                total
+
+. 
+. // save it
+. save "`fileName'.dta", replace
+file 40a  district manager.dta saved
+
+. 
+. // 41
+. local fileName "41 area sales _ sr manager" 
+
+. import delimited using "`pathName'`fileName'.txt",  clear
+(104 vars, 16 obs)
+
+. 
+. rename v14                    assoc2
+
+. rename v15                    bnspct2
+
+. rename v16                    bnsdollar2
+
+. rename v17                  cap2
+
+. rename v18                    base2
+
+. rename v19                    bonus2
+
+. rename v20                    total2
+
+. rename v21                  assoc2_4
+
+. rename v22                    bnspct2_4
+
+. rename v23                    bnsdollar2_4
+
+. rename v24                  cap2_4
+
+. rename v25                    base2_4
+
+. rename v26                    bonus2_4
+
+. rename v27                    total2_4
+
+. rename assoc                  assoc5
+
+. rename bns                    bnspct5
+
+. rename v30                    bnsdollar5
+
+. rename cap                  cap5
+
+. rename base                   base5
+
+. rename bonus                  bonus5
+
+. rename total                total5
+
+. rename allassoc              assoc
+
+. rename allbns                 bnspct
+
+. rename v9                   bnsdollar
+
+. rename allcap             cap
+
+. rename allbase             base
+
+. rename allbonus           bonus
+
+. rename alltotal              total
+
+. 
+. 
+. // save it
+. save "`fileName'.dta", replace
+file 41 area sales _ sr manager.dta saved
+
+. 
+. // 42a
+. local fileName "42a store manager" 
+
+. import delimited using "`pathName'`fileName'.txt",  clear
+(54 vars, 59 obs)
+
+. 
+. rename v13                   assoc500
+
+. rename v14                    bnspct500
+
+. rename v15                   bnsdollar500
+
+. rename v16                   cap500
+
+. rename v17                    base500
+
+. rename v18                    bonus500
+
+. rename v19                    total500
+
+. rename v20                   assoc501_999
+
+. rename v21                    bnspct501_999
+
+. rename v22                   bnsdollar501_999
+
+. rename v23                   cap501_999
+
+. rename v24                    base501_999
+
+. rename v25                    bonus501_999
+
+. rename v26                    total501_999
+
+. rename m14assoc             assoc1m_1m4
+
+. rename m14bns                 bnspct1m_1m4
+
+. rename v29                   bnsdollar1m_1m4
+
+. rename m14cap                cap1m_1m4
+
+. rename m14base                base1m_1m4
+
+. rename m14bonus               bonus1m_1m4
+
+. rename m14total               total1m_1m4
+
+. rename v34                   assoc1m5_2m4
+
+. rename v35                     bnspct1m5_2m4
+
+. rename v36                   bnsdollar1m5_2m4
+
+. rename v37                   cap1m5_2m4
+
+. rename v38                    base1m5_2m4
+
+. rename v39                    bonus1m5_2m4
+
+. rename v40                    total1m5_2m4
+
+. rename v41                   assoc2m5_3m9
+
+. rename v42                     bnspct2m5_3m9
+
+. rename v43                   bnsdollar2m5_3m9
+
+. rename v44                   cap2m5_3m9
+
+. rename v45                    base2m5_3m9
+
+. rename v46                    bonus2m5_3m9
+
+. rename v47                    total2m5_3m9
+
+. rename massoc               assoc4m
+
+. rename mbns                    bnspct4m
+
+. rename v50                   bnsdollar4m
+
+. rename mcap                  cap4m
+
+. rename mbase                    base4m
+
+. rename mbonus                 bonus4m
+
+. rename mtotal                 total4m
+
+. rename allassoc           assoc
+
+. rename allbns               bnspct
+
+. rename v8                     bnsdollar
+
+. rename allcap               cap
+
+. rename allbase             base
+
+. rename allbonus           bonus
+
+. rename alltotal              total
+
+. 
+. 
+. // save it
+. save "`fileName'.dta", replace
+file 42a store manager.dta saved
+
+. 
+. 
+. // 43a
+. local fileName "43a assistant manager" 
+
+. import delimited using "`pathName'`fileName'.txt",  clear
+(37 vars, 58 obs)
+
+. 
+. rename v8                   assoc500
+
+. rename v9                   base500
+
+. rename v10                   bonus500
+
+. rename v11                   total500
+
+. rename v12                   min500
+
+. rename v13                   assoc501_999
+
+. rename v14                   base501_999
+
+. rename v15                   bns501_999
+
+. rename v16                   total501_999
+
+. rename v17                   min501_999
+
+. rename m14assoc              assoc1m_1m4
+
+. rename m14base               base1m_1m4
+
+. rename m14bns                bns1m_1m4
+
+. rename m14total              total1m_1m4
+
+. rename m14min                min1m_1m4
+
+. rename v23                   assoc1m5_2m4
+
+. rename v24                   base1m5_2m4
+
+. rename v25                   bns1m5_2m4
+
+. rename v26                   total1m5_2m4
+
+. rename v27                   min1m5_2m4
+
+. rename v28                   assoc2m5_3m9
+
+. rename v29                   base2m5_3m9
+
+. rename v30                   bns2m5_3m9
+
+. rename v31                   total2m5_3m9
+
+. rename v32                   min2m5_3m9
+
+. rename massoc                assoc4m
+
+. rename mbase                 base4m
+
+. rename mbns                  bns4m
+
+. rename mtotal                total4m
+
+. rename mmin                  min4m
+
+. rename allassoc           assoc
+
+. rename allbase             base
+
+. rename allbns               bns
+
+. rename alltotal              total
+
+. 
+. // save it
+. save "`fileName'.dta", replace
+file 43a assistant manager.dta saved
+
+. 
+. // 44a
+. local fileName "44a third key" 
+
+. import delimited using "`pathName'`fileName'.txt",  clear
+(38 vars, 37 obs)
+
+. 
+. rename v15                    assoc500
+
+. rename v16                    base500
+
+. rename v17                    bonus500
+
+. rename v18                    total500
+
+. rename v19                    assoc501_999
+
+. rename v20                    base501_999
+
+. rename v21                    Bns501_999
+
+. rename v22                    total501_999
+
+. rename m14assoc               assoc1m_1m4
+
+. rename m14base                base1m_1m4
+
+. rename m14bns                 Bns1m_1m4
+
+. rename m14total               total1m_1m4
+
+. rename v27                    assoc1m5_2m4
+
+. rename v28                    base1m5_2m4
+
+. rename v29                    Bns1m5_2m4
+
+. rename v30                    total1m5_2m4
+
+. rename v31                    assoc2m5_3m9
+
+. rename v32                    base2m5_3m9
+
+. rename v33                    Bns2m5_3m9
+
+. rename v34                    total2m5_3m9
+
+. rename massoc                 assoc4m
+
+. rename mbase                  base4m
+
+. rename mbns                   Bns4m
+
+. rename mtotal                 total4m
+
+. 
+. // save it
+. save "`fileName'.dta", replace
+(note: file 44a third key.dta not found)
+file 44a third key.dta saved
+
+. 
+. 
+end of do-file
+
+. do "/Users/macbook/Desktop/18-19 Thesis/Data Processing/1998/02 RealConversion/convertDa
+> ta.do"
+
+. cd "/Users/macbook/Desktop/18-19 Thesis/Data Processing/1998/02 RealConversion"
+/Users/macbook/Desktop/18-19 Thesis/Data Processing/1998/02 RealConversion
+
+. 
+. capture log close

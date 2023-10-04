@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1552274222358.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F5F251CD",
+    "lastKnownWriteTime" : 7957688353961834240,
+    "last_content_update" : 1552274222358,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "DA53930A",
+        "caption" : "secondDiffNZ",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=secondDiffNZ&cache_key=DA53930A",
+        "displayedObservations" : 14,
+        "environment" : "",
+        "object" : "secondDiffNZ",
+        "preview" : 0,
+        "totalObservations" : 14,
+        "variables" : 8
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

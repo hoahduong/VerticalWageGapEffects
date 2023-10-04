@@ -1,0 +1,40 @@
+----------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/macbook/Desktop/18-19 Thesis/Data Processing/GAP/GAPFinancial.
+> log
+  log type:  text
+ opened on:  17 Oct 2018, 15:15:08
+
+. 
+. version 15
+
+. 
+. use allGap_v3.dta, clear
+
+. keep code base bonus total hire reports title reportsto fileName
+
+. 
+. gsort -fileName 
+
+. 
+end of do-file
+
+. do "/var/folders/sy/4d9t8khs1jn_xflrv2wvq20c0000gn/T//SD00297.000000"
+
+. keep in 32/35
+(37 observations deleted)
+
+. 
+. gen payGap = total - total[_n-1]
+(1 missing value generated)
+
+. 
+end of do-file
+
+. do "/var/folders/sy/4d9t8khs1jn_xflrv2wvq20c0000gn/T//SD00297.000000"
+
+. cd "/Users/macbook/Desktop/18-19 Thesis/Data Processing/GAP"
+/Users/macbook/Desktop/18-19 Thesis/Data Processing/GAP
+
+. 
+. capture log close

@@ -1,0 +1,37 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"BRO",6,0,6,5,,"","","46 Part Time.txt",
+"BRO",7.2,0,7.2,5,,"","","45 Full Time.txt",1.2
+"BRO",23519,265,23784,17850,,"","","43 Assistant Store Manager.txt",23776.8
+"BRO",33450,1933,35383,,10,"","","42 Store Manager.txt",11599
+"BRO",,,47700,,,"AREA MGR","","41 Area Manager.txt",12317
+"BRO",62300,31150,93450,,,"DM","","40 District Manager.txt",45750
+"BRO",95000,47500,142500,,,"RM","","39 Regional Manager.txt",49050
+"BRO",170000,0,170000,,1465,"SR VP","CEO","37 Top Store Operations.txt",27500
+"BRO",52300,,52300,,7,"MGR, LOG & SUPPORT","OPER VP DISTRIB","36 Domestic Traffic.txt",-117700
+"BRO",110000,13125,123125,,100,"OPER VP DISTRIB & LOGISTICS","EX VP FINAN & ADMIN","34 Top DC _ Logistics.txt",70825
+"BRO",50350,,50350,38438,,"REG LP MGR","","33 Regional Loss Prevention.txt",-72775
+"BRO",90500,0,90500,,3,"DR LP","SR VP STORE OPS","32 Top Loss Prevention.txt",40150
+"BRO",93000,0,93000,,1,"","","31 Comp_Benefits Mgr.txt",2500
+"BRO",140000,0,140000,,14,"VP HR","CEO","30 Top Human Resources.txt",47000
+"BRO",57800,,57800,,2,"PROJECT MGR,POS,MERCH","MGR SYSTEM DEV","29 Point Of Sale Admin.txt",-82200
+"BRO",70000,,70000,,7,"MGR, TECH SERV & TLECOM","","28 Computer Operations.txt",12200
+"BRO",100000,,100000,,4,"MGR SYSTEM DEV","","27 Systems Programming.txt",30000
+"BRO",150000,0,150000,,15,"OP VP INFO SERV","EX VP FINAN","26 Top Systems_Data Procg.txt",50000
+"BRO",65000,,65000,,3,"VIS DR","OPS VP CREATIVE","24 Top Visual.txt",-85000
+"BRO",135000,0,135000,,11,"OP VP CREATIVE SERV","EX VP MERSH","23 Art Department.txt",70000
+"BRO",23000,,23000,,,"INVNT PLAN COORD","","21 Product Coordinator.txt",-112000
+"BRO",45000,,45000,,,"STORE PLAN","","19 Distributor.txt",22000
+"BRO",55000,,55000,,,"MERCH PLAN","","18 Planner.txt",10000
+"BRO",56800,,56800,,1,"ASST DR, PLAN & ALLOC","","17 Sr Planner.txt",1800
+"BRO",121000,14375,135375,,13,"DR PLAN & ALLOC","EX VP MERCH","16 Top Planner.txt",78575
+"BRO",35000,0,35000,,,"ASST B","","15 Assistant Buyer.txt",-100375
+"BRO",90000,10000,100000,,,"","","14 Buyer.txt",65000
+"BRO",140500,13500,154000,,10,"OPERATIONAL VP, MERCH","","12 Div Merchandise Mgr.txt",54000
+"BRO",240000,0,240000,,30,"EX VP MERSH","PRES/CEO","11 General Merchandise Mgr.txt",86000
+"BRO",85147,,85147,,10,"ASST CONTR","","09 Treasurer.txt",-154853
+"BRO",112500,13438,125938,,30,"CONTR","","08 Controller.txt",40791
+"BRO",230000,50000,280000,,98,"EX VP FINAN& ADMIN","","07 CFO.txt",154062
+"BRO",67500,,67500,,0,"STORE PLAN, NEW CONSTRUC","VP RE","05 Top Store Plan_Construct.txt",-212500
+"BRO",118450,0,118450,,5,"VP RE","EX VP FINANCE & ADMIN","03 Top Real Estate.txt",50950
+"BRO",115000,0,115000,,0,"CORP COUNSEL & SEC","","02 General Counsel.txt",-3450
+"BRO",325000,0,325000,,17000,"PRES/CEO","BD OF DR","01 CEO.txt",210000

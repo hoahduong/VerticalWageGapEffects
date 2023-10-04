@@ -1,0 +1,62 @@
+------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/1996_StoreOpsCombine
+> d/1997_StoreOpsCombined.log
+  log type:  text
+ opened on:   8 Apr 2019, 08:48:11
+
+. 
+. version 15
+
+. 
+. local csvPath "/Users/macbook/Desktop/18-19 Thesis/Data Processing/1997/03 1997_StoreOps
+> Combined/csvFiles/"
+
+. local dataPath "/Users/macbook/Desktop/18-19 Thesis/Data Processing/1997/02 RealConversi
+> on/convertedData/"
+
+.         
+. drop _all
+
+. 
+. // 43 has repeated code (BRI)
+. use "`dataPath'43A Assistant Store Manager.dta", clear
+
+. collapse total, by (code)
+
+. save "`dataPath'43A Assistant Store Manager_collapse.dta", replace
+file /Users/macbook/Desktop/18-19 Thesis/Data Processing/1997/02 RealConversion/convertedD
+> ata/43A Assistant Store Manager_collapse.dta saved
+
+. 
+. local fileList "42A Store Manager.dta" ///
+>         "41 Area Manager.dta" ///
+>         "40A District Manager.dta" ///
+>         "39 Regional Manager.dta" ///
+>         "38 Zone Manager.dta" ///
+>         "37 Top Store Operations.dta"
+
+. 
+. 
+. // create the big data file
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1997/001 Company ID.dta", cl
+> ear
+
+. keep code stores volume employees
+
+. save StoreOpsCombined.dta, replace emptyok
+file StoreOpsCombined.dta saved
+
+. use StoreOpsCombined.dta, clear
+
+. 
+end of do-file
+
+. do "/Users/macbook/Desktop/18-19 Thesis/Data Processing/1997/03 1997_StoreOpsCombined/19
+> 97_StoreOpsCombined.do"
+
+. cd "/Users/macbook/Desktop/18-19 Thesis/Data Processing/1997/03 1997_StoreOpsCombined"
+/Users/macbook/Desktop/18-19 Thesis/Data Processing/1997/03 1997_StoreOpsCombined
+
+. 
+. capture log close

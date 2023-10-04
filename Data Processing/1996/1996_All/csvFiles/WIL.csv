@@ -1,0 +1,29 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"WIL",90000,0,90000,66000,2,"DR, LOGISTICS","SR VP LOGISTICS","36 Domestic Traffic.txt",
+"WIL",210000,0,210000,,650,"SR VP","CAO","34 Top DC _ Logistics.txt",120000
+"WIL",51500,0,51500,40000,,"REGIONAL LP MGR","","33 Regional Loss Prevention.txt",-158500
+"WIL",80000,0,80000,,5,"DR, LOSS PREVENTION","CAO","32 Top Loss Prevention.txt",28500
+"WIL",115000,0,115000,,11,"","","31 Comp_Benefits Mgr.txt",35000
+"WIL",180000,0,180000,,60,"SR VP, HR","CHIEF INFORMATION OFFICER","30 Top Human Resources.txt",65000
+"WIL",50000,0,50000,,6,"MGR, HELP DESK","DR, STORE SYSTEMS","29 Point Of Sale Admin.txt",-130000
+"WIL",73000,0,73000,,15,"DR, COMPUTER OPERATIONS","","28 Computer Operations.txt",23000
+"WIL",92500,0,92500,,15,"DR, SYSTEM DEVELOPMENT","","27 Systems Programming.txt",19500
+"WIL",142000,0,142000,,47,"VP, MIS","CAO","26 Top Systems_Data Procg.txt",49500
+"WIL",24808,,24808,,,"VISUAL MERCHANDISER","","25 Regional Visual.txt",-117192
+"WIL",87500,0,87500,,8,"DR, VISUAL MERCHANDISING","EVP & GM","24 Top Visual.txt",62692
+"WIL",130000,0,130000,,6,"VP INTERNATIONAL OPS","SE VP LOGISTICS","20 Top Import Coordinator.txt",42500
+"WIL",28000,0,28000,,,"RET INVENT PLANNER","","18 Planner.txt",-102000
+"WIL",55000,0,55000,,5,"MGTR, RETAIL INVENTORY MGMT","","17 Sr Planner.txt",27000
+"WIL",85000,0,85000,,9,"DR, RETAIL INVENTORY MGMT","EVP & GM","16 Top Planner.txt",30000
+"WIL",36400,,36400,,,"ASST BUYER","","15 Assistant Buyer.txt",-48600
+"WIL",50000,0,52500,,,"","","14 Buyer.txt",16100
+"WIL",70000,0,70000,,10,"DR, DIVISIONAL MERCH MGR","","12 Div Merchandise Mgr.txt",17500
+"WIL",400000,0,400000,,119,"CHIEF MERCHANDISING OFFICER","CEO","11 General Merchandise Mgr.txt",330000
+"WIL",73500,,73500,,0,"","","10 Top Internal Auditor.txt",-326500
+"WIL",140000,0,140000,,44,"VP, CONTROLLER","","08 Controller.txt",66500
+"WIL",149000,,149000,,44,"CFO","","07 CFO.txt",9000
+"WIL",48000,0,48000,,,"PROJECT MGR","","06 Regional Store Construct.txt",-101000
+"WIL",95000,0,95000,,6,"DR, STORE DEV","VP, RE","05 Top Store Plan_Construct.txt",47000
+"WIL",75000,0,75000,,,"SR, R E REP","","04 Regional Real Estate.txt",-20000
+"WIL",140000,0,140000,,8,"VP, REAL ESTATE","CEO","03 Top Real Estate.txt",65000
+"WIL",500000,0,500000,,6300,"CHAIRMAN/CEO","BOARD OF DR","01 CEO.txt",360000

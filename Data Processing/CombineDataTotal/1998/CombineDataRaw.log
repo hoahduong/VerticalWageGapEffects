@@ -1,0 +1,849 @@
+------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/macbook/Desktop/18-19 Thesis/Data Processing/CombineDataTotal/1998/Com
+> bineDataRaw.log
+  log type:  text
+ opened on:   2 Apr 2019, 20:40:16
+
+. 
+. version 15
+
+. 
+. // use the grep command to get the list of all text files
+. // $ grep -l '' *.dta
+. 
+. drop _all 
+
+. 
+. local dataPath "/Users/macbook/Desktop/18-19 Thesis/Data Processing/1998/02 RealConversi
+> on/convertedData/"
+
+. 
+. // 15 has both assistant and associate
+. use "`dataPath'15 assistant _ assoiciate",  clear 
+
+. gen total = cond(missing(assoctotal, assisttotal), max(assoctotal, assisttotal), (assoct
+> otal + assisttotal) / 2) 
+(1 missing value generated)
+
+. save "15 assistant _ assoiciate_avg.dta", replace
+file 15 assistant _ assoiciate_avg.dta saved
+
+. 
+. // 44 has both pt and ft
+. use "`dataPath'44a third key", clear
+
+. gen total = cond(missing(pttotal, fttotal), max(pttotal, fttotal), (pttotal + fttotal) /
+>  2) 
+(1 missing value generated)
+
+. save "44a third key_avg.dta", replace
+file 44a third key_avg.dta saved
+
+. 
+. // create the big data file
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1998/001 company data.dta", 
+> clear
+
+. keep code stores volume employee
+
+. save allPosRaw.dta, replace emptyok
+file allPosRaw.dta saved
+
+. use allPosRaw.dta, clear
+
+. 
+. local fileList "01 ceo" ///
+>                 "02 head of legal" ///
+>                 "03 head of real estate" ///
+>                 "04 regional real estate" ///
+>                 "05 head of store plan const" ///
+>                 "06 field regional const mgr" ///
+>                 "07 cfo" ///
+>                 "08 controller" ///
+>                 "09 treasurer" ///
+>                 "10 top internal auditor" ///
+>                 "11 head of merchandising" ///
+>                 "12 div merchandise mgr" ///
+>                 "13 sr merch buyer" ///
+>                 "14 merch buyer" ///
+>                 "15 assistant _ assoiciate" ///
+>                 "16 head of merch plan alloc" ///
+>                 "17 sr merch plan controll" ///
+>                 "18 merch planner controller" ///
+>                 "19 merch distrib" ///
+>                 "20 head of import prod" ///
+>                 "21 production coor" ///
+>                 "22 head of mktg advtg sales" ///
+>                 "23 art department head" ///
+>                 "24 head of visual" ///
+>                 "25 reg visual merch" ///
+>                 "26 head info sys data proc" ///
+>                 "27 head systems programming" ///
+>                 "28 head computer operations" ///
+>                 "29 point sale admin" ///
+>                 "30 head of human resource" ///
+>                 "31 compensation benefit mgr" ///
+>                 "32 head of loss prevention" ///
+>                 "33 regional loss prevention" ///
+>                 "34 head phys distrib log" ///
+>                 "35 distribution center mgr" ///
+>                 "36 domestic traffic manager" ///
+>                 "37 head of stores" ///
+>                 "38 zone manager" ///
+>                 "39 regional manager" ///
+>                 "40a  district manager" ///
+>                 "41 area sales _ sr manager" ///
+>                 "42a store manager" ///
+>                 "43a assistant manager" ///
+>                 "44a third key" ///
+>                 "45 full time" ///
+>                 "46 part time" 
+
+. local i 0
+
+.         
+. // for each data file, merge by code
+. foreach fileName in "`fileList'" {
+  2. di "This is file `fileName'" //DDD
+  3. local i = `i' + 1
+  4. if (`i' != 5 & `i' != 15 & `i' != 21 & `i' != 22 & `i' != 31 & `i' != 44 & `i' != 45 
+> & `i' != 46)       {
+  5.         merge m:1 code using "`dataPath'`fileName'",  keepusing(total)
+  6.         rename total total`i'
+  7.         drop _merge
+  8.         }
+  9. if (`i' == 5)   {
+ 10.         merge m:1 code using "`dataPath'`fileName'",  keepusing(pdctotal)
+ 11.         rename pdctotal total`i'
+ 12.         drop _merge
+ 13.         }
+ 14. if (`i' == 15)  {
+ 15.         merge m:1 code using "15 assistant _ assoiciate_avg.dta", keepusing(total)
+ 16.         rename total total`i'
+ 17.         drop _merge
+ 18.         }
+ 19. if (`i' == 21)  {
+ 20.         merge m:1 code using "`dataPath'`fileName'",  keepusing(odtotal)
+ 21.         rename odtotal total`i'
+ 22.         drop _merge
+ 23.         }
+ 24. if (`i' == 22)  {
+ 25.         merge m:1 code using "`dataPath'`fileName'",  keepusing(masptotal)
+ 26.         rename masptotal total`i'
+ 27.         drop _merge
+ 28.         }
+ 29. if (`i' == 31)  {
+ 30.         merge m:1 code using "`dataPath'`fileName'",  keepusing(cbtotal)
+ 31.         rename cbtotal total`i'
+ 32.         drop _merge
+ 33.         }
+ 34. if (`i' == 44)  {
+ 35.         merge m:1 code using "44a third key_avg.dta", keepusing(total)
+ 36.         rename total total`i'
+ 37.         drop _merge
+ 38.         }
+ 39. if (`i' == 45 | `i' == 46)      {
+ 40.         merge m:1 code using "`dataPath'`fileName'",  keepusing(nattotal)
+ 41.         rename nattotal total`i'
+ 42.         drop _merge
+ 43.         }
+ 44. }
+This is file 01 ceo
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            20
+        from master                        20  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                44  (_merge==3)
+    -----------------------------------------
+This is file 02 head of legal
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            38
+        from master                        38  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                26  (_merge==3)
+    -----------------------------------------
+This is file 03 head of real estate
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            32
+        from master                        32  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                32  (_merge==3)
+    -----------------------------------------
+This is file 04 regional real estate
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            43
+        from master                        43  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                21  (_merge==3)
+    -----------------------------------------
+This is file 05 head of store plan const
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            20
+        from master                        20  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                44  (_merge==3)
+    -----------------------------------------
+This is file 06 field regional const mgr
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            41
+        from master                        41  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                23  (_merge==3)
+    -----------------------------------------
+This is file 07 cfo
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            21
+        from master                        21  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                43  (_merge==3)
+    -----------------------------------------
+This is file 08 controller
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            20
+        from master                        20  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                44  (_merge==3)
+    -----------------------------------------
+This is file 09 treasurer
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            46
+        from master                        46  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                18  (_merge==3)
+    -----------------------------------------
+This is file 10 top internal auditor
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            50
+        from master                        50  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                14  (_merge==3)
+    -----------------------------------------
+This is file 11 head of merchandising
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            26
+        from master                        26  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                38  (_merge==3)
+    -----------------------------------------
+This is file 12 div merchandise mgr
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            18
+        from master                        18  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                46  (_merge==3)
+    -----------------------------------------
+This is file 13 sr merch buyer
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            36
+        from master                        36  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                28  (_merge==3)
+    -----------------------------------------
+This is file 14 merch buyer
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             8
+        from master                         8  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                56  (_merge==3)
+    -----------------------------------------
+This is file 15 assistant _ assoiciate
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            14
+        from master                        14  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                50  (_merge==3)
+    -----------------------------------------
+This is file 16 head of merch plan alloc
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            17
+        from master                        17  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                47  (_merge==3)
+    -----------------------------------------
+This is file 17 sr merch plan controll
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            37
+        from master                        37  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                27  (_merge==3)
+    -----------------------------------------
+This is file 18 merch planner controller
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            18
+        from master                        18  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                46  (_merge==3)
+    -----------------------------------------
+This is file 19 merch distrib
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            16
+        from master                        16  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                48  (_merge==3)
+    -----------------------------------------
+This is file 20 head of import prod
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            49
+        from master                        49  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                15  (_merge==3)
+    -----------------------------------------
+This is file 21 production coor
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            55
+        from master                        55  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                 9  (_merge==3)
+    -----------------------------------------
+This is file 22 head of mktg advtg sales
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            18
+        from master                        18  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                46  (_merge==3)
+    -----------------------------------------
+This is file 23 art department head
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            40
+        from master                        40  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                24  (_merge==3)
+    -----------------------------------------
+This is file 24 head of visual
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            18
+        from master                        18  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                46  (_merge==3)
+    -----------------------------------------
+This is file 25 reg visual merch
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            47
+        from master                        47  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                17  (_merge==3)
+    -----------------------------------------
+This is file 26 head info sys data proc
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            24
+        from master                        24  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                40  (_merge==3)
+    -----------------------------------------
+This is file 27 head systems programming
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            26
+        from master                        26  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                38  (_merge==3)
+    -----------------------------------------
+This is file 28 head computer operations
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            28
+        from master                        28  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                36  (_merge==3)
+    -----------------------------------------
+This is file 29 point sale admin
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            38
+        from master                        38  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                26  (_merge==3)
+    -----------------------------------------
+This is file 30 head of human resource
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            18
+        from master                        18  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                46  (_merge==3)
+    -----------------------------------------
+This is file 31 compensation benefit mgr
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            24
+        from master                        24  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                40  (_merge==3)
+    -----------------------------------------
+This is file 32 head of loss prevention
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            20
+        from master                        20  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                44  (_merge==3)
+    -----------------------------------------
+This is file 33 regional loss prevention
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            30
+        from master                        30  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                34  (_merge==3)
+    -----------------------------------------
+This is file 34 head phys distrib log
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            24
+        from master                        24  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                40  (_merge==3)
+    -----------------------------------------
+This is file 35 distribution center mgr
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            35
+        from master                        35  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                29  (_merge==3)
+    -----------------------------------------
+This is file 36 domestic traffic manager
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            36
+        from master                        36  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                28  (_merge==3)
+    -----------------------------------------
+This is file 37 head of stores
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            20
+        from master                        20  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                44  (_merge==3)
+    -----------------------------------------
+This is file 38 zone manager
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            55
+        from master                        55  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                 9  (_merge==3)
+    -----------------------------------------
+This is file 39 regional manager
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            11
+        from master                        11  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                53  (_merge==3)
+    -----------------------------------------
+This is file 40a  district manager
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             6
+        from master                         6  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                58  (_merge==3)
+    -----------------------------------------
+This is file 41 area sales _ sr manager
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            48
+        from master                        48  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                16  (_merge==3)
+    -----------------------------------------
+This is file 42a store manager
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             5
+        from master                         5  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                59  (_merge==3)
+    -----------------------------------------
+This is file 43a assistant manager
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             6
+        from master                         6  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                58  (_merge==3)
+    -----------------------------------------
+This is file 44a third key
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            27
+        from master                        27  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                37  (_merge==3)
+    -----------------------------------------
+This is file 45 full time
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            15
+        from master                        15  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                49  (_merge==3)
+    -----------------------------------------
+This is file 46 part time
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             7
+        from master                         7  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                57  (_merge==3)
+    -----------------------------------------
+
+. 
+. save allPosRaw.dta, replace  
+file allPosRaw.dta saved
+
+. 
+. summ
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        code |          0
+   employees |         64    8088.516    10702.55        523      81000
+      stores |         64    762.9531    860.3572         42       4473
+      volume |         64    7.71e+08    9.68e+08   4.90e+07   6.50e+09
+      total1 |         44    673036.1    571757.3     168750    3584850
+-------------+---------------------------------------------------------
+      total2 |         26    226963.2    122161.1      93725     485000
+      total3 |         32    205600.9    84560.36      75000     475500
+      total4 |         21    122600.3    39146.92      67103     243300
+      total5 |         27    145202.3    54564.56      53000     295000
+      total6 |         23    66199.17    16323.86      44500     109500
+-------------+---------------------------------------------------------
+      total7 |         43    288378.3      130309     125429     605000
+      total8 |         44    139549.8    48017.97      78000     285500
+      total9 |         18    131390.9    57625.31   45319.56     266437
+     total10 |         14    84069.36    20066.81      56650     128000
+     total11 |         38    296466.2      141496     106600     814436
+-------------+---------------------------------------------------------
+     total12 |         46    149137.8     52593.6      67845     323100
+     total13 |         28    89641.31    26988.44   43233.32     189052
+     total14 |         56     70123.8    17763.37   38110.02     119369
+     total15 |         49    39559.44    9367.987      23510      63800
+     total16 |         47    146228.4    55220.25      63250     321900
+-------------+---------------------------------------------------------
+     total17 |         27       78001    27284.77      37500     138500
+     total18 |         46    50971.72     10670.5      33495      79300
+     total19 |         48    32640.86    8348.133      18866      59973
+     total20 |         15    198625.4    161436.1      55203     564000
+     total21 |          9       83616    49237.57      34500     207171
+-------------+---------------------------------------------------------
+     total22 |         26    173850.8    90514.44      53845     392490
+     total23 |         24    73665.42     33745.5      36000     157000
+     total24 |         46    85275.22    36650.71      41500     190000
+     total25 |         17     45197.7    10599.73      31666      68000
+     total26 |         40    179275.1    81961.08   84875.96     499200
+-------------+---------------------------------------------------------
+     total27 |         38    100745.3     34461.9      61521     193050
+     total28 |         36    88913.88    30441.04      40000     162519
+     total29 |         26    57082.81    22813.11      22239     125580
+     total30 |         46    174818.1    83388.77      62000     520000
+     total31 |         18    78351.89    21457.08      48000     139000
+-------------+---------------------------------------------------------
+     total32 |         43    103015.7    37650.34      50200     240000
+     total33 |         34    52439.53    9513.704      40000      80485
+     total34 |         40    166989.8     84060.3      57400     462000
+     total35 |         29    75522.69    25427.82      40000     155908
+     total36 |         28    66267.95    23650.45      36330     130666
+-------------+---------------------------------------------------------
+     total37 |         44    232578.4    92088.54     117000     599500
+     total38 |          9    175228.3    77285.91      81420   296865.4
+     total39 |         52    108643.2    30487.05      58968     217800
+     total40 |         58    58565.21    11768.22      39266      86631
+     total41 |         16    40168.66    10342.32      26700      57931
+-------------+---------------------------------------------------------
+     total42 |         59    32717.37    6930.001      19150      48336
+     total43 |         57    10.50544    2.513113        6.1      17.38
+     total44 |         36    8.001389    1.360593       5.79      10.72
+     total45 |         49    8.121837    2.557546       5.75      23.72
+     total46 |         56    6.289464    .8330959       5.25       9.53
+
+. 
+. use allPosRaw.dta
+
+. describe
+
+Contains data from allPosRaw.dta
+  obs:            64                          
+ vars:            50                          2 Apr 2019 20:40
+ size:        12,864                          
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str3    %9s                   Code
+employees       long    %12.0g                Employees
+stores          int     %8.0g                 .Stores
+volume          double  %10.0g                Volume
+total1          long    %12.0g                Total
+total2          float   %9.0g                 
+total3          float   %9.0g                 
+total4          float   %9.0g                 
+total5          float   %9.0g                 
+total6          float   %9.0g                 
+total7          float   %9.0g                 
+total8          float   %9.0g                 
+total9          float   %9.0g                 
+total10         float   %9.0g                 
+total11         long    %12.0g                Total
+total12         float   %9.0g                 
+total13         float   %9.0g                 
+total14         float   %9.0g                 
+total15         float   %9.0g                 
+total16         long    %12.0g                Total
+total17         float   %9.0g                 
+total18         float   %9.0g                 
+total19         float   %9.0g                 
+total20         float   %9.0g                 
+total21         float   %9.0g                 
+total22         float   %9.0g                 
+total23         float   %9.0g                 
+total24         long    %12.0g                Total
+total25         float   %9.0g                 
+total26         float   %9.0g                 
+total27         float   %9.0g                 
+total28         float   %9.0g                 
+total29         float   %9.0g                 
+total30         long    %12.0g                Total
+total31         float   %9.0g                 
+total32         float   %9.0g                 
+total33         float   %9.0g                 
+total34         float   %9.0g                 
+total35         float   %9.0g                 
+total36         float   %9.0g                 
+total37         long    %12.0g                Total
+total38         float   %9.0g                 
+total39         float   %9.0g                 
+total40         float   %9.0g                 
+total41         float   %9.0g                 
+total42         float   %9.0g                 AllTotal
+total43         float   %9.0g                 
+total44         float   %9.0g                 
+total45         float   %9.0g                 
+total46         float   %9.0g                 
+------------------------------------------------------------------------------------------
+Sorted by: 
+
+. 
+. // rename
+. rename total1 CEO
+
+. rename total2 General_Counsel
+
+. rename total3 Top_Real_Estate
+
+. rename total4 Regional_Real_Estate
+
+. rename total5 Top_Store_Plan_Construct  
+
+. rename total6 Regional_Store_Construct
+
+. rename total7 CFO
+
+. rename total8 Controller
+
+. rename total9 Treasurer
+
+. rename total10 Top_Internal_Auditor
+
+. rename total11 General_Merchandise_Mgr
+
+. rename total12 Div_Merchandise_Mgr
+
+. rename total13 Sr_Buyer
+
+. rename total14 Buyer
+
+. rename total15 Assistant_Buyer
+
+. rename total16 Top_Planner
+
+. rename total17 Sr_Planner
+
+. rename total18 Planner
+
+. rename total19 Distributor
+
+. rename total20 Top_Import_Coordinator
+
+. rename total21 Product_Coordinator
+
+. rename total22 Top_Mktg_Sales_Promo     
+
+. rename total23 Art_Department
+
+. rename total24 Top_Visual
+
+. rename total25 Regional_Visual
+
+. rename total26 Top_Systems_Data_Procg
+
+. rename total27 Systems_Programming
+
+. rename total28 Computer_Operations
+
+. rename total29 Point_Of_Sale_Admin
+
+. rename total30 Top_Human_Resources
+
+. rename total31 Comp_Benefits_Mgr
+
+. rename total32 Top_Loss_Prevention
+
+. rename total33 Regional_Loss_Prevention
+
+. rename total34 Top_DC_Logistics
+
+. rename total35 DC_Manager
+
+. rename total36 Domestic_Traffic
+
+. rename total37 Top_Store_Operations
+
+. rename total38 Zone_Manager
+
+. rename total39 Regional_Manager
+
+. rename total40 District_Manager
+
+. rename total41 Area_Manager
+
+. rename total42 Store_Manager
+
+. rename total43 Assistant_Store_Manager 
+
+. rename total44 Third_Key
+
+. rename total45 Full_Time
+
+. rename total46 Part_Time
+
+. 
+. save allPosRaw.dta, replace 
+file allPosRaw.dta saved
+
+. 
+. 
+end of do-file
+

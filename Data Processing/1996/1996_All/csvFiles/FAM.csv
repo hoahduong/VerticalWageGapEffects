@@ -1,0 +1,29 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"FAM",5.11,0,5.11,,,"","","46 Part Time.txt",
+"FAM",5.86,0,5.86,,,"","","45 Full Time.txt",.75
+"FAM",15412,52,15464,,,"","","43 Assistant Store Manager.txt",15458.14
+"FAM",24454,607,25061,,10,"","","42 Store Manager.txt",9597
+"FAM",,,32634,,,"AREA STORE MGR","","41 Area Manager.txt",7573
+"FAM",46313,1992,48305,,,"DSM","","40 District Manager.txt",15671
+"FAM",80000,4849,84849,,,"REG SALES MGR","","39 Regional Manager.txt",36544
+"FAM",175000,35000,210000,,7156,"SR VP","PRES","37 Top Store Operations.txt",125151
+"FAM",47600,3275,50875,,5,"TRAFFIC MGR","VP LOGISTICS","36 Domestic Traffic.txt",-159125
+"FAM",58000,6000,64000,,360,"","","35 DC Manager.txt",13125
+"FAM",112500,14220,126720,,400,"VP LOGISTICS","EX VP","34 Top DC _ Logistics.txt",62720
+"FAM",105000,18822,123822,,15,"VP HR","EX VP","30 Top Human Resources.txt",-2898
+"FAM",64000,3662,67662,,16,"DR OF IS","","28 Computer Operations.txt",-56160
+"FAM",71000,1702,72702,,66,"DR OF IS","","27 Systems Programming.txt",5040
+"FAM",115000,25830,140830,,82,"VP INFO SYSTEMS","EX  VP","26 Top Systems_Data Procg.txt",68128
+"FAM",165000,27500,192500,,19,"VP MKTNG","","22 Top Mktg_Sales Promo.txt",51670
+"FAM",30928,785,31713,,,"MERCHANDISER","","19 Distributor.txt",-160787
+"FAM",57000,3150,60150,,,"MERCH MGR","","18 Planner.txt",28437
+"FAM",90000,,90000,,42,"DR OF MERCH","VP GMM","16 Top Planner.txt",29850
+"FAM",66421,4596,71017,,,"","","14 Buyer.txt",-18983
+"FAM",91500,5600,97100,,3,"MERCH MGR","","12 Div Merchandise Mgr.txt",26083
+"FAM",200000,275000,475000,,72,"SR VP MERCH/GMM","PRES","11 General Merchandise Mgr.txt",377900
+"FAM",70000,9700,79700,,44,"CONTR","","08 Controller.txt",-395300
+"FAM",150000,28000,178000,,45,"CFO","","07 CFO.txt",98300
+"FAM",35000,,35000,,,"CONSTRUC COORD","","06 Regional Store Construct.txt",-143000
+"FAM",67000,4789,71789,,10,"DR FACILITIES MGMT","VP RE","05 Top Store Plan_Construct.txt",36789
+"FAM",100000,10000,110000,,16,"VP RE","PRES","03 Top Real Estate.txt",38211
+"FAM",,0,,,8153,"PRES","PRES OF PARENT","01 CEO.txt",

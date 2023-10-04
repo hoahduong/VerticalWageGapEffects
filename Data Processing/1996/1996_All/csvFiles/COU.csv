@@ -1,0 +1,38 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"COU",4.66,0,4.66,4.25,,"","","46 Part Time.txt",
+"COU",4.73,0,4.73,4.34,,"","","45 Full Time.txt",.0700002
+"COU",17534,0,17534,,,"","","43 Assistant Store Manager.txt",17529.27
+"COU",24156,0,24156,,9,"","","42 Store Manager.txt",6622
+"COU",,,29622,,,"AREA MGR","","41 Area Manager.txt",5466
+"COU",42829,0,42829,,,"DM","","40 District Manager.txt",13207
+"COU",85243,0,85243,,,"RM","","39 Regional Manager.txt",42414
+"COU",222000,0,222000,,5856,"SR VP STORE OPS","CEO","37 Top Store Operations.txt",136757
+"COU",51270,,51270,,0,"TRANS MGR","VP DISTRIB & TRANS","36 Domestic Traffic.txt",-170730
+"COU",114150,0,114150,,379,"VP DISTRIB & TRANS","SR VP CORP OPS","34 Top DC _ Logistics.txt",62880
+"COU",47811,,47811,,,"SR & REG LP MGR","","33 Regional Loss Prevention.txt",-66339
+"COU",81200,,81200,,9,"DR LP","SR VP CAO","32 Top Loss Prevention.txt",33389
+"COU",,,,,,"","","31 Comp_Benefits Mgr.txt",
+"COU",100000,0,100000,,12,"VP CORP HR","CEO","30 Top Human Resources.txt",
+"COU",47868,,47868,,5,"MGR POS LOGISTICS/POS HELP DESK","VP RET SYSTEMS SERV & CIO","29 Point Of Sale Admin.txt",-52132
+"COU",66000,,66000,,4,"ENTERPRISE NETWRK & ARCHITECTURE MGR","","28 Computer Operations.txt",18132
+"COU",163000,0,163000,,55,"VP RET SYSTEM SERV & CIO","SR VP CORP OPS","26 Top Systems_Data Procg.txt",97000
+"COU",52855,,52855,,4,"VIS MERCH COMM MGR","SR VP STORE OPS","24 Top Visual.txt",-110145
+"COU",79530,,79530,,5,"DR OF MKTNG","","22 Top Mktg_Sales Promo.txt",26675
+"COU",63650,,63650,,,"DR OF PROD & SOURCING","","21 Product Coordinator.txt",-15880
+"COU",58000,,58000,,2,"DR OF IMPORTS","SR VP CORP OPS","20 Top Import Coordinator.txt",-5650
+"COU",24926,,24926,,,"ASST PLANNER","","19 Distributor.txt",-33074
+"COU",38110,0,38110,,,"PLANNER","","18 Planner.txt",13184
+"COU",61000,0,61000,,15,"DR MERCH PLAN & DISTRIB","","17 Sr Planner.txt",22890
+"COU",115450,0,115450,,32,"VP MERCH PLAN & DISTRIB","SR VP MERCH & MKTNG","16 Top Planner.txt",54450
+"COU",26740,0,26740,,,"SR ASST MERCH","","15 Assistant Buyer.txt",-88710
+"COU",55028,0,55082,,,"","","14 Buyer.txt",28342
+"COU",96000,0,96000,,4,"MERCH MGR","","12 Div Merchandise Mgr.txt",40918
+"COU",252750,0,252750,,53,"SR VP MERCH & MKTNG","CEO","11 General Merchandise Mgr.txt",156750
+"COU",85300,,85300,,54,"DR FINAN ACCTNG & CONTROL","","08 Controller.txt",-167450
+"COU",150000,,150000,,60,"SR VP CFO","","07 CFO.txt",64700
+"COU",54000,0,54000,,,"PROJECT MGR CONSTRUC","","06 Regional Store Construct.txt",-96000
+"COU",78000,,78000,,3,"DR STORE CONSTRUC & MAIN","SR VP CORP OPS","05 Top Store Plan_Construct.txt",24000
+"COU",100000,,100000,,,"DR RE & DEV","","04 Regional Real Estate.txt",22000
+"COU",215000,0,215000,,380,"SR VP CORP OPS","CEO","03 Top Real Estate.txt",115000
+"COU",110000,0,110000,,2,"VP & GEN COUNSEL","","02 General Counsel.txt",-105000
+"COU",450000,0,450000,,7500,"CHAIR/PRES/CEO","BD OF DR","01 CEO.txt",340000

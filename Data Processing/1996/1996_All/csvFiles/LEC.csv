@@ -1,0 +1,34 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"LEC",5.18,0,5.18,,,"","","46 Part Time.txt",
+"LEC",17800,60,17860,,,"","","43 Assistant Store Manager.txt",17854.82
+"LEC",25283,200,25483,,6,"","","42 Store Manager.txt",7623
+"LEC",46686,883,47569,,,"DM","","40 District Manager.txt",22086
+"LEC",114000,1291,115291,,,"REGIONAL VP","","39 Regional Manager.txt",67722
+"LEC",208000,12500,220500,,4500,"SR VP OF STORES","CEO","37 Top Store Operations.txt",105209
+"LEC",66924,4376,71300,,5,"TRAFFIC MGR","DR OF INVENTORY SUPPORT","36 Domestic Traffic.txt",-149200
+"LEC",84870,2188,87058,,108,"","","35 DC Manager.txt",15758
+"LEC",115500,4376,119876,,242,"DR OF INVENTORY SUPPORT","GMM","34 Top DC _ Logistics.txt",32818
+"LEC",45339,1500,46839,,,"REGIONAL LP MGR","","33 Regional Loss Prevention.txt",-73037
+"LEC",71000,5313,76313,,10,"DR OF LOSS PREVENTION","CFO","32 Top Loss Prevention.txt",29474
+"LEC",,,,,,"","","31 Comp_Benefits Mgr.txt",
+"LEC",185000,12500,197500,,9,"SR VP/HR","CEO","30 Top Human Resources.txt",
+"LEC",38110,0,38110,,1,"POS COORDINATOR","COMPUTER OPS MGR","29 Point Of Sale Admin.txt",-159390
+"LEC",74000,,74000,,8,"COMPUTER OPERATIONS MGR","","28 Computer Operations.txt",35890
+"LEC",160000,0,160000,,32,"VP/INFORMATION TECHNOLOGY","SR VP/CFO","26 Top Systems_Data Procg.txt",86000
+"LEC",82000,0,82000,,4,"DR OF VISUAL MERCHANDISING","SR VP/GMM","24 Top Visual.txt",-78000
+"LEC",46900,,46900,,4,"IMPORT MGR","DR OF INVENTORY SUPPORT","20 Top Import Coordinator.txt",-35100
+"LEC",40857,0,40857,,,"REORDER BUYER","","19 Distributor.txt",-6043
+"LEC",51960,,51960,,,"REPLANTISHMENT MGR","","18 Planner.txt",11103
+"LEC",126000,0,126000,,10,"VP/PLANNING & ALLOCATION","GMM","16 Top Planner.txt",74040
+"LEC",46640,,46640,,,"ASSOCIATE BUYER","","15 Assistant Buyer.txt",-79360
+"LEC",94600,2124,96724,,,"","","14 Buyer.txt",50084
+"LEC",100000,0,100000,,,"MERCHANDISE MGR","","13 Sr Buyer.txt",3276
+"LEC",160000,4595,164595,,15,"MERCHANDISE VP","","12 Div Merchandise Mgr.txt",64595
+"LEC",298000,30000,328000,,285,"SR VP/GMM","CEO","11 General Merchandise Mgr.txt",163405
+"LEC",142500,11463,153963,,4,"VP TREASURER","","09 Treasurer.txt",-174037
+"LEC",131000,8750,139750,,36,"CORPORATE CONTROLLER/VP","","08 Controller.txt",-14213
+"LEC",250000,12500,262500,,94,"SR VP/CFO","","07 CFO.txt",122750
+"LEC",105000,4376,109376,,1,"","","05 Top Store Plan_Construct.txt",-153124
+"LEC",273000,12500,285500,,16,"SR VP RE  & CONSTRUC","CHAIRMAN/CEO","03 Top Real Estate.txt",176124
+"LEC",132870,8500,141370,,3,"VP/CORPORATE COUNSEL","","02 General Counsel.txt",-144130
+"LEC",,0,,,1521,"","","01 CEO.txt",

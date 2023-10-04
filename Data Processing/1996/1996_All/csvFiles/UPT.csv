@@ -1,0 +1,30 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"UPT",6.09,0,6.09,5,,"","","46 Part Time.txt",
+"UPT",6.09,0,6.09,5,,"","","45 Full Time.txt",0
+"UPT",33720,0,33720,25000,,"","","43 Assistant Store Manager.txt",33713.91
+"UPT",53122,0,53122,,66,"","","42 Store Manager.txt",19402
+"UPT",93500,0,93500,,,"REGIONAL MGR","","40 District Manager.txt",40378
+"UPT",188600,32800,221400,,4336,"SR VP STORES","PRES/CEO","37 Top Store Operations.txt",127900
+"UPT",52800,4800,57600,,5,"SR TRAFFIC MGR","DR DISTRIBUTION CENTER","36 Domestic Traffic.txt",-163800
+"UPT",92750,0,92750,,160,"","","35 DC Manager.txt",35150
+"UPT",25950,,25950,,,"REGIONAL LP MGR","","33 Regional Loss Prevention.txt",-66800
+"UPT",87000,0,87000,,80,"DR, LOSS PREVENTION","SR VP STORES","32 Top Loss Prevention.txt",61050
+"UPT",63800,,63800,,2,"","","31 Comp_Benefits Mgr.txt",-23200
+"UPT",193200,33600,226800,,85,"VP, HR","PRES/CEO","30 Top Human Resources.txt",163000
+"UPT",23190,,23190,,,"REGIONAL VISUAL MERCH COORDINATOR","","25 Regional Visual.txt",-203610
+"UPT",101500,0,101500,,75,"DR VISUAL MERCHANDISING","SR VP STORES","24 Top Visual.txt",78310
+"UPT",,,,,,"DR SALES PROMOTION","","22 Top Mktg_Sales Promo.txt",
+"UPT",33100,,33100,,,"DISTRIBUTOR","","19 Distributor.txt",
+"UPT",43500,,43500,,,"DISTRIBUTION SUPVSR","","18 Planner.txt",10400
+"UPT",80500,0,80500,,61,"DR, MERCHANDISING SERVICES","EXEC VP & GMM","16 Top Planner.txt",37000
+"UPT",33800,0,33800,,,"ASST BUYER","","15 Assistant Buyer.txt",-46700
+"UPT",68200,0,69519,,,"","","14 Buyer.txt",35719
+"UPT",79200,0,79200,,,"SR BUYER","","13 Sr Buyer.txt",9681
+"UPT",145000,19500,164500,,25,"DIVISIONAL MERCHANDISE MGR","","12 Div Merchandise Mgr.txt",85300
+"UPT",276000,48000,324000,,181,"EXEC VP & GMM","CEO","11 General Merchandise Mgr.txt",159500
+"UPT",39100,0,39100,,0,"","","10 Top Internal Auditor.txt",-284900
+"UPT",108500,0,108500,,59,"CONTROLLER","","08 Controller.txt",69400
+"UPT",207000,36000,243000,,379,"VP, FINANCE & OPS","","07 CFO.txt",134500
+"UPT",95900,8000,103900,,4,"DR, STORE PLANNING","CEO","05 Top Store Plan_Construct.txt",-139100
+"UPT",178000,10000,188000,,1,"EXEC VP - REAL ESTATE","PRES & CEO","03 Top Real Estate.txt",84100
+"UPT",460000,80000,540000,,5441,"PRES/CEO","GROUP EXECUTIVE","01 CEO.txt",352000

@@ -1,0 +1,27 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"GAN",5.98,1.05,7.03,,,"","","46 Part Time.txt",
+"GAN",7.06,1.6,8.66,,,"","","45 Full Time.txt",1.63
+"GAN",23717,936,24653,,,"","","43 Assistant Store Manager.txt",24644.34
+"GAN",29550,2829,32379,,20,"","","42 Store Manager.txt",7726
+"GAN",,,42940,,,"DISTRICT MGR","","41 Area Manager.txt",10561
+"GAN",45428,2169,47597,,,"DM","","40 District Manager.txt",4657
+"GAN",71757,8379,80136,,,"REGIONAL MGR","","39 Regional Manager.txt",32539
+"GAN",155000,0,155000,,2411,"VP STORE OPERSTIONS","CEO","37 Top Store Operations.txt",74864
+"GAN",81300,11895,93195,,56,"DR OF DISTRIBUTION","CFO","34 Top DC _ Logistics.txt",-61805
+"GAN",52000,0,52000,,0,"LOSS CONTROL SUPERVISOR","CFO","32 Top Loss Prevention.txt",-41195
+"GAN",62897,9160,72057,,9,"","","31 Comp_Benefits Mgr.txt",20057
+"GAN",150000,70000,220000,,24,"VP - HR, RE, GEN COUNSEL","CEO","30 Top Human Resources.txt",147943
+"GAN",53000,4335,57335,,3,"MGR COMPUTER OPERATIONS","","28 Computer Operations.txt",-162665
+"GAN",72500,10500,83000,,10,"DR OF MIS","VP FINANCE & CFO","26 Top Systems_Data Procg.txt",25665
+"GAN",62830,6100,68930,,0,"VISUAL MERCHANDISING MGR","VP STORE OPS","24 Top Visual.txt",-14070
+"GAN",90000,31500,121500,,1,"SR DR OF MARKETING","","22 Top Mktg_Sales Promo.txt",52570
+"GAN",26690,851,27541,,,"MERCHANDISE COORDINATOR","","19 Distributor.txt",-93959
+"GAN",50062,4888,54950,,,"PLAN& ALLOC MGR","","18 Planner.txt",27409
+"GAN",90000,31096,121096,,16,"SR DR OF PLANNING & ALLOCATION","CEO","16 Top Planner.txt",66146
+"GAN",27581,769,28350,,,"ASST BUYER","","15 Assistant Buyer.txt",-92746
+"GAN",60500,7479,56148,,,"","","14 Buyer.txt",27798
+"GAN",177500,60122,237622,,10,"VP/GMM","CEO","11 General Merchandise Mgr.txt",181474
+"GAN",59000,8550,67550,,9,"ASST CONTROLLER","","08 Controller.txt",-170072
+"GAN",150000,70000,220000,,126,"VP/CFO","","07 CFO.txt",152450
+"GAN",48438,4658,53096,,,"CONSTRUCTION MGR","","06 Regional Store Construct.txt",-166904
+"GAN",525000,183750,708750,,2651,"CHAIRMAN/CEO","BD OF DR","01 CEO.txt",655654

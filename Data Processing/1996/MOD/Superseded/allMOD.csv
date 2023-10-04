@@ -1,0 +1,13 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"MOD",34200,,34200,,0,"TRAF COORD","DC MGR","36 Domestic Traffic.txt",
+"MOD",56700,,56700,,1,"MGR VIS PRESEN","DR / MKT & SALE PROMO","24 Top Visual.txt",22500
+"MOD",64000,,64000,,4,"MGR STORE DEV/PURCH","VP/CFO","05 Top Store Plan_Construct.txt",7300
+"MOD",82400,8000,90400,,5,"DR HR","PRES","30 Top Human Resources.txt",26400
+"MOD",100000,0,100000,,6,"DR MKTNG & SALES PROMO","","22 Top Mktg_Sales Promo.txt",9600
+"MOD",25100,400,25500,,7,"","","42 Store Manager.txt",-74500
+"MOD",121100,11700,132800,,7,"DMM","","12 Div Merchandise Mgr.txt",107300
+"MOD",101500,9900,111400,,13,"DR MERCH PLAN & ALLOC","PRES","16 Top Planner.txt",-21400
+"MOD",210000,30000,240000,,17,"VP/GMM","CEO","11 General Merchandise Mgr.txt",128600
+"MOD",88200,8500,96700,,24,"CONTR","","08 Controller.txt",-143300
+"MOD",58000,,58000,,39,"MGR DC","CFO","34 Top DC _ Logistics.txt",-38700
+"MOD",185000,17600,202600,,78,"VP/CFO","","07 CFO.txt",144600

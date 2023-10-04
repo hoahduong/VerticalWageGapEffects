@@ -1,0 +1,970 @@
+------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/macbook/Desktop/18-19 Thesis/Data Processing/CombineDataTotal/1996/Com
+> bineDataRaw.log
+  log type:  text
+ opened on:   2 Apr 2019, 20:23:01
+
+. 
+. version 15
+
+. 
+. local pathName "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/"
+
+. 
+. // use the grep command to get the list of all text files
+. // $ grep -l '' *.txt
+. 
+. local fileList "01 CEO" ///
+>         "02 General Counsel" ///
+>         "03 Top Real Estate" ///
+>         "04 Regional Real Estate" ///
+>         "05 Top Store Plan_Construct" ///
+>         "06 Regional Store Construct" ///
+>         "07 CFO" ///
+>         "08 Controller" ///
+>         "09 Treasurer" ///
+>         "10 Top Internal Auditor" ///
+>         "11 General Merchandise Mgr" ///
+>         "12 Div Merchandise Mgr" ///
+>         "13 Sr Buyer" ///
+>         "14 Buyer" ///
+>         "15 Assistant Buyer" ///
+>         "16 Top Planner" ///
+>         "17 Sr Planner" ///
+>         "18 Planner" ///
+>         "19 Distributor" ///
+>         "20 Top Import Coordinator" ///
+>         "21 Product Coordinator" ///
+>         "22 Top Mktg_Sales Promo" ///
+>         "23 Art Department" ///
+>         "24 Top Visual" ///
+>         "25 Regional Visual" ///
+>         "26 Top Systems_Data Procg" ///
+>         "27 Systems Programming" ///
+>         "28 Computer Operations" ///
+>         "29 Point Of Sale Admin" ///
+>         "30 Top Human Resources" ///
+>         "31 Comp_Benefits Mgr" ///
+>         "32 Top Loss Prevention" ///
+>         "33 Regional Loss Prevention" ///
+>         "34 Top DC _ Logistics" ///
+>         "35 DC Manager" ///
+>         "36 Domestic Traffic" ///
+>         "37 Top Store Operations" ///
+>         "38 Zone Manager" ///
+>         "39 Regional Manager" ///
+>         "40 District Manager" ///
+>         "41 Area Manager" ///
+>         "42 Store Manager" ///
+>         "43 Assistant Store Manager" ///
+>         "44 Third Key" ///
+>         "45 Full Time" ///
+>         "46 Part Time" 
+
+. 
+. // for each data file, merge by code
+. foreach fileName in "`fileList'" {
+  2. import delimited using "`pathName'`fileName'.txt",  clear 
+  3. save "`fileName'.dta", replace 
+  4. }
+(10 vars, 66 obs)
+file 01 CEO.dta saved
+(8 vars, 27 obs)
+file 02 General Counsel.dta saved
+(9 vars, 38 obs)
+file 03 Top Real Estate.dta saved
+(7 vars, 23 obs)
+file 04 Regional Real Estate.dta saved
+(23 vars, 46 obs)
+file 05 Top Store Plan_Construct.dta saved
+(7 vars, 28 obs)
+file 06 Regional Store Construct.dta saved
+(8 vars, 47 obs)
+file 07 CFO.dta saved
+(7 vars, 42 obs)
+file 08 Controller.dta saved
+(7 vars, 19 obs)
+file 09 Treasurer.dta saved
+(6 vars, 17 obs)
+file 10 Top Internal Auditor.dta saved
+(9 vars, 50 obs)
+file 11 General Merchandise Mgr.dta saved
+(9 vars, 46 obs)
+file 12 Div Merchandise Mgr.dta saved
+(8 vars, 25 obs)
+file 13 Sr Buyer.dta saved
+(28 vars, 56 obs)
+file 14 Buyer.dta saved
+(6 vars, 46 obs)
+file 15 Assistant Buyer.dta saved
+(9 vars, 52 obs)
+file 16 Top Planner.dta saved
+(9 vars, 31 obs)
+file 17 Sr Planner.dta saved
+(8 vars, 50 obs)
+file 18 Planner.dta saved
+(6 vars, 46 obs)
+file 19 Distributor.dta saved
+(9 vars, 18 obs)
+file 20 Top Import Coordinator.dta saved
+(7 vars, 16 obs)
+file 21 Product Coordinator.dta saved
+(43 vars, 42 obs)
+file 22 Top Mktg_Sales Promo.dta saved
+(8 vars, 23 obs)
+file 23 Art Department.dta saved
+(9 vars, 49 obs)
+file 24 Top Visual.dta saved
+(76 vars, 15 obs)
+file 25 Regional Visual.dta saved
+(8 vars, 41 obs)
+file 26 Top Systems_Data Procg.dta saved
+(7 vars, 29 obs)
+file 27 Systems Programming.dta saved
+(8 vars, 37 obs)
+file 28 Computer Operations.dta saved
+(7 vars, 33 obs)
+file 29 Point Of Sale Admin.dta saved
+(9 vars, 47 obs)
+file 30 Top Human Resources.dta saved
+(17 vars, 39 obs)
+file 31 Comp_Benefits Mgr.dta saved
+(9 vars, 41 obs)
+file 32 Top Loss Prevention.dta saved
+(76 vars, 26 obs)
+file 33 Regional Loss Prevention.dta saved
+(10 vars, 42 obs)
+file 34 Top DC _ Logistics.dta saved
+(75 vars, 23 obs)
+file 35 DC Manager.dta saved
+(78 vars, 31 obs)
+file 36 Domestic Traffic.dta saved
+(10 vars, 52 obs)
+file 37 Top Store Operations.dta saved
+(7 vars, 9 obs)
+file 38 Zone Manager.dta saved
+(32 vars, 56 obs)
+file 39 Regional Manager.dta saved
+(108 vars, 58 obs)
+file 40 District Manager.dta saved
+(100 vars, 19 obs)
+file 41 Area Manager.dta saved
+(107 vars, 59 obs)
+file 42 Store Manager.dta saved
+(107 vars, 59 obs)
+file 43 Assistant Store Manager.dta saved
+(108 vars, 35 obs)
+file 44 Third Key.dta saved
+(76 vars, 58 obs)
+file 45 Full Time.dta saved
+(78 vars, 60 obs)
+file 46 Part Time.dta saved
+
+. 
+end of do-file
+
+. 
+. // 42 43 45 46 have repeated code
+. use "42 Store Manager.dta", clear
+
+. collapse total, by (code)
+
+. save "42 Store Manager_collapse.dta", replace
+file 42 Store Manager_collapse.dta saved
+
+. 
+. use "43 Assistant Store Manager.dta", clear
+
+. collapse total, by (code)
+
+. save "43 Assistant Store Manager_collapse.dta", replace
+file 43 Assistant Store Manager_collapse.dta saved
+
+. 
+. use "44 Third Key.dta", clear
+
+. collapse total, by (code)
+
+. save "44 Third Key_collapse.dta", replace
+file 44 Third Key_collapse.dta saved
+
+. 
+. use "45 Full Time.dta", clear
+
+. collapse total, by (code)
+
+. save "45 Full Time_collapse.dta", replace
+file 45 Full Time_collapse.dta saved
+
+. 
+. use "46 Part Time.dta", clear
+
+. collapse total, by (code)
+
+. save "46 Part Time_collapse.dta", replace
+file 46 Part Time_collapse.dta saved
+
+. 
+. // create the big data file
+. use "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/001 Company ID.dta", cl
+> ear
+
+. keep code stores volume
+
+. save allPosRaw.dta, replace emptyok
+file allPosRaw.dta saved
+
+. use allPosRaw.dta, clear
+
+. 
+. // 01 CEO 
+. merge m:1 code using "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/01 CEO
+> .dta", keepusing(total)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             0
+    matched                                66  (_merge==3)
+    -----------------------------------------
+
+. rename total total1
+
+. drop _merge
+
+. 
+. local fileList "02 General Counsel.dta" ///
+>         "03 Top Real Estate.dta" ///
+>         "04 Regional Real Estate.dta" ///
+>         "05 Top Store Plan_Construct.dta" ///
+>         "06 Regional Store Construct.dta" ///
+>         "07 CFO.dta" ///
+>         "08 Controller.dta" ///
+>         "09 Treasurer.dta" ///
+>         "10 Top Internal Auditor.dta" ///
+>         "11 General Merchandise Mgr.dta" ///
+>         "12 Div Merchandise Mgr.dta" ///
+>         "13 Sr Buyer.dta" ///
+>         "14 Buyer.dta" ///
+>         "15 Assistant Buyer.dta" ///
+>         "16 Top Planner.dta" ///
+>         "17 Sr Planner.dta" ///
+>         "18 Planner.dta" ///
+>         "19 Distributor.dta" ///
+>         "20 Top Import Coordinator.dta" ///
+>         "21 Product Coordinator.dta" ///
+>         "22 Top Mktg_Sales Promo.dta" ///
+>         "23 Art Department.dta" ///
+>         "24 Top Visual.dta" ///
+>         "25 Regional Visual.dta" ///
+>         "26 Top Systems_Data Procg.dta" ///
+>         "27 Systems Programming.dta" ///
+>         "28 Computer Operations.dta" ///
+>         "29 Point Of Sale Admin.dta" ///
+>         "30 Top Human Resources.dta" ///
+>         "31 Comp_Benefits Mgr.dta" ///
+>         "32 Top Loss Prevention.dta" ///
+>         "33 Regional Loss Prevention.dta" ///
+>         "34 Top DC _ Logistics.dta" ///
+>         "35 DC Manager.dta" ///
+>         "36 Domestic Traffic.dta" ///
+>         "37 Top Store Operations.dta" ///
+>         "38 Zone Manager.dta" ///
+>         "39 Regional Manager.dta" ///
+>         "40 District Manager.dta" ///
+>         "41 Area Manager.dta" ///
+>         "42 Store Manager_collapse.dta" ///
+>         "43 Assistant Store Manager_collapse.dta" ///
+>         "44 Third Key_collapse.dta" ///
+>         "45 Full Time_collapse.dta" ///
+>         "46 Part Time_collapse.dta" 
+
+. 
+. local i 1
+
+.         
+. // for each data file, merge by code
+. foreach fileName in "`fileList'" {
+  2. local i = `i' + 1
+  3. merge m:1 code using "`fileName'",  keepusing(total)
+  4. rename total total`i'
+  5. drop _merge
+  6. }
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            39
+        from master                        39  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                27  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            28
+        from master                        28  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                38  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            43
+        from master                        43  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                23  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            20
+        from master                        20  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                46  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            38
+        from master                        38  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                28  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            19
+        from master                        19  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                47  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            24
+        from master                        24  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                42  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            47
+        from master                        47  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                19  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            49
+        from master                        49  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                17  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            16
+        from master                        16  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                50  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            20
+        from master                        20  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                46  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            41
+        from master                        41  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                25  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            10
+        from master                        10  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                56  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            20
+        from master                        20  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                46  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            14
+        from master                        14  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                52  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            35
+        from master                        35  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                31  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            16
+        from master                        16  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                50  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            20
+        from master                        20  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                46  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            48
+        from master                        48  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                18  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            50
+        from master                        50  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                16  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            24
+        from master                        24  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                42  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            43
+        from master                        43  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                23  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            17
+        from master                        17  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                49  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            51
+        from master                        51  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                15  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            25
+        from master                        25  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                41  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            37
+        from master                        37  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                29  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            29
+        from master                        29  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                37  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            33
+        from master                        33  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                33  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            19
+        from master                        19  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                47  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            27
+        from master                        27  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                39  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            25
+        from master                        25  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                41  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            40
+        from master                        40  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                26  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            24
+        from master                        24  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                42  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            43
+        from master                        43  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                23  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            35
+        from master                        35  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                31  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            14
+        from master                        14  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                52  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            57
+        from master                        57  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                 9  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            10
+        from master                        10  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                56  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             8
+        from master                         8  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                58  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            47
+        from master                        47  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                19  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             8
+        from master                         8  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                58  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             8
+        from master                         8  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                58  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            31
+        from master                        31  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                35  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            11
+        from master                        11  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                55  (_merge==3)
+    -----------------------------------------
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             9
+        from master                         9  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                57  (_merge==3)
+    -----------------------------------------
+
+. 
+. save allPosRaw.dta, replace 
+file allPosRaw.dta saved
+
+. 
+. use allPosRaw.dta
+
+. describe
+
+Contains data from allPosRaw.dta
+  obs:            66                          
+ vars:            49                          2 Apr 2019 20:23
+ size:        13,596                          (_dta has notes)
+------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------
+code            str4    %9s                   Company ID
+stores          int     %8.0g                 Number of stores for all divisions
+volume          double  %12.0g                Total sales volume achieved/expected
+total1          long    %12.0g                Total
+total2          long    %12.0g                Total
+total3          long    %12.0g                Total
+total4          long    %12.0g                Total
+total5          long    %12.0g                Total
+total6          long    %12.0g                Total
+total7          long    %12.0g                Total
+total8          long    %12.0g                Total
+total9          long    %12.0g                Total
+total10         long    %12.0g                Total
+total11         long    %12.0g                Total
+total12         long    %12.0g                Total
+total13         long    %12.0g                Total
+total14         long    %12.0g                Total
+total15         long    %12.0g                Total
+total16         long    %12.0g                Total
+total17         long    %12.0g                Total
+total18         long    %12.0g                Total
+total19         long    %12.0g                Total
+total20         long    %12.0g                Total
+total21         long    %12.0g                Total
+total22         long    %12.0g                Total
+total23         long    %12.0g                Total
+total24         long    %12.0g                Total
+total25         long    %12.0g                Total
+total26         long    %12.0g                Total
+total27         long    %12.0g                Total
+total28         long    %12.0g                Total
+total29         long    %12.0g                Total
+total30         long    %12.0g                Total
+total31         long    %12.0g                Total
+total32         long    %12.0g                Total
+total33         long    %12.0g                Total
+total34         long    %12.0g                Total
+total35         long    %12.0g                Total
+total36         long    %12.0g                Total
+total37         long    %12.0g                Total
+total38         long    %12.0g                Total
+total39         long    %12.0g                Total
+total40         long    %12.0g                Total
+total41         long    %12.0g                Total
+total42         double  %12.0g                (mean) total
+total43         double  %12.0g                (mean) total
+total44         float   %9.0g                 (mean) total
+total45         float   %9.0g                 (mean) total
+total46         float   %9.0g                 (mean) total
+------------------------------------------------------------------------------------------
+Sorted by: 
+
+. 
+. // rename
+. rename total1 CEO
+
+. rename total2 General_Counsel
+
+. rename total3 Top_Real_Estate
+
+. rename total4 Regional_Real_Estate
+
+. rename total5 Top_Store_Plan_Construct
+
+. rename total6 Regional_Store_Construct
+
+. rename total7 CFO
+
+. rename total8 Controller
+
+. rename total9 Treasurer
+
+. rename total10 Top_Internal_Auditor
+
+. rename total11 General_Merchandise_Mgr
+
+. rename total12 Div_Merchandise_Mgr
+
+. rename total13 Sr_Buyer
+
+. rename total14 Buyer
+
+. rename total15 Assistant_Buyer
+
+. rename total16 Top_Planner
+
+. rename total17 Sr_Planner
+
+. rename total18 Planner
+
+. rename total19 Distributor
+
+. rename total20 Top_Import_Coordinator
+
+. rename total21 Product_Coordinator
+
+. rename total22 Top_Mktg_Sales_Promo
+
+. rename total23 Art_Department
+
+. rename total24 Top_Visual
+
+. rename total25 Regional_Visual
+
+. rename total26 Top_Systems_Data_Procg
+
+. rename total27 Systems_Programming
+
+. rename total28 Computer_Operations
+
+. rename total29 Point_Of_Sale_Admin
+
+. rename total30 Top_Human_Resources
+
+. rename total31 Comp_Benefits_Mgr
+
+. rename total32 Top_Loss_Prevention
+
+. rename total33 Regional_Loss_Prevention
+
+. rename total34 Top_DC_Logistics
+
+. rename total35 DC_Manager
+
+. rename total36 Domestic_Traffic
+
+. rename total37 Top_Store_Operations
+
+. rename total38 Zone_Manager
+
+. rename total39 Regional_Manager
+
+. rename total40 District_Manager
+
+. rename total41 Area_Manager
+
+. rename total42 Store_Manager
+
+. rename total43 Assistant_Store_Manager 
+
+. rename total44 Third_Key
+
+. rename total45 Full_Time
+
+. rename total46 Part_Time
+
+. 
+. save allPosRaw.dta, replace 
+file allPosRaw.dta saved
+
+. 
+. 
+end of do-file
+
+. do "/var/folders/sy/4d9t8khs1jn_xflrv2wvq20c0000gn/T//SD00792.000000"
+
+. summ
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        code |          0
+      stores |         66    710.7576    768.3187         62       4300
+      volume |         50    7.38e+08    8.72e+08   6.11e+07   5.09e+09
+         CEO |         45    553039.2    327007.6     190375    2114100
+General_Co~l |         27    169941.6    89691.46      58000     375000
+-------------+---------------------------------------------------------
+Top_Real_E~e |         38    186382.3    78218.75      55000     374500
+Regional_R~e |         23    103268.6    45112.15      40533     210361
+Top_Store_~t |         39      102472    36877.33      57000     230000
+Regional_S~t |         28    56632.21     16438.3      26800     106000
+         CFO |         47    244755.2    98860.22      90000     575000
+-------------+---------------------------------------------------------
+  Controller |         42    127518.6    64111.65      54500     360000
+   Treasurer |         19    142051.3     48402.1      76500     230000
+Top_Intern~r |         17       88528    50069.19      30000     211800
+General_Me~r |         50    235369.3    95794.13      82552     475000
+Div_Mercha~r |         46    123823.5    44341.15      60200     275800
+-------------+---------------------------------------------------------
+    Sr_Buyer |         25    83887.04     23656.6      49500     145000
+       Buyer |         56    63668.88    16028.26      30008     104200
+Assistan~yer |         46    35801.76    10628.23      16625      79500
+ Top_Planner |         52    124234.1    58182.73      66000     380000
+  Sr_Planner |         31    71813.68    27390.39      37500     138000
+-------------+---------------------------------------------------------
+     Planner |         50    50698.42    15699.85      28000      95854
+ Distributor |         46    31545.78    7825.459      17392      56100
+Top_Import~r |         18    122762.9     60137.7      46000     250000
+Product_Co~r |         16    64249.81    34678.24      23000     152124
+Top_Mktg_S~o |         26    135069.6    77059.66      41500     375000
+-------------+---------------------------------------------------------
+Art_Depart~t |         23    66602.74    26920.19      26708     135000
+  Top_Visual |         49    77978.49    44246.61      30000     240000
+Regional_V~l |         15    35507.73    10293.05      23190      60500
+Top_System~g |         41      169058    78343.18      75000     470000
+Systems_Pr~g |         29    100862.8    34349.72      55000     208700
+-------------+---------------------------------------------------------
+Computer_O~s |         37    86640.03    47994.46      29000     314400
+Point_Of_S~n |         33    47408.12    16072.36      24500      99600
+Top_Human_~s |         47    170852.4    91191.28      49800     410000
+Comp_Benef~r |         23    79258.35    25979.27      47500     152549
+Top_Loss_P~n |         41    86943.34    25235.51      45500     168055
+-------------+---------------------------------------------------------
+Regional_L~n |         26    48142.42    9956.356      25950      75756
+Top_DC_Log~s |         42    136180.9    64228.28      57700     315100
+  DC_Manager |         23     76327.3    28953.13      36439     164722
+Domestic_T~c |         31    57505.26    24021.95      29000     118903
+Top_Store_~s |         52    192308.8    74559.73      91000     399000
+-------------+---------------------------------------------------------
+Zone_Manager |          9    153655.6    61232.14      78593     259000
+Regional_M~r |         56    91766.84    27128.28      40554     161700
+District_M~r |         58    52913.57    12133.35      34800      93500
+Area_Manager |         19    34082.95     7039.89      25292      50580
+Store_Mana~r |         58    29716.22    7040.611      17641      53122
+-------------+---------------------------------------------------------
+Assistan~ger |         58    19591.98    4799.208      10656      33720
+   Third_Key |         35    7.573714    1.783956       5.22      13.92
+   Full_Time |         55    7.297182    2.064193       4.73      18.47
+   Part_Time |         57    5.663158    .8671627       4.25       8.48
+
+. 
+end of do-file
+
+. summary volume
+command summary is unrecognized
+r(199);
+
+. summ volume
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+      volume |         50    7.38e+08    8.72e+08   6.11e+07   5.09e+09
+
+. mean(volume)
+
+Mean estimation                   Number of obs   =         50
+
+--------------------------------------------------------------
+             |       Mean   Std. Err.     [95% Conf. Interval]
+-------------+------------------------------------------------
+      volume |   7.38e+08   1.23e+08      4.90e+08    9.85e+08
+--------------------------------------------------------------
+
+. summ stores
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+      stores |         66    710.7576    768.3187         62       4300
+
+. do "/var/folders/sy/4d9t8khs1jn_xflrv2wvq20c0000gn/T//SD00792.000000"
+
+. cd "/Users/macbook/Desktop/18-19 Thesis/Data Processing/CombineDataTotal/1997"
+/Users/macbook/Desktop/18-19 Thesis/Data Processing/CombineDataTotal/1997
+
+. 
+. capture log close

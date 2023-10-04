@@ -1,0 +1,27 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"WAL",5.8,0,5.8,4.73,,"","","46 Part Time.txt",
+"WAL",6.35,0,6.35,4.73,,"","","45 Full Time.txt",.5499997
+"WAL",18000,800,18800,,,"","","43 Assistant Store Manager.txt",18793.65
+"WAL",26700,1200,27900,,10,"","","42 Store Manager.txt",9100
+"WAL",45300,870,46170,,,"DISTRICT MGR","","40 District Manager.txt",18270
+"WAL",82600,23700,106300,,,"REGIONAL DR","","39 Regional Manager.txt",60130
+"WAL",130000,35700,165700,,82,"VP STORE OPS","","38 Zone Manager.txt",59400
+"WAL",200000,63500,263500,,7683,"SR VP STORE OPS","PRES/COO","37 Top Store Operations.txt",97800
+"WAL",52600,0,52600,,,"REGIONAL LP MGR","","33 Regional Loss Prevention.txt",-210900
+"WAL",89700,21300,111000,,13,"DR, LOSS PREVENTION","VP, FINANCE","32 Top Loss Prevention.txt",58400
+"WAL",166400,45900,212300,,21,"VP, HR","PRES/COO","30 Top Human Resources.txt",101300
+"WAL",88000,24700,112700,,60,"DR, TECHNOLOGY","","28 Computer Operations.txt",-99600
+"WAL",185000,45900,230900,,104,"VP, MIS","PRES/COO","26 Top Systems_Data Procg.txt",118200
+"WAL",46700,,46700,,5,"MGR, CREATIVE SERVICES","DR, MARKETING","24 Top Visual.txt",-184200
+"WAL",90000,7100,97100,,19,"DR, MARKETING","","22 Top Mktg_Sales Promo.txt",50400
+"WAL",110000,8900,118900,,19,"DR, MERCH/PLAN/ANALYSIS","SR VP, MERCH/MRKTNG","16 Top Planner.txt",21800
+"WAL",32900,,32900,,,"ASST BUYER","","15 Assistant Buyer.txt",-86000
+"WAL",51500,,51900,,,"","","14 Buyer.txt",19000
+"WAL",60200,0,60200,,8,"DIVISIONAL MERCH MGR","","12 Div Merchandise Mgr.txt",8300
+"WAL",200000,63500,263500,,85,"SR VP, MERCHANDISING","CEO","11 General Merchandise Mgr.txt",203300
+"WAL",160000,45900,205900,,66,"VP, FINANCE","","07 CFO.txt",-57600
+"WAL",68700,0,68700,,,"PROJECT MGR","","06 Regional Store Construct.txt",-137200
+"WAL",90000,11200,101200,,18,"DR, CONSTRUCT & DESIGN","VP, RE & CONSTRUC","05 Top Store Plan_Construct.txt",32500
+"WAL",111200,23600,134800,,,"DR, RE","","04 Regional Real Estate.txt",33600
+"WAL",172000,41100,213100,,35,"VP, RE & CONSTRUCTION","SR VP, STORE OPS","03 Top Real Estate.txt",78300
+"WAL",345000,237900,582900,,9200,"PRES/CEO","VC & PRES OF PARENT CO","01 CEO.txt",369800

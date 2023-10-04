@@ -1,0 +1,35 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"DES",5.57,0,5.57,,,"","","46 Part Time.txt",
+"DES",6.46,0,6.46,,,"","","45 Full Time.txt",.8899999
+"DES",22797,0,22797,,,"","","43 Assistant Store Manager.txt",22790.54
+"DES",28332,3410,31742,,12,"","","42 Store Manager.txt",8945
+"DES",47309,0,47309,,,"DM","","40 District Manager.txt",15567
+"DES",74294,0,74294,,,"RM","","39 Regional Manager.txt",26985
+"DES",135000,0,135000,,1,"VP LOGISTICS","SR VP MERSH","34 Top DC _ Logistics.txt",60706
+"DES",98325,0,98325,,3,"DR LP","VP/GC/SEC","32 Top Loss Prevention.txt",-36675
+"DES",,,,,,"","","31 Comp_Benefits Mgr.txt",
+"DES",120000,0,120000,,7,"VP HR","VP GC & SEC","30 Top Human Resources.txt",
+"DES",52067,,52067,,0,"MGR POS APPLIC SYS","DR SYS DEV & BS","29 Point Of Sale Admin.txt",-67933
+"DES",74750,0,74750,,3,"DR NETW & TECH OPS","","28 Computer Operations.txt",22683
+"DES",80000,0,80000,,4,"DR SYSTEMS DEV & BUS SYTEMS","","27 Systems Programming.txt",5250
+"DES",120000,0,120000,,4,"VP CORP TECH & SYSTEMS","CEO","26 Top Systems_Data Procg.txt",40000
+"DES",82800,0,82800,,3,"DR OF GVIS MERCH","SR VP MERCH","24 Top Visual.txt",-37200
+"DES",43500,,43500,,,"MGR","","21 Product Coordinator.txt",-39300
+"DES",115006,0,115006,,5,"DR OF PRODUCT/SOURCING","VP PROD/DEV","20 Top Import Coordinator.txt",71506
+"DES",30467,0,30467,,,"ALLOCATOR","","19 Distributor.txt",-84539
+"DES",37000,0,37000,,,"PLANNER","","18 Planner.txt",6533
+"DES",116500,0,116500,,2,"VP MERCH PLAN","","17 Sr Planner.txt",79500
+"DES",200000,0,200000,,3,"VP PLAN & ALLOC","SR VP MERCH","16 Top Planner.txt",83500
+"DES",31267,0,31267,,,"ASST MERCH","","15 Assistant Buyer.txt",-168733
+"DES",47000,0,47000,,,"","","14 Buyer.txt",15733
+"DES",175000,0,175000,,6,"VP MERCH","","12 Div Merchandise Mgr.txt",128000
+"DES",300000,0,300000,,6,"SR VP MERSH","CEO","11 General Merchandise Mgr.txt",125000
+"DES",50000,0,50000,,0,"","","10 Top Internal Auditor.txt",-250000
+"DES",100000,0,100000,,0,"TREAS","","09 Treasurer.txt",50000
+"DES",130000,0,130000,,2,"VP CONTR","","08 Controller.txt",30000
+"DES",130000,0,130000,,4,"CFO","","07 CFO.txt",0
+"DES",59512,0,59512,,,"CONSTRUC MGR","","06 Regional Store Construct.txt",-70488
+"DES",120000,0,120000,,6,"VP C & D","CEO","05 Top Store Plan_Construct.txt",60488
+"DES",55000,0,55000,,1,"MGR RE","CEO","03 Top Real Estate.txt",-65000
+"DES",290000,0,290000,,10,"VP, GC, SEC","","02 General Counsel.txt",235000
+"DES",375000,0,375000,,2948,"PRES/CEO","BD OF DR","01 CEO.txt",85000

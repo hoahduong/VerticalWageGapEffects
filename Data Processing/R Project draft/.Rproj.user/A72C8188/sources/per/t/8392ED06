@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1539749107308.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3037660904",
+    "id" : "8392ED06",
+    "lastKnownWriteTime" : 1540409036,
+    "last_content_update" : 1540409036,
+    "path" : "~/Desktop/18-19 Thesis/Data Processing/R Project draft/GAP.R",
+    "project_path" : "GAP.R",
+    "properties" : {
+        "cursorPosition" : "7,26",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

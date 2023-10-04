@@ -1,0 +1,17 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"PAR",5.29,0,5.29,,,"","","46 Part Time.txt",
+"PAR",6.02,0,6.02,,,"","","45 Full Time.txt",.73
+"PAR",15100,,15100,,,"","","43 Assistant Store Manager.txt",15093.98
+"PAR",27100,400,27500,,6,"","","42 Store Manager.txt",12400
+"PAR",47500,1600,49100,,,"DM","","40 District Manager.txt",21600
+"PAR",76700,0,76700,,,"RM","","39 Regional Manager.txt",27600
+"PAR",120000,0,120000,,1431,"DR STORE OPS","DIV PRES","37 Top Store Operations.txt",43300
+"PAR",45000,0,45000,,1,"ART DR","DR MKTNG","23 Art Department.txt",-75000
+"PAR",,,,,,"DR MKTNG","","22 Top Mktg_Sales Promo.txt",
+"PAR",25900,,25900,,,"DIST ANALYST","","19 Distributor.txt",
+"PAR",34000,,34000,,,"MERCH PLAN","","18 Planner.txt",8100
+"PAR",43400,,43400,,5,"DIST & PLAN MGR","","17 Sr Planner.txt",9400
+"PAR",85000,0,85000,,13,"VP PLAN & DIST","1ST VP PLAN & DIST","16 Top Planner.txt",41600
+"PAR",68700,0,59500,,,"","","14 Buyer.txt",-25500
+"PAR",135000,0,135000,,14,"GMM","DIV PRES/SHOE OPS","11 General Merchandise Mgr.txt",75500
+"PAR",375000,0,375000,,1467,"DIV PRES/DR OPS","CEO OF PARENT CO","01 CEO.txt",240000

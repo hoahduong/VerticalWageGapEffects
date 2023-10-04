@@ -1,0 +1,26 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"PRI",5.24,0,5.24,4.5,,"","","46 Part Time.txt",
+"PRI",15642,,15642,,,"","","43 Assistant Store Manager.txt",15636.76
+"PRI",20896,461,21357,,10,"","","42 Store Manager.txt",5715
+"PRI",,,30238,,,"ARE MGR","","41 Area Manager.txt",8881
+"PRI",43350,0,43350,,,"DSM","","40 District Manager.txt",13112
+"PRI",69964,0,69964,,,"DR OF STORES","","39 Regional Manager.txt",26614
+"PRI",114000,12959,126959,,1239,"VP OPS","PRES","37 Top Store Operations.txt",56995
+"PRI",46000,1835,47835,48600,18,"","","35 DC Manager.txt",-79124
+"PRI",49220,1780,51000,,1,"","","31 Comp_Benefits Mgr.txt",3165
+"PRI",89024,8383,97407,,7,"VP HR","CFO","30 Top Human Resources.txt",46407
+"PRI",35000,972,35972,,3,"SALES AUD SUPER","CONTR","29 Point Of Sale Admin.txt",-61435
+"PRI",85000,0,85000,,10,"DR MIS","","27 Systems Programming.txt",49028
+"PRI",97400,13753,111153,,30,"VP IS & LOG","CFO","26 Top Systems_Data Procg.txt",26153
+"PRI",56000,2071,58071,,2,"VIS MERCH MGR","DR PROD SEL","24 Top Visual.txt",-53082
+"PRI",35000,873,35873,,,"DIST/PLAN ANALYST","","19 Distributor.txt",-22198
+"PRI",46000,2167,48167,,,"PLAN & DIST MGR","","18 Planner.txt",12294
+"PRI",76000,9847,85847,,9,"DR DIST & INV MGMT","VP MERCH","16 Top Planner.txt",37680
+"PRI",,,46146,,,"","","14 Buyer.txt",-39701
+"PRI",61000,1356,62356,,,"MERCH MGR","","13 Sr Buyer.txt",16210
+"PRI",85000,11728,96728,,7,"DR PROD SELEC","","12 Div Merchandise Mgr.txt",34372
+"PRI",98592,9092,107684,,20,"VP MERCH","PRES","11 General Merchandise Mgr.txt",10956
+"PRI",84000,8218,92218,,20,"CONTR","","08 Controller.txt",-15466
+"PRI",150000,47803,197803,,60,"SR VP/CFO","","07 CFO.txt",105585
+"PRI",80000,11196,91196,,22,"DR CON & STORE DES","PRES","05 Top Store Plan_Construct.txt",-106607
+"PRI",220000,192012,412012,,1200,"PRES","PARENT CO","01 CEO.txt",320816

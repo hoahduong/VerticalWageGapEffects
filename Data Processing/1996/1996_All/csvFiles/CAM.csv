@@ -1,0 +1,32 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"CAM",5,0,5,,,"","","46 Part Time.txt",
+"CAM",5.94,0,5.94,,,"","","45 Full Time.txt",.9400001
+"CAM",16684,,16684,,,"","","43 Assistant Store Manager.txt",16678.06
+"CAM",26219,1148,27367,,8,"","","42 Store Manager.txt",10683
+"CAM",,,33405,,,"SR STORE MGR","","41 Area Manager.txt",6038
+"CAM",46105,1602,47707,,,"DIST SUPRV","","40 District Manager.txt",14302
+"CAM",73355,2516,75871,,,"REG DR","","39 Regional Manager.txt",28164
+"CAM",165000,0,165000,,3000,"VP STORE OPS","CEO","37 Top Store Operations.txt",89129
+"CAM",29000,0,29000,33831,2,"MGR TRANS","VP DISTRIB","36 Domestic Traffic.txt",-136000
+"CAM",125000,0,125000,,250,"VP DISTRIB","CFO","34 Top DC _ Logistics.txt",96000
+"CAM",57600,0,57600,,1,"MGR LP","DR STORE OPS","32 Top Loss Prevention.txt",-67400
+"CAM",47500,0,47500,,8,"","","31 Comp_Benefits Mgr.txt",-10100
+"CAM",105000,0,105000,,20,"VP HR","CFO","30 Top Human Resources.txt",57500
+"CAM",54000,0,54000,,1,"PROJECT LEADER","SYSTEMS MGR","29 Point Of Sale Admin.txt",-51000
+"CAM",76500,0,76500,,24,"DR COMP SYSTEMS","","28 Computer Operations.txt",22500
+"CAM",90000,0,90000,,24,"DR BUS SYSTEMS","","27 Systems Programming.txt",13500
+"CAM",135000,0,135000,,50,"VP INFO SYSTEMS","CFO","26 Top Systems_Data Procg.txt",45000
+"CAM",76000,0,76000,,5,"DR VIS MERCH","VP MKTNG & ADV","24 Top Visual.txt",-59000
+"CAM",35734,0,35734,,1,"SUPER, CREATIVE","DR VIS MERCH","23 Art Department.txt",-40266
+"CAM",29300,0,29300,,,"MERCH ANALYST","","19 Distributor.txt",-6434
+"CAM",83000,0,83000,,1,"DR PLAN","VP DIST","16 Top Planner.txt",53700
+"CAM",46600,0,43400,,,"","","14 Buyer.txt",-39600
+"CAM",49500,0,49500,,,"BUYER II","","13 Sr Buyer.txt",6100
+"CAM",86000,0,86000,,6,"DR BUYING","","12 Div Merchandise Mgr.txt",36500
+"CAM",165000,0,165000,,15,"VP MERCH","CEO","11 General Merchandise Mgr.txt",79000
+"CAM",135000,0,135000,,58,"VP-FINAN& ACCT","","09 Treasurer.txt",-30000
+"CAM",200000,0,200000,,350,"EXEC VP/CFO","","07 CFO.txt",65000
+"CAM",80000,0,80000,,4,"DR STORE PLAN &C","VP STORE OPS","05 Top Store Plan_Construct.txt",-120000
+"CAM",52800,0,52800,,,"MGR RE","","04 Regional Real Estate.txt",-27200
+"CAM",135000,0,135000,,3,"VP RE","CFO","03 Top Real Estate.txt",82200
+"CAM",300000,0,300000,,3500,"PRES/CEO","BD OF DR","01 CEO.txt",165000

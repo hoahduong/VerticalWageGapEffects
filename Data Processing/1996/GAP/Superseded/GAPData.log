@@ -1,0 +1,561 @@
+----------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/macbook/Desktop/18-19 Thesis/Data Processing/GAP/GAPData.log
+  log type:  text
+ opened on:  11 Oct 2018, 15:48:16
+
+. 
+. version 15.0
+
+. 
+. cd "/Users/macbook/Desktop/18-19 Thesis/Data Processing"
+/Users/macbook/Desktop/18-19 Thesis/Data Processing
+
+. local pathName "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/"
+
+. local fileList "01 CEO.txt" ///
+>         "02 General Counsel.txt" ///
+>         "03 Top Real Estate.txt" ///
+>         "04 Regional Real Estate.txt" ///
+>         "05 Top Store Plan_Construct.txt" ///
+>         "06 Regional Store Construct.txt" ///
+>         "07 CFO.txt" ///
+>         "08 Controller.txt" ///
+>         "09 Treasurer.txt" ///
+>         "10 Top Internal Auditor.txt" ///
+>         "11 General Merchandise Mgr.txt" ///
+>         "12 Div Merchandise Mgr.txt" ///
+>         "13 Sr Buyer.txt" ///
+>         "14 Buyer.txt" ///
+>         "15 Assistant Buyer.txt" ///
+>         "16 Top Planner.txt" ///
+>         "17 Sr Planner.txt" ///
+>         "18 Planner.txt" ///
+>         "19 Distributor.txt" ///
+>         "20 Top Import Coordinator.txt" ///
+>         "22 Top Mktg_Sales Promo.txt" ///
+>         "23 Art Department.txt" ///
+>         "24 Top Visual.txt" ///
+>         "26 Top Systems_Data Procg.txt" ///
+>         "27 Systems Programming.txt" ///
+>         "28 Computer Operations.txt" ///
+>         "29 Point Of Sale Admin.txt" ///
+>         "30 Top Human Resources.txt" ///
+>         "31 Comp_Benefits Mgr.txt" ///
+>         "32 Top Loss Prevention.txt" ///
+>         "33 Regional Loss Prevention.txt" ///
+>         "34 Top DC _ Logistics.txt" ///
+>         "37 Top Store Operations.txt" ///
+>         "38 Zone Manager.txt" ///
+>         "39 Regional Manager.txt" ///
+>         "40 District Manager.txt" ///
+>         "41 Area Manager.txt" ///
+>         "42 Store Manager.txt" ///
+>         "43 Assistant Store Manager.txt" ///
+>         "45 Full Time.txt" ///
+>         "46 Part Time.txt" 
+
+. 
+. display "`fileList'"
+01 CEO.txt02 General Counsel.txt03 Top Real Estate.txt04 Regional Real Estate.txt0
+> 5 Top Store Plan_Construct.txt06 Regional Store Construct.txt07 CFO.txt08 Contro
+> ller.txt09 Treasurer.txt10 Top Internal Auditor.txt11 General Merchandise Mgr.tx
+> t12 Div Merchandise Mgr.txt13 Sr Buyer.txt14 Buyer.txt15 Assistant Buyer.txt16 T
+> op Planner.txt17 Sr Planner.txt18 Planner.txt19 Distributor.txt20 Top Import Coo
+> rdinator.txt22 Top Mktg_Sales Promo.txt23 Art Department.txt24 Top Visual.txt26 
+> Top Systems_Data Procg.txt27 Systems Programming.txt28 Computer Operations.txt29
+>  Point Of Sale Admin.txt30 Top Human Resources.txt31 Comp_Benefits Mgr.txt32 Top
+>  Loss Prevention.txt33 Regional Loss Prevention.txt34 Top DC _ Logistics.txt37 T
+> op Store Operations.txt38 Zone Manager.txt39 Regional Manager.txt40 District Man
+> ager.txt41 Area Manager.txt42 Store Manager.txt43 Assistant Store Manager.txt45 
+> Full Time.txt46 Part Time.txt
+
+. // help concatenate
+. // help strings ... double quotes
+. //
+. // foreach fileName in "`fileList'" {
+. // display "`fileName'"
+. // }
+. 
+. drop _all 
+
+. save allGap.dta, replace emptyok
+(note: dataset contains 0 observations)
+(note: file allGap.dta not found)
+file allGap.dta saved
+
+. foreach fileName in "`fileList'" {
+  2. import delimited using "`pathName'`fileName'",  clear // names
+  3. keep if code == "GAP"
+  4. append using allGap.dta
+  5. save allGap.dta, replace 
+  6. }
+(10 vars, 66 obs)
+(65 observations deleted)
+file allGap.dta saved
+(8 vars, 27 obs)
+(26 observations deleted)
+(note: variable reports was byte, now long to accommodate using data's values)
+(note: variable percent was byte, now float to accommodate using data's values)
+file allGap.dta saved
+(9 vars, 38 obs)
+(37 observations deleted)
+(note: variable reports was int, now long to accommodate using data's values)
+(note: variable reportsto was str21, now str24 to accommodate using data's
+       values)
+file allGap.dta saved
+(7 vars, 23 obs)
+(22 observations deleted)
+(note: variable title was str28, now str29 to accommodate using data's values)
+(note: variable percent was byte, now float to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+file allGap.dta saved
+(23 vars, 46 obs)
+(45 observations deleted)
+(note: variable reports was byte, now long to accommodate using data's values)
+file allGap.dta saved
+(7 vars, 28 obs)
+(27 observations deleted)
+(note: variable title was str30, now str39 to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+file allGap.dta saved
+(8 vars, 47 obs)
+(46 observations deleted)
+(note: variable title was str28, now str39 to accommodate using data's values)
+(note: variable reports was int, now long to accommodate using data's values)
+file allGap.dta saved
+(7 vars, 42 obs)
+(41 observations deleted)
+(note: variable title was str28, now str39 to accommodate using data's values)
+(note: variable reports was int, now long to accommodate using data's values)
+file allGap.dta saved
+(7 vars, 19 obs)
+(18 observations deleted)
+(note: variable title was str17, now str39 to accommodate using data's values)
+(note: variable reports was int, now long to accommodate using data's values)
+file allGap.dta saved
+(6 vars, 17 obs)
+(16 observations deleted)
+(note: variable reports was byte, now long to accommodate using data's values)
+file allGap.dta saved
+(9 vars, 50 obs)
+(49 observations deleted)
+(note: variable reports was int, now long to accommodate using data's values)
+(note: variable title was str34, now str39 to accommodate using data's values)
+(note: variable reportsto was str20, now str28 to accommodate using data's
+       values)
+file allGap.dta saved
+(9 vars, 46 obs)
+(45 observations deleted)
+(note: variable title was str27, now str39 to accommodate using data's values)
+(note: variable reports was byte, now long to accommodate using data's values)
+file allGap.dta saved
+(8 vars, 25 obs)
+(24 observations deleted)
+(note: variable title was str18, now str39 to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+file allGap.dta saved
+(28 vars, 56 obs)
+(55 observations deleted)
+(note: variable bonus was int, now long to accommodate using data's values)
+file allGap.dta saved
+(6 vars, 46 obs)
+(45 observations deleted)
+(note: variable bonus was int, now long to accommodate using data's values)
+(note: variable title was str20, now str39 to accommodate using data's values)
+file allGap.dta saved
+(9 vars, 52 obs)
+(51 observations deleted)
+(note: variable title was str36, now str39 to accommodate using data's values)
+(note: variable reports was int, now long to accommodate using data's values)
+(note: variable reportsto was str24, now str28 to accommodate using data's
+       values)
+file allGap.dta saved
+(9 vars, 31 obs)
+(30 observations deleted)
+(note: variable title was str28, now str39 to accommodate using data's values)
+(note: variable reports was byte, now long to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+file allGap.dta saved
+(8 vars, 50 obs)
+(49 observations deleted)
+(note: variable title was str23, now str39 to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+file allGap.dta saved
+(6 vars, 46 obs)
+(45 observations deleted)
+(note: variable title was str34, now str39 to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+file allGap.dta saved
+(9 vars, 18 obs)
+(17 observations deleted)
+(note: variable title was str28, now str39 to accommodate using data's values)
+(note: variable percent was byte, now float to accommodate using data's values)
+(note: variable reports was int, now long to accommodate using data's values)
+(note: variable reportsto was str23, now str28 to accommodate using data's
+       values)
+file allGap.dta saved
+(43 vars, 42 obs)
+(41 observations deleted)
+(note: variable title was str34, now str39 to accommodate using data's values)
+(note: variable reports was byte, now long to accommodate using data's values)
+file allGap.dta saved
+(8 vars, 23 obs)
+(22 observations deleted)
+(note: variable title was str25, now str39 to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+(note: variable reports was byte, now long to accommodate using data's values)
+file allGap.dta saved
+(9 vars, 49 obs)
+(48 observations deleted)
+(note: variable title was str31, now str39 to accommodate using data's values)
+(note: variable reports was byte, now long to accommodate using data's values)
+file allGap.dta saved
+(8 vars, 41 obs)
+(40 observations deleted)
+(note: variable title was str27, now str39 to accommodate using data's values)
+(note: variable reportsto was str30, now str40 to accommodate using data's
+       values)
+(note: variable reports was int, now long to accommodate using data's values)
+file allGap.dta saved
+(7 vars, 29 obs)
+(28 observations deleted)
+(note: variable reports was int, now long to accommodate using data's values)
+file allGap.dta saved
+(8 vars, 37 obs)
+(36 observations deleted)
+(note: variable title was str36, now str42 to accommodate using data's values)
+(note: variable reports was int, now long to accommodate using data's values)
+file allGap.dta saved
+(7 vars, 33 obs)
+(32 observations deleted)
+(note: variable title was str31, now str42 to accommodate using data's values)
+(note: variable reports was byte, now long to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+(note: variable reportsto was str38, now str40 to accommodate using data's
+       values)
+file allGap.dta saved
+(9 vars, 47 obs)
+(46 observations deleted)
+(note: variable title was str24, now str42 to accommodate using data's values)
+(note: variable reportsto was str25, now str40 to accommodate using data's
+       values)
+(note: variable reports was float, now double to accommodate using data's
+       values)
+file allGap.dta saved
+(17 vars, 39 obs)
+(38 observations deleted)
+(note: variable reports was byte, now double to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+(note: variable comments was str30, now str31 to accommodate using data's
+       values)
+file allGap.dta saved
+(9 vars, 41 obs)
+(40 observations deleted)
+(note: variable reports was byte, now double to accommodate using data's values)
+(note: variable title was str27, now str42 to accommodate using data's values)
+file allGap.dta saved
+(76 vars, 26 obs)
+(25 observations deleted)
+(note: variable title was str22, now str42 to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+file allGap.dta saved
+(10 vars, 42 obs)
+(41 observations deleted)
+(note: variable title was str30, now str42 to accommodate using data's values)
+(note: variable reportsto was str24, now str42 to accommodate using data's
+       values)
+(note: variable reports was int, now double to accommodate using data's values)
+file allGap.dta saved
+(10 vars, 52 obs)
+(51 observations deleted)
+(note: variable title was str40, now str42 to accommodate using data's values)
+(note: variable reportsto was str35, now str42 to accommodate using data's
+       values)
+(note: variable reports was int, now double to accommodate using data's values)
+file allGap.dta saved
+(7 vars, 9 obs)
+(8 observations deleted)
+(note: variable title was str22, now str42 to accommodate using data's values)
+(note: variable reports was int, now double to accommodate using data's values)
+(note: variable percent was byte, now float to accommodate using data's values)
+file allGap.dta saved
+(32 vars, 56 obs)
+(55 observations deleted)
+(note: variable title was str21, now str42 to accommodate using data's values)
+(note: variable v10 was byte, now float to accommodate using data's values)
+(note: variable v19 was int, now long to accommodate using data's values)
+file allGap.dta saved
+(108 vars, 58 obs)
+(57 observations deleted)
+(note: variable title was str14, now str42 to accommodate using data's values)
+(note: variable v10 was byte, now float to accommodate using data's values)
+(note: variable v15 was int, now long to accommodate using data's values)
+(note: variable v19 was int, now long to accommodate using data's values)
+(note: variable v26 was byte, now float to accommodate using data's values)
+(note: variable v27 was int, now long to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+(note: variable phhire was float, now double to accommodate using data's values)
+file allGap.dta saved
+(100 vars, 19 obs)
+(18 observations deleted)
+(note: variable title was str31, now str42 to accommodate using data's values)
+(note: variable v15 was int, now long to accommodate using data's values)
+(note: variable v19 was int, now long to accommodate using data's values)
+(note: variable v22 was byte, now float to accommodate using data's values)
+(note: variable v26 was byte, now float to accommodate using data's values)
+(note: variable v27 was int, now long to accommodate using data's values)
+(note: variable base was int, now long to accommodate using data's values)
+(note: variable percent was byte, now float to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+(note: variable bohire was int, now long to accommodate using data's values)
+(note: variable mahire was int, now long to accommodate using data's values)
+(note: variable lihire was int, now long to accommodate using data's values)
+(note: variable njhire was int, now long to accommodate using data's values)
+(note: variable wpbase was int, now long to accommodate using data's values)
+(note: variable wphire was int, now long to accommodate using data's values)
+(note: variable phhire was long, now double to accommodate using data's values)
+(note: variable wahire was int, now long to accommodate using data's values)
+(note: variable lahire was int, now long to accommodate using data's values)
+(note: variable sfhire was int, now long to accommodate using data's values)
+(note: variable sehire was int, now long to accommodate using data's values)
+(note: variable albase was byte, now long to accommodate using data's values)
+(note: variable albonus was byte, now int to accommodate using data's values)
+(note: variable alcomp was byte, now long to accommodate using data's values)
+(note: variable alhire was byte, now long to accommodate using data's values)
+(note: variable hihire was byte, now long to accommodate using data's values)
+(note: variable prbase was int, now long to accommodate using data's values)
+(note: variable prbonus was byte, now int to accommodate using data's values)
+(note: variable prcomp was int, now long to accommodate using data's values)
+(note: variable prhire was int, now long to accommodate using data's values)
+(note: variable comp was int, now long to accommodate using data's values)
+file allGap.dta saved
+(107 vars, 59 obs)
+(58 observations deleted)
+(note: variable bonus was int, now long to accommodate using data's values)
+(note: variable v13 was int, now long to accommodate using data's values)
+(note: variable v14 was long, now double to accommodate using data's values)
+(note: variable v16 was float, now double to accommodate using data's values)
+(note: variable v17 was int, now long to accommodate using data's values)
+(note: variable v18 was long, now double to accommodate using data's values)
+(note: variable v20 was float, now double to accommodate using data's values)
+(note: variable v21 was int, now long to accommodate using data's values)
+(note: variable v22 was long, now double to accommodate using data's values)
+(note: variable v24 was byte, now long to accommodate using data's values)
+(note: variable v25 was int, now long to accommodate using data's values)
+(note: variable v26 was long, now double to accommodate using data's values)
+(note: variable v29 was int, now long to accommodate using data's values)
+(note: variable v30 was long, now double to accommodate using data's values)
+(note: variable phhire was int, now double to accommodate using data's values)
+(note: variable mihire was int, now long to accommodate using data's values)
+(note: variable mehire was int, now long to accommodate using data's values)
+(note: variable prhire was int, now long to accommodate using data's values)
+(note: variable v9 was int, now long to accommodate using data's values)
+(note: variable v10 was long, now double to accommodate using data's values)
+(note: variable v12 was float, now double to accommodate using data's values)
+(note: variable v32 was byte, now long to accommodate using data's values)
+(note: variable v33 was int, now long to accommodate using data's values)
+(note: variable reports was int, now double to accommodate using data's values)
+(note: variable v8 was float, now double to accommodate using data's values)
+file allGap.dta saved
+(107 vars, 59 obs)
+(58 observations deleted)
+(note: variable low was int, now long to accommodate using data's values)
+(note: variable v8 was int, now double to accommodate using data's values)
+(note: variable v9 was int, now long to accommodate using data's values)
+(note: variable v10 was int, now double to accommodate using data's values)
+(note: variable v11 was int, now long to accommodate using data's values)
+(note: variable v12 was int, now double to accommodate using data's values)
+(note: variable v13 was int, now long to accommodate using data's values)
+(note: variable v14 was int, now double to accommodate using data's values)
+(note: variable v15 was int, now long to accommodate using data's values)
+(note: variable v16 was int, now double to accommodate using data's values)
+(note: variable v17 was int, now long to accommodate using data's values)
+(note: variable v18 was int, now double to accommodate using data's values)
+(note: variable v19 was int, now long to accommodate using data's values)
+(note: variable v20 was long, now double to accommodate using data's values)
+(note: variable v21 was int, now long to accommodate using data's values)
+(note: variable v22 was long, now double to accommodate using data's values)
+(note: variable v23 was int, now long to accommodate using data's values)
+(note: variable v25 was int, now long to accommodate using data's values)
+(note: variable v26 was long, now double to accommodate using data's values)
+(note: variable v27 was int, now long to accommodate using data's values)
+(note: variable v29 was int, now long to accommodate using data's values)
+(note: variable v30 was long, now double to accommodate using data's values)
+(note: variable v31 was int, now long to accommodate using data's values)
+(note: variable v33 was int, now long to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+(note: variable bobase was int, now long to accommodate using data's values)
+(note: variable bocomp was int, now long to accommodate using data's values)
+(note: variable bohire was int, now long to accommodate using data's values)
+(note: variable mabonus was int, now long to accommodate using data's values)
+(note: variable libase was int, now long to accommodate using data's values)
+(note: variable licomp was int, now long to accommodate using data's values)
+(note: variable lihire was int, now long to accommodate using data's values)
+(note: variable njbase was int, now long to accommodate using data's values)
+(note: variable njcomp was int, now long to accommodate using data's values)
+(note: variable njhire was int, now long to accommodate using data's values)
+(note: variable wpbase was int, now long to accommodate using data's values)
+(note: variable wpcomp was int, now long to accommodate using data's values)
+(note: variable wphire was int, now long to accommodate using data's values)
+(note: variable phbase was int, now long to accommodate using data's values)
+(note: variable phcomp was int, now long to accommodate using data's values)
+(note: variable phhire was int, now double to accommodate using data's values)
+(note: variable wabase was int, now long to accommodate using data's values)
+(note: variable wacomp was int, now long to accommodate using data's values)
+(note: variable wahire was int, now long to accommodate using data's values)
+(note: variable athire was int, now long to accommodate using data's values)
+(note: variable mibase was int, now long to accommodate using data's values)
+(note: variable micomp was int, now long to accommodate using data's values)
+(note: variable mihire was int, now long to accommodate using data's values)
+(note: variable mebase was int, now long to accommodate using data's values)
+(note: variable mecomp was int, now long to accommodate using data's values)
+(note: variable mehire was int, now long to accommodate using data's values)
+(note: variable chbase was int, now long to accommodate using data's values)
+(note: variable chcomp was int, now long to accommodate using data's values)
+(note: variable chhire was int, now long to accommodate using data's values)
+(note: variable labase was int, now long to accommodate using data's values)
+(note: variable lacomp was int, now long to accommodate using data's values)
+(note: variable lahire was int, now long to accommodate using data's values)
+(note: variable sfhire was int, now long to accommodate using data's values)
+(note: variable sebase was int, now long to accommodate using data's values)
+(note: variable secomp was int, now long to accommodate using data's values)
+(note: variable sehire was int, now long to accommodate using data's values)
+(note: variable alhire was int, now long to accommodate using data's values)
+(note: variable hihire was int, now long to accommodate using data's values)
+(note: variable prbase was int, now long to accommodate using data's values)
+(note: variable prcomp was int, now long to accommodate using data's values)
+(note: variable prhire was int, now long to accommodate using data's values)
+(note: variable hire was int, now long to accommodate using data's values)
+file allGap.dta saved
+(76 vars, 58 obs)
+(57 observations deleted)
+(note: variable base was float, now double to accommodate using data's values)
+(note: variable bonus was float, now double to accommodate using data's values)
+(note: variable total was float, now double to accommodate using data's values)
+(note: variable hire was float, now double to accommodate using data's values)
+(note: variable bobase was float, now double to accommodate using data's values)
+(note: variable bocomp was float, now double to accommodate using data's values)
+(note: variable bohire was float, now double to accommodate using data's values)
+(note: variable mabase was float, now double to accommodate using data's values)
+(note: variable mabonus was float, now double to accommodate using data's
+       values)
+(note: variable macomp was float, now double to accommodate using data's values)
+(note: variable mahire was float, now double to accommodate using data's values)
+(note: variable libase was float, now double to accommodate using data's values)
+(note: variable licomp was float, now double to accommodate using data's values)
+(note: variable lihire was float, now double to accommodate using data's values)
+(note: variable njbase was float, now double to accommodate using data's values)
+(note: variable njcomp was float, now double to accommodate using data's values)
+(note: variable njhire was float, now double to accommodate using data's values)
+(note: variable wpbase was float, now double to accommodate using data's values)
+(note: variable wpcomp was float, now double to accommodate using data's values)
+(note: variable wphire was float, now double to accommodate using data's values)
+(note: variable phbase was float, now double to accommodate using data's values)
+(note: variable phcomp was float, now double to accommodate using data's values)
+(note: variable phhire was float, now double to accommodate using data's values)
+(note: variable wabase was float, now double to accommodate using data's values)
+(note: variable wacomp was float, now double to accommodate using data's values)
+(note: variable wahire was float, now double to accommodate using data's values)
+(note: variable atbase was float, now double to accommodate using data's values)
+(note: variable atcomp was float, now double to accommodate using data's values)
+(note: variable athire was float, now double to accommodate using data's values)
+(note: variable mibase was float, now double to accommodate using data's values)
+(note: variable micomp was float, now double to accommodate using data's values)
+(note: variable mihire was float, now double to accommodate using data's values)
+(note: variable mebase was float, now double to accommodate using data's values)
+(note: variable mecomp was float, now double to accommodate using data's values)
+(note: variable mehire was float, now double to accommodate using data's values)
+(note: variable chbase was float, now double to accommodate using data's values)
+(note: variable chcomp was float, now double to accommodate using data's values)
+(note: variable chhire was float, now double to accommodate using data's values)
+(note: variable labase was float, now double to accommodate using data's values)
+(note: variable lacomp was float, now double to accommodate using data's values)
+(note: variable lahire was float, now double to accommodate using data's values)
+(note: variable sfbase was float, now double to accommodate using data's values)
+(note: variable sfcomp was float, now double to accommodate using data's values)
+(note: variable sfhire was float, now double to accommodate using data's values)
+(note: variable sebase was float, now double to accommodate using data's values)
+(note: variable secomp was float, now double to accommodate using data's values)
+(note: variable sehire was float, now double to accommodate using data's values)
+(note: variable albase was float, now double to accommodate using data's values)
+(note: variable alcomp was float, now double to accommodate using data's values)
+(note: variable alhire was float, now double to accommodate using data's values)
+(note: variable hibase was float, now double to accommodate using data's values)
+(note: variable hicomp was float, now double to accommodate using data's values)
+(note: variable hihire was float, now double to accommodate using data's values)
+(note: variable prbase was float, now double to accommodate using data's values)
+(note: variable prcomp was float, now double to accommodate using data's values)
+(note: variable prhire was float, now double to accommodate using data's values)
+file allGap.dta saved
+(78 vars, 60 obs)
+(59 observations deleted)
+(note: variable base was float, now double to accommodate using data's values)
+(note: variable bonus was float, now double to accommodate using data's values)
+(note: variable total was float, now double to accommodate using data's values)
+(note: variable hire was float, now double to accommodate using data's values)
+(note: variable bobase was float, now double to accommodate using data's values)
+(note: variable bocomp was float, now double to accommodate using data's values)
+(note: variable bohire was float, now double to accommodate using data's values)
+(note: variable mabase was float, now double to accommodate using data's values)
+(note: variable mabonus was float, now double to accommodate using data's
+       values)
+(note: variable macomp was float, now double to accommodate using data's values)
+(note: variable mahire was float, now double to accommodate using data's values)
+(note: variable libase was float, now double to accommodate using data's values)
+(note: variable licomp was float, now double to accommodate using data's values)
+(note: variable lihire was float, now double to accommodate using data's values)
+(note: variable njbase was float, now double to accommodate using data's values)
+(note: variable njcomp was float, now double to accommodate using data's values)
+(note: variable njhire was float, now double to accommodate using data's values)
+(note: variable wpbase was float, now double to accommodate using data's values)
+(note: variable wpcomp was float, now double to accommodate using data's values)
+(note: variable wphire was float, now double to accommodate using data's values)
+(note: variable phbase was float, now double to accommodate using data's values)
+(note: variable phcomp was float, now double to accommodate using data's values)
+(note: variable phhire was float, now double to accommodate using data's values)
+(note: variable wabase was float, now double to accommodate using data's values)
+(note: variable wacomp was float, now double to accommodate using data's values)
+(note: variable wahire was float, now double to accommodate using data's values)
+(note: variable atbase was float, now double to accommodate using data's values)
+(note: variable atcomp was float, now double to accommodate using data's values)
+(note: variable athire was float, now double to accommodate using data's values)
+(note: variable mibase was float, now double to accommodate using data's values)
+(note: variable micomp was float, now double to accommodate using data's values)
+(note: variable mihire was float, now double to accommodate using data's values)
+(note: variable mebase was float, now double to accommodate using data's values)
+(note: variable mecomp was float, now double to accommodate using data's values)
+(note: variable mehire was float, now double to accommodate using data's values)
+(note: variable chbase was float, now double to accommodate using data's values)
+(note: variable chcomp was float, now double to accommodate using data's values)
+(note: variable chhire was float, now double to accommodate using data's values)
+(note: variable labase was float, now double to accommodate using data's values)
+(note: variable lacomp was float, now double to accommodate using data's values)
+(note: variable lahire was float, now double to accommodate using data's values)
+(note: variable sfbase was float, now double to accommodate using data's values)
+(note: variable sfcomp was float, now double to accommodate using data's values)
+(note: variable sfhire was float, now double to accommodate using data's values)
+(note: variable sebase was float, now double to accommodate using data's values)
+(note: variable secomp was float, now double to accommodate using data's values)
+(note: variable sehire was float, now double to accommodate using data's values)
+(note: variable albase was float, now double to accommodate using data's values)
+(note: variable alcomp was float, now double to accommodate using data's values)
+(note: variable alhire was float, now double to accommodate using data's values)
+(note: variable hibase was float, now double to accommodate using data's values)
+(note: variable hicomp was float, now double to accommodate using data's values)
+(note: variable hihire was float, now double to accommodate using data's values)
+(note: variable prbase was float, now double to accommodate using data's values)
+(note: variable prcomp was float, now double to accommodate using data's values)
+(note: variable prhire was float, now double to accommodate using data's values)
+(note: variable comments was str9, now str31 to accommodate using data's values)
+file allGap.dta saved
+
+. 
+. exit
+
+end of do-file
+
+
+. 
+. use "allGap.dta"
+

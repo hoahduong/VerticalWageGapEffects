@@ -1,0 +1,238 @@
+setwd("~/Desktop/18-19 Thesis/R Calculations/1996 Ladders/Superseded")
+rm(list=ls())
+
+noZone <- read.csv("noZone.csv")
+noZoneNoArea <- read.csv("noZoneNoArea.csv")
+
+type <- c("No Zone", "No Zone No Area")
+
+# LEVEL
+# Create the dataframe
+# No Zone
+positionNZ <- colnames(noZone)
+levelNZ <- data.frame(matrix(nrow = nrow(noZone), ncol = ncol(noZone)))
+
+colnames(levelNZ) <- positionNZ
+levelNZ$code <- noZone$code
+
+for (i in 2:ncol(noZone)){
+  for (j in 1:nrow(noZone)){
+    standardized <- noZone[j,i]/noZone[j,2]
+    levelNZ[j,i] <- standardized
+  }
+}
+
+# No Zone No Area
+positionNZNA <- colnames(noZoneNoArea)
+levelNZNA <- data.frame(matrix(nrow = nrow(noZoneNoArea), ncol = ncol(noZoneNoArea)))
+
+colnames(levelNZNA) <- positionNZNA
+levelNZNA$code <- noZoneNoArea$code
+
+for (i in 2:ncol(noZoneNoArea)){
+  for (j in 1:nrow(noZoneNoArea)){
+    standardized <- noZoneNoArea[j,i]/noZoneNoArea[j,2]
+    levelNZNA[j,i] <- standardized
+  }
+}
+
+
+# Plot
+mypath <- file.path("~/Desktop/18-19 Thesis/R Calculations/1996 Ladders/Plots/Combined/Standardized Level.jpeg")
+jpeg(file=mypath, width = 600, height = 600, units = "px", quality = 100)
+
+#dev.new(width = 3, height = 2)
+
+op <- par(mar = c(5.5,4,3.5,2) + 0.1)
+
+# draw the plot but without annotation
+boxplot(levelNZ$AsstStoreMgr, levelNZNA$AsstStoreMgr, 
+        levelNZ$StoreMgr, levelNZNA$StoreMgr, 
+        levelNZ$AreaMgr,
+        levelNZ$DistrictMgr, levelNZNA$DistrictMgr,
+        levelNZ$RegionalMgr, levelNZNA$RegionalMgr,
+        levelNZ$TopStoreOps, levelNZNA$TopStoreOps,
+        at = c(1,2, 4,5, 7, 9,10, 12,13, 15,16),
+        col = c("blue", "red", "blue", "red", "blue",
+                "blue", "red", "blue", "red", "blue", "red"), 
+        main = "Standardized Pay Level", axes = FALSE, ann = FALSE)
+
+# add axes and legend
+legend("topleft", type, fill = c("blue", "red"))
+axis(1, at = c(1.5, 4.5, 7, 9.5, 12.5, 15.5), 
+     labels = c("Assistant \n Store Mgr",
+                "Store Mgr", 
+                "Area Mgr", 
+                "District\n Mgr   ", 
+                "Regional\n Mgr   ",
+                "Top Store \n Operations"), las = 2, cex.axis = 1)
+axis(2, at = seq(0, 22, by = 2), las = 2, cex.axis = 1)
+
+title(ylab = "Standardized level", line = 2.25, cex.lab = 1)
+box()
+
+par(op)
+
+dev.off()
+
+
+# Create dataframe
+# No Zone
+gap1NZ <- c("Code", "AsstToStore", "StoreToArea", "AreaToDist", "DistToReg", "RegToTop")
+firstDiffNZ <- data.frame(matrix(nrow = nrow(noZone), ncol = ncol(noZone) - 1), row.names = rownames(noZone))
+colnames(firstDiffNZ) <- gap1NZ
+
+firstDiffNZ$Code <- noZone$code
+
+firstDiffNZ$AsstToStore <- levelNZ$StoreMgr - levelNZ$AsstStoreMgr
+firstDiffNZ$StoreToArea <- levelNZ$AreaMgr - levelNZ$StoreMgr
+firstDiffNZ$AreaToDist <- levelNZ$DistrictMgr - levelNZ$AreaMgr
+firstDiffNZ$DistToReg <- levelNZ$RegionalMgr - levelNZ$DistrictMgr
+firstDiffNZ$RegToTop <- levelNZ$TopStoreOps - levelNZ$RegionalMgr
+
+# No Zone No Area
+gap1NZNA <- c("Code", "AsstToStore", "StoreToDist", "DistToReg", "RegToTop")
+firstDiffNZNA <- data.frame(matrix(nrow = nrow(noZoneNoArea), ncol = ncol(noZoneNoArea) - 1), row.names = rownames(noZoneNoArea))
+colnames(firstDiffNZNA) <- gap1NZNA
+
+firstDiffNZNA$Code <- noZoneNoArea$code
+
+firstDiffNZNA$AsstToStore <- levelNZNA$StoreMgr - levelNZNA$AsstStoreMgr
+firstDiffNZNA$StoreToDist <- levelNZNA$DistrictMgr - levelNZNA$StoreMgr
+firstDiffNZNA$DistToReg <- levelNZNA$RegionalMgr - levelNZNA$DistrictMgr
+firstDiffNZNA$RegToTop <- levelNZNA$TopStoreOps - levelNZNA$RegionalMgr
+
+# Plot
+mypath <- file.path("~/Desktop/18-19 Thesis/R Calculations/1996 Ladders/Plots/Combined/Standardized First Difference.jpeg")
+jpeg(file=mypath, width = 600, height = 600, units = "px", quality = 100)
+
+#dev.new(width = 3, height = 2)
+
+op <- par(mar = c(5.5,4,3.5,2) + 0.1)
+
+# draw the plot but without annotation
+boxplot(firstDiffNZ$AsstToStore, firstDiffNZNA$AsstToStore,
+        firstDiffNZ$StoreToArea, firstDiffNZ$AreaToDist,
+        firstDiffNZNA$StoreToDist,
+        firstDiffNZ$DistToReg, firstDiffNZNA$DistToReg,
+        firstDiffNZ$RegToTop, firstDiffNZNA$RegToTop,
+        at = c(1,2, 4,5,6, 8,9, 11,12),
+        col = c("blue", "red", "blue", "blue", "red",
+                "blue", "red", "blue", "red"), 
+        main = "Standardized First Difference", axes = FALSE, ann = FALSE)
+
+# add axes and legend
+legend("topleft", type, fill = c("blue", "red"))
+axis(1, at = c(1.5, 4,5,6, 8.5, 11.5), 
+     labels = c("Assistant\n to Store",
+                "Store to\n Area    ", "Area to\n District",
+                "Store to\n District", 
+                "District to\n Regional",
+                "Regional\n to Top"), las = 2, cex.axis = 1)
+axis(2, at = seq(0, 22, by = 2), las = 2, cex.axis = 1)
+
+title(ylab = "Difference between Standardized Level", line = 2.25, cex.lab = 1)
+box()
+
+par(op)
+
+dev.off()
+
+
+
+# SECOND DIFFERENCE
+
+# Create dataframe
+# No Zone
+gap2NZ <- c("Code", "AsstToStoreVSStoreToArea", "StoreToAreaVSAreaToDist", "AreaToDistVSDistToReg", "DistToRegVSRegToTop")
+secondDiffNZ <- data.frame(matrix(nrow = nrow(noZone), ncol = ncol(noZone) - 2))
+colnames(secondDiffNZ) <- gap2NZ
+
+secondDiffNZ$Code <- noZone$code
+
+secondDiffNZ$AsstToStoreVSStoreToArea <- firstDiffNZ$StoreToArea - firstDiffNZ$AsstToStore
+secondDiffNZ$StoreToAreaVSAreaToDist <- firstDiffNZ$AreaToDist - firstDiffNZ$StoreToArea
+secondDiffNZ$AreaToDistVSDistToReg <- firstDiffNZ$DistToReg - firstDiffNZ$AreaToDist
+secondDiffNZ$DistToRegVSRegToTop <- firstDiffNZ$RegToTop - firstDiffNZ$DistToReg
+
+# No Zone No Area
+gap2NZNA <- c("Code", "AsstToStoreVSStoreToDist", "StoreToDistVSDistToReg", "DistToRegVSRegToTop")
+secondDiffNZNA <- data.frame(matrix(nrow = nrow(noZoneNoArea), ncol = ncol(noZoneNoArea) - 2))
+colnames(secondDiffNZNA) <- gap2NZNA
+
+secondDiffNZNA$Code <- noZoneNoArea$code
+
+secondDiffNZNA$AsstToStoreVSStoreToDist <- firstDiffNZNA$StoreToDist - firstDiffNZNA$AsstToStore
+secondDiffNZNA$StoreToDistVSDistToReg <- firstDiffNZNA$DistToReg - firstDiffNZNA$StoreToDist
+secondDiffNZNA$DistToRegVSRegToTop <- firstDiffNZNA$RegToTop - firstDiffNZNA$DistToReg
+
+# Plot
+mypath <- file.path("~/Desktop/18-19 Thesis/R Calculations/1996 Ladders/Plots/Combined/Standardized Second Difference.jpeg")
+jpeg(file=mypath, width = 600, height = 600, units = "px", quality = 100)
+
+#dev.new(width = 3, height = 2)
+
+op <- par(mar = c(7.5,4,3.5,2) + 0.1)
+
+# draw the plot but without annotation
+boxplot(secondDiffNZ$AsstToStoreVSStoreToArea, 
+        secondDiffNZNA$AsstToStoreVSStoreToDist,
+        secondDiffNZ$StoreToAreaVSAreaToDist,
+        
+        secondDiffNZ$AreaToDistVSDistToReg,
+        secondDiffNZNA$StoreToDistVSDistToReg, 
+        
+        secondDiffNZ$DistToRegVSRegToTop, 
+        secondDiffNZNA$DistToRegVSRegToTop,
+        
+        at = c(1,2,3, 5,6, 8,9),
+        col = c("blue", "red", "blue", "blue", "red",
+                "blue", "red"), 
+        main = "Standardized Second Difference", axes = FALSE, ann = FALSE)
+
+# add axes and legend
+legend("topleft", type, fill = c("blue", "red"))
+axis(1, at = c(1,2,3, 5,6, 8.5), 
+     labels = c("Asst to Store \n vs. Store to Area",
+                "Store to Area \n vs. Area to Dist",
+                "Asst to Store \n vs. Store to Dist",
+                
+                "Area to Dist \n vs. Dist to Reg",
+                "Store to Dist \n vs. Dist to Reg",
+                
+                "Dist to Reg \n vs. Reg to Top"), las = 2, cex.axis = 1)
+axis(2, at = seq(-4, 10, by = 2), las = 2, cex.axis = 1)
+
+title(ylab = "Difference between Standardized Gaps", line = 2.25, cex.lab = 1)
+box()
+
+par(op)
+
+dev.off()
+
+
+# t-test
+
+# No Zone
+t.test(secondDiffNZ$AsstToStoreVSStoreToArea, alternative = "greater")
+
+t.test(secondDiffNZ$StoreToAreaVSAreaToDist, alternative = "greater")
+
+t.test(secondDiffNZ$AreaToDistVSDistToReg, alternative = "greater")
+
+t.test(secondDiffNZ$DistToRegVSRegToTop, alternative = "greater")
+
+# No Zone No Area
+t.test(secondDiffNZNA$AsstToStoreVSStoreToDist, alternative = "greater")
+
+t.test(secondDiffNZNA$StoreToDistVSDistToReg, alternative = "greater")
+
+t.test(secondDiffNZNA$DistToRegVSRegToTop, alternative = "greater")
+
+
+
+
+
+
+
+

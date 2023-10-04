@@ -1,0 +1,29 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"LAN",5.44,0,5.44,,,"","","46 Part Time.txt",
+"LAN",8.4,0,8.4,,,"","","45 Full Time.txt",2.96
+"LAN",20300,,20300,,,"","","43 Assistant Store Manager.txt",20291.6
+"LAN",29200,1100,30300,,9,"","","42 Store Manager.txt",10000
+"LAN",53400,3200,56600,,,"DSM","","40 District Manager.txt",26300
+"LAN",126600,9100,135700,,,"RSM","","39 Regional Manager.txt",79100
+"LAN",330000,69000,399000,,8000,"EX VP STORES","CEO","37 Top Store Operations.txt",263300
+"LAN",135000,10100,145100,,300,"VP DC","EX VP CFO","34 Top DC _ Logistics.txt",-253900
+"LAN",96000,4000,100000,,15,"DR SEC","CEO","32 Top Loss Prevention.txt",-45100
+"LAN",79500,,79500,,2,"","","31 Comp_Benefits Mgr.txt",-20500
+"LAN",250000,0,250000,,10,"VP HR","CEO","30 Top Human Resources.txt",170500
+"LAN",68200,,68200,,8,"MGR, STORE COMMUN","DR STORE CONTROL","29 Point Of Sale Admin.txt",-181800
+"LAN",200000,24000,224000,,40,"VP/MIS","EX VP/CFO","26 Top Systems_Data Procg.txt",155800
+"LAN",39300,,39300,27400,,"REG PRESNT COORD","","25 Regional Visual.txt",-184700
+"LAN",80000,3200,83200,,10,"DR PRESNT","EX VP STORES","24 Top Visual.txt",43900
+"LAN",92000,,92000,,3,"SR ART DR","VP MKTNG","23 Art Department.txt",8800
+"LAN",315000,60000,375000,,15,"VP MKTNG","","22 Top Mktg_Sales Promo.txt",283000
+"LAN",29400,,29400,,,"PLANNER","","19 Distributor.txt",-345600
+"LAN",39800,,39800,,,"DISTRIB MGR","","18 Planner.txt",10400
+"LAN",84000,,84000,,3,"DIV CONTR","","17 Sr Planner.txt",44200
+"LAN",230000,46000,276000,,45,"EVP PLAN ALLOC","CEO","16 Top Planner.txt",192000
+"LAN",79500,0,79500,,,"ASSOC B","","15 Assistant Buyer.txt",-196500
+"LAN",104100,,104200,,,"","","14 Buyer.txt",24700
+"LAN",142000,0,142000,,,"SR B","","13 Sr Buyer.txt",37800
+"LAN",201000,74800,275800,,10,"MERCH MGR","","12 Div Merchandise Mgr.txt",133800
+"LAN",265000,9600,274600,,30,"VP/GMM","CEO","11 General Merchandise Mgr.txt",-1200
+"LAN",325000,29300,354300,,400,"EX VP CFO","","07 CFO.txt",79700
+"LAN",550000,128800,678800,,10000,"PRES/CEO","VICE CHAIR","01 CEO.txt",324500

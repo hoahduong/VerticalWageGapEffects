@@ -1,0 +1,47 @@
+setwd("~/Desktop/18-19 Thesis/R Calculations/1996 Ladders")
+
+noZone <- read.csv("noZone.csv")
+noZoneNoArea <- read.csv("noZoneNoArea.csv")
+
+# # No Zone
+# noZoneCols = c("code", "AsstStoreMgr", "StoreMgr", "AreaMgr", "DistrictMgr", 
+#               "RegionalMgr", "TopStoreOps")
+# 
+# attach(noZone)
+# avgNZ <- data.frame("Average", mean(AsstStoreMgr), mean(StoreMgr), mean(AreaMgr), mean(DistrictMgr),
+#            mean(RegionalMgr), mean(TopStoreOps))
+# names(avgNZ) <- noZoneCols
+# 
+# noZone <- rbind(noZone, avgNZ)
+
+# No Zone
+# first remember the names
+nZ <- noZone$code
+
+# transpose all but the first column (name)
+noZoneTrans <- as.data.frame(t(noZone[,-1]))
+colnames(noZoneTrans) <- nZ
+
+# Level 
+levelAvg = rowMeans(noZoneTrans)
+levelSd = apply(noZoneTrans[,1:14],1,sd)
+noZoneTrans <- cbind(noZoneTrans, levelAvg, levelSd)
+
+x <- 1:6
+plot(x, levelAvg,
+     ylim=range(c(levelAvg-levelSd, levelAvg+levelSd)),
+     pch=19, xlab="Positions", ylab="Mean +/- SD",
+     main="Pay level"
+)
+# hack: we draw arrows but with very special "arrowheads"
+arrows(x, levelAvg-levelSd, x, levelAvg+levelSd, length=0.05, angle=90, code=3)
+
+# First Difference
+firstDiffAvg = diff(noZoneTrans$levelAvg)
+
+
+
+
+
+
+

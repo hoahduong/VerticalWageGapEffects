@@ -1,0 +1,505 @@
+----------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/COA/COA.log
+  log type:  text
+ opened on:   2 Feb 2019, 17:33:53
+
+. 
+. version 15
+
+. 
+. local pathName "/Users/macbook/Desktop/18-19 Thesis/fromBefore/theData/1996/"
+
+. 
+. // use the grep command to get the list of files that contains COA
+. // $ grep -l 'COA' *.txt
+. local fileList "01 CEO.txt" ///
+>         "03 Top Real Estate.txt" ///
+>         "05 Top Store Plan_Construct.txt" ///
+>         "07 CFO.txt" ///
+>         "08 Controller.txt" ///
+>         "16 Top Planner.txt" ///
+>         "17 Sr Planner.txt" ///
+>         "18 Planner.txt" ///
+>         "22 Top Mktg_Sales Promo.txt" ///
+>         "23 Art Department.txt" ///
+>         "24 Top Visual.txt" ///
+>         "29 Point Of Sale Admin.txt" ///
+>         "30 Top Human Resources.txt" ///
+>         "31 Comp_Benefits Mgr.txt" ///
+>         "35 DC Manager.txt" ///
+>         "36 Domestic Traffic.txt" ///
+>         "37 Top Store Operations.txt" ///
+>         "39 Regional Manager.txt" ///
+>         "40 District Manager.txt" ///
+>         "41 Area Manager.txt" ///
+>         "42 Store Manager.txt" ///
+>         "43 Assistant Store Manager.txt" ///
+>         "45 Full Time.txt" ///
+>         "46 Part Time.txt" 
+
+. 
+. 
+. drop _all 
+
+. 
+. // create the big data file
+. save COA.dta, replace emptyok
+(note: dataset contains 0 observations)
+file COA.dta saved
+
+. 
+. // for each data file, keep the row that has COA information and append to the b
+> ig data file
+. foreach fileName in "`fileList'" {
+  2. import delimited using "`pathName'`fileName'",  clear // names
+  3. keep if code == "COA"
+  4. gen fileName = "`fileName'"
+  5. append using COA.dta
+  6. save COA.dta, replace 
+  7. }
+(10 vars, 66 obs)
+(65 observations deleted)
+file COA.dta saved
+(9 vars, 38 obs)
+(37 observations deleted)
+(note: variable reportsto was str21, now str24 to accommodate using data's
+       values)
+(note: variable reports was int, now long to accommodate using data's values)
+file COA.dta saved
+(23 vars, 46 obs)
+(45 observations deleted)
+(note: variable reports was byte, now long to accommodate using data's values)
+file COA.dta saved
+(8 vars, 47 obs)
+(46 observations deleted)
+(note: variable title was str28, now str39 to accommodate using data's values)
+(note: variable reports was int, now long to accommodate using data's values)
+(note: variable fileName was str10, now str31 to accommodate using data's
+       values)
+file COA.dta saved
+(7 vars, 42 obs)
+(41 observations deleted)
+(note: variable title was str28, now str39 to accommodate using data's values)
+(note: variable reports was int, now long to accommodate using data's values)
+(note: variable fileName was str17, now str31 to accommodate using data's
+       values)
+file COA.dta saved
+(9 vars, 52 obs)
+(51 observations deleted)
+(note: variable title was str36, now str39 to accommodate using data's values)
+(note: variable reports was int, now long to accommodate using data's values)
+(note: variable fileName was str18, now str31 to accommodate using data's
+       values)
+(note: variable reportsto was str24, now str28 to accommodate using data's
+       values)
+file COA.dta saved
+(9 vars, 31 obs)
+(30 observations deleted)
+(note: variable title was str28, now str39 to accommodate using data's values)
+(note: variable reports was byte, now long to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+(note: variable fileName was str17, now str31 to accommodate using data's
+       values)
+file COA.dta saved
+(8 vars, 50 obs)
+(49 observations deleted)
+(note: variable title was str23, now str39 to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+(note: variable fileName was str14, now str31 to accommodate using data's
+       values)
+file COA.dta saved
+(43 vars, 42 obs)
+(41 observations deleted)
+(note: variable title was str34, now str39 to accommodate using data's values)
+(note: variable fileName was str27, now str31 to accommodate using data's
+       values)
+(note: variable reports was byte, now long to accommodate using data's values)
+file COA.dta saved
+(8 vars, 23 obs)
+(22 observations deleted)
+(note: variable title was str25, now str39 to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+(note: variable reports was byte, now long to accommodate using data's values)
+(note: variable fileName was str21, now str31 to accommodate using data's
+       values)
+file COA.dta saved
+(9 vars, 49 obs)
+(48 observations deleted)
+(note: variable title was str31, now str39 to accommodate using data's values)
+(note: variable reports was byte, now long to accommodate using data's values)
+(note: variable fileName was str17, now str31 to accommodate using data's
+       values)
+file COA.dta saved
+(7 vars, 33 obs)
+(32 observations deleted)
+(note: variable title was str31, now str39 to accommodate using data's values)
+(note: variable reportsto was str38, now str40 to accommodate using data's
+       values)
+(note: variable reports was byte, now long to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+(note: variable fileName was str26, now str31 to accommodate using data's
+       values)
+file COA.dta saved
+(9 vars, 47 obs)
+(46 observations deleted)
+(note: variable title was str24, now str39 to accommodate using data's values)
+(note: variable reportsto was str25, now str40 to accommodate using data's
+       values)
+(note: variable reports was float, now double to accommodate using data's
+       values)
+(note: variable fileName was str26, now str31 to accommodate using data's
+       values)
+file COA.dta saved
+(17 vars, 39 obs)
+(38 observations deleted)
+(note: variable reports was byte, now double to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+(note: variable fileName was str24, now str31 to accommodate using data's
+       values)
+(note: variable comments was str30, now str31 to accommodate using data's
+       values)
+file COA.dta saved
+(75 vars, 23 obs)
+(22 observations deleted)
+(note: variable reports was int, now double to accommodate using data's values)
+(note: variable fileName was str17, now str31 to accommodate using data's
+       values)
+(note: variable sfbase was byte, now long to accommodate using data's values)
+(note: variable sfbonus was byte, now int to accommodate using data's values)
+file COA.dta saved
+(78 vars, 31 obs)
+(30 observations deleted)
+(note: variable reports was byte, now double to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+(note: variable phbonus was byte, now int to accommodate using data's values)
+(note: variable athire was byte, now long to accommodate using data's values)
+(note: variable mibase was byte, now long to accommodate using data's values)
+(note: variable micomp was byte, now long to accommodate using data's values)
+(note: variable labonus was byte, now int to accommodate using data's values)
+(note: variable sfbonus was byte, now int to accommodate using data's values)
+(note: variable fileName was str23, now str31 to accommodate using data's
+       values)
+(note: variable title was str32, now str39 to accommodate using data's values)
+(note: variable reportsto was str25, now str40 to accommodate using data's
+       values)
+file COA.dta saved
+(10 vars, 52 obs)
+(51 observations deleted)
+(note: variable reportsto was str35, now str40 to accommodate using data's
+       values)
+(note: variable reports was int, now double to accommodate using data's values)
+(note: variable fileName was str27, now str31 to accommodate using data's
+       values)
+file COA.dta saved
+(32 vars, 56 obs)
+(55 observations deleted)
+(note: variable title was str21, now str40 to accommodate using data's values)
+(note: variable fileName was str23, now str31 to accommodate using data's
+       values)
+file COA.dta saved
+(108 vars, 58 obs)
+(57 observations deleted)
+(note: variable title was str14, now str40 to accommodate using data's values)
+(note: variable v15 was int, now long to accommodate using data's values)
+(note: variable v26 was byte, now float to accommodate using data's values)
+(note: variable v27 was int, now long to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+(note: variable fileName was str23, now str31 to accommodate using data's
+       values)
+(note: variable phhire was float, now double to accommodate using data's values)
+file COA.dta saved
+(100 vars, 19 obs)
+(18 observations deleted)
+(note: variable title was str31, now str40 to accommodate using data's values)
+(note: variable v15 was int, now long to accommodate using data's values)
+(note: variable v22 was byte, now float to accommodate using data's values)
+(note: variable v26 was byte, now float to accommodate using data's values)
+(note: variable v27 was int, now long to accommodate using data's values)
+(note: variable base was int, now long to accommodate using data's values)
+(note: variable percent was byte, now float to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+(note: variable bohire was int, now long to accommodate using data's values)
+(note: variable mahire was int, now long to accommodate using data's values)
+(note: variable lihire was int, now long to accommodate using data's values)
+(note: variable njhire was int, now long to accommodate using data's values)
+(note: variable wpbase was int, now long to accommodate using data's values)
+(note: variable wphire was int, now long to accommodate using data's values)
+(note: variable phhire was long, now double to accommodate using data's values)
+(note: variable wahire was int, now long to accommodate using data's values)
+(note: variable lahire was int, now long to accommodate using data's values)
+(note: variable sfhire was int, now long to accommodate using data's values)
+(note: variable sehire was int, now long to accommodate using data's values)
+(note: variable albase was byte, now long to accommodate using data's values)
+(note: variable albonus was byte, now int to accommodate using data's values)
+(note: variable alcomp was byte, now long to accommodate using data's values)
+(note: variable alhire was byte, now long to accommodate using data's values)
+(note: variable hihire was byte, now long to accommodate using data's values)
+(note: variable prbase was int, now long to accommodate using data's values)
+(note: variable prbonus was byte, now int to accommodate using data's values)
+(note: variable prcomp was int, now long to accommodate using data's values)
+(note: variable prhire was int, now long to accommodate using data's values)
+(note: variable fileName was str19, now str31 to accommodate using data's
+       values)
+file COA.dta saved
+(107 vars, 59 obs)
+(58 observations deleted)
+(note: variable bonus was int, now long to accommodate using data's values)
+(note: variable v13 was int, now long to accommodate using data's values)
+(note: variable v14 was long, now double to accommodate using data's values)
+(note: variable v16 was float, now double to accommodate using data's values)
+(note: variable v17 was int, now long to accommodate using data's values)
+(note: variable v18 was long, now double to accommodate using data's values)
+(note: variable v20 was float, now double to accommodate using data's values)
+(note: variable v21 was int, now long to accommodate using data's values)
+(note: variable v22 was long, now double to accommodate using data's values)
+(note: variable v24 was byte, now long to accommodate using data's values)
+(note: variable v25 was int, now long to accommodate using data's values)
+(note: variable v26 was long, now double to accommodate using data's values)
+(note: variable v29 was int, now long to accommodate using data's values)
+(note: variable v30 was long, now double to accommodate using data's values)
+(note: variable phhire was int, now double to accommodate using data's values)
+(note: variable mihire was int, now long to accommodate using data's values)
+(note: variable mehire was int, now long to accommodate using data's values)
+(note: variable prhire was int, now long to accommodate using data's values)
+(note: variable fileName was str20, now str31 to accommodate using data's
+       values)
+(note: variable v9 was int, now long to accommodate using data's values)
+(note: variable v12 was float, now double to accommodate using data's values)
+(note: variable v32 was byte, now long to accommodate using data's values)
+(note: variable v33 was int, now long to accommodate using data's values)
+(note: variable reports was int, now double to accommodate using data's values)
+file COA.dta saved
+(107 vars, 59 obs)
+(58 observations deleted)
+(note: variable low was int, now long to accommodate using data's values)
+(note: variable v8 was int, now float to accommodate using data's values)
+(note: variable v9 was int, now long to accommodate using data's values)
+(note: variable v10 was int, now long to accommodate using data's values)
+(note: variable v11 was int, now long to accommodate using data's values)
+(note: variable v12 was int, now double to accommodate using data's values)
+(note: variable v13 was int, now long to accommodate using data's values)
+(note: variable v14 was int, now double to accommodate using data's values)
+(note: variable v15 was int, now long to accommodate using data's values)
+(note: variable v16 was int, now double to accommodate using data's values)
+(note: variable v17 was int, now long to accommodate using data's values)
+(note: variable v18 was int, now double to accommodate using data's values)
+(note: variable v19 was int, now long to accommodate using data's values)
+(note: variable v20 was long, now double to accommodate using data's values)
+(note: variable v21 was int, now long to accommodate using data's values)
+(note: variable v22 was long, now double to accommodate using data's values)
+(note: variable v23 was int, now long to accommodate using data's values)
+(note: variable v25 was int, now long to accommodate using data's values)
+(note: variable v26 was long, now double to accommodate using data's values)
+(note: variable v27 was int, now long to accommodate using data's values)
+(note: variable v29 was int, now long to accommodate using data's values)
+(note: variable v30 was long, now double to accommodate using data's values)
+(note: variable v31 was int, now long to accommodate using data's values)
+(note: variable v33 was int, now long to accommodate using data's values)
+(note: variable bonus was int, now long to accommodate using data's values)
+(note: variable bobase was int, now long to accommodate using data's values)
+(note: variable bocomp was int, now long to accommodate using data's values)
+(note: variable bohire was int, now long to accommodate using data's values)
+(note: variable mabonus was int, now long to accommodate using data's values)
+(note: variable libase was int, now long to accommodate using data's values)
+(note: variable licomp was int, now long to accommodate using data's values)
+(note: variable lihire was int, now long to accommodate using data's values)
+(note: variable njbase was int, now long to accommodate using data's values)
+(note: variable njcomp was int, now long to accommodate using data's values)
+(note: variable njhire was int, now long to accommodate using data's values)
+(note: variable wpbase was int, now long to accommodate using data's values)
+(note: variable wpcomp was int, now long to accommodate using data's values)
+(note: variable wphire was int, now long to accommodate using data's values)
+(note: variable phbase was int, now long to accommodate using data's values)
+(note: variable phcomp was int, now long to accommodate using data's values)
+(note: variable phhire was int, now double to accommodate using data's values)
+(note: variable wabase was int, now long to accommodate using data's values)
+(note: variable wacomp was int, now long to accommodate using data's values)
+(note: variable wahire was int, now long to accommodate using data's values)
+(note: variable athire was int, now long to accommodate using data's values)
+(note: variable mibase was int, now long to accommodate using data's values)
+(note: variable micomp was int, now long to accommodate using data's values)
+(note: variable mihire was int, now long to accommodate using data's values)
+(note: variable mebase was int, now long to accommodate using data's values)
+(note: variable mecomp was int, now long to accommodate using data's values)
+(note: variable mehire was int, now long to accommodate using data's values)
+(note: variable chbase was int, now long to accommodate using data's values)
+(note: variable chcomp was int, now long to accommodate using data's values)
+(note: variable chhire was int, now long to accommodate using data's values)
+(note: variable labase was int, now long to accommodate using data's values)
+(note: variable lacomp was int, now long to accommodate using data's values)
+(note: variable lahire was int, now long to accommodate using data's values)
+(note: variable sfhire was int, now long to accommodate using data's values)
+(note: variable sebase was int, now long to accommodate using data's values)
+(note: variable secomp was int, now long to accommodate using data's values)
+(note: variable sehire was int, now long to accommodate using data's values)
+(note: variable alhire was int, now long to accommodate using data's values)
+(note: variable hihire was int, now long to accommodate using data's values)
+(note: variable prbase was int, now long to accommodate using data's values)
+(note: variable prcomp was int, now long to accommodate using data's values)
+(note: variable prhire was int, now long to accommodate using data's values)
+(note: variable fileName was str30, now str31 to accommodate using data's
+       values)
+(note: variable hire was int, now long to accommodate using data's values)
+file COA.dta saved
+(76 vars, 58 obs)
+(57 observations deleted)
+(note: variable base was float, now double to accommodate using data's values)
+(note: variable bonus was float, now double to accommodate using data's values)
+(note: variable total was float, now double to accommodate using data's values)
+(note: variable hire was float, now double to accommodate using data's values)
+(note: variable bobase was float, now double to accommodate using data's values)
+(note: variable bocomp was float, now double to accommodate using data's values)
+(note: variable bohire was float, now double to accommodate using data's values)
+(note: variable mabase was float, now double to accommodate using data's values)
+(note: variable mabonus was float, now double to accommodate using data's
+       values)
+(note: variable macomp was float, now double to accommodate using data's values)
+(note: variable mahire was float, now double to accommodate using data's values)
+(note: variable libase was float, now double to accommodate using data's values)
+(note: variable licomp was float, now double to accommodate using data's values)
+(note: variable lihire was float, now double to accommodate using data's values)
+(note: variable njbase was float, now double to accommodate using data's values)
+(note: variable njcomp was float, now double to accommodate using data's values)
+(note: variable njhire was float, now double to accommodate using data's values)
+(note: variable wpbase was float, now double to accommodate using data's values)
+(note: variable wpcomp was float, now double to accommodate using data's values)
+(note: variable wphire was float, now double to accommodate using data's values)
+(note: variable phbase was float, now double to accommodate using data's values)
+(note: variable phcomp was float, now double to accommodate using data's values)
+(note: variable phhire was float, now double to accommodate using data's values)
+(note: variable wabase was float, now double to accommodate using data's values)
+(note: variable wacomp was float, now double to accommodate using data's values)
+(note: variable wahire was float, now double to accommodate using data's values)
+(note: variable atbase was float, now double to accommodate using data's values)
+(note: variable atcomp was float, now double to accommodate using data's values)
+(note: variable athire was float, now double to accommodate using data's values)
+(note: variable mibase was float, now double to accommodate using data's values)
+(note: variable micomp was float, now double to accommodate using data's values)
+(note: variable mihire was float, now double to accommodate using data's values)
+(note: variable mebase was float, now double to accommodate using data's values)
+(note: variable mecomp was float, now double to accommodate using data's values)
+(note: variable mehire was float, now double to accommodate using data's values)
+(note: variable chbase was float, now double to accommodate using data's values)
+(note: variable chcomp was float, now double to accommodate using data's values)
+(note: variable chhire was float, now double to accommodate using data's values)
+(note: variable labase was float, now double to accommodate using data's values)
+(note: variable lacomp was float, now double to accommodate using data's values)
+(note: variable lahire was float, now double to accommodate using data's values)
+(note: variable sfbase was float, now double to accommodate using data's values)
+(note: variable sfcomp was float, now double to accommodate using data's values)
+(note: variable sfhire was float, now double to accommodate using data's values)
+(note: variable sebase was float, now double to accommodate using data's values)
+(note: variable secomp was float, now double to accommodate using data's values)
+(note: variable sehire was float, now double to accommodate using data's values)
+(note: variable albase was float, now double to accommodate using data's values)
+(note: variable alcomp was float, now double to accommodate using data's values)
+(note: variable alhire was float, now double to accommodate using data's values)
+(note: variable hibase was float, now double to accommodate using data's values)
+(note: variable hicomp was float, now double to accommodate using data's values)
+(note: variable hihire was float, now double to accommodate using data's values)
+(note: variable prbase was float, now double to accommodate using data's values)
+(note: variable prcomp was float, now double to accommodate using data's values)
+(note: variable prhire was float, now double to accommodate using data's values)
+(note: variable fileName was str16, now str31 to accommodate using data's
+       values)
+file COA.dta saved
+(78 vars, 60 obs)
+(59 observations deleted)
+(note: variable base was float, now double to accommodate using data's values)
+(note: variable bonus was float, now double to accommodate using data's values)
+(note: variable total was float, now double to accommodate using data's values)
+(note: variable hire was float, now double to accommodate using data's values)
+(note: variable bobase was float, now double to accommodate using data's values)
+(note: variable bocomp was float, now double to accommodate using data's values)
+(note: variable bohire was float, now double to accommodate using data's values)
+(note: variable mabase was float, now double to accommodate using data's values)
+(note: variable mabonus was float, now double to accommodate using data's
+       values)
+(note: variable macomp was float, now double to accommodate using data's values)
+(note: variable mahire was float, now double to accommodate using data's values)
+(note: variable libase was float, now double to accommodate using data's values)
+(note: variable licomp was float, now double to accommodate using data's values)
+(note: variable lihire was float, now double to accommodate using data's values)
+(note: variable njbase was float, now double to accommodate using data's values)
+(note: variable njcomp was float, now double to accommodate using data's values)
+(note: variable njhire was float, now double to accommodate using data's values)
+(note: variable wpbase was float, now double to accommodate using data's values)
+(note: variable wpcomp was float, now double to accommodate using data's values)
+(note: variable wphire was float, now double to accommodate using data's values)
+(note: variable phbase was float, now double to accommodate using data's values)
+(note: variable phcomp was float, now double to accommodate using data's values)
+(note: variable phhire was float, now double to accommodate using data's values)
+(note: variable wabase was float, now double to accommodate using data's values)
+(note: variable wacomp was float, now double to accommodate using data's values)
+(note: variable wahire was float, now double to accommodate using data's values)
+(note: variable atbase was float, now double to accommodate using data's values)
+(note: variable atcomp was float, now double to accommodate using data's values)
+(note: variable athire was float, now double to accommodate using data's values)
+(note: variable mibase was float, now double to accommodate using data's values)
+(note: variable micomp was float, now double to accommodate using data's values)
+(note: variable mihire was float, now double to accommodate using data's values)
+(note: variable mebase was float, now double to accommodate using data's values)
+(note: variable mecomp was float, now double to accommodate using data's values)
+(note: variable mehire was float, now double to accommodate using data's values)
+(note: variable chbase was float, now double to accommodate using data's values)
+(note: variable chcomp was float, now double to accommodate using data's values)
+(note: variable chhire was float, now double to accommodate using data's values)
+(note: variable labase was float, now double to accommodate using data's values)
+(note: variable lacomp was float, now double to accommodate using data's values)
+(note: variable lahire was float, now double to accommodate using data's values)
+(note: variable sfbase was float, now double to accommodate using data's values)
+(note: variable sfcomp was float, now double to accommodate using data's values)
+(note: variable sfhire was float, now double to accommodate using data's values)
+(note: variable sebase was float, now double to accommodate using data's values)
+(note: variable secomp was float, now double to accommodate using data's values)
+(note: variable sehire was float, now double to accommodate using data's values)
+(note: variable albase was float, now double to accommodate using data's values)
+(note: variable alcomp was float, now double to accommodate using data's values)
+(note: variable alhire was float, now double to accommodate using data's values)
+(note: variable hibase was float, now double to accommodate using data's values)
+(note: variable hicomp was float, now double to accommodate using data's values)
+(note: variable hihire was float, now double to accommodate using data's values)
+(note: variable prbase was float, now double to accommodate using data's values)
+(note: variable prcomp was float, now double to accommodate using data's values)
+(note: variable prhire was float, now double to accommodate using data's values)
+(note: variable fileName was str16, now str31 to accommodate using data's
+       values)
+(note: variable comments was str9, now str31 to accommodate using data's values)
+file COA.dta saved
+
+. 
+. // load the file after appending all rows
+. use COA.dta, clear
+
+. 
+. // keep certain columns
+. keep code base bonus total hire reports title reportsto fileName
+
+. 
+. // sort descending by file name 
+. gsort -fileName 
+
+. 
+. // generate the pay gap between each position
+. //gen payGap = total - total[_n-1]
+. 
+. save COA.dta, replace
+file COA.dta saved
+
+. 
+. //outsheet code base bonus total hire reports title reportsto fileName payGap us
+> ing COA.csv, comma
+. 
+. exit
+
+end of do-file
+
+
+. do "/var/folders/sy/4d9t8khs1jn_xflrv2wvq20c0000gn/T//SD14206.000000"
+
+. cd "/Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/COU"
+/Users/macbook/Desktop/18-19 Thesis/Data Processing/1996/COU
+
+. 
+. capture log close

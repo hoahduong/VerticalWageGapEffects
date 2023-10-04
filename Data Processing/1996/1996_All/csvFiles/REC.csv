@@ -1,0 +1,40 @@
+code,base,bonus,total,hire,reports,title,reportsto,fileName,payGap
+"REC",4.95,0,4.95,,,"","","46 Part Time.txt",
+"REC",5.95,0,5.95,,,"","","45 Full Time.txt",1
+"REC",18726,,18726,,,"","","43 Assistant Store Manager.txt",18720.05
+"REC",25098,1343,26441,,3200,"","","42 Store Manager.txt",7715
+"REC",,,34797,,,"AREA MGR","","41 Area Manager.txt",8356
+"REC",44001,1861,45862,,,"DISTRICT MGR","","40 District Manager.txt",11065
+"REC",93700,1032,94732,,,"REGIONAL MGR","","39 Regional Manager.txt",48870
+"REC",260799,50000,310799,,3885,"SR VP OPS","CEO","37 Top Store Operations.txt",216067
+"REC",35713,4956,40669,,24,"SHIPPING/RECEIVING MGR","DR OF DC","36 Domestic Traffic.txt",-270130
+"REC",82000,39780,121780,,450,"DR OF DISTIRBUTION CENTER","CEO","34 Top DC _ Logistics.txt",81111
+"REC",54809,2340,57149,0,,"REGIONAL LP MGR","","33 Regional Loss Prevention.txt",-64631
+"REC",86000,10000,96000,,19,"VP OF LOSS PREVENTION","EXEC VP OF OPS","32 Top Loss Prevention.txt",38851
+"REC",,,,,,"","","31 Comp_Benefits Mgr.txt",
+"REC",80696,0,80696,,7.5,"DR, HR","CFO","30 Top Human Resources.txt",
+"REC",22360,3629,25989,,3,"MGR OF POS","DR MIS, OPS","29 Point Of Sale Admin.txt",-54707
+"REC",69168,7500,76668,,14,"DR MIS, OPERATIONS","","28 Computer Operations.txt",50679
+"REC",69130,7500,76630,,9,"DR MIS, DEVELOPMENT","","27 Systems Programming.txt",-38
+"REC",135800,7500,143300,,24,"VP OF MIS","CFO","26 Top Systems_Data Procg.txt",66670
+"REC",24860,,24860,,,"VISUAL MERCHANDISING COORDINATOR","","25 Regional Visual.txt",-118440
+"REC",55000,5500,60500,,5,"VISUAL MERCHANDISE MGR","DR OF MARKETING","24 Top Visual.txt",35640
+"REC",91124,12500,103624,,15,"DR OF MARKETING","","22 Top Mktg_Sales Promo.txt",43124
+"REC",25388,0,25388,,,"MERCHANDISE REPLENTISHMENT ANALYST","","19 Distributor.txt",-78236
+"REC",75000,1500,76500,,,"DR OF STORE REPLENT","","18 Planner.txt",51112
+"REC",75000,1500,76500,,11,"DR OF MERCHANDISE PLANNING","","17 Sr Planner.txt",0
+"REC",102500,10000,112500,,24,"VP OF MERCH, PLAN, & DISTRIBUTION","EXEC VP OF MERCHANDISING","16 Top Planner.txt",36000
+"REC",29484,2500,31984,,,"ASST BUYER","","15 Assistant Buyer.txt",-80516
+"REC",,,71735,,,"","","14 Buyer.txt",39751
+"REC",124225,40000,164225,,11,"DIVISIONAL MERCHANDISE MGR","","12 Div Merchandise Mgr.txt",92490
+"REC",275000,0,275000,,66,"EXEC VP OF MERSHANDISING","CEO","11 General Merchandise Mgr.txt",110775
+"REC",60000,0,60000,,0,"","","10 Top Internal Auditor.txt",-215000
+"REC",78225,7500,85725,,44,"ASST CONTROLLER","","09 Treasurer.txt",25725
+"REC",64480,8000,72480,,14,"ASST CONTROLLER","","08 Controller.txt",-13245
+"REC",182000,0,182000,,106,"CFO/SR VP","","07 CFO.txt",109520
+"REC",49250,2000,51250,,,"PROJECT MGR","","06 Regional Store Construct.txt",-130750
+"REC",82500,10000,92500,,6,"DR, STORE PLANNING & CONSTRUC","EXEC VP OF OPS","05 Top Store Plan_Construct.txt",41250
+"REC",95000,5000,100000,,,"DR OF LEASING ADMINISTRATION","","04 Regional Real Estate.txt",7500
+"REC",174000,100000,274000,,3,"SR VP OF REAL ESTATE","CEO","03 Top Real Estate.txt",174000
+"REC",58000,,58000,,0,"SECRETARY TO THE CORP","","02 General Counsel.txt",-216000
+"REC",575000,0,575000,,4551,"PRES/CEO","BD OF DR","01 CEO.txt",517000

@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1551051579535.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "361177887",
+    "id" : "ACB5263F",
+    "lastKnownWriteTime" : 1551049760,
+    "last_content_update" : 1551049760,
+    "path" : "~/Desktop/18-19 Thesis/R Calculations/1996 Difference Calculation/NoZone.R",
+    "project_path" : "NoZone.R",
+    "properties" : {
+        "cursorPosition" : "23,2",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
